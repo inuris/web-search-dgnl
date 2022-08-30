@@ -1251,7 +1251,6 @@ function filter() {
 			} else if (match.prior === 0) {
 				htmlQueue0 += template(match);
 			} else {
-				console.log(match);
 			}
 		} else {
 			htmlQueue1 += template(data[i]);
