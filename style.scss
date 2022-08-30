@@ -145,15 +145,16 @@ body {
         -moz-appearance: none;
         appearance: none;
         background-repeat: no-repeat;
-        background-position-x: 100%;
-        background-position-y: 13px;
+        background-position-x: calc(100% - 8px);
+        background-position-y: 10px;
+								background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
     }
 				&__clear {
 					position: absolute;
 					top: 0.7rem;
-					right: 0.8rem;
+					right: 0.5rem;
 					cursor: pointer;
-					background: $color--white;
+					background: transparent;
 					width: 2rem;
 					height: 2rem;
 					line-height: 2rem;
@@ -194,34 +195,5 @@ body {
         &:hover {
             color: $state-ui--danger;
         }
-    }
-}
-
-.clear-btn {
-    font-family: inherit;
-    background: $base-ui--4;
-    color: $color--black;
-    border: 0;
-    cursor: pointer;
-    margin-right: 1rem;
-    border-radius: $border-radius;
-    font-size: 1.4rem;
-    display: inline-block;
-    padding: .5rem 1rem;
-    line-height: 1;
-
-    &:hover {
-        background: $base-ui--5;
-    }
-
-    &:focus,
-    &:active {
-        outline: 0;
-    }
-
-    &:disabled {
-        background: $base-ui--1;
-        color: $base-ui--4;
-        cursor: not-allowed;
     }
 }
