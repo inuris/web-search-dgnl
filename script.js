@@ -181,7 +181,6 @@ let data = [
 {lesson:7, question:'Trung tâm điều hành thông minh (IOC - Intelligent Operation Center) của VNPT được triển khai đầu tiên cho đơn vị nào?', answer:'Thành phố Đà Lạt'}, 
 {lesson:7, question:'________ dự đoán xu hướng và hành vi trong tương lai, hỗ trợ các nhà quản lý đưa ra quyết định tác động đến hoạt động kinh doanh của doanh nghiệp.', answer:'Data mining - Khai phá dữ liệu'}, 
 {lesson:7, question:'VNPT đã phát triển hệ sinh thái các giải pháp để có thể giúp số hóa doanh nghiệp. Đó là:', answer:'Tất cả các giải pháp đều đúng'}, 
-{lesson:7, question:'nh hướng chiến lược VNPT 4.0 của tập đoàn VNPT là gì?', answer:'Chuyển đổi VNPT thành nhà cung cấp dịch vụ số'}, 
 {lesson:7, question:'Trong Internet of Things (IoT), các thiết bị máy tính, máy móc, vật thể, động vật (với chip sinh học có khả năng tự động nhận và truyền tín hiệu radio) hoặc người (có bộ cấy ghép để giám sát hoạt động của tim chẳng hạn) phải được gán một địa chỉ IP và có khả năng truyền dữ liệu qua mạng. Điều này đúng hay sai?', answer:'Đúng'}, 
 {lesson:7, question:'Cuộc cách mạng công nghiệp lần thứ tư phát triển trên 03 lĩnh vực chính là gì ?', answer:'Kỹ thuật số, công nghệ sinh học, vật lý'}, 
 {lesson:7, question:'Các nhà cung cấp dịch vụ điện toán đám mây (Cloud computing) cung cấp các dịch vụ của họ theo những mô hình cơ bản nào?', answer:'IaaS (Hạ tầng như một dịch vụ), PaaS (Nền tảng như một dịch vụ) và SaaS (Phần mềm như một dịch vụ).'}, 
