@@ -13,6683 +13,1146 @@ const template = (listItem) => {
 };
 
 let data = [
-	{
-		lesson: 1,
-		question:
-			'Các cá nhân/đoàn thể nào tham gia tổ chức triển khai và phổ biến, tuyên truyền Quy tắc ứng xử trên mạng xã hội đến người lao động tại đơn vị?',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Khi đăng tải nội dung lên mạng xã hội, chúng ta cần:',
-		answer:
-			'Kiểm tra kỹ thông tin trước khi đăng tải để đảm bảo nội dung đúng sự thật và phù hợp.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Nếu nhân viên VNPT "Một tay bỏ vào túi quần, 1 tay chào" đây là tình huống',
-		answer:
-			'Chào chưa đúng quy chuẩn trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo sổ tay Văn hóa VNPT, Sức mạnh thương hiệu "VNPT- Cuộc sống đích thực" phải được tạo ra từ các giá trị đích thực bên trong VNPT với:',
-		answer: 'Con người đích thực, Môi trường đích thực, Sản phẩm đích thực.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Chuẩn mực VNPT, chuẩn mực về "Văn hóa ứng xử" của cấp dưới với cấp trên là:',
-		answer: 'Thẳng thắn, chấp hành',
-	},
-	{
-		lesson: 1,
-		question: 'Theo anh chị, Câu Khẩu hiệu (Slogan) của VNPT là gì?',
-		answer: 'VNPT - Cuộc sống đích thực',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo anh/chị thì đâu là thách thức/mối đe dọa (Threats) của VNPT?',
-		answer:
-			'Nhiều nhà cung cấp dịch vụ quốc tế đang tìm kiếm cơ hội kinh doanh tại thị trường Việt Nam; hạ tầng băng rộng đang thay thế hạ tầng cáp đồng, thị trường di động Việt Nam chủ yếu vẫn là thị trường trả trước và có tỷ lệ rời mạng cao; việc triển khai dịch vụ chậm có thể làm mất thị trường nhanh chóng',
-	},
-	{
-		lesson: 1,
-		question: 'Theo anh/chị thì đâu là điểm yếu (Weaknesses) của VNPT?',
-		answer:
-			'Thiếu sự khác biệt rõ ràng cả về thương hiệu và sản phẩm; quy trình nội bộ kéo dài; thiếu công cụ mạnh tiếp cận thị trường; thiếu lực lượng lao động CNTT có tay nghề cao; thương hiệu VNPT không được biết đến bên ngoài thị trường Việt Nam',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người lao động thực hiện tốt Quy tắc ứng xử trên mạng xã hội sẽ được xem xét biểu dương, khen thưởng. Đúng hay Sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Chỉ có phát triển nhanh, vượt trội, bền vững, VNPT mới có thể chiến thắng trong cạnh tranh và hội nhập.Yếu tố "Nhanh" được hiểu là:',
-		answer: 'Bàn nhanh - Quyết nhanh - Làm nhanh',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, tình huống chào chưa đúng quy chuẩn VNPT bao gồm:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Theo anh/chị thì đâu là cơ hội (Opportunities) của VNPT?',
-		answer:
-			'Tăng trưởng mạnh mẽ của thị trường CNTT cùng với nhận thức cao về IT trên toàn quốc; tăng trưởng mạnh mẽ của thị trường di động với nhu cầu thay đổi từ thoại sang dữ liệu và tỷ lệ sử dụng điện thoại thông minh cao; Chính phủ thúc đẩy lĩnh vực ICT phát triển',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo sổ tay văn hóa VNPT quy định "Trách nhiệm của VNPT" bao gồm:',
-		answer:
-			'Với nhà nước: Thực thi pháp luật Với khách hàng: Luôn làm hài lòng Với đối tác: Hợp tác cùng phát triển Với cộng đồng xã hội: Cùng chung vai góp sức Với người lao động: Tôn trọng và bảo vệ Với môi trường: Vì một hành tinh xanh',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Chuẩn mực VNPT, chuẩn mực về "Văn hóa ứng xử" trong đơn vị đó là:',
-		answer:
-			'Với đồng nghiệp: Hợp tác – Cởi mở Với cấp dưới: Lắng nghe – Chân thành Với cấp trên: Thẳng thắn – Chấp hành Với bản thân: Vượt qua chính mình',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, khi thực hiện cúi chào, "Các ngón tay xòe ra và đặt ở bên trái" đây là tình huống',
-		answer: 'Chào chưa đúng quy chuẩn VNPT',
-	},
-	{
-		lesson: 1,
-		question:
-			'Kỹ thuật cúi chào nào là đúng theo nội dung Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT?',
-		answer: 'Cúi nhẹ cả người từ thắt lưng xuống 15 độ.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Việc xây dựng Quy tắc ứng xử trên mạng xã hội của người lao động VNPT, nhằm mục đích:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Tập đoàn VNPT đang bước vào giai đoạn tăng tốc trong chuyển đổi số. Theo Anh/Chị, để việc này thành công thì mỗi Người VNPT cần phải làm gì ?',
-		answer:
-			'Để thành công và giữ vị trí chủ đạo trong công cuộc chuyển đổi số quốc gia, điều này đòi hỏi mỗi người VNPT phải tự chuyển đổi chính bản thân mình',
-	},
-	{
-		lesson: 1,
-		question:
-			'Quy tắc Tôn trọng bản quyền trong Quy tắc ứng xử trên mạng xã hội của VNPT, nói đến việc:',
-		answer:
-			'Không sử dụng tên, logo, hình ảnh, bản quyền thương hiệu của VNPT, sản phẩm dịch vụ của VNPT vào mục đích cá nhân',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, khoảng cách hợp lý khi thực hiện cúi chào khách hàng là:',
-		answer: 'Từ 1 đến 1,5m',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo Sổ tay Văn hóa VNPT, Trách nhiệm của VNPT với người lao động là "Tôn trọng và Bảo vệ" được hiểu như thế nào?',
-		answer:
-			'VNPT xác định đội ngũ lao động là tài sản quý giá nhất của VNPT, là những người làm nên lịch sử truyền thống hào hùng, cũng như đang tạo dựng những bậc thang cho tương lai, do vậy mọi chủ trương, ý tưởng, cơ chế, chính sách hay giải pháp triển khai cũng đều hướng về người lao động.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Chuẩn mực VNPT, chuẩn mực về "Văn hóa ứng xử" của cấp trên với cấp dưới là:',
-		answer: 'Lắng nghe, chân thành',
-	},
-	{
-		lesson: 1,
-		question:
-			'Chỉ có phát triển nhanh, vượt trội, bền vững, VNPT mới có thể chiến thắng trong cạnh tranh và hội nhập. Theo anh chị, Yếu tố "Bền vững" được hiểu là:',
-		answer: 'Đạo lý bền vững - Hạ tầng bền vững - Lợi nhuận bền vững',
-	},
-	{
-		lesson: 1,
-		question:
-			'Sức mạnh gắn kết của VNPT - Một mái nhà chung được thể hiện ở những yếu tố nào sau đây?',
-		answer: 'Hạ tầng chung, Sản phẩm chung, Thương hiệu chung, Lợi ích chung',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi thấy những thông tin mang tính chất tiêu cực về VNPT, nhân viên VNPT cần:',
-		answer: 'Thông báo với Bộ phận truyền thông của Tập đoàn',
-	},
-	{
-		lesson: 1,
-		question:
-			'Anh/chị cho biết VNPT lựa chọn yếu tố nào để tạo nên "Đạo đức" trong văn hoá VNPT:',
-		answer:
-			'Tín với Nhà nước, Tín với Cộng đồng, Tín với Khách hàng, Tín với Người lao động',
-	},
-	{
-		lesson: 1,
-		question:
-			'Quy tắc ứng xử trên mạng xã hội áp dụng đối với tất cả người lao động VNPT làm việc tại Công ty mẹ và các Công ty con do VNPT sở hữu 100% vốn điều lệ. Đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, việc cúi chào được áp dụng tại các điểm chạm như:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong sổ tay văn hóa VNPT, anh chị hiểu trách nhiệm của người VNPT với "Môi trường" là:',
-		answer:
-			'Vì một hành tinh xanh _ Cam kết xây dựng cơ quan Xanh - Sạch - Đẹp, bảo đảm an toàn, PCCN, ứng dụng công nghệ tiên tiến thân thiện và bảo vệ môi trường.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo anh chị, khi VNPT thực hiện chuyển đổi số, chiến lược về văn hóa nào sau đây sẽ hỗ trợ tốt nhất cho chiến lược dài hạn của VNPT?',
-		answer:
-			'Áp dụng những thông lệ tốt nhất của một doanh nghiệp số, bảo tồn những thông lệ của doanh nghiệp truyền thống vẫn có giá trị cho sự phát triển bền vững của doanh nghiệp số',
-	},
-	{
-		lesson: 1,
-		question:
-			'Các lĩnh vực chính cụ thể của "Chiến lược phát triển Tập đoàn BCVTVN cho giai đoạn 2017 - 2025, tầm nhìn 2030" là gì?',
-		answer:
-			'IoT; mạng lưới tin cậy; đám mây; phân tích dữ liệu; an ninh mạng và trí tuệ nhân tạo',
-	},
-	{
-		lesson: 1,
-		question:
-			'Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT được áp dụng cho:',
-		answer: 'Tất cả CBNV từ lãnh đạo đến nhân viên, lao động thuê ngoài',
-	},
-	{
-		lesson: 2,
-		question: 'Anh/chị cho biết giao thức https sử dụng port nào?',
-		answer: '443',
-	},
-	{
-		lesson: 2,
-		question:
-			'Câu lệnh nào được sử dụng để hiển thị bảng routing trên HĐH Linux?',
-		answer: 'Route -n',
-	},
-	{
-		lesson: 2,
-		question:
-			'Anh/chị hay cho biết khi một kẻ tấn công lợi dụng lỗ hổng của việc kiểm tra dữ liệu đầu vào trong các ứng dụng web để thêm vào và thực thi các lệnh SQL bất hợp pháp thì cách tấn công đó được gọi là gì?',
-		answer: 'SQL Injection attack',
-	},
-	{
-		lesson: 2,
-		question:
-			'Kỹ thuật sử dụng các gói tin giả mạo chiếm đoạt kết nối giữa máy tính nạn nhân với máy đích?',
-		answer: 'TCP Hijacking',
-	},
-	{
-		lesson: 2,
-		question:
-			'Người dùng mở 2 trình duyệt chrome cùng một lúc và cùng truy vấn vào trang web http://vnpt.vn, trường nào sau đây là khác nhau giữa 2 connection này?',
-		answer: 'Source port number',
-	},
-	{
-		lesson: 2,
-		question: 'Việc sử dụng đội quân zombie tấn công trên mạng là hình thức?',
-		answer: 'DDOS',
-	},
-	{
-		lesson: 2,
-		question:
-			'Câu lệnh nào được sử dụng để bật xác thực AAA nếu người dùng truy cập vào chế độ privilege',
-		answer: 'aaa authentication enable default local',
-	},
-	{
-		lesson: 2,
-		question: 'Hình thức mã hóa nào dưới đây không dựa trên block cipher?',
-		answer: 'RC4',
-	},
-	{
-		lesson: 2,
-		question:
-			'Để thực hiện cuộc tấn công Trojan-Backdoor. Hacker sẽ thực hiện:',
-		answer:
-			'Trojan Client được cài trên máy nạn nhân – Hacker điều khiển bằng Trojan Server',
-	},
-	{
-		lesson: 2,
-		question:
-			'Kỹ thuật nhằm tăng tốc độ thực thi và giảm kích thước chương trình virus được gọi là?',
-		answer: 'Biến hình',
-	},
-	{
-		lesson: 2,
-		question:
-			'Phương thức thông dụng để chia sẻ một kết nối internet cho nhiều máy khác trong mạng là:',
-		answer: 'ICS (Internet Connection Sharring)',
-	},
-	{
-		lesson: 2,
-		question:
-			'Nếu không phải do attacker tấn công thì backdoor có thể lây nhiễm từ cách nào sau đây?',
-		answer: 'Left in the code by a programmer.',
-	},
-	{
-		lesson: 2,
-		question: 'Có thể kiểm tra các port đang mở với?',
-		answer: 'Netstat',
-	},
-	{
-		lesson: 2,
-		question:
-			'Trên firewall ASA, access list entry nào được sử dụng trong cấu hình access-list mà cho phép match multiple entries với chỉ 1 câu lệnh?',
-		answer: 'Object groups',
-	},
-	{
-		lesson: 2,
-		question:
-			'Câu lệnh nào được sử dụng để bật tính năng tự động học MAC trên switch',
-		answer: 'switchport port-security mac-address sticky',
-	},
-	{
-		lesson: 2,
-		question:
-			'Trong môi trường Cisco Cloud Web Security khi nào lưu lượng truy cập mạng được phép cho qua các quét proxies',
-		answer: 'Khi máy client đã kết nối tới dịch vụ VPN đã cho qua proxies.',
-	},
-	{
-		lesson: 2,
-		question:
-			'Các server như: Web, Mail thường được đặt trong vùng nào dưới đây?',
-		answer: 'Demilitarized Zones',
-	},
-	{
-		lesson: 2,
-		question: 'HTTPS sử dụng giao thức nào để mã hóa dữ liệu ?',
-		answer: 'SSL hoặc TLS.',
-	},
-	{
-		lesson: 2,
-		question: 'Thành phần nào trong bộ 802.1x thực thi chính sách mạng',
-		answer: 'authentication server',
-	},
-	{
-		lesson: 2,
-		question: 'Điều quan trọng nhất khi triển khai firewall là gì ?',
-		answer: 'Writing a firewall policy',
-	},
-	{
-		lesson: 2,
-		question:
-			'Kỹ thuật nào sau đây được hacker sử dụng để vượt qua MAC filtering ở thiết bị phát wifi ?',
-		answer: 'Spoof a physical address',
-	},
-	{
-		lesson: 2,
-		question:
-			'3 yếu tố quan trọng nhất của an toàn an ninh thông tin (Information Security) ?',
-		answer: 'Confidentiality, Integrity and Availability',
-	},
-	{
-		lesson: 2,
-		question:
-			'Giao thức nào cung cấp tính toàn vẹn dữ liệu, mã hóa, xác thực và anti-replay cho Ipsec VPN',
-		answer: 'ESP protocol',
-	},
-	{
-		lesson: 2,
-		question:
-			'Metasploit Framework là công cụ tấn công khai thác lỗ hổng để lấy Shell của máy nạn nhân. Ngay sau khi cài đặt, chạy công cụ này thì gặp sự cố: tất cả các lệnh gõ trên Metasploit không được thi hành. Nguyên nhân là do:',
-		answer: 'Do không kết nối được tới máy nạn nhân',
-	},
-	{
-		lesson: 2,
-		question:
-			'Nếu bạn mở cổng TCP/21 mà dịch vụ FTP vẫn bị firewall block, vậy bạn cần thực hiện bước nào dưới đây để dịch vụ ftp hoạt động được ?',
-		answer: 'Open TCP/20',
-	},
-	{
-		lesson: 2,
-		question:
-			'Tính năng nào được sử dụng để chọn địa chỉ tiếp theo thay vì chọn cổng trong cơ chế dịch chuyển địa chỉ PAT pool',
-		answer: 'round robin',
-	},
-	{
-		lesson: 2,
-		question:
-			'Phải vào mode nào để sử dụng lệnh “ip ospf authentication-key c1$c0?”',
-		answer: 'Interface',
-	},
-	{
-		lesson: 2,
-		question:
-			'Máy Windows Server 2003 có 2 thiết bị giao tiếp mạng: một giao tiếp Internet và một giao tiếp với các Client. Người quản trị triển khai NAT trên Windows Server này để chia sẻ kết nối internet. Sau khi triển khai xong thì Server giao tiếp internet tốt, còn các Client thì không giao tiếp được mặc dùng đã khai báo đúng và đủ các thông số IP cho Clients. Nguyên nhân dẫn đến tình trạng trên:',
-		answer:
-			'Do dịch vụ “Basic Firewall” ngăn không cho các Client giao tiếp internet',
-	},
-	{
-		lesson: 2,
-		question:
-			'Anh/Chị cho biết cách thức nào sau đây được sử dụng phổ biến trong kỷ thuật Social engineering attack?',
-		answer: 'Qua điện thoại',
-	},
-	{
-		lesson: 2,
-		question:
-			'Anh/chị cho biết passwords được lưu ở đâu trong hệ điều hành Linux',
-		answer: '/etc/shadow',
-	},
-	{
-		lesson: 2,
-		question: 'Hình thức nào sau đây không phải là hình thức tấn công DoS?',
-		answer: 'ARP Spoofing',
-	},
-	{
-		lesson: 2,
-		question:
-			'Anh/chị cho biết cách tốt nhất để bảo mật cho thiết bị switch tránh việc truy cập ở lớp vật lý là gì?',
-		answer: 'Disable tất cả các port không sử dụng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Chế độ nào kém an toàn hơn các tùy chọn khác nhưng cho phép tối ưu thông lượng mạng',
-		answer: 'Promiscuous mode',
-	},
-	{
-		lesson: 2,
-		question:
-			'Loại nào được dùng để đại diện cho nhiều yếu tố trong chính sách truy cập Cisco',
-		answer: 'object groups',
-	},
-	{
-		lesson: 2,
-		question:
-			'Câu lệnh nào được sử dụng để cấu hình tưởng lửa có chức năng che giấu các địa chỉ nội bộ',
-		answer: 'no proxy-arp',
-	},
-	{
-		lesson: 2,
-		question:
-			'Tùy chọn nào được dùng để duy trì kết nối khi đi qua tường lửa ASA',
-		answer: 'Routing table',
-	},
-	{
-		lesson: 2,
-		question:
-			'Trên Firewall Cisco ASA, Interface nào có giá trị security-level lớn nhất ?',
-		answer: 'Interface inside',
-	},
-	{
-		lesson: 2,
-		question:
-			'Trên Firewall Cisco ASA, căn cứ vào hình vẽ trên hãy chỉ ra loại NAT được sử dụng ?',
-		answer: 'Dynamic NAT',
-	},
-	{
-		lesson: 2,
-		question: 'Giá trị mặc định TTL trên hệ điều hành Linux là bao nhiêu ?',
-		answer: '64',
-	},
-	{
-		lesson: 2,
-		question:
-			'Kiểu tường lửa nào có thể thực hiện kiểm tra lớp tận cùng gói tin',
-		answer: 'application firewall',
-	},
-	{
-		lesson: 2,
-		question:
-			'Anh/chị cho biết thứ tự đúng của các gói tin gửi đi trong quá trình khởi tạo TCP theo phương pháp bắt tay 03 bước',
-		answer: 'SYN, SYN-ACK, ACK',
-	},
-	{
-		lesson: 2,
-		question:
-			'Trường nào dưới đây được sử dụng để nhận biết gói tin được gửi đi trong cùng mạng hay khác mạng?',
-		answer: 'Subnet Mask',
-	},
-	{
-		lesson: 3,
-		question:
-			'Các chương trình học tập thiết kế cho người lớn cần tuân thủ nguyên tắc nào trong số các nội dung sau?',
-		answer:
-			'Sử dụng kinh nghiệm của học viên trong các ví dụ và hoạt động học tập',
-	},
-	{
-		lesson: 3,
-		question: 'Hình thức học tập phổ biến hiện nay là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Sự tham gia của nhân viên vào sự thay đổi là cần thiết bởi vì:',
-		answer: 'Giúp kiểm soát quá trình thay đổi',
-	},
-	{
-		lesson: 3,
-		question: 'Lợi ích của làm việc nhóm là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Một trong những nguyên tắc để lập kế hoạch là:',
-		answer: 'Có tính linh hoạt phù hợp với sự thay đổi của môi trường',
-	},
-	{
-		lesson: 3,
-		question:
-			'Phương pháp 6 chiếc mũ tư duy hướng mọi người cùng tập trung vào vấn đề từ cùng một góc nhìn, nhằm:',
-		answer:
-			'Triệt tiêu hoàn toàn các tranh cãi xuất phát từ các góc nhìn khác nhau.',
-	},
-	{
-		lesson: 3,
-		question: 'Khi bắt đầu học nên bắt đầu bằng tư tưởng:',
-		answer: 'Tiếp thu cái mới',
-	},
-	{
-		lesson: 3,
-		question: 'Đảm bảo sự phù hợp trong năng lực sáng tạo có nghĩa là:',
-		answer: 'Phải đúng đối tượng, đúng mục tiêu và đúng cách',
-	},
-	{
-		lesson: 3,
-		question: 'Lợi ích khi có mối quan hệ tốt là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Đầu ra của hoạch định chiến lược là:',
-		answer: 'Bản kế hoạch kinh doanh',
-	},
-	{
-		lesson: 3,
-		question:
-			'"Thay đổi là một quá trình chứ không phải là một sự kiện". Đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Tìm kiếm cơ hội được định nghĩa là:',
-		answer:
-			'Chủ động tìm cách xây dựng những mối quan hệ công việc với người khác',
-	},
-	{
-		lesson: 3,
-		question:
-			'"Luôn cố gắng tuân theo logic là một trong những nguyên tắc phải tuân thủ khi sử dụng phương pháp Tập kích não". Đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 3,
-		question:
-			'Mô hình học tập &quot;lấy người học làm trung tâm&quot; là mô hình trong đó giảng viên là nhà diễn thuyết, nhà truyền đạt thông tin nhằm đi hết nội dung của chương trình học. Đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 3,
-		question: 'Quy trình sáng tạo thường bắt đầu từ việc:',
-		answer: 'Tìm kiếm ý tưởng trong thực tế',
-	},
-	{
-		lesson: 3,
-		question:
-			'Để tìm ý tưởng cho phương pháp mở rộng hay thu nhỏ, nhân viên VNPT nên:',
-		answer: 'Suy nghĩ việc mở rộng hay thu nhỏ sản phẩm, dịch vụ sẵn có',
-	},
-	{
-		lesson: 3,
-		question: 'Đối với Doanh nghiệp, sự sáng tạo có những lợi ích:',
-		answer: 'Các đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Đâu là hành động chính trong năng lực học tập ứng dụng ?',
-		answer: 'Tích cực tham gia các hoạt động học tập',
-	},
-	{
-		lesson: 3,
-		question: 'Những lợi ích của sáng tạo đối với cá nhân bao gồm',
-		answer: 'Các đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question:
-			'Trong ma trận quản lý thời gian, đối với công việc quan trọng nhưng không khẩn cấp thì nên:',
-		answer: 'Có kế hoạch làm hợp lý',
-	},
-	{
-		lesson: 4,
-		question:
-			'Sau khi thực hiện lắp đặt/sửa chữa dịch vụ tại nhà khách hàng, NVKT KHÔNG nên:',
-		answer: 'Nhờ khách hàng dọn giúp vệ sinh khu vực đã thi công',
-	},
-	{
-		lesson: 4,
-		question:
-			'Khi giao tiếp với khách hàng, chúng ta luôn mong muốn nhận được thông tin phản hồi từ khách hàng. Đúng hay Sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 4,
-		question:
-			'NVKT sẽ ứng xử thế nào khi khách hàng yêu cầu ngừng sử dụng dịch vụ/sản phẩm của VNPT?',
-		answer:
-			'Tìm hiểu nguyên nhân, thuyết phục khách hàng tiếp tục sử dụng dịch vụ. Trong trường hợp khách hàng thực sự không còn nhu cầu thì hướng dẫn khách hàng làm thủ tục chấm dứt hợp đồng.',
-	},
-	{
-		lesson: 4,
-		question: 'Lý do khiến thuê bao rời mạng có thể là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 4,
-		question:
-			'Sau khi lắp đặt dịch vụ Internet tại nhà khách hàng, một trong những vấn đề mà NVKT cần lưu ý khách hàng là:',
-		answer: 'Số lượng thiết bị tối đa truy cập cùng lúc trên đường truyền',
-	},
-	{
-		lesson: 4,
-		question: 'NVKT nên ứng xử thế nào khi gặp khách hàng lần đầu?',
-		answer:
-			'Chủ động cúi chào theo quy chuẩn và hướng ánh mắt về phía khách hàng với thái độ vui vẻ, nhiệt tình; giới thiệu bản thân để khách hàng yên tâm; xác nhận lại với khách hàng về yêu cầu lắp đặt, sửa chữa ... dịch vụ.',
-	},
-	{
-		lesson: 4,
-		question:
-			'NVKT khi thực hiện chăm sóc khách hàng, nếu khách hàng phản ánh "Mạng bị chậm", sẽ xử lý như thế nào?',
-		answer:
-			'Xin lỗi khách hàng; khảo sát và kiểm tra dịch vụ; đưa ra khuyến nghị hoặc đo sóng WIFI và tối ưu WIFI cho khách hàng.',
-	},
-	{
-		lesson: 4,
-		question:
-			'Khi lắp đặt, xử lý sự cố dịch vụ cho khách hàng xong, nội dung nào NVKT không nên khuyến nghị khách hàng:',
-		answer:
-			'Chủ động mua và lắp thêm repeater nếu muốn mở rộng thêm vùng phủ sóng',
-	},
-	{
-		lesson: 4,
-		question: 'Để tạo thiện cảm với khách hàng, chúng ta nên:',
-		answer: 'Giữ đúng lời hứa với khách hàng',
-	},
-	{
-		lesson: 4,
-		question: 'Các lỗi thường mắc phải trong bán hàng',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 4,
-		question:
-			'Sau khi xử lý khu vực sóng yếu hoặc xử lý chất lượng mạng tại nhà khách hàng. NVKT nên:',
-		answer:
-			'Thông báo cho khách hàng về tình hình chất lượng dịch vụ sau xử lý; Hỏi khách hàng xem còn thắc mắc điều gì nữa không; Gửi lời cảm ơn khách hàng đã tin tưởng và sử dụng dịch vụ của VNPT; Giới thiệu đầu số hỗ trợ khách hàng; Chào tạm biệt khách hàng theo quy chuẩn VNPT.',
-	},
-	{
-		lesson: 4,
-		question: 'Theo anh/chị thì khách hàng ngày nay có xu hướng thế nào?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 4,
-		question:
-			'Khi tiếp cận khách hàng để tư vấn dịch vụ, nếu khách hàng đang bận việc, NVKT nên:',
-		answer: 'Tạm biệt khách hàng và gợi ý khách hàng xin một cuộc hẹn khác',
-	},
-	{
-		lesson: 4,
-		question: 'Lắng nghe tích cực KHÔNG có đặc điểm nào, sau đây:',
-		answer:
-			'Khi khách hàng đang trình bày, nếu có điều gì khách hàng nói chưa đúng thì nên ngắt lời để giải thích ngay, tránh để khách hàng hiểu lầm',
-	},
-	{
-		lesson: 4,
-		question: 'NVKT đến tối ưu mạng WIFI cho khách hàng hiện hữu nhằm mục đích',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 4,
-		question:
-			'Khi khách hàng có ý so sánh các dịch vụ của VNPT với dịch vụ của các đối thủ cạnh tranh về mức giá sử dụng, NVKT nên:',
-		answer:
-			'Nêu và chứng minh tính ưu việt về chất lượng sản phẩm dịch vụ của VNPT cùng những chính sách chăm sóc khách hàng, dịch vụ hậu mãi; Định hướng cho khách hàng hiểu về chất lượng quan trọng hơn giá cả.',
-	},
-	{
-		lesson: 4,
-		question:
-			'Theo anh/chị, mục đích quan trọng nhất khi một doanh nghiệp yêu cầu nhân viên tiếp xúc với khách hàng phải đeo thẻ nhân viên và mặc đồng phục là gì ?',
-		answer:
-			'Thể hiện tính chuyên nghiệp và thái độ tôn trọng trong phục vụ khách hàng',
-	},
-	{
-		lesson: 4,
-		question: 'Khi giao tiếp với khách hàng, NVKT nên tránh:',
-		answer: 'Nói với tốc độ và ngữ điệu đều đều',
-	},
-	{
-		lesson: 4,
-		question: 'Những phàn nàn của khách hàng sẽ giúp cho đơn vị:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'VNPT Pay có tính năng thanh toán tự động các hóa đơn, đảm bảo cho các thanh toán định kỳ luôn đúng hạn. Đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Khi sử dụng hệ thống VNPT HMIS, người dân sẽ hưởng được lợi ích gì?',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Trong tính năng Quản trị của giải pháp VNPT VXP không có chức năng nào:',
-		answer: 'Chức năng trọng tài',
-	},
-	{
-		lesson: 5,
-		question: 'Các tính năng chính của giải pháp VNPT VXP là:',
-		answer: 'Tính năng nhận gửi và Tính năng quản trị',
-	},
-	{
-		lesson: 5,
-		question: 'Hóa đơn điện tử không có mã cơ quan Thuế:',
-		answer:
-			'Là Hóa đơn điện tử do Tổ chức bán hàng hóa, cung cấp dịch vụ gửi cho Người mua không có mã của cơ quan Thuế',
-	},
-	{
-		lesson: 5,
-		question:
-			'Hệ thống VNPT VSR có thể tích hợp dữ liệu với hệ thống báo cáo chính phủ?',
-		answer: 'Có',
-	},
-	{
-		lesson: 5,
-		question:
-			'So với việc sử dụng Phòng họp không giấy tờ VNPT e-Cabinet, một trong những hạn chế của phòng họp truyền thống là:',
-		answer:
-			'Các thành viên tham gia cuộc họp, không thể tham gia cùng lúc tại nhiều địa điểm',
-	},
-	{
-		lesson: 5,
-		question:
-			'Khi sử dụng phần mềm VNPT e-Cabinet sẽ mang lại những lợi ích gì?',
-		answer:
-			'- Tích hợp dễ dàng với các ứng dụng thông qua hệ thống API - Kết nối thông minh với các thiết bị: Màn hình TV, Máy QR Code, Laptop/Tablet, SMS/Email,… - Giao diện thân thiện với người sử dụng, tính năng tương tác cao. - Quản lý ghi chú tài liệu họp trực tuyến từ xa. - Hỗ trợ ký số trên Sim Mobile PKI.',
-	},
-	{
-		lesson: 5,
-		question: 'Nạp tiền vào Ví điện tử VNPT Pay bằng cách nào? :',
-		answer:
-			'Đăng nhập Ví VNPT Pay->Chọn “Nạp tiền” trên màn hình chính-> Nhập số tiền cần nạp->Ấn “Tiếp tục”-> Nạp tiền thành công',
-	},
-	{
-		lesson: 5,
-		question: 'Các chức năng chính của hệ thống vnEdu IOC',
-		answer:
-			'Trực quan hóa: Giám sát cảnh báo; Lịch công tác; Gửi thông báo; Đồng bộ Cơ sở dữ liệu ngành',
-	},
-	{
-		lesson: 5,
-		question: 'vnEdu Portal ra đời hướng đến mục đích gì?',
-		answer: 'Giới thiệu, quảng bá hình ảnh các đơn vị giáo dục',
-	},
-	{
-		lesson: 5,
-		question:
-			'Trong tính năng Nhận gửi của giải pháp VNPT VXP không có chức năng nào:',
-		answer: 'Tra cứu',
-	},
-	{
-		lesson: 5,
-		question:
-			'"VNPT PAY chỉ có thể thực hiện việc thu hộ cho các đối tác cung cấp dịch vụ trong nội bộ VNPT". Đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 5,
-		question: 'Lợi ích khi sử dụng hóa đơn điện tử:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question: 'Định nghĩa đầy đủ của Dịch vụ SIP Trunking cố định là:',
-		answer:
-			'Đường dây trung kế thoại chạy trên giao thức SIP được cung cấp trên phạm vi tất cả các T/TP trên toàn quốc cho đối tượng KH là các tổ chức doanh nghiệp có trang bị tổng đài IP PBX dùng để tạo kết nối cho các đầu số điện thoại cố định.',
-	},
-	{
-		lesson: 5,
-		question: 'Đối tượng sử dụng hệ thống vnEdu IOC',
-		answer:
-			'Các đối tượng trong khối quản lý điều hành (Sở Giáo dục, Phòng Giáo dục)',
-	},
-	{
-		lesson: 5,
-		question:
-			'"Khóa công khai" trong dịch vụ VNPT - MobileID là loại khóa được tạo bởi:',
-		answer: 'Khóa bí mật tương ứng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Trong hệ thống VNPT VSR, hệ thống thông tin thu thập, tổng hợp, phân tích số liệu báo cáo từ các bộ, cơ quan, địa phương để phục vụ công tác chỉ đạo, điều hành của Chính phủ, Thủ tướng Chính phủ, là định nghĩa của:',
-		answer: 'Hệ thống thông tin báo cáo Chính phủ ( GRIS)',
-	},
-	{
-		lesson: 5,
-		question:
-			'Khách hàng dùng SIM số bình thường là đã có thể sử dụng VNPT - MobileID. Đúng hay Sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 5,
-		question:
-			'"Theo dõi, giám sát thông tin y tế cơ sở toàn Huyện trực tuyến." là lợi ích mà hệ thống VNPT HMIS đem đến cho đối tượng nào sau đây?',
-		answer: 'Trung tâm y tế',
-	},
-	{
-		lesson: 6,
-		question:
-			'Cấu trúc bộ nhớ nào ghi tất cả những thay đổi CSDL của instance?',
-		answer: 'Redo log buffer',
-	},
-	{
-		lesson: 6,
-		question:
-			'Có bao nhiêu pan tồn tại trong phiên bản mới của Oracle Enterprise Manager (OEM)?',
-		answer: 'Two, in a master/detail format',
-	},
-	{
-		lesson: 6,
-		question: 'Tác vụ nào được phép thực thi trên tablespace chỉ đọc?',
-		answer: 'Drop table',
-	},
-	{
-		lesson: 6,
-		question:
-			'Tùy chọn SHUTDOWN nào sẽ đợi user hoàn thành các transaction chưa được commit của họ?',
-		answer: 'SHUTDOWN TRANSACTIONAL',
-	},
-	{
-		lesson: 6,
-		question: 'Số tối thiểu của online redo log file yêu cầu trong CSDL?',
-		answer: '2',
-	},
-	{
-		lesson: 6,
-		question:
-			'Cho một quan hệ cơ sơ dữ liệu HANG(MA_HANG, TEN_HANG, LOAI, NHACC, GIA). Để giảm giá 20% các mặt hàng thuộc nhà cung cấp là Sony thì câu lệnh SQL nào sau được dùng?',
-		answer: 'Update HANG set GIA = GIA – GIA*20/100 where NHACC=“Sony”.',
-	},
-	{
-		lesson: 6,
-		question:
-			'Tùy chọn mới nào của RMAN có thể được DBA dùng để lưu thời gian khi việc sao lưu không thành công?',
-		answer: 'Khởi động lại sao lưu với tùy chọn NOT BACKED UP .',
-	},
-	{
-		lesson: 6,
-		question:
-			'Xử lí hậu cảnh và liên kết các thành phần CSDL bảo đảm rằng dữ liệu được commit ngay cả khi những thay đổi chưa được ghi lại trong các tập tin DL?',
-		answer: 'LGWR and online redo log file',
-	},
-	{
-		lesson: 6,
-		question:
-			'User SCOTT đã mở 1session SQL*Plus và tạm thời không sử dụng đến. Khi bạn vấn tin view V$SESSION, STATUS thì INACTIVE. Bạn kết thúc session của SCOTT. Cái gì sẽ là hiện trạng của session của SCOTT trong V$SESSION?',
-		answer: 'KILLED',
-	},
-	{
-		lesson: 6,
-		question: 'Role nào được khởi tạo mặc định cho Quản trị viên CSDL?',
-		answer: 'DBA',
-	},
-	{
-		lesson: 6,
-		question:
-			'UPDATE products SET Price=Price+Price*0.1 WHERE Price IN(60,70). Kết quả câu lệnh SQL trên là:',
-		answer:
-			'Tăng 10% giá (Price) trong bảng Products, cho những sản phẩm có giá là 60 hoặc 70',
-	},
-	{
-		lesson: 6,
-		question:
-			'Những kiểu nối nào sau đây được cho phép trong mệnh đề FROM của câu lệnh SQL?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 6,
-		question:
-			'Bạn cần phải bảo đảm là tất cả các transaction chỉnh sửa dữ liệu các bảng phải theo cùng 1 thứ tự',
-		answer:
-			'Bạn cần phải bảo đảm là tất cả các transaction chỉnh sửa dữ liệu các bảng phải theo cùng 1 thứ tự',
-	},
-	{
-		lesson: 6,
-		question:
-			'Câu lệnh nào sau đây có thể yêu cầu cấp phát temporary segment ?',
-		answer: 'CREATE INDEX',
-	},
-	{
-		lesson: 6,
-		question: 'Dirty buffer là gì?',
-		answer: 'Data buffer đã được thay đổi nhưng khôngđược ghi vào ổ đĩa.',
-	},
-	{
-		lesson: 6,
-		question:
-			'Anh (chị) xin vui lòng cho biết: Những điều nào sau đây ko phải quyền hệ thống?',
-		answer: 'SELECT',
-	},
-	{
-		lesson: 6,
-		question:
-			'Quyền nào mà bạn cần có để kết nối CSDL, nếu CSDL đang được khởi động bằng STARTUP RESTRICT?',
-		answer: 'RESTRICTED SESSION',
-	},
-	{
-		lesson: 6,
-		question: 'Chọn các cấp hệ thống đúng, từ lớn nhất tới nhỏ nhất',
-		answer: 'Database, tablespace, segment, extent, block',
-	},
-	{
-		lesson: 6,
-		question:
-			'Anh (chị) xin vui lòng cho biết: Ở bước nào trong việc khởi động CSDL thì control file được mở?',
-		answer: 'Database mounted',
-	},
-	{
-		lesson: 7,
-		question:
-			'Nhằm đón nhận xu hướng công nghiệp 4.0, ngày 04/5/2017, Thủ tướng Chính phủ đã có Chỉ thị số 16/CT-TTg về việc tăng cường năng lực tiếp cận cuộc Cách mạng công nghiệp lần thứ thư để yêu cầu các Bộ, ngành, địa phương tạo điều kiện tốt nhất cho sự tăng tốc phát triển của cuộc Cách mạng công nghiệp 4.0 ở Việt Nam. Điều này đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 7,
-		question:
-			'Khung chuyển đổi số của VNPT ban hành theo quyết định số 357/VNPT-QĐ-CN bao gồm:',
-		answer:
-			'Doanh nghiệp số, Khách hàng số, Nghiệp vụ số , Vận hành số, Dữ liệu số và Hạ tầng số.',
-	},
-	{
-		lesson: 7,
-		question:
-			'Thiết bị IoT cần 1 nguồn năng lượng lớn để hoạt động, điều này đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 7,
-		question:
-			'Con người và máy móc được kết nối với nhau qua quá trình nào sau đây?',
-		answer: 'Quá trình xử lý ngôn ngữ tự nhiên',
-	},
-	{
-		lesson: 7,
-		question:
-			'Hiện nay, có 4 mô hình dịch vụ triển khai điện toán đám mây chính đang được sử dụng phổ biến. Đó là những mô hình nào sau đây?',
-		answer: 'Public Cloud, Private Cloud, Hybrid Cloud và Community Cloud.',
-	},
-	{
-		lesson: 7,
-		question:
-			'Hiện nay thuật ngữ IoT được nhắc đến nhiều trên các phương tiện truyền thông liên quan đến Cách mạng công nghiệp 4.0. IoT là viết tắt của từ nào ?',
-		answer: 'Internet Of Things',
-	},
-	{
-		lesson: 7,
-		question:
-			'VNPT IoT Platform: Nền tảng IoT đầu tiên của Việt Nam nhận chứng chỉ oneM2M (Chứng chỉ toàn cầu dành cho chuẩn hóa phát triển về IoT/M2M), điều này đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 7,
-		question:
-			'Doanh nghiệp viễn thông nào được UBND TP.HCM chọn là đơn vị tư vấn xây dựng khung kiến trúc Đô thị thông minh cho TP.Hồ Chí Minh?',
-		answer: 'VNPT',
-	},
-	{
-		lesson: 7,
-		question: 'Những lĩnh vực nào sau đây chưa ứng dụng trí tuệ nhân tạo (AI)?',
-		answer: 'Trị liệu tâm lý',
-	},
-	{
-		lesson: 7,
-		question:
-			'Trí tuệ nhân tạo (AI) đã được tích hợp trên các ứng dụng cho Smart Phone nhằm giúp smartphone "thông minh" hơn. Điều này đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 7,
-		question: 'Khối dữ liệu Block Chain được lưu trữ trên mô hình mạng nào?',
-		answer: 'Peer to Peer',
-	},
-	{
-		lesson: 7,
-		question:
-			'Phát biều nào sau đây là phát biểu chính xác về khái niệm của Blockchain?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 7,
-		question:
-			'Phát biểu nào sau đây được gọi là khái niệm của Trí tuệ nhân tạo hay Trí thông minh nhân tạo (Artificial Intelligence – viết tắt là AI)',
-		answer:
-			'Là một ngành thuộc lĩnh vực khoa học máy tính (Computer science). Là trí tuệ do con người lập trình tạo nên với mục tiêu giúp máy tính có thể tự động hóa các hành vi thông minh như con người.',
-	},
-	{
-		lesson: 7,
-		question:
-			'Trung tâm điều hành thông minh (IOC - Intelligent Operation Center) của VNPT được triển khai đầu tiên cho đơn vị nào?',
-		answer: 'Thành phố Đà Lạt',
-	},
-	{
-		lesson: 7,
-		question:
-			'________ dự đoán xu hướng và hành vi trong tương lai, hỗ trợ các nhà quản lý đưa ra quyết định tác động đến hoạt động kinh doanh của doanh nghiệp.',
-		answer: 'Data mining - Khai phá dữ liệu',
-	},
-	{
-		lesson: 7,
-		question:
-			'VNPT đã phát triển hệ sinh thái các giải pháp để có thể giúp số hóa doanh nghiệp. Đó là:',
-		answer: 'Tất cả các giải pháp đều đúng',
-	},
-	{
-		lesson: 7,
-		question: 'nh hướng chiến lược VNPT 4.0 của tập đoàn VNPT là gì?',
-		answer: 'Chuyển đổi VNPT thành nhà cung cấp dịch vụ số',
-	},
-	{
-		lesson: 7,
-		question:
-			'Trong Internet of Things (IoT), các thiết bị máy tính, máy móc, vật thể, động vật (với chip sinh học có khả năng tự động nhận và truyền tín hiệu radio) hoặc người (có bộ cấy ghép để giám sát hoạt động của tim chẳng hạn) phải được gán một địa chỉ IP và có khả năng truyền dữ liệu qua mạng. Điều này đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 7,
-		question:
-			'Cuộc cách mạng công nghiệp lần thứ tư phát triển trên 03 lĩnh vực chính là gì ?',
-		answer: 'Kỹ thuật số, công nghệ sinh học, vật lý',
-	},
-	{
-		lesson: 7,
-		question:
-			'Các nhà cung cấp dịch vụ điện toán đám mây (Cloud computing) cung cấp các dịch vụ của họ theo những mô hình cơ bản nào?',
-		answer:
-			'IaaS (Hạ tầng như một dịch vụ), PaaS (Nền tảng như một dịch vụ) và SaaS (Phần mềm như một dịch vụ).',
-	},
-	{
-		lesson: 7,
-		question:
-			'Phát biểu nào sau đây là không đúng về mục tiêu, tính năng và công nghệ của Trung tâm điều hành thông minh (Trung tâm IOC – Intelligent Operation Center)?',
-		answer:
-			'Trung tâm điều hành thông minh (Trung tâm IOC – Intelligent Operation Center) là một cái tiến của sản phẩm Smart City.',
-	},
-	{
-		lesson: 7,
-		question: 'Về cơ bản, Big Data có thuộc tính đặc trưng như thế nào ?',
-		answer:
-			'.Đặc trưng của Big Data được mô tả qua 5V (Volume, Velocity, Variety, Veracity, Value)',
-	},
-	{
-		lesson: 7,
-		question:
-			'Các thành phần công nghệ cốt lõi nào của kỹ thuật số tác động đến Cách mạng công nghiệp 4.0?',
-		answer: 'Trí tuệ nhân tạo; Kết nối Internet vạn vật; Big Data',
-	},
-	{
-		lesson: 7,
-		question:
-			'Big Data lại chứa rất nhiều thông tin quý giá, mà nếu trích xuất thành công sẽ giúp rất nhiều cho việc nắm bắt xu thế trong kinh doanh, nghiên cứu khoa học, dự đoán để phòng tránh các dịch bệnh sắp phát sinh, phát hiện sớm tội phạm, hay đo lường điều kiện giao thông theo thời gian thực,...Theo anh chị nhận định này đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 7,
-		question:
-			'Các phát biểu nào sau đây là khái niệm về Điện toán đám mấy (Cloud Computing) ?',
-		answer:
-			'Cloud Computing là mô hình dịch vụ cho phép người dùng truy cập tài nguyên điện toán dùng chung (mạng, sever, lưu trữ, ứng dụng, dịch vụ) thông qua kết nối mạng một cách dễ dàng, mọi lúc mọi nơi, theo yêu cầu.',
-	},
-	{
-		lesson: 7,
-		question:
-			'Nền tảng IoT được VNPT Technology ứng dụng trong giải pháp nào sau đây?',
-		answer: 'Tất cả các giải pháp đều đúng',
-	},
-	{
-		lesson: 7,
-		question:
-			'Sự khác nhau giữa máy chủ ảo dùng riêng (VPS - Virtual Private Server) và máy chủ ảo Cloud Server là :',
-		answer:
-			'VPS (Virtual Private Server): là máy chủ ảo hoạt động dưới dạng chia sẻ tài nguyên từ một máy chủ vật lý. Cloud Server: là máy chủ ảo được triển khai trên nền tảng điện toán đám mây, hoạt động trên nhiều kết nối server vật lý khác nhau.',
-	},
-	{
-		lesson: 7,
-		question: 'Định hướng chiến lược VNPT 4.0 của tập đoàn VNPT là gì?',
-		answer: 'Chuyển đổi VNPT thành nhà cung cấp dịch vụ số',
-	},
-	{
-		lesson: 7,
-		question:
-			'Khối dữ liệu Block Chain hợp pháp có thể chỉnh sửa thông tin hay không?',
-		answer: 'Không',
-	},
-	{
-		lesson: 7,
-		question:
-			'Xu hướng Big Data (Dữ liệu lớn) trong cách mạng công nghệ 4.0 được hiểu là ?',
-		answer:
-			'Big Data là thuật ngữ dùng để chỉ một tập hợp dữ liệu rất lớn và phức tạp mà những công cụ, ứng dụng xử lý dữ liệu truyền thống KHÔNG THỂ thu thập, quản lý và xử lý dữ liệu trong một khoảng thời gian hợp lý.',
-	},
-	{
-		lesson: 7,
-		question:
-			'Trung tâm điều hành thông minh (IOC - Intelligent Operation Center) với khả năng tích hợp dữ liệu và các hệ thống sẵn có cùng các phần mềm điều khiển trung tâm, tạo ra một cái nhìn toàn cảnh về tỉnh/thành phố trên mọi lĩnh vực. IOC được ví như là ?',
-		answer: '“Bộ não điều hành số” của các địa phương',
-	},
-	{
-		lesson: 7,
-		question:
-			'Chiến lược phát triển giai đoạn 2018-2025 và tầm nhìn đến năm 2030, gọi tắt là Chiến lược VNPT 4.0. có mục tiêu chính là gì?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 7,
-		question:
-			'Phát biểu nào sau đây được gọi là khái niệm của IoT (Internet of Things):',
-		answer:
-			'IoT là thuật ngữ dùng để chỉ các đối tượng có thể được nhận biết (identifiable) cũng như chỉ sự tồn tại của chúng trong một kiến trúc mang tính kết nối.',
-	},
-	{
-		lesson: 7,
-		question:
-			'Điều gì đã thúc đẩy sự phát triển của trí tuệ nhân tạo (AI) trong giai đoạn hiện tại?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 7,
-		question:
-			'Sản phẩm tự động đọc thẻ ngân hàng và phát hiện gian lận trong ứng dụng VNPT PAY ứng dụng công nghệ nào?',
-		answer: 'AI',
-	},
-	{
-		lesson: 7,
-		question:
-			'Giải pháp VNPT eKYC (Giải pháp xác thực định danh điện tử) đột phá dựa trên nền tảng là công nghệ nào sau đây?',
-		answer: 'Công nghệ AI và Blockchain',
-	},
-	{
-		lesson: 7,
-		question:
-			'Internet of Things (IoT) là một hệ thống các thiết bị máy tính, máy móc, vật thể, động vật hoặc người có liên quan đến nhau, được cung cấp định danh duy nhất và có khả năng để truyền dữ liệu qua mạng mà không cần sự tương tác giữa con người với con người hay giữa con người với máy tính. Điều này đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 7,
-		question: 'OLAP là tên viết tắt của kỹ thuật nào?',
-		answer: 'Online Analytical Processing',
-	},
-	{
-		lesson: 7,
-		question:
-			'AI (Trí tuệ nhân tạo) được viết tắt từ thuật ngữ tiếng Anh nào sau đây ?',
-		answer: 'Artificial Intelligence',
-	},
-	{
-		lesson: 7,
-		question:
-			'Đến nay, thế giới vẫn chưa có một định nghĩa thống nhất về Đô thị thông minh. Nhưng về cơ bản, đó là mô hình thành phố ứng dụng công nghệ thông tin, trí tuệ nhân tạo để:',
-		answer:
-			'Quản lý nâng cao tiêu chuẩn cuộc sống đô thị; cải thiện chất lượng phục vụ của chính quyền thành phố; sử dụng hiệu quả các nguồn năng lượng, tài nguyên thiên nhiên',
-	},
-	{
-		lesson: 7,
-		question:
-			'VNPT đã triển khai công nghệ trí tuệ nhân tạo (AI) trên ứng dụng nào sau đây?',
-		answer:
-			'Ứng dụng quản lý đăng ký và cập nhật thông tin thuê bao (SMCS Mobile), Smartcity',
-	},
-	{
-		lesson: 7,
-		question: 'Phát biểu nào sau đây được gọi là khái niệm của Big Data?',
-		answer:
-			'Dữ liệu lớn (Big Data) là một thuật ngữ cho việc xử lý một tập hợp dữ liệu rất lớn và phức tạp khác với cách truyền thống.',
-	},
-	{
-		lesson: 7,
-		question:
-			'Theo anh chị thì nhận định sau đây về Big Data là đúng hay sai: Điều thực sự mang lại giá trị từ các tổ chức dữ liệu lớn là phân tích dữ liệu. Nếu không có phân tích, nó chỉ là một tập dữ liệu với việc sử dụng hạn chế trong kinh doanh.',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 7,
-		question:
-			'IoT Platform là một hạ tầng duy nhất kết nối mọi vật (connected things) và cung cấp dịch vụ end – to – end cho nhiều lĩnh vực, bao gồm các thành phần chính nào sau đây? (chọn trả phương án đúng nhất)',
-		answer:
-			'Kết nối thiết bị; Trung tâm xử lý dữ liệu; Quản lý MSIM; Quản lý tập trung ứng dụng',
-	},
-	{
-		lesson: 7,
-		question: 'Hệ thống Blockchain được chia thành bao nhiêu loại chính:',
-		answer: '3',
-	},
-	{
-		lesson: 7,
-		question:
-			'Những dịch vụ nào sau đây không dùng điện toán đám mây (Cloud Computing)?',
-		answer: 'Máy chủ ảo VPS (Virtual Private Server) hay Shared Hosting',
-	},
-	{
-		lesson: 7,
-		question:
-			'Hiện nay, có bao nhiêu mô hình dịch vụ triển khai điện toán đám mây đang được sử dụng phổ biến ?',
-		answer: '4',
-	},
-	{
-		lesson: 7,
-		question:
-			'Công nghệ nào dưới đây giúp máy tính tự động tương tác với người dùng?',
-		answer: 'Chatbot',
-	},
-	{
-		lesson: 7,
-		question:
-			'Google Drive là một trong các ứng dụng của nền tảng điện toán đám mây, điều này đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Việc tính toán, tổng hợp số học lực, hạnh kiểm của học sinh được hệ thống vnEdu thực hiện tự động. Đúng hay Sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 5,
-		question: 'Cung cấp một đường truyền dẫn tạm thời giữa hai điểm, đây là',
-		answer: 'Đặc điểm của dịch vụ',
-	},
-	{
-		lesson: 5,
-		question:
-			'Dịch vụ Mobile ID KHÔNG có khả năng cung cấp chứng thư số cho số lượng thuê bao lớn. Đúng hay Sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 5,
-		question:
-			'Thông qua hệ thống vnEdu, các Phòng/Sở giáo dục có thể quản lý được các cơ sở giáo dục trên địa bàn mình phụ trách. Đúng hay Sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Để sử dụng các ứng dụng có trong vnEdu Portal và các hệ thống tích hợp từ ngoài vào, người dùng chỉ cần đăng nhập và xác thực 01 lần. Đúng hay Sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Chức năng Quản lý phát hành trong dịch vụ Hóa đơn điện tử cho phép:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question: 'Chế độ báo cáo đột xuất trong hệ thống VNPT VSR được hiểu là:',
-		answer:
-			'Chế độ báo cáo được ban hành để đáp ứng yêu cầu thông tin về vấn đề phát sinh bất thường.',
-	},
-	{
-		lesson: 5,
-		question: 'Chức năng Trực quan hóa trong hệ thống vnEdu IOC cho phép:',
-		answer:
-			'Cung cấp các Thống kê báo cáo, biểu đồ, chức năng tra cứu hồ sơ, đồng bộ dữ liệu',
-	},
-	{
-		lesson: 5,
-		question:
-			'Có tính năng phòng chống virus, phần mềm độc hại, chống tấn công ddos. Có khả năng sao lưu, backup dữ liệu tự động, Việc phân quyền người dùng có thể tùy biến theo yêu cầu của người quản trị đây là:',
-		answer: 'Những ưu điểm của dịch vụ VNPT Elearning',
-	},
-	{
-		lesson: 5,
-		question:
-			'Để đăng ký công việc cá nhân trên hệ thống HRM, bạn thực hiện các bước sau:',
-		answer:
-			'Bước 1: Đăng nhập vào HRM từ web: https://hrm.vnpt.vn/\n Bước 2: Chọn QLCV cá nhân, chọn Công việc cá nhân\n Bước 3: Chọn Đăng ký công việc cá nhân, nhấn Tạo và nhập các thông tin đăng ký.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Tiết kiệm chi phí, nhân lực, tăng cường hiệu quả trong quản lý, xử lý thủ tục hồ sơ BHXH. Đây là',
-		answer: 'lợi ích của dịch vụ',
-	},
-	{
-		lesson: 5,
-		question: 'Hệ thống vnEdu được thiết kế dành cho những đối tượng nào?',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Thuê bao MyTV hiện đang ở hệ thống VMP muốn chuyển sang hệ thống MyTV thường hoặc ngược lại thì có thực hiện được trên VNPT Cab hay không?',
-		answer: 'Có',
-	},
-	{
-		lesson: 5,
-		question:
-			'Sử dụng chức năng Thu thập thông tin dung lượng thị trường trong VNPT Cab nhằm mục đích nào sau đây?',
-		answer:
-			'Cập nhật các thông tin hộ dân và thu thập bằng hình ảnh giúp nhà quản lý đưa ra các định hướng mới trong việc phát triển dịch vụ.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Để xem hướng dẫn về công tác an toàn và bảo hộ lao động trên hệ thống HRM, bạn thực hiện :',
-		answer:
-			'Bước 1: Đăng nhập vào HRM từ web: https://hrm.vnpt.vn/\n Bước 2: Chọn (+) , chọn Hỗ trợ\n Bước 3: Chọn Hướng dẫn HRM, chọn An toàn vệ sinh lao động và bảo hộ lao động.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Chức năng lọc phiếu trong danh sách máy hỏng (Xử lý phiếu báo hỏng ở phần mềm VNPT Cab) gồm nhóm tiêu chí lọc nào sau đây?',
-		answer: 'Danh sách, theo nhóm khách hàng và theo dịch vụ',
-	},
-	{
-		lesson: 5,
-		question:
-			'Số lượng account hoặc port tối đa trong một lần đo kiểm chất lượng GPON là bao nhiêu ?',
-		answer: '50',
-	},
-	{
-		lesson: 5,
-		question:
-			'Sử dụng VNPT Cab, để tra cứu ra các dòng TV nào hỗ trợ cài đặt APP Mytv, ta thực hiện trình tự các bước nào sau đây?',
-		answer:
-			'Mở phần mềm VNPT Cab trên Smart Phone, chọn Điều Hành thi công, chọn Công cụ, Công cụ hỗ trợ, nhập model TV vào mục tra cứu thông tin cài đặt App MyTV.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Trình tự thực hiện xoá “storage backup” trên OLT đối với 1 thuê bao GPON là ?',
-		answer: 'Tất cả các bước trên đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Sử dụng VNPT Cab, các lưu ý nào sau đây là không cần thiết trước khi cấp Port cho thuê bao Fiber trên đường không số?',
-		answer: 'Tất cả các thuê bao phải được cấp port trước khi kích hoạt.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Sử dụng VNPT Cab, Để thực hiện chuyển đổi thuê bao MyTV ở hệ thống thường sang hệ thống VMP, ta thực hiện trình tự nào sau đây?',
-		answer:
-			'Mở phần mềm VNPT Cab trên Smart Phone, chọn Điều Hành thi công, chọn Công cụ, Chọn MyTV <-> VMP, nhập tìm thuê bao muốn đổi và xác nhận chuyển đổi.',
-	},
-	{
-		lesson: 5,
-		question: 'Khi sử dụng hệ thống vnEdu, người dùng sẽ:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question: 'VNPT Pay là sản phẩm thanh toán điện tử của công ty nào?',
-		answer: 'Tổng Công ty Truyền thông VNPT-Media',
-	},
-	{
-		lesson: 5,
-		question: 'Cách tạo tài khoản và sử dụng ví VNPT Pay là:',
-		answer:
-			'Tải app VNPT Pay ->Mở ứng dụng VNPT Pay và đăng ký Ví bằng số điện thoại -> Nhập mã OTP xác nhận SĐT ->Nhập mật khẩu khi đăng nhập ứng dụng -> Liên kết ngân hàng qua chức năng liên kết Ví -> Nạp tiền vào Ví thông qua ngân hàng liên kết ->Trải nghiệm các chức năng của VNPT Pay',
-	},
-	{
-		lesson: 5,
-		question: 'Đường dây trung kế thoại chạy trên giao thức nào?',
-		answer: 'SIP',
-	},
-	{
-		lesson: 5,
-		question: 'Dịch vụ VNPT VXP được khái niệm là:',
-		answer:
-			'là giải pháp nền tảng tích hợp chia sẻ dữ liệu được kết hợp các ưu điểm của kiến trúc chia sẻ dữ liệu ngang hàng và tập trung nhằm hạn chế các nhược điểm của 2 mô hình chia sẻ dữ liệu (ngang hàng, tập trung).',
-	},
-	{
-		lesson: 5,
-		question:
-			'Khóa bí mật trong dịch vụ VNPT - MobileID là loại khóa thuộc hệ thống:',
-		answer: 'Mã không đối xứng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Giảm được chi phí quản lý, in ấn, kiểm đếm, bảo quản và vận chuyển tiền mặt, sử dụng giao dịch không dùng tiền mặt giúp các giao dịch sẽ minh bạch hơn, góp phần đẩy mạnh công tác phòng chống tham nhũng, đây là:',
-		answer: 'Lợi ích mang lại cho nhà nước khi sử dụng dịch vụ VNPT Pay',
-	},
-	{
-		lesson: 5,
-		question:
-			'Hệ thống VNPT VSR đang được áp dụng triển khai cho hệ thống nào?',
-		answer:
-			'Hệ thống báo cáo của Chính phủ; Hệ thống báo cáo của Bộ ngành địa phương',
-	},
-	{
-		lesson: 5,
-		question: 'VNPT VXP sử dụng trung tâm tích hợp và chia sẻ dữ liệu đảm bảo:',
-		answer:
-			'Liên thông giữa các sở, ban ngành, UBND quận/huyện, UBND phường/xã. Và Có thể kết nối vào Trục liên thông Quốc gia',
-	},
-	{
-		lesson: 5,
-		question:
-			'Các chức năng nào sau đây không có trên App VNPT HRM cài trên Smart Phone?',
-		answer: 'Đánh giá năng lực',
-	},
-	{
-		lesson: 5,
-		question:
-			'Để thực hiện đo kiểm chất lượng cổng GPON, cho phép ta đo cùng lúc nhiều account hoặc port, điều này đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Sử dụng phần mềm VNPT Cab, để thi công một máy mới, bạn thực hiện trình tự theo các bước nào sau đây ?',
-		answer:
-			'B1: Mở phần mềm VNPT Cab trên Smart Phone\n B2: Chọn "Điều Hành thi công", chọn "Phiếu thi công"\n B3: Chọn "Chờ thi công" trên giao diện, chọn thuê bao để thi công ở danh sách.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Theo dõi, giám sát thông tin y tế cơ sở toàn Huyện trực tuyến. là lợi ích mà hệ thống VNPT HMIS đem đến cho đối tượng nào sau đây?',
-		answer: 'Trung tâm y tế',
-	},
-	{
-		lesson: 5,
-		question:
-			'Tính tới tháng 7 năm 2020, VNPT HMIS đã kết nối liên thông với những hệ thống nào?',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Dịch vụ VNPT - MobileID với hệ thống phân tải thông minh, sẽ giúp người dùng:',
-		answer: 'Tiếp nhận nhiều yêu cầu truy vấn cùng lúc',
-	},
-	{
-		lesson: 5,
-		question: 'Có mấy phương thức phát hành hóa đơn điện tử?',
-		answer: '2',
-	},
-	{
-		lesson: 5,
-		question: 'vnEdu ra đời hướng đến mục đích gì?',
-		answer: 'Tin học hóa toàn diện công tác quản lý, điều hành trong giáo dục',
-	},
-	{
-		lesson: 5,
-		question:
-			'Ở dịch vụ VNPT - MobileID, việc đưa khóa bí mật vào một phần mềm để tự động tạo và gắn chữ ký số vào thông điệp dữ liệu nào đó, được gọi là Ký số. Đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Một trong những lợi ích mà hệ thống vnEdu đem đến cho người dùng là:',
-		answer: 'Tổ chức và quản lý kỳ thi một cách nhanh chóng, hiệu quả',
-	},
-	{
-		lesson: 5,
-		question:
-			'Cập nhật thường xuyên và kịp thời thông tin trên vnEdu Portal, là yêu cầu cơ bản của hệ thống cổng thông tin điện tử. Đúng hay Sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Chức năng thu thập thông tin hạ tầng mạng trong phần mềm VNPT Cab, ở mục Quản lý kết cuối có bao nhiêu chế độ hiển thị kết cuối?',
-		answer:
-			'3 chế độ là: Kết cuối xung quanh (hiển thị trong bán kính xung quanh từ 50 – 300m), kết cuối đối thủ mà bạn đã thu thập trong N ngày, Kết cuối đối thủ mà bạn đã thu thập.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Để xem lại số liệu và thông tin các bài thi đánh giá năng lực trên hệ thống HRM của VNPT, ta thực hiện các bước sau:',
-		answer:
-			'Bước 1: Đăng nhập vào web: https://hrm.vnpt.vn\n Bươc 2: Chọn mục Tham gia KS-ĐGNL\n Bước 3: Chọn Đánh giá năng lực, chọn nội dung thông tin cần xem.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Để xem giao KPI cá nhân trên thống HRM của VNPT, ta thực hiện các bước sau:',
-		answer:
-			'Bước 1: Đăng nhập vào web: https://hrm.vnpt.vn/\n Bước 2: Chọn KPI cá nhân, chọn KPI cá nhân được giao, nhập các tiêu chí để tìm kiếm, điều kiện hay bộ lọc,..',
-	},
-	{
-		lesson: 5,
-		question: 'Dịch vụ VNPT - MobileID là:',
-		answer: 'Một dạng chữ ký điện tử được dùng để cam kết lời hứa của mình',
-	},
-	{
-		lesson: 5,
-		question: 'Một số ưu điểm của dịch vụ VNPT Elearning là:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'vnEdu đã kết nối được phụ huynh học sinh với nhà trường thông qua:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question: 'Tại sao nói dịch vu SIP Trunking có đường tín hiệu ổn định?',
-		answer:
-			'Là vì triển khai trên các kênh truyền: cáp quang, FTTH, kênh truyền số liệu, kênh thuê riêng, Internet Leasedline',
-	},
-	{
-		lesson: 5,
-		question: 'Cổng thông tin điện tử nhà trường vnEdu Portal là:',
-		answer:
-			'Trang thông tin điện tử khối giáo dục, nhằm giới thiệu quảng bá hình ảnh các đơn vị giáo dục, tích hợp các thông tin về giáo dục theo một phương thức thống nhất, thông qua một điểm truy cập duy nhất đối với người sử dụng.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Dịch vụ nền tảng học và thi trực tuyến VNPT Elearning được triển khai dựa trên nền tảng nào?',
-		answer: 'Nền tảng điện toán đám mây hiện đại.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Người dùng có thể sử dụng tài khoản của hệ thống vnEdu để đăng nhập hệ thống vnEdu IOC được không?',
-		answer: 'Có',
-	},
-	{
-		lesson: 5,
-		question: 'Hệ thống Hóa đơn điện tử có bao nhiêu tính năng cơ bản?',
-		answer: 'Có 6 tính năng cơ bản',
-	},
-	{
-		lesson: 5,
-		question:
-			'Hệ thống VNPT HMIS có tạo lập được hồ sơ sức khỏe điện tử không?',
-		answer: 'Có',
-	},
-	{
-		lesson: 5,
-		question:
-			'Để thực hiện đo kiểm chất lượng cổng GPON, ta thực hiện tuần tự theo bước nào sau đây?',
-		answer:
-			'B1: Chọn "Đo kiểm", chọn "Đo kiểm chất lượng cổng GPON"\n B2: Nhập account hoặc Port, chọn Đo.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Thực hiện đăng ký nghỉ phép trên Ứng dụng trên di động (Mobile App) VNPT HRM, ta thực hiện trình tự nào sau đây?',
-		answer:
-			'B1: Mở ứng dụng VNPT HRM, chọn "Đăng ký nghỉ phép", chọn nút (+)\n B2: Nhập thông tin đăng ký, lưu nghỉ phép và gửi phê duyệt.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Để tham gia bài khảo sát hoặc bài đánh giá năng lực trên hệ thống HRM, bạn thực hiện:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Sử dụng chức năng xóa file Backup cấu hình modem trong phần mềm VNPT Cab, ta thực hiện theo các bước nào sau đây?',
-		answer:
-			'B1: Chọn "Điều hành thi công",chọn "công cụ", chọn "công cụ hỗ trợ"\n B2: Nhập Account và thực hiện xóa file Backup cấu hình Modem.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Khi sử dụng hệ thống VNPT VXP "Dữ liệu được trao đổi trực tiếp giữa các thành viên và - không có sự can thiệp của bên thứ ba". Đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 5,
-		question: 'Hiệu quả sử dụng của VNPT e-Cabinet?',
-		answer:
-			'Tiết kiệm chi phí; Tiết kiệm thời gian; Dễ dàng quản trị; Sử dụng linh hoạt.',
-	},
-	{
-		lesson: 5,
-		question: 'Đối tượng khách hàng sử dụng dịch vụ VNPT-BHXH',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'VNPT PAY chỉ có thể thực hiện việc thu hộ cho các đối tác cung cấp dịch vụ trong nội bộ VNPT. Đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 5,
-		question:
-			'Thực hiện chức năng Đo kiểm theo Account/Port (FTTH), để tải file Backup ta thực hiện theo các bước nào sau đây ?',
-		answer: 'Tất cả đều đúng.',
-	},
-	{
-		lesson: 5,
-		question:
-			'Ở dịch vụ VNPT - MobileID, thuê bao dùng khóa bí mật của mình để ký số vào một thông điệp dữ liệu nào đó dưới tên mình, được gọi là:',
-		answer: 'Người ký',
-	},
-	{
-		lesson: 5,
-		question:
-			'Để thống kê tình hình xử lý đường dây kém chất lượng theo đơn vị, ta thực hiện tuần tự các bước nào sau đây?',
-		answer:
-			'Chọn Thống Kê trên giao diện --> GPON -->Tình hình xử lý đường dây kém theo tuần (GPON) --> chọn ngày, đơn vị và bấm nút Xem.',
-	},
-	{
-		lesson: 5,
-		question: 'Định nghĩa đầy đủ của Hóa đơn điện tử là:',
-		answer:
-			'Hóa đơn được thể hiện ở dạng dữ liệu điện tử do tổ chức, cá nhân bán hàng hóa, cung cấp dịch vụ lập, ghi nhận thông tin bán hàng hóa cung cấp dịch vụ, ký số, ký điện tử theo quy định bằng phương tiện điển tử, bao gồm cả trường hợp hóa đơn được khởi tạo từ máy tính tiền có kết nối chuyển dữ liệu điện tử với cơ quan thuế',
-	},
-	{
-		lesson: 5,
-		question: 'Đối tượng khách hàng sử dụng dịch vụ SIP Trucking là',
-		answer:
-			'Các tổ chức, doanh nghiệp có nhu cầu thoại lớn cần trang bị tổng đài để phục vụ công tác liên lạc của đơn vị',
-	},
-	{
-		lesson: 5,
-		question:
-			'Để xem công việc cá nhân được giao trên hệ thống HRM, bạn thực hiện tuần tự các bước sau:',
-		answer:
-			'Bước 1: Đăng nhập vào HRM từ web: https://hrm.vnpt.vn/Bước 2: Chọn QLCV cá nhân, chọn Công việc cá nhânBước 3: Chọn công việc được giao, nhập các thông tin để tìm kiếm.',
-	},
-	{
-		lesson: 5,
-		question: 'Số lượng cổng thành phần trên hệ thống vnEdu Portal là:',
-		answer: 'Không hạn chế số lượng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Hệ thống vnEdu Portal KHÔNG được tích hợp với các hệ thống như: văn bản điện tử, thư điện tử... Đúng hay Sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 5,
-		question: 'Lợi ích của hệ thống VNPT VXP',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question: 'Định nghĩa đầy đủ của dịch vụ VNPT – BHXH là:',
-		answer:
-			'Giải pháp giao dịch điện tử giữa các tổ chức, doanh nghiệp, các đơn vị hành chính sự nghiệp, trường học,... Với cơ quan bảo hiểm xã hội trên toàn quốc',
-	},
-	{
-		lesson: 5,
-		question: 'vnEdu là giải pháp được xây dựng trên nền tảng nào?',
-		answer: 'Nền tảng web công nghệ điện toán đám mây',
-	},
-	{
-		lesson: 5,
-		question: 'Một số lợi ích của dịch vụ VNPT Elearning đối với học sinh là',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Dịch vụ nền tảng đào tạo và thi trực tuyến có thể áp dụng cho đối tượng nào?',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question: 'Mục đích xây dựng hệ thống vnEdu IOC',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question: 'vnEdu Portal được tích hợp với hệ thống:',
-		answer:
-			'Hệ thống thông tin quản lý giáo dục, quản lý trực tuyến trường học',
-	},
-	{
-		lesson: 5,
-		question: 'Lợi ích của dịch vụ SIP Trunking là',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question: 'Định nghĩa đầy đủ của phần mềm VNPT e-Cabinet?',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Một trong những lợi ích mà dịch vụ VNPT-BHXH đem đến cho người dùng là:',
-		answer:
-			'Giúp khách hàng lập tờ khai, hồ sơ BHXH theo chuẩn quy định của Ngành BHXH',
-	},
-	{
-		lesson: 5,
-		question: 'VNPT e-Cabinet là tên thương hiệu của dịch vụ nào sau đây?',
-		answer: 'Phần mềm phòng họp không giấy tờ',
-	},
-	{
-		lesson: 5,
-		question:
-			'Khóa công khai trong dịch vụ VNPT - MobileID là loại khóa được tạo bởi:',
-		answer: 'Khóa bí mật tương ứng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Với phần mềm VNPT AlineTest, thực hiện chức năng Đo kiểm theo Account/Port (FTTH), thông tin Port của thuê bao đang đo là 10.59.104.20:1/1/1/9| ONUID = 45 có nghĩa là IP của thuê bao : 10.59.104.20 Còn các thông số đo 1/1/1/9| ONUID = 45 là :',
-		answer: 'Slot/shelf/rack/ port \nSai (mới làm xong => sai :))',
-	},
-	{
-		lesson: 5,
-		question: 'Việc thực hiện nghiệp vụ hóa đơn được thao tác trên',
-		answer: 'Hệ thống quản lý nội bộ của doanh nghiệp',
-	},
-	{
-		lesson: 5,
-		question:
-			'Hệ thống VNPT HMIS có liên thông được dữ liệu ở các tuyến tỉnh, huyện, xã không?',
-		answer: 'Có',
-	},
-	{
-		lesson: 5,
-		question: 'Dịch vụ hóa đơn điện tử được định nghĩa là:',
-		answer:
-			'Là dịch vụ do nhà cung cấp được Tổng cục Thuế lựa chọn, ủy quyền cung cấp việc tạo lập, phát hành và lưu trữ hóa đợn điện tử cho các Tổ chức, Doanh nghiệp',
-	},
-	{
-		lesson: 5,
-		question:
-			'Dịch vụ VNPT - MobileID cho phép nhà mạng cung cấp dịch vụ di động triển khai các ứng dụng:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question: 'Dịch vụ Thu hộ, chi hộ thông qua VNPT PAY có thể:',
-		answer:
-			'Thực hiện việc thu hộ cho các đối tác cung cấp dịch vụ ngoài xã hội có nhu cầu thu hộ qua hệ thống ngân hàng đầy đủ đã kết nối với VNPT Pay',
-	},
-	{
-		lesson: 2,
-		question: 'Luật an toàn thông tin mạng chính thức có hiệu lực từ ngày',
-		answer: '07/01/2016',
-	},
-	{
-		lesson: 2,
-		question: 'Tên gọi tiếng việt của kho ứng dụng trên hệ điều hành Android',
-		answer: 'CH play',
-	},
-	{
-		lesson: 2,
-		question: 'Tổ hợp phím tắt để khóa màn hình trên windows 10 là',
-		answer: 'Windows + L',
-	},
-	{
-		lesson: 2,
-		question: 'Điểm yếu nhất trong an ninh mạng là',
-		answer:
-			'Thiết lập không đúng trên các trang thiết bị và phần mềm được cung cấp',
-	},
-	{
-		lesson: 2,
-		question:
-			'Loại mã độc nào có khả năng che dấu tung tích bản thân trong hệ thống',
-		answer: 'Rootkit',
-	},
-	{
-		lesson: 2,
-		question:
-			'Theo quy định hiện hành của VNPT về tài khoản/mật khẩu, mật khẩu của các máy chủ, máy trạm phải được thiết lập đủ độ mạnh, bao gồm?',
-		answer:
-			'Tối thiểu 8 ký tự, có chữ in thường, in hoa, chữ số và ký tự đặc biệt',
-	},
-	{
-		lesson: 2,
-		question: 'Các nguyên tắc khi đặt mật khẩu dưới đây là đúng?',
-		answer: 'Tất cả các đáp án trên',
-	},
-	{
-		lesson: 2,
-		question:
-			'Theo khuyến cáo của Microsoft, nhà sản xuất hệ điều hành windows, trên một máy tính bạn chỉ nên sử dụng duy nhất một phần mềm diệt virus. Điều đó đúng hay sai',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Khi tạo tài khoản, nhóm, để máy chủ có thể teamview vào máy khách trong nhóm thì máy chủ cần biết',
-		answer: 'Xác nhận cho phép thâm nhập của máy khách hoặc password máy khách',
-	},
-	{
-		lesson: 2,
-		question: 'Nguyên nhân chủ quan trong nguy cơ tiêu hủy thông tin là:',
-		answer: 'Bản thân người dùng vô tình xóa thông tin',
-	},
-	{
-		lesson: 2,
-		question:
-			'Giao thức nào sau đây được sử dụng để đảm bảo an toàn kết nối HTTP?',
-		answer: 'SSL',
-	},
-	{
-		lesson: 2,
-		question:
-			'Nhiều người dùng miếng băng dính đen che webcam máy tính. Mục đích là để phòng chống việc tin tặc tấn công lợi dụng webcam để thu thập thông tin',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Loại mã độc nào chỉ gây khó chịu cho người dùng mà không có tính phá hoại',
-		answer: 'Adware',
-	},
-	{
-		lesson: 2,
-		question:
-			'Biện pháp xử lý nào sau đây phù hợp cho việc mất kết nối Router-Hub/SW:',
-		answer: 'Các biện pháp trên',
-	},
-	{
-		lesson: 2,
-		question:
-			'Đối với các USB lạ có nghi ngờ bị nhiễm mã độc, nên quét virus hoặc format trước khi sử dụng',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 2,
-		question: 'Khi cài đặt phần mềm nên tải từ đâu?',
-		answer: 'Từ các trang chính thống',
-	},
-	{
-		lesson: 2,
-		question:
-			'Theo khuyến cáo của Microsoft, nhà sản xuất hệ điều hành Windows, trên một máy tính nên sử dụng bao nhiêu phần mềm diệt virus?',
-		answer: '1',
-	},
-	{
-		lesson: 2,
-		question: 'Địa chỉ liên kết không an toàn là',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 2,
-		question: 'Một số phương pháp thu thập thông tin phản hồi của khách hàng:',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Tên gọi phần mềm Antivirus của Microsoft trên hệ điều hành Windows 10',
-		answer: 'Windows defender',
-	},
-	{
-		lesson: 2,
-		question: 'Những thông tin không nên cung cấp khi sử dụng mạng xã hội',
-		answer: 'Tài khoản ngân hàng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Tiến hành công việc nào sau đây phát huy đầy đủ được tác dụng của biện pháp phòng chống tấn công mạng:',
-		answer: 'Không đáp án nào đầy đủ',
-	},
-	{
-		lesson: 2,
-		question:
-			'Tên gọi phần mềm tường lửa của Microsoft trên hệ điều hành Windows 10',
-		answer: 'Windows Firewall',
-	},
-	{
-		lesson: 2,
-		question:
-			'VNPT đã triển khai ISO/IEC 27001:2013 trên phạm vi toàn Tập đoàn, bao gồm Văn phòng Tập đoàn và các đơn vị VNPT thành viên. Điều đó đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 2,
-		question: 'Phương án đảm bảo an toàn bảo mật cho điện thoại di động',
-		answer: 'Tất cả các phương án',
-	},
-	{
-		lesson: 2,
-		question: 'Chữ ký số được dùng cho mục đích gì',
-		answer: 'Để kiểm tra định danh người gửi',
-	},
-	{
-		lesson: 2,
-		question:
-			'Chức năng nào của Window giúp xóa bỏ các chương trình không cần thiết:',
-		answer: 'Programs and Futures trong Control Panel',
-	},
-	{
-		lesson: 2,
-		question: 'Mật khẩu nào được coi là mật khẩu mạnh',
-		answer: '$aLtNb83',
-	},
-	{
-		lesson: 2,
-		question: 'Các biện pháp bảo mật cơ bản để giữ máy tính an toàn',
-		answer: 'Tích cả 3 đáp án còn lại ngoại trừ "Tắt firewall"',
-	},
-	{
-		lesson: 2,
-		question:
-			'Giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT có hiệu lực trong thời gian bao lâu',
-		answer: '10 năm',
-	},
-	{
-		lesson: 2,
-		question:
-			'Theo giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT, VNPT được phép kinh doanh bao nhiêu lĩnh vực?',
-		answer: '9',
-	},
-	{
-		lesson: 2,
-		question: 'Tường lửa (Firewall) không có tác dụng với',
-		answer: 'Social Engineering',
-	},
-	{
-		lesson: 2,
-		question:
-			'Website cập nhật thông tin về an toàn thông tin do Trung tâm ATTT – Ban IT&VAS xây dựng',
-		answer: 'https://vnptcert.vnpt.vn/',
-	},
-	{
-		lesson: 2,
-		question: 'Từ viết tắt của giao thức an ninh trên mạng không dây:',
-		answer: 'WPA2',
-	},
-	{
-		lesson: 2,
-		question: 'Khi sử dụng mạng xã hội, cần lưu ý những điều sau:',
-		answer: 'Tất cả các phương án',
-	},
-	{
-		lesson: 2,
-		question: 'Mật khẩu mạnh bao gồm:',
-		answer: 'Tất cả các yếu tố',
-	},
-	{
-		lesson: 2,
-		question:
-			'Để cấp phát động địa chỉ IP, ta có thể sử dụng dịch vụ có giao thức nào?',
-		answer: 'Dùng giao thức DHCP',
-	},
-	{
-		lesson: 2,
-		question: 'Nguyên nhân nào có thể dẫn đến việc bị đánh cắp thông tin:',
-		answer: 'Mất mật khẩu',
-	},
-	{
-		lesson: 2,
-		question: 'Để đảm bảo an toàn cho dữ liệu USB, đáp án nào dưới đây là sai?',
-		answer: 'Tránh để USB lưu trữ dữ liệu >80% dung lượng',
-	},
-	{
-		lesson: 2,
-		question: 'Đường dẫn (URL) để thay đổi mật khẩu Email VNPT',
-		answer: 'https://mail.vnpt.vn/ecp',
-	},
-	{
-		lesson: 2,
-		question: 'Theo mặc định, cổng nào được HTTPS sử dụng',
-		answer: '443',
-	},
-	{
-		lesson: 2,
-		question:
-			'Trong suốt quá trình kiểm định một bản ghi hệ thống máy chủ, các mục nào sau đây có thể được xem như một khả năng đe dọa bảo mật',
-		answer: 'Năm trăm ngàn công việc in được gửi đến một máy in',
-	},
-	{
-		lesson: 2,
-		question:
-			'Các phần mềm anti-virus có thể can thiệp vào tường lửa thông qua:',
-		answer: 'Tất cả các hồ sơ',
-	},
-	{
-		lesson: 2,
-		question:
-			'Khi máy chủ teamview vào máy khách việc trao đổi thông tin có thể được thực hiện thông qua chức năng:',
-		answer: 'Voice chat và video chat',
-	},
-	{
-		lesson: 2,
-		question: 'Chiều dài tối thiểu của một mật khẩu mạnh',
-		answer: '8 ký tự',
-	},
-	{
-		lesson: 2,
-		question:
-			'Để phòng chống tấn công webcam, người dùng nên thực hiện những hành động nào sau đây?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Lựa chọn đáp án đúng: Việc xây dựng hệ thống phân tích mã độc tự động của Tập đoàn',
-		answer: 'Đã được thực hiện',
-	},
-	{
-		lesson: 2,
-		question: 'Tường lửa có thể điều khiển',
-		answer: 'Lưu lượng vào, ra mạng',
-	},
-	{
-		lesson: 2,
-		question: 'Hệ điều hành được Tập đoàn trang bị bản quyền tập trung là gì?',
-		answer: 'Windows 10',
-	},
-	{
-		lesson: 2,
-		question:
-			'Rút trực tiếp USB ra khỏi máy tính mà không cần thực hiện các thao tác ngắt kết nối có thể làm dữ liệu trong USB bị lỗi. Điều đó đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT có hiệu lực từ ngày',
-		answer: '10/09/2017',
-	},
-	{
-		lesson: 2,
-		question: 'Dùng điện thoại Iphone không lo bị tấn công',
-		answer: 'Sai',
-	},
-	{
-		lesson: 2,
-		question:
-			'Để tăng cường bảo mật dữ liệu trong USB, đáp án nào dưới đây là sai?',
-		answer:
-			'Sao lưu từng tệp tin vào USB và không sử dụng mật khẩu cho các tệp tin',
-	},
-	{
-		lesson: 2,
-		question: 'Khi kết thúc công việc và ra ngoài buổi trưa 1 tiếng, ta nên',
-		answer: 'Logout khỏi máy tính',
-	},
-	{
-		lesson: 2,
-		question: 'Quy trình để tiếp cận đơn vị triển khai phần mềm:',
-		answer:
-			'Chuẩn bị - Tiếp cận - Giới thiệu tư vấn lợi ích dịch vụ - Xử lý tình huống trong quá trình tư vấn - Một số giải pháp hỗ trợ khi tư vấn - Chăm sóc khách hàng',
-	},
-	{
-		lesson: 2,
-		question: 'Google Authenticator là phần mêm',
-		answer: 'Tạo mã xác thực OTP (One time password)',
-	},
-	{
-		lesson: 2,
-		question:
-			'Thiết lập tắt cookies trên trình duyệt web giúp ngăn chặn nguy cơ mất:',
-		answer: 'User và password',
-	},
-	{
-		lesson: 2,
-		question:
-			'VNPT đã được cấp giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Khi truy cập vào các trang HTTPS, người dùng đều được cam kết và đảm bảo rằng mình an toàn. Nếu người dùng chỉ ra được trang HTTPS đó không an toàn, người dùng sẽ nhận được chính sách bồi thường.\nĐiều đó đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 2,
-		question: 'Phải thực hiện thay đổi mật khẩu ngay khi:',
-		answer: 'Tát cả đều đúng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Bạn nhận được một email từ bộ phận IT của công ty bạn. Email yêu cầu thông tin tài khoản và mật khẩu email của bạn để phục vụ công tác điều tra. Hành động của bạn khi đó:',
-		answer: 'Gọi cho bộ phận IT xac nhận nếu đúng thì cung cấp cho họ',
-	},
-	{
-		lesson: 2,
-		question:
-			'Kiểu tấn công bằng cách can thiệp vào giữa phiên liên lạc của 2 hệ thống gọi là',
-		answer: 'Tấn công dạng Man in the middle',
-	},
-	{
-		lesson: 2,
-		question: 'Quy tắc đặt mật khẩu nào sau đây dễ bị bẻ khóa, dễ lộ mật khẩu?',
-		answer: 'Sử dụng các mật khẩu đơn giản như 123456, qwerty…',
-	},
-	{
-		lesson: 2,
-		question:
-			'VNPT đã triển khai hệ thống giám sát DNS Sinkhole tại Tập đoàn. Điều đó đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Theo quy định 1771/QĐ-VNPT-IT&VAS về an toàn bảo mật trong mạng điều hành sản xuất kinh doanh, mật khẩu mức người sử dụng phải thay đổi ít nhất bao lâu một lần:',
-		answer: '2 tháng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Khuyến nghị nào dưới đây là SAI khi sử dụng điện thoại thông minh?',
-		answer:
-			'Cài đặt ứng dụng từ các nguồn appstore, google play, website, diễn đàn chia sẻ,…',
-	},
-	{
-		lesson: 2,
-		question: 'Các nguy cơ bị đánh cắp mật khẩu nào dưới đây là đúng?',
-		answer: 'Tất cả các đáp án trên',
-	},
-	{
-		lesson: 1,
-		question:
-			'Tín với Nhà nước; Tín với cộng đồng; Tín với khách hàng; Tín với người lao động là yếu tố thuộc về ..., đây là một trong các yếu tố tạo nên Tinh thần VNPT trong VNPT - 5 Giá trị cốt lõi.',
-		answer: 'Đạo đức',
-	},
-	{
-		lesson: 1,
-		question: 'Bảng tổng kết để đánh giá công việc nên có những nội dung nào?',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Bước cuối cùng để giải quyết xung đột trong nhóm bao gồm',
-		answer: 'Thỏa thuận',
-	},
-	{
-		lesson: 1,
-		question:
-			'Các chương trình học tập thiết kế cho người lớn cần tuân thủ nguyên tắc nào trong số các nội dung sau?',
-		answer:
-			'Sử dụng kinh nghiệm của học viên trong các ví dụ và hoạt động học tập',
-	},
-	{
-		lesson: 1,
-		question: 'Đảm bảo sự phù hợp trong năng lực sáng tạo có nghĩa là:',
-		answer: 'Phải đúng đối tượng, đúng mục tiêu và đúng cách',
-	},
-	{
-		lesson: 1,
-		question:
-			'Để bảo mật thông tin nội bộ trên môi trường mạng xã hội, người lao động làm việc tại VNPT cần:',
-		answer:
-			'Không tự ý phát ngôn, cung cấp thông tin, tài liệu không đúng thẩm quyền',
-	},
-	{
-		lesson: 1,
-		question:
-			'Để đảm bảo công việc tại các vị trí, bộ phận, các phòng ban chức năng không bị chồng chéo nhau thì doanh nghiệp cần có:',
-		answer: 'Bản mô tả công việc',
-	},
-	{
-		lesson: 1,
-		question:
-			'Để lập kế hoạch tuần, chúng ta sẽ sử dụng nguồn thông tin nào dưới đây?',
-		answer: 'Các công việc trong kế hoạch tháng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Để tìm ý tưởng cho phương pháp mở rộng hay thu nhỏ, nhân viên VNPT nên:',
-		answer: 'Suy nghĩ việc mở rộng hay thu nhỏ sản phẩm, dịch vụ sẵn có',
-	},
-	{
-		lesson: 1,
-		question:
-			'Để việc phối hợp với đồng nghiệp đạt hiệu quả cao, thì khi phối hợp trong công việc nên:',
-		answer: 'Có thái độ cởi mở; Có tư duy tích cực; Trao đổi với nhau',
-	},
-	{
-		lesson: 1,
-		question:
-			'Hành động tích cực tham gia vào các hoạt động học tập được định nghĩa là:',
-		answer:
-			'Tham gia vào những hoạt động học tập cần thiết một cách tích cực và hiệu quả nhất',
-	},
-	{
-		lesson: 1,
-		question: 'Hình thức học tập phổ biến hiện nay là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Khung năng lực cốt lõi được xây dựng nhằm mục đích:',
-		answer:
-			'Làm thước đo xác định mục tiêu học tập đồng thời nâng cao năng lực cán bộ nhân viên trong Tập đoàn',
-	},
-	{
-		lesson: 1,
-		question:
-			'Luôn cố gắng tuân theo logic là một trong những nguyên tắc phải tuân thủ khi sử dụng phương pháp Tập kích não. Đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 1,
-		question:
-			'Một trong những cách thức để xây dựng hình ảnh tốt của bản thân là:',
-		answer: 'Kiểm soát lời nói và hành động của bản thân',
-	},
-	{
-		lesson: 1,
-		question:
-			'Một trong những kỹ thuật sử dụng phổ biến khi sử dụng phương pháp tập kích não trong học tập là quan sát kỹ những thứ nhìn thấy, quan sát từ cách nhìn của người khác, nhìn sự vật, sự việc theo một hướng khác. Đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Một vài nguyên nhân gây lãng phí thời gian bao gồm',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Năng lực học tập ứng dụng được định nghĩa là:',
-		answer:
-			'Việc kịp thời xử lý và ứng dụng những thông tin mới liên quan đến công việc',
-	},
-	{
-		lesson: 1,
-		question: 'Nguyên tắc giao việc:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Nội dung "Chịu trách nhiệm với các hoạt động của bản thân trên mạng xã hội" tại Quy tắc ứng xử trên Mạng xã hội yêu cầu người lao động thực hiện hành động nào sau đây:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Nội dung nào dưới đây phản ánh đúng về phương pháp học tập "lấy học viên làm trung tâm"?',
-		answer: 'Học viên tham gia và tự khám phá nội dung',
-	},
-	{
-		lesson: 1,
-		question: 'Nội dung nào nằm trong 5 cam kết phục vụ khách hàng của VNPT?',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Phương pháp để thích ứng với sự thay đổi đó là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Phương thức nào dưới đây có thể được sử dụng một cách hiệu quả để giảm thiểu sự chống đối trong quá trình thay đổi?',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Quy trình sáng tạo thường bắt đầu từ việc:',
-		answer: 'Tìm kiếm ý tưởng trong thực tế',
-	},
-	{
-		lesson: 1,
-		question: 'Sự tham gia của nhân viên vào sự thay đổi là cần thiết bởi vì',
-		answer: 'Giúp kiểm soát quá trình thay đổi',
-	},
-	{
-		lesson: 1,
-		question: 'Sức mạnh của VNPT nằm ở những khía cạnh nào sau đây?',
-		answer:
-			'Sức mạnh truyền thống, Sức mạnh thương hiệu, Sức mạnh gắn kết, Sức mạnh phát triển, Sức mạnh kỷ cương',
-	},
-	{
-		lesson: 1,
-		question: 'Tại sao đưa ra ý kiến phản hồi trong giao tiếp lại quan trọng?',
-		answer:
-			'Đó là quá trình giúp người nói kiểm chứng xem thông điệp truyền đi tới từ người nghe như thế nào',
-	},
-	{
-		lesson: 1,
-		question:
-			'Tại sao VNPT 4.0 phải chuyển dịch mạnh mẽ từ viễn thông sang công nghệ thông tin?',
-		answer:
-			'Để tăng thị phần và giữ được mức tăng trưởng doanh thu; do thị trường viễn thông trở nên bão hòa; việc phát triển thuê bao mới ngày càng khó khăn',
-	},
-	{
-		lesson: 1,
-		question:
-			'Tập đoàn VNPT khởi động xây dựng Chiến lược VNPT 4.0 với mục tiêu thế nào?',
-		answer:
-			'Thực hiện chuyển đổi mạnh mẽ nhà cung cấp các sản phẩm dịch vụ số hiện đại, thực hiện số hóa toàn bộ để vai trò của Tập đoàn được khẳng định trong nền kinh tế số.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo quyết định số 1311/QĐ-VNPT-KHCN&amp;ĐT, ngày 21/10/2013 Năng lực sáng tạo được định nghĩa:',
-		answer:
-			'Là khả năng hiện có của cá nhân trong việc tạo ra cái mới có giá trị dựa trên tổ hợp các thuộc tính độc đáo của cá nhân đó phù hợp với yêu cầu của hoạt động sáng tạo sản phẩm trong một lĩnh vực hoạt động nhất định.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo quyết định số 1311/QĐ-VNPT-KHCN&ĐT, năng lực xây dựng mối quan hệ công việc tốt là:',
-		answer:
-			'Phát triển và sử dụng các mối quan hệ cộng tác để thúc đẩy việc đạt tới mục tiêu.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo Sổ tay Văn hóa VNPT, Trách nhiệm của VNPT với đối tác là "Hợp tác cùng phát triển" được hiểu như thế nào?',
-		answer:
-			'VNPT coi hợp tác, hỗ trợ giúp đỡ đối tác cũng chính là giúp mình. VNPT coi trọng mở rộng hợp tác, VNPT luôn là đối tác tin cậy của bạn hàng và xây dựng các quan hệ hợp tác bình đẳng, hữu nghị, hợp tác cùng có lợi.',
-	},
-	{
-		lesson: 1,
-		question: 'Theo thời gian kế hoạch được phân loại thành:',
-		answer: 'Kế hoạch dài hạn; Kế hoạch trung hạn; Kế hoạch ngắn hạn',
-	},
-	{
-		lesson: 1,
-		question: 'Thông tin trong doanh nghiệp thường được ví như là:',
-		answer: 'Mạch máu',
-	},
-	{
-		lesson: 1,
-		question:
-			'Thường xuyên trao đổi để nhận thông tin phản hồi từ người khác, điều này giúp nhân viên VNPT:',
-		answer: 'Tìm kiếm thêm cơ hội; Phát triển ý tưởng; Thúc đẩy thỏa thuận',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong học tập, người học có xu hướng ghi nhớ nhất những điều gì trong số những nội dung sau?',
-		answer: 'Những nội dung nổi bật',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong ma trận quản lý thời gian, đối với công việc quan trọng nhưng không khẩn cấp thì nên:',
-		answer: 'Có kế hoạch làm hợp lý',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong quá trình sáng tạo, chúng ta có thể gặp phải những rào cản như',
-		answer: 'Rào cản từ bản thân; Rào cản từ bên ngoài',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong quy tắc ứng xử trên mạng XH của người lao động VNPT. Nội dung "Tuyệt đối không đăng tải, chia sẻ hay bình luận về các thông tin không được công bố hay các thông tin mật của VNPT trên mạng xã hội." Là thuộc:',
-		answer: 'Quy định về Bảo mật thông tin',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trước đây, VNPT thực hiện văn hóa học tập chủ yếu theo cách cử nhân sự tham gia các khóa đào tạo. Trong thời gian gần đây, Tập đoàn dần dần chuyển dịch sang văn hóa Học hỏi & Chia sẻ - nghĩa là khuyến khích sự chủ động học tập và chia sẻ kiến thức từ mọi cấp bậc. Theo anh chị, VNPT có những công cụ, hoạt động nào sau đây giúp khuyến khích sự chủ động học tập và chia sẻ kiến thức trong Tập đoàn:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Ưu điểm của phương pháp triển khai MBO từ cấp công ty xuống cấp bộ phận:',
-		answer: 'Nhanh về mặt thời gian',
-	},
-	{
-		lesson: 1,
-		question: 'Việc lựa chọn phương thức đánh giá công việc được căn cứ vào',
-		answer: 'Tính thực tiễn, chi phí hệ thống và hiệu quả',
-	},
-	{
-		lesson: 1,
-		question: 'Việc xác định mục tiêu kế hoạch giúp doanh nghiệp:',
-		answer: 'Xác định những việc cần đạt được',
-	},
-	{
-		lesson: 1,
-		question:
-			'VNPT đang trong quá trình chuyển đổi từ một công ty viễn thông truyền thống sang một nhà cung cấp dịch vụ số. Song hành với những chuyển đổi về công nghệ, sản phẩm, mô hình tổ chức…, những chuyển đổi về văn hóa - chuyển đổi về khía cạnh con người của doanh nghiệp là hợp phần quan trọng, hỗ trợ cho sự thành công của những chuyển đổi khác. Theo anh chị, nhận định trên đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'VNPT khuyến khích toàn bộ người lao động trở thành những đại sứ thông tin của VNPT bằng cách thông báo với Bộ phận Truyền thông khi thấy những thông tin tích cực về VNPT mà chưa được đăng tải trên kênh truyền thông chính thức của Tập đoàn. Đúng hay Sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Với chiến lược phát triển trong kỷ nguyên mới, phù hợp với xu thế toàn cầu hóa\n và sự phát triển không ngừng của cuộc cách mạng công nghiệp 4.0, VNPT đã và đang từng bước chuyển đổi từ nhà cung cấp dịch vụ viễn thông truyền thống sang nhà cung cấp dịch vụ số (DSP), trở thành một Tập đoàn kinh tế năng động, chú trọng phát triển những sản phẩm, dịch vụ, giải pháp ICT sáng tạo. Các sứ mệnh của VNPT là:',
-		answer:
-			'Cung cấp cho khách hàng và đối tác các sản phẩm, dịch vụ Viễn thông - CNTT - Truyền thông và Dịch vụ số chất lượng, đột phá, sáng tạo; Trở thành trung tâm số (Digital Hub) của khu vực châu Á; Tôn vinh và đánh giá giá trị đích thực của người lao động; Tiên phong trong các hoạt động về cộng đồng.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi có những thông tin quan trọng, có khả năng ảnh hưởng đến lợi ích và hình ảnh của VNPT, người lao động nên thực hiện hành động nào sau đây?',
-		answer:
-			'Thông báo với Bộ phận Truyền thông của Tập đoàn (Email: prnoibovnpt@vnpt.vn)',
-	},
-	{
-		lesson: 1,
-		question:
-			'Chuẩn mực cá nhân của người VNPT bao gồm Ý thức, Thái độ và Ứng xử. Anh/chị cho biết thái độ nào sau đây thể hiện đúng nhất chuẩn mực cá nhân của VNPT khi tham gia hội họp?',
-		answer:
-			'Nghiêm túc - đúng giờ. Đến trước ít nhất 5 phút, không bỏ họp về sớm; phát biểu, thảo luận nghiêm túc, đúng chủ đề; để điện thoại ở chế độ rung, hạn chế nghe điện thoại trong khi họp.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, nếu khách hàng đến trụ sở VNPT từ 03 người trở lên, nhân viên VNPT thực hiện chào:',
-		answer: '01 lần cho cả nhóm khách hàng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo anh chị, những nét văn hóa nào sau đây sẽ hỗ trợ tốt cho việc thực hiện thành công Chiến lược VNPT 4.0?',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, hành động cúi chào được áp dụng khi:',
-		answer: 'Khi gặp khách hàng và khi khách hàng ra về',
-	},
-	{
-		lesson: 1,
-		question:
-			'Yếu tố "Thái độ" thuộc Chuẩn mực cá nhân trong sổ tay Văn hóa VNPT được thể hiện qua:',
-		answer:
-			'Công việc: Hết mình – Hết việc Hội họp: Nghiêm túc – Đúng giờ Học tập: Tự giác – Kiên trì',
-	},
-	{
-		lesson: 1,
-		question: 'Lợi ích khi có mối quan hệ tốt là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Một nhóm làm việc hiệu quả khi các thành viên trong nhóm:',
-		answer: 'Hoàn thành các mục tiêu của nhóm một cách hoàn hảo',
-	},
-	{
-		lesson: 1,
-		question:
-			'Mỗi cá nhân cần phải điều chỉnh có hiệu quả để làm việc trong những cấu trúc, quy trình, yêu cầu hay văn hóa làm việc mới Đây là yêu cầu của năng lực thích ứng đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong quy trình xây dựng kế hoạch, ở mỗi phương án thực hiện mục tiêu, doanh nghiệp cần cụ thể hóa về:',
-		answer: 'Giải pháp và công cụ thực hiện',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo quyết định số 1311/QĐ-VNPT-KHCN&ĐT, ngày 21/10/2013 Năng lực sáng tạo được định nghĩa:',
-		answer:
-			'Là khả năng hiện có của cá nhân trong việc tạo ra cái mới có giá trị dựa trên tổ hợp các thuộc tính độc đáo của cá nhân đó phù hợp với yêu cầu của hoạt động sáng tạo sản phẩm trong một lĩnh vực hoạt động nhất định.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Phương pháp sáu chiếc mũ tư duy giúp đánh giá sự việc từ nhiều góc nhìn khác nhau, qua đó:',
-		answer:
-			'Có thể hiểu rõ hơn mọi ngóc ngách của sự việc, nhận diện được những nguy cơ và cơ hội mà bình thường ta có thể không chú ý đến',
-	},
-	{
-		lesson: 1,
-		question: 'Thay đổi là một quá trình chứ không phải là một sự kiện',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Đầu ra của hoạch định chiến lược là:',
-		answer: 'Bản kế hoạch kinh doanh',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong quá trình sử dụng phương pháp tập kích não (brainstorming) để thúc đẩy quá trình học tập, người học cần phải',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Phương pháp 6 chiếc mũ tư duy hướng mọi người cùng tập trung vào vấn đề từ cùng một góc nhìn, nhằm:',
-		answer:
-			'Triệt tiêu hoàn toàn các tranh cãi xuất phát từ các góc nhìn khác nhau.',
-	},
-	{
-		lesson: 1,
-		question: 'Lợi ích của làm việc nhóm là',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong các hoạt động tổ chức thực hiện công việc, hoạt động quan trọng nhất là:',
-		answer: 'Thực hiện',
-	},
-	{
-		lesson: 1,
-		question:
-			'Mô hình học tập "lấy người học làm trung tâm" là mô hình trong đó giảng viên là nhà diễn thuyết, nhà truyền đạt thông tin nhằm đi hết nội dung của chương trình học. Đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 1,
-		question: 'Tìm kiếm cơ hội được định nghĩa là:',
-		answer:
-			'Chủ động tìm cách xây dựng những mối quan hệ công việc với người khác',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong văn hóa cuối chào khi giao tiếp với khách hàng của VNPT, thời gian hợp lý khi thực hiện cuối chào khách hàng là:',
-		answer: 'Từ 01 đến 03 giây',
-	},
-	{
-		lesson: 1,
-		question: 'Một trong những đặc điểm của bản kế hoạch tác nghiệp là',
-		answer: 'Thời hạn ngắn, 1 năm trở xuống',
-	},
-	{
-		lesson: 1,
-		question: 'Đâu là hành động chính trong năng lực học tập ứng dụng',
-		answer: 'Tích cực tham gia các hoạt động học tập',
-	},
-	{
-		lesson: 1,
-		question:
-			'Văn hóa giới thiệu và tự giới thiệu trong Văn hóa giao tiếp công sở và lễ nghi ngoại giao của VNPT, bao gồm những nội dung sau:',
-		answer:
-			'Giới thiệu người có địa vị cao hoặc người lớn tuổi trước, giới thiệu tên kèm theo chức vụ; Tự giới thiệu ngắn gọn tên, đơn vị làm việc, thái độ lịch sự, khiêm nhường.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Các thông tin về công việc, mục tiêu – yêu cầu công việc, nhiệm vụ, quyền hạn, các mối quan hệ, tiêu chuẩn công việc, điều kiện làm việc là các nội dung nằm trong:',
-		answer: 'Bản mô tả công việc',
-	},
-	{
-		lesson: 1,
-		question: 'Một trong những đặc điểm của bản kế hoạch tác nghiệp là:',
-		answer: 'Thời hạn ngắn, 1 năm trở xuống',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Chuẩn mực VNPT, theo anh chị thái độ nào của cá nhân được khuyến khích thế nào?',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'VNPT khuyến khích người lao động thực hiện hành vi nào sau đây khi tham gia mạng xã hội?',
-		answer:
-			'Sử dụng danh tính thật khi bàn luận về VNPT, các công ty, sản phẩm, dịch vụ, thương hiệu của VNPT trên mạng xã hội',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người lao động VNPT vi phạm các quy định về sử dụng mạng xã hội gây ra hậu quả nghiêm trọng cho Tập đoàn sẽ bị xử lý như thế nào?',
-		answer:
-			'Xử lý kỷ luật lao động và/hoặc kiến nghị cơ quan nhà nước có thẩm quyền xử lý theo quy định pháp luật',
-	},
-	{
-		lesson: 1,
-		question: 'Đâu là những nhược điểm của phương pháp "thử và sai"?',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo Sổ tay Văn hóa VNPT, Trách nhiệm của VNPT đối với khách hàng là "Luôn làm hài lòng" được hiểu như thế nào?',
-		answer:
-			'VNPT coi khách hàng là trung tâm và là mục tiêu trong chiến lược phát triển. Mọi thành viên của VNPT luôn chú ý phải chân thành, nhã nhặn, chú ý lời chào, lời cảm ơn. Lắng nghe nhu cầu, giải thích cặn kẽ, rõ ràng. Tôn trọng lời hứa, đúng thời gian, không sách nhiễu hoặc gây phiền hà cho khách hàng.',
-	},
-	{
-		lesson: 1,
-		question: 'Triết lý của VNPT là gì?',
-		answer:
-			'Khách hàng là trung tâm; Chất lượng là linh hồn; Hiệu quả là thước đo',
-	},
-	{
-		lesson: 1,
-		question: 'Điều nào dưới đây KHÔNG PHẢI là rào cản của tư duy sáng tạo?',
-		answer: 'Không sợ thất bại',
-	},
-	{
-		lesson: 1,
-		question: 'Tâm lý ổn định việc làm là một lý do cản trở sự thay đổi',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Phương pháp Thử và sai được ứng dụng khi',
-		answer: 'Đáp án sai: Giới thiệu ý tưởng cho đơn vị',
-	},
-	{
-		lesson: 1,
-		question:
-			'Một môi trường làm việc cởi mở, chân thành sẽ mang lại lợi ích nào sau đây?',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người lao động làm việc theo ca được nghỉ ít nhất …....... trước khi chuyển sang ca làm việc khác.',
-		answer: '12 giờ',
-	},
-	{
-		lesson: 1,
-		question:
-			'đối với người làm công việc trong điều kiện bình thường, khi có đủ 12 tháng làm việc cho một người sử dụng lao động thì thời gian được nghỉ hàng năm hưởng nguyên lương theo hợp đồng lao động là ?',
-		answer: '12 ngày',
-	},
-	{
-		lesson: 1,
-		question:
-			'Nghỉ trong giờ làm việc theo quy định được tính vào thời giờ làm việc được hưởng lương.',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Đối với người lao động cao tuổi trong năm cuối cùng trước khi nghỉ hưu. Thời giờ làm việc được rút ngắn mỗi ngày ít nhất là ?',
-		answer: '01 giờ và được tính vào thời gian làm việc được hưởng lương',
-	},
-	{
-		lesson: 1,
-		question:
-			'Cứ ….. Làm việc cho một người sử dụng lao động thì số ngày nghỉ hằng năm của người lao động được tăng thêm tương ứng 01 ngày',
-		answer: '5 năm',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi giao tiếp với khách hàng, chúng ta luôn mong muốn nhận được thông tin phản hồi từ khách hàng',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'NVKT nên đưa ấn phẩm, tài liệu, hợp đồng, brochure cho khách hàng như thế nào để thể hiện sự tôn trọng',
-		answer: 'Bằng hai tay và phải đưa cùng chiều với khách hàng',
-	},
-	{
-		lesson: 1,
-		question: 'Theo anh/chị thì khách hàng ngày nay có xu hướng thế nào ?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi đến nhà khách hàng để lắp đặt dịch vụ, nvkt nên sử dụng mẫu câu nào để giới thiệu bản thân',
-		answer:
-			'Chào anh/chị, em/tôi là … nvkt của VNPT… Theo hẹn, hôm nay em/tôi đến lắp đặt dịch vụ… cho gia đình mình ạ',
-	},
-	{
-		lesson: 1,
-		question:
-			'Để việc giao tiếp/ giao dịch với khách hàng đạt hiệu quả, nvkt nên:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Lợi ích của năng lực thích ứng đối với Cá nhân đó là:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Một trong những nguyên tắc để lập kế hoạch là:',
-		answer: 'Có tính linh hoạt phù hợp với sự thay đổi của môi trường',
-	},
-	{
-		lesson: 1,
-		question:
-			'Thời giờ học tập, huấn luyện an toàn lao động, vệ sinh lao động không được tính vào thời giờ làm việc được hưởng lương',
-		answer: 'Sai',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người sử dụng lao động có quyền quyết định sắp xếp ngày nghỉ hàng tuần vào ….. Trong tuần nhưng phải ghi vào nội quy lao động',
-		answer: 'Ngày chủ nhật hoặc một ngày cố định khác',
-	},
-	{
-		lesson: 1,
-		question:
-			'Thời giờ hội họp, học tập, tập huấn do yêu cầu của người sử dụng lao động hoặc được người sử dụng lao động đồng ý được tính vào thời giờ làm việc được hưởng lương',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người lao động có thể thỏa thuận với người sử dụng lao động để nghỉ hằng năm thành nhiều lần hoặc nghỉ gộp tối đa là ?',
-		answer: '03 năm một lần',
-	},
-	{
-		lesson: 1,
-		question: 'Mỗi tuần người lao động được nghỉ ít nhất ?',
-		answer: '24 giờ liên tục',
-	},
-	{
-		lesson: 1,
-		question: 'NVKT nên ứng xử như thế nào khi gặp khách hàng lần đầu?',
-		answer: 'Chủ động cúi chào….. Dịch vụ',
-	},
-	{
-		lesson: 1,
-		question: 'Lý do khiến thuê bao rời mạng có thể là :',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Sau khi lắp đặt thiết bị MODEM WIFI xong, NVKT cần lưu ý với khách điều gì ?',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'người sử dụng lao động có quyền quy định làm việc theo',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người sử dụng lao động có quyền yêu cầu người lao động làm thêm giờ vào bất kỳ ngày nào và người lao động không được từ chối trong các trường hợp nào sau đây?',
-		answer:
-			'Thực hiện các công việc nhằm bảo vệ tính mạng con người, tài sản của cơ quan, tổ chức, cá nhân trong phòng ngừa và khắc phục hậu quả thiên tai, hỏa hoạn, dịch bệnh và thảm họa',
-	},
-	{
-		lesson: 1,
-		question:
-			'Nghỉ cần thiết trong quá trình lao động đã được tính trong định mức lao động cho nhu cầu sinh lý tự nhiên của con người được tính vào thời giờ làm việc được hưởng lương.',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trường hợp làm việc ban đêm, thì người lao động được nghỉ giữa giờ ít nhất … tính vào thời giờ làm việc',
-		answer: '45 phút',
-	},
-	{
-		lesson: 1,
-		question:
-			'Phương thức "giao tiếp phi ngôn ngữ" đối với Doanh nghiệp được thể hiện qua',
-		answer: 'Thương hiệu; logo; đồng phục, cách trang trí cửa hàng',
-	},
-	{
-		lesson: 1,
-		question:
-			'NVKT sẽ ứng xử như thế nào khi khách hàng yêu cầu ngừng sử dụng dịch vụ/sản phẩm của VNPT',
-		answer:
-			'Tìm hiểu nguyên nhân, thuyết phục khách hàng tiếp tục sử dụng dịch vụ. Trong trường hợp khách hàng thực sự không còn như cầu thì hướng dẫn khách hàng làm thủ tục chấm dứt hợp đồng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi trình bày cho khách hàng về dịch vụ của VNPT, NVKT không nên :',
-		answer: 'Nói không có chủ đích',
-	},
-	{
-		lesson: 1,
-		question: 'Quản trị mục tiêu bằng MBO giúp doanh nghiệp',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Ý kiến nào cần lưu ý khi thiết lập một bản kế hoạch',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong trường hợp người sử dụng lao động quy định làm việc theo tuần thì thời gian làm việc bình thường không quá …....... trong 01 ngày, nhưng không quá 48 giờ trong 01 tuần.',
-		answer: '10 giờ',
-	},
-	{
-		lesson: 1,
-		question:
-			'Tiền tàu xe và tiền lương những ngày đi đường do hai bên thỏa thuận ?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Đối với những người làm công việc nặng nhọc, độc hại, nguy hiểm, khi có đủ 12 tháng làm việc cho một người sử dụng lao động thì thời gian được nghỉ hàng năm được hưởng nguyên lương theo hợp đồng lao động là ?',
-		answer: '14 ngày',
-	},
-	{
-		lesson: 1,
-		question:
-			'Thời giờ làm việc bình thường không quá …. Trong 01 ngày và 48 giờ trong một tuần',
-		answer: '08 giờ',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi lắp đặt, xử lý sự cố cho khách hàng xong, nội dung nào nvkt không nên khuyến nghị khách hàng',
-		answer:
-			'Chủ động mua và lắp thêm repeater nếu muốn mở rộng thêm vùng phủ sóng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo anh/chị, mục đích quan trọng nhất khi một doanh nghiệp yêu cầu nhân viên tiếp xúc với khách hàng phải đeo thẻ nhân viên và mặc đồng phục là gì ?',
-		answer:
-			'Thể hiện tính chuyên nghiệp và thái độ tôn trọng trong phục vụ khách hàng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi trao đổi, giải thích với khách hàng qua điện thoại, nvkt KHÔNG nên',
-		answer: 'Sử dụng các thuật ngữ chuyên nghành',
-	},
-	{
-		lesson: 1,
-		question:
-			'Sau khi lắp đặt dịch vụ Internet tại nhà khách hàng, một trong những vấn đề mà nhân viên kỹ thuật cần lưu ý khách hàng là :',
-		answer: 'Số lượng thiết bị tối đa truy cập cùng lúc trên đường truyền',
-	},
-	{
-		lesson: 1,
-		question:
-			'Mối quan hệ giữa các đồng nghiệp trong cùng phòng ban đơn vị , là mối quan hệ:',
-		answer: 'Đồng cấp',
-	},
-	{
-		lesson: 1,
-		question:
-			'Thời giờ làm việc không quá …. Trong 01 ngày đối với những người làm các công việc đặc biệt nặng nhọc, độc hại, nguy hiểm theo danh mục do Bộ Lao động - Thương binh và Xã hội chủ trì phối hợp với Bộ Y tế ban hành',
-		answer: '06 giờ',
-	},
-	{
-		lesson: 1,
-		question:
-			'NVKT khi thi công tại địa chỉ khách hàng nên thực hiện thể nào để thể hiện sự chuyên nghiệp ?',
-		answer:
-			'Phục vụ khách hàng với thao tác nhanh, chính xác; hạn chế nói chuyện riêng, hạn chế giải quyết việc khác hoặc mượn thiết bị của khách hàng; Dọn dẹp sạch sẽ tại vị trí thi công; xin lỗi khách hàng nếu trong quá trình thi công đã làm phiền khách hàng',
-	},
-	{
-		lesson: 1,
-		question: 'Lắng nghe tích cực Không có đặc điểm nào, sau đây:',
-		answer:
-			'Khi khách hàng đang trình bày, nếu có điều gì khách hàng nói chưa đúng thì nên ngắt lời để giải thích ngay, tránh để khách hàng hiểu lầm',
-	},
-	{
-		lesson: 1,
-		question: 'Khi giao tiếp với khách hàng, nvkt nên tránh',
-		answer: 'Nói với tốc độ và ngữ điệu đều đều',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong kinh doanh, khi khách hàng không hài lòng thì phương án tốt nhất doanh nghiệp mong muốn là',
-		answer: 'Khách hàng nói trực tiếp với chúng ta',
-	},
-	{
-		lesson: 1,
-		question:
-			'Thời giờ phải ngừng việc do lỗi của người lao động vẫn được tính vào thời giờ làm việc được hưởng lương',
-		answer: 'Sai',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người lao động làm việc liên tục 08 giờ hoặc 06 giờ được nghỉ giữa giờ ít nhất … tính vào thời giờ làm việc',
-		answer: '30 phút',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi nghỉ hằng năm, người lao động được tạm ứng trước một khoản tiền ít nhất bằng tiền lương….',
-		answer: 'của những ngày nghỉ',
-	},
-	{
-		lesson: 1,
-		question: 'Chăm sóc khách hàng mang lại cho doanh nghiệp lợi ích gì?',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi nghỉ hằng năm, nếu người lao động đi bằng các phương tiện đường bộ, đường sắt, đường thủy mà số ngày đi đường cả đi và về trên 02 ngày thì ngày thứ 03 trở đi được tính thêm thời gian đi đường ngoài ngày nghỉ hằng năm và được tính cho…...',
-		answer: '01 lần nghỉ trong năm',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi tiếp xúc với khách hàng, lý do nào là quan trọng nhất khiến chùng ta nên gọi đúng tên khách hàng?',
-		answer: 'Để thể hiện sự tôn trọng và tạo thiện cảm với khách hàng',
-	},
-	{
-		lesson: 1,
-		question:
-			'NVKT khi thực hiện chăm sóc khách hàng, nếu khách hàng phản ánh "Mạng bị chậm", sẽ xử lý như thế nào?',
-		answer:
-			'Xin lỗi khách hàng; khảo sát và kiểm tra dịch vụ; đưa ra khuyến nghị hoặc đo sóng WIFI và tối ưu WIFI cho khách hàng.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người sử dụng lao động phải chi trả chế độ gì cho người lao động bị tai nạn lao động?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong quá trình phục vụ, nếu khách hàng không hài lòng với dịch vụ hoặc thái độ của nhân viên, NVKT nên ứng xử thế nào?',
-		answer:
-			'Chân thành xin lỗi khách hàng cho dù nhân viên có lỗi hay không; chủ động lắng nghe, thể hiện đồng cảm với khách hàng và có hướng giải thích rõ ràng, nhẹ nhàng để khách hàng hiểu cũng như thông cảm',
-	},
-	{
-		lesson: 1,
-		question:
-			'Sau khi thực hiện lắp đặt/sửa chữa dịch vụ tại nhà khách hàng, NVKT KHÔNG nên:',
-		answer: 'Nhờ khách hàng dọn giúp vệ sinh khu vực đã thi công',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi tiếp xúc với một khách hàng phàn nàn về chất lượng dịch vụ của VNPT NVKT nên làm gì?',
-		answer:
-			'Xin lỗi khách hàng; đặt câu hỏi, xác định vấn đề, chủ động lắng nghe tích cực và tìm cách giải quyết theo quy định.',
-	},
-	{
-		lesson: 1,
-		question: 'Việc học tập không ngừng sẽ giúp người học',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi tổ chức có những thay đổi về văn hóa doanh nghiệp, khoa học công nghệ, đòi hỏi mỗi cá nhân phải…',
-		answer: 'Thích ứng',
-	},
-	{
-		lesson: 1,
-		question:
-			'NVKT nên tìm hiểu những thông tin gì về sản phẩm của đối thủ cạnh tranh?',
-		answer: 'Điểm mạnh - điểm yếu của sản phẩm tương đồng với VNPT',
-	},
-	{
-		lesson: 1,
-		question: 'Trước khi đến lắp đặt dịch vụ cho khách hàng, NVKT nên:',
-		answer: 'Gọi điện đặt lịch hẹn để xác nhận thời gian cụ thể với khách hàng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi trao đổi, giải thích với khách hàng qua điện thoại, NVKT KHÔNG nên:',
-		answer: 'Sử dụng các thuật ngữ chuyên ngành',
-	},
-	{
-		lesson: 1,
-		question:
-			'Phương thức "Giao tiếp phi ngôn ngữ" đối với Doanh nghiệp được thể hiện qua:',
-		answer: 'Thương hiệu; Logo; Đồng phục, cách trang trí cửa hàng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi khách hàng có ý so sánh các dịch vụ của VNPT với dịch vụ của các đối thủ cạnh tranh về mức giá sử dụng, NVKT nên:',
-		answer:
-			'Nêu và chứng minh tính ưu việt về chất lượng sản phẩm dịch vụ của VNPT cùng những chính sách chăm sóc khách hàng, dịch vụ hậu mãi; Định hướng cho khách hàng hiểu về chất lượng quan trọng hơn giá cả.',
-	},
-	{
-		lesson: 1,
-		question: 'Để tạo thiện cảm với khách hàng, chúng ta nên:',
-		answer: 'Giữ đúng lời hứa với khách hàng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi tiếp xúc với khách hàng, lý do nào là quan trọng nhất khiến chúng ta nên gọi đúng tên khách hàng?',
-		answer: 'Để thể hiện sự tôn trọng và tạo thiện cảm với khách hàng',
-	},
-	{
-		lesson: 1,
-		question:
-			'NVKT nên đưa ấn phẩm, tài liệu, hợp đồng, brochure cho khách hàng như thế nào để thể hiện sự tôn trọng?',
-		answer:
-			'Đưa ấn phẩm, tài liệu, hợp đồng, brochure,…bằng hai tay và phải đưa cùng chiều với khách hàng.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi giao tiếp với khách hàng, chúng ta luôn mong muốn nhận được thông tin phản hồi từ khách hàng. Đúng hay Sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question: 'Khi giao tiếp với khách hàng, NVKT nên tránh:',
-		answer: 'Nói với tốc độ và ngữ điệu đều đều',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi chăm sóc khách hàng, nếu gặp trường hợp khách hàng trước đây đã từng dùng mạng của VNPT phản ánh "Mạng bị chậm, hay bị quay,..", vì vậy khách hàng đã chuyển sang dùng của nhà mạng khác, NVKT nên xử lý:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Quy định đối với NVKT về việc cung cấp thông tin cho khách hàng:',
-		answer:
-			'Cung cấp thông tin cho khách hàng đầy đủ, trung thực, theo phạm vi công việc được giao và chịu trách nhiệm về tính chính xác của thông tin',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi giao tiếp với khách hàng, để việc lắng nghe hiệu quả NVKT nên:',
-		answer: 'Kiểm soát cảm xúc của bản thân',
-	},
-	{
-		lesson: 1,
-		question:
-			'NVKT khi thi công tại địa chỉ khách hàng nên thực hiện thế nào để thể hiện sự chuyên nghiệp?',
-		answer:
-			'Phục vụ khách hàng với thao tác nhanh, chính xác; Hạn chế nói chuyện riêng, hạn chế giải quyết việc khác hoặc mượn thiết bị của khách hàng; Dọn dẹp sạch sẽ tại vị trí thi công; Xin lỗi khách hàng nếu trong quá trình thi công đã làm phiền khách hàng.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Sau khi lắp đặt thiết bị MODEM WIFI xong, NVKT cần lưu ý với khách hàng điều gì?',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'NVKT sẽ ứng xử thế nào khi khách hàng yêu cầu ngừng sử dụng dịch vụ/sản phẩm của VNPT?',
-		answer:
-			'Tìm hiểu nguyên nhân, thuyết phục khách hàng tiếp tục sử dụng dịch vụ. Trong trường hợp khách hàng thực sự không còn nhu cầu thì hướng dẫn khách hàng làm thủ tục chấm dứt hợp đồng.',
-	},
-	{
-		lesson: 1,
-		question: 'NVKT đến tối ưu mạng WIFI cho khách hàng hiện hữu nhằm mục đích',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi lắp đặt, xử lý sự cố dịch vụ cho khách hàng xong, nội dung nào NVKT không nên khuyến nghị khách hàng:',
-		answer:
-			'Chủ động mua và lắp thêm repeater nếu muốn mở rộng thêm vùng phủ sóng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Sau khi lắp đặt dịch vụ Internet tại nhà khách hàng, một trong những vấn đề mà NVKT cần lưu ý khách hàng là:',
-		answer: 'Số lượng thiết bị tối đa truy cập cùng lúc trên đường truyền',
-	},
-	{
-		lesson: 1,
-		question: 'Việc bảo mật thông tin khách hàng được VNPT quy định thế nào?',
-		answer:
-			'Không được sử dụng, tiết lộ bất cứ thông tin nào của khách hàng vào mục đích riêng.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong kinh doanh, khi khách hàng không hài lòng thì phương án tốt nhất doanh nghiệp mong muốn là:',
-		answer: 'Khách hàng nói trực tiếp với chúng ta.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi trình bày cho khách hàng về dịch vụ của VNPT, NVKT không nên:',
-		answer: 'Nói không có chủ đích',
-	},
-	{
-		lesson: 1,
-		question: 'Những phàn nàn của khách hàng sẽ giúp cho đơn vị:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người sử dụng lao động có quyền quy định lịch nghỉ hằng năm sau khi tham khảo ý kiến của người lao động và phải thông báo trước cho người lao động ?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Với chiến lược phát triển trong kỷ nguyên mới, phù hợp với xu thế toàn cầu hóa và sự phát triển không ngừng của cuộc cách mạng công nghiệp 4.0, VNPT đã và đang từng bước chuyển đổi từ nhà cung cấp dịch vụ viễn thông truyền thống sang nhà cung cấp dịch vụ số (DSP), trở thành một Tập đoàn kinh tế năng động, chú trọng phát triển những sản phẩm, dịch vụ, giải pháp ICT sáng tạo. Các sứ mệnh của VNPT là:',
-		answer:
-			'Cung cấp cho khách hàng và đối tác các sản phẩm, dịch vụ Viễn thông - CNTT - Truyền thông và Dịch vụ số chất lượng, đột phá, sáng tạo; Trở thành trung tâm số (Digital Hub) của khu vực châu Á; Tôn vinh và đánh giá giá trị đích thực của người lao động; Tiên phong trong các hoạt động về cộng đồng.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người sử dụng lao động được sử dụng người lao động làm thêm giờ khi đáp ứng đủ điều kiện ?',
-		answer: 'cả 3 ý còn lại',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong trường hợp đặc biệt do chu kỳ lao động không thể nghỉ hằng tuần, thì người sử dụng lao động có trách nhiệm bảo đảm cho người lao động được nghỉ tính bình quân 01 tháng ít nhất là ?',
-		answer: '04 ngày',
-	},
-	{
-		lesson: 1,
-		question:
-			'Luật An toàn, vệ sinh lao động năm 2015 quy định yếu tố có hại là gì?',
-		answer:
-			'Yếu tố có hại là yếu tố gây bệnh tật, làm suy giảm sức khỏe con người trong quá trình lao động.',
-	},
-	{
-		lesson: 1,
-		question: 'Đối với Doanh nghiệp, sự sáng tạo có những lợi ích:',
-		answer: 'Các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Nghỉ giải lao theo tính chất của công việc được tính vào thời giờ làm việc được hưởng lương.',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Thời giờ hội họp, học tập, tập huấn do yêu cầu của người sử dụng lao động hoặc được người sử dụng lao động đồng ý được tính vào thời giờ làm việc được hưởng lương.',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Thời giờ làm việc không quá …....... trong 01 ngày đối với những người làm các công việc đặc biệt nặng nhọc, độc hại, nguy hiểm theo danh mục do Bộ Lao động - Thương binh và Xã hội chủ trì phối hợp với Bộ Y tế ban hành.',
-		answer: '06 giờ',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người sử dụng lao động có quyền quyết định sắp xếp ngày nghỉ hàng tuần vào .......... trong tuần nhưng phải ghi vào nội quy lao động.',
-		answer: 'ngày chủ nhật hoặc một ngày cố định khác',
-	},
-	{
-		lesson: 1,
-		question: 'Quản trị bằng mục tiêu MBO giúp doanh nghiệp:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Nhà nước khuyến khích người sử dụng lao động thực hiện tuần làm việc ….......',
-		answer: '40 giờ',
-	},
-	{
-		lesson: 1,
-		question: 'Mỗi tuần, người lao động được nghỉ ít nhất ?',
-		answer: '24 giờ liên tục',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi gặp những thay đổi lớn trong nhiệm vụ hoặc môi trường làm việc, nhân viên VNPT nên:',
-		answer: 'Thích ứng, duy trì được hiệu quả làm việc',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi nghỉ hằng năm, người lao động được tạm ứng trước một khoản tiền ít nhất bằng tiền lương ..........',
-		answer: 'của những ngày nghỉ',
-	},
-	{
-		lesson: 1,
-		question:
-			'Thời giờ làm việc bình thường không quá …....... trong 01 ngày và 48 giờ trong một tuần.',
-		answer: '08 giờ',
-	},
-	{
-		lesson: 1,
-		question:
-			'Người lao động có đủ …....... làm việc cho một người sử dụng lao động thì được nghỉ hằng năm, hưởng nguyên lương theo hợp đồng lao động.',
-		answer: '12 tháng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo anh/chị, mục đích quan trọng nhất khi một doanh nghiệp yêu cầu nhân viên tiếp xúc với khách hàng phải đeo thẻ nhân viên và mặc đồng phục là gì ?',
-		answer:
-			'Thể hiện tính chuyên nghiệp và thái độ tôn trọng trong phục vụ khách hàng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Đối với người làm công việc trong điều kiện bình thường, khi có đủ 12 tháng làm việc cho một người sử dụng lao động thì thời gian được nghỉ hằng năm hưởng nguyên lương theo hợp đồng lao động là ?',
-		answer: '12 ngày',
-	},
-	{
-		lesson: 1,
-		question: 'Người sử dụng lao động có quyền quy định làm việc theo ?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 8,
-		question:
-			'Công ty bạn có dựng một FTP Server, bạn là người quản trị FTP server này, bạn muốn tất cả các user khi truy cập vào FTP này đều phải nhập user name và password, bạn làm thế nào',
-		answer:
-			'Trên máy FTP Server, chọn tab security account check vào ô Allow anonymous connections',
-	},
-	{
-		lesson: 8,
-		question:
-			'Công ty bạn có 2 văn phòng sử dụng 2 NetID khác nhau, bạn sử dụng máy tính xách tay sử dụng hệ điều hành Windows XP, bạn thường di chuyển qua lại giữa hai văn phòng này, bạn cấu hình địa chỉ IP trên máy tính xách tay như thế nào để mỗi lần qua lại giữa hai trụ sở này mà không cần phải cấu hình lại địa chỉ IP?',
-		answer: 'Cấu hình Alternate Configuration trên máy tính xách tay',
-	},
-	{
-		lesson: 8,
-		question: 'Thực thi câu lệnh nào để chạy giao thức OSPFv2 trên mạng',
-		answer: 'router ospf process-id',
-	},
-	{
-		lesson: 8,
-		question:
-			'Các giao thức xác thực nào sau đây là được sử dụng trong các mạng ko dây',
-		answer: '802.11b',
-	},
-	{
-		lesson: 8,
-		question: 'Việc xác minh và cấp phép là nhiệm vụ của',
-		answer: 'AD',
-	},
-	{
-		lesson: 8,
-		question:
-			'Để kích Hyper-V Manager trên Windows, thực hiện trình tự các bước sau:',
-		answer:
-			'Ở cửa sổ Control Panel, chọn Programs - truy cập Programs and Features rồi chọn Turn Windows features on or off. Tích vào Hyper-V rồi nhấn OK',
-	},
-	{
-		lesson: 8,
-		question: 'Cài đặt Win 2012 trên máy ảo VMWare thì yêu cầu phần cứng ntn',
-		answer: 'Tất cả yếu tố trên',
-	},
-	{
-		lesson: 8,
-		question:
-			'Bạn là người quản trị mạng trong công ty, trong hệ thống mạng bạn đã cài đặt và cấu hình DHCP server, bạn muốn bổ sung thêm một số địa chỉ loại trừ mới, để cấp địa chỉ này cho các máy server, trường hợp này bản thực hiện như thế nào?',
-		answer: 'Trong DHCP Server chọn DHCP reservation',
-	},
-	{
-		lesson: 8,
-		question:
-			'Bạn là người QTM cho một cty, cty bạn muốn triển khai 2 NetID khác nhau cho 2 phòng ban, bạn làm thế nào để trên mạng ko bị trùng IP và 2 NetID này ít traffic nhất',
-		answer: 'Sử dụng Ip tĩnh trên mỗi nhánh mạng',
-	},
-	{
-		lesson: 8,
-		question: 'Hyper-V phân chia mỗi máy ảo thành',
-		answer: 'Một partition',
-	},
-	{
-		lesson: 8,
-		question:
-			'Máy tính dùng hđh nào có thể gia nhập AD(Active Directory) domain',
-		answer: 'Windows OS',
-	},
-	{
-		lesson: 8,
-		question: 'Máy ảo khách chạy trên Xen được gọi là',
-		answer: 'Domains',
-	},
-	{
-		lesson: 8,
-		question: 'Để phân chia quyền hành của một miền trong AD người ta dùng',
-		answer: 'OU',
-	},
-	{
-		lesson: 8,
-		question:
-			'Địa chỉ Ipv6 nào được sử dụng cho địa chỉ multicast của một nhóm các router',
-		answer: 'FF02::2',
-	},
-	{
-		lesson: 8,
-		question:
-			'Ảo hóa giải quyết các thách thức của việc quản lý trung tâm dữ liệu và cung cấp một số lợi ích ntn',
-		answer: 'Các ý trên đều đúng',
-	},
-	{
-		lesson: 8,
-		question: 'Hyper V Windows Server 2008 64 có mấy phiên bản',
-		answer: '3 phiên bản',
-	},
-	{
-		lesson: 8,
-		question:
-			'Sau khi cài Terminal Service(Software Deployment) , để cài một phần mềm người ta sử dụng',
-		answer: 'Cài qua Add/Remove program',
-	},
-	{
-		lesson: 8,
-		question:
-			'Bạn là người quản trị mạng trong cty, cty yêu cầu bạn cài dịch vụ DHCP Server để cấp Ip cho các máy khác trong mạng. Trước khi cài DHCP trên Windows 2003 Server, bạn cần thiết lập các thành phần nào',
-		answer: 'Địa chỉ Ip tĩnh, subnet mask, default gateway và DNS',
-	},
-	{
-		lesson: 8,
-		question: 'Công nghệ Hyper V trong window server là gì',
-		answer: 'E. Công nghệ ảo hóa của Microsoft',
-	},
-	{
-		lesson: 8,
-		question:
-			'Giao thức nào sau đây làm việc trên lớp IP để bảo vệ thông tin IP trên mạng',
-		answer: 'IPSec',
-	},
-	{
-		lesson: 8,
-		question: 'Ảo hóa mức hđh còn gọi là',
-		answer: 'Container Virtualization hay Isolation',
-	},
-	{
-		lesson: 8,
-		question:
-			'Để thiết lập quyền khởi động ưu tiên cho file boot DLC(*.iso) trong VMWare',
-		answer: 'Vào VM và chọn CD/DVD (SATA) và chọn đường dẫn đến file DLC',
-	},
-	{
-		lesson: 8,
-		question: 'Khi cài đặt Hyper-V yêu cầu processor',
-		answer:
-			'Hyper-V chỉ có thể triển khai trên máy chủ sử dụng processor 64bit (x86-64) có hỗ trợ ảo hóa (Intel VT hay AMD-V)',
-	},
-	{
-		lesson: 8,
-		question: 'Chiều dài tối thiếu của mật khẩu là',
-		answer: '8 ký tự',
-	},
-	{
-		lesson: 8,
-		question: 'Nhược điểm của Open VZ là gì',
-		answer: 'Các máy chủ phải sử dụng chung 1 nhân duy nhất',
-	},
-	{
-		lesson: 8,
-		question: '2 đáp án đúng về địa chỉ Ipv6',
-		answer:
-			'[2 chọn]\nfd15:0db8:0000:0000:700:3:400F:527B\nfd15:db8::700:3:400F:527B',
-	},
-	{
-		lesson: 8,
-		question: 'Trong hình bên dưới chế độ nào đang đc thiết lập mật khẩu',
-		answer: 'Telnet',
-	},
-	{
-		lesson: 8,
-		question:
-			'Các chức năng nào sau đây không phải là chức năng của ảo hóa với VMware Workstation',
-		answer: 'Hỗ trợ hệ thống cho hệ điều hành trên máy đang sử dụng',
-	},
-	{
-		lesson: 8,
-		question:
-			'VMWare vSphere là bộ sản phẩm của VMWare, dùng để phục vụ nhu cầu ảo hóa hệ thống, thành phần nào dưới đây không phải của nó',
-		answer: 'VMWare Store',
-	},
-	{
-		lesson: 8,
-		question:
-			'Thông số nào được dùng để tính toán tuyến đường đối với giao thức OSPF',
-		answer: 'Bandwith',
-	},
-	{
-		lesson: 8,
-		question:
-			'Trong quá trình xác thực CHAP, để thực hiện mã hóa với một site từ xa có id là 177798 thông qua kết nối PPP thì giá trị nào đc sử dụng',
-		answer: 'Sử dụng host name của thiết bị từ xa',
-	},
-	{
-		lesson: 8,
-		question: 'Ưu điểm của Xen là gì?',
-		answer:
-			'Công nghệ ảo hóa thực sự cho phép chạy cùng lúc nhiều máy ảo VPS trên máy chủ vật lý',
-	},
-	{
-		lesson: 8,
-		question:
-			'Công ty bạn có dựng một web server, bạn là người quản trị web server này, bạn muốn quản trị web server này qua mạng, để có thể quản trị web server từ xa bạn phải cài đặt công cụ gì?',
-		answer: 'Remote Administration (HTML)',
-	},
-	{
-		lesson: 8,
-		question:
-			'Bạn có thể cấu hình Hyper-V để chạy nhiều máy ảo cùng lúc. Số lượng máy ảo nhiều hay ít tùy thuộc vào mấy yếu tố',
-		answer: '3',
-	},
-	{
-		lesson: 8,
-		question:
-			'Các thực hiện Activator Windows (Product key bản quyền) hợp lệ là gì',
-		answer: 'Active Window Key Online',
-	},
-	{
-		lesson: 8,
-		question:
-			'Để ko phải thực hiện thao tác cài lại máy ảo, có thể sủe dụng chức năng khôi phục tại thời điểm đc tạo ra, ta chon tính năng',
-		answer: 'Snapshots',
-	},
-	{
-		lesson: 8,
-		question: 'Có bao nhiêu bit trong 1 ô địa chỉ IPv6',
-		answer: '16',
-	},
-	{
-		lesson: 8,
-		question:
-			'Thông số nào ảnh hưởng tới việc lựa chọn một tuyến đường khi có nhiều bộ giao thức cùng có 1 tuyến đường tới 1 đích',
-		answer: 'Administrative distance',
-	},
-	{
-		lesson: 8,
-		question:
-			'Nếu sử dụng câu lệnh “ service password-encrytion” điều gì xảy ra',
-		answer: 'Tất cả pass hiện tai và tương lại đều mã hóa',
-	},
-	{
-		lesson: 8,
-		question:
-			'Để thực hiện Share dữ liệu giữa máy thật và máy ảo, trong hộp thoại hiệu chỉnh cấu hình máy ảo ta chọn:',
-		answer:
-			'Chọn tab Options và chọn mục Share Folder và chọn nút Add để tạo một chia sẻ một thư mục trên máy tính thật cho máy ảo',
-	},
-	{
-		lesson: 8,
-		question:
-			'Trong dịch vụ DHCP các gói tin Broadcast có thể đi qua Route đc ko',
-		answer: 'Có nhưng route phải có chuẩn RFC1542',
-	},
-	{
-		lesson: 8,
-		question: 'Mục đích của một máy chủ RADIUS là',
-		answer: 'Xác thực',
-	},
-	{
-		lesson: 8,
-		question: 'Tạo mới máy ảo Hyper-V thực hiện các bước sau',
-		answer:
-			'Ở cưa sổ Hyper-V chọn Virtual Switch Manager - chọn External và chọn create Virtual Switch. Chọn tên máy tính chủ (máy tính đang chạy Hyper-V). Sau đó dưới khung Actions, nhấn New-> Virtual Machine',
-	},
-	{
-		lesson: 8,
-		question: 'Dịch vụ DNS server có chức năng chính là',
-		answer: 'Phân giải tên miền từ IP sang tên và ngược lai',
-	},
-	{
-		lesson: 8,
-		question:
-			'Khi “gắn” một card mạng vào một máy ảo, card mạng này không chọn loại nào sau đây:',
-		answer: 'Network',
-	},
-	{
-		lesson: 8,
-		question: 'Điểm khác biệt cơ bản giữa mail onl và offline là',
-		answer: 'Mail online nhanh hơn mail offiline',
-	},
-	{
-		lesson: 8,
-		question: 'DHCPACK đây là gói tin nhằm giúp',
-		answer: 'DHCP Server chấp nhận yêu cầu cho Client',
-	},
-	{
-		lesson: 8,
-		question: 'Cơ chế point to point trg việc giải đáp tên máy là kiểu',
-		answer: 'P node',
-	},
-	{
-		lesson: 8,
-		question:
-			'Theo thứ tự câu lệnh nào đc cấu hình trên cùng một router chạy OSPF và thêm vùng mạng 10.1.1.0/24 vào vùng area 0',
-		answer: 'router ospf 1 network 10.1.1.0 0.0.0.255 area 0',
-	},
-	{
-		lesson: 8,
-		question: 'Tính năng chính của VMWare Workstation là',
-		answer: 'Tạo máy ảo đa hệ điều hành',
-	},
-	{ lesson: 8, question: 'Dịch vụ phải có khi cài AD', answer: 'DNS' },
-	{
-		lesson: 8,
-		question: 'DHCP Relay Agent là',
-		answer: 'Đại lý chuyển tiếp DHCP Server',
-	},
-	{
-		lesson: 8,
-		question: 'Thành phần nào sau đây không phải của một hệ thống ảo hóa:',
-		answer: 'iCloud',
-	},
-	{
-		lesson: 8,
-		question: 'Các loại client đc hỗ trợ bởi Exchange Server',
-		answer: 'Tất cả đúng',
-	},
-	{
-		lesson: 8,
-		question: 'MX Record dùng để làm gì?',
-		answer: 'Dùng cho dịch vụ chuyển mail',
-	},
-	{
-		lesson: 8,
-		question: 'Các tính năng nào sau đây ko phải là công nghệ ảo hóa',
-		answer: 'Tổ chức lưu trữ dữ liệu lớn',
-	},
-	{
-		lesson: 8,
-		question: 'Sự khác nhau cơ bản giữa VMWare-Xen-OpenVZ',
-		answer: 'Open VZ hoạt động dựa trên nhân Linux và hđh',
-	},
-	{
-		lesson: 8,
-		question:
-			'Câu lệnh nào thì cần thiết để cho phép SSH hoặc Telnet tới một thiết bị switch cisco',
-		answer: 'transport input all',
-	},
-	{
-		lesson: 8,
-		question: 'Quyền truy cập nào cho phép ta lưu giữ một tập tin?',
-		answer: 'Ghi',
-	},
-	{
-		lesson: 8,
-		question:
-			'Tính năng bảo mật nào có thể đc sử dụng đối với 1 máy trạm quay số truy cập từ xa sử dụng một user name và mật khẩu',
-		answer: 'Mã hóa sđt',
-	},
-	{
-		lesson: 8,
-		question: 'Các công nghệ nào sau đây không hỗ trợn hệ thống ảo hóa',
-		answer: 'Công nghệ Beamforming',
-	},
-	{
-		lesson: 8,
-		question: 'Tính năng nào được sử dụng khi tagging 1 vùng Vlan?',
-		answer: 'Encapsulation',
-	},
-	{
-		lesson: 8,
-		question:
-			'Phát biểu nào sau đây ko đúng khi so sánh ưu điểm của hyper-v so với VMWare',
-		answer: 'Hỗ trợ nhiều hđh khác nhau',
-	},
-	{
-		lesson: 8,
-		question:
-			'Hđh chủ (host OS) hyper-v chỉ có thể đc triển khai trên các nền tảng window sau',
-		answer: 'Window Server và Window Desktop',
-	},
-	{
-		lesson: 8,
-		question: 'Điểm khác nhau giữa CSU/DSU và modem',
-		answer:
-			'Thiết bị CSU/DSU chuyển đổi tín hiệu số từ 1 router tới đường truyền leased, thiết bị moderm chuyển đổi tín hiệu tương tự từ một router tới đường truyền diện thoại',
-	},
-	{
-		lesson: 8,
-		question: 'Hypervisor ko thể là',
-		answer: 'Một hệ thống mạng (network)',
-	},
-	{
-		lesson: 8,
-		question:
-			'VMWare cso tính năng cấp IP Động (DHCP) để cấu hình cho chức năng này thực hiện các bước sau',
-		answer:
-			'Edit -> Chọn Virtual Network Editor trên thanh toolbar để cấu hình',
-	},
-	{
-		lesson: 8,
-		question:
-			'Sử dụng mặt subnet nào đc sử dụng cho 8 dải mạng con, mỗi mạng chưa từ 6 cho tới 26 host',
-		answer: '255.255.255.224',
-	},
-	{
-		lesson: 8,
-		question: 'Trình tự các bước Export máy ảo trong hyper-v',
-		answer:
-			'Mở hyper-v sau đó chọn export nhấn browser để lựa chọn nơi muốn export máy ảo trong hyper-v',
-	},
-	{
-		lesson: 8,
-		question: 'DHCPOFFER đây là gói tin nhằm giúp',
-		answer: 'DHCP Server đề nghị danh sách các IP cho thuê đến Client',
-	},
-	{
-		lesson: 8,
-		question:
-			'Câu lệnh nào đc sử dụng để cấu hình 1 port của Switch hoạt động ở mode Trunk',
-		answer: 'D Show interfaces switch port',
-	},
-	{
-		lesson: 8,
-		question:
-			'Danh sách Black List trong Spam (của chương trình MDemon) có ý nghĩa gì:',
-		answer: 'Danh sách các địa chỉ email và các miền không muốn nhận',
-	},
-	{
-		lesson: 8,
-		question:
-			'Phương pháp thông tin truy cập từ xa nào được xem như kết nối điển hình tớ Internet mọi lúc, nó làm gia tăng rủi ro bảo mật do luôn mở đối với mọi cuộc tấn công',
-		answer: 'Wireless',
-	},
-	{
-		lesson: 8,
-		question: 'Chọn đáp án đúng khi tổng hợp lại 4 mạng trong hình',
-		answer: '10.0.0.0/22',
-	},
-	{
-		lesson: 8,
-		question: 'Các phương pháp ảo hóa phổ biến là',
-		answer: 'ảo hóa máy chủ, ảo hóa ứng dụng, ảo hóa lưu trữ',
-	},
-	{
-		lesson: 8,
-		question: 'Trong Microsoft Hyper-V, Integration Services:',
-		answer: 'Tất cả các ý trên',
-	},
-	{
-		lesson: 8,
-		question:
-			'Giao thức giúp ng dùng có thể truy cập vào hộp thư và download về máy tính của mình',
-		answer: 'SMTP',
-	},
-	{
-		lesson: 8,
-		question: 'Đâu không phải là ưu điểm của Vmware',
-		answer: 'Mã nguồn mở vì đc xây dựng dựa trên Linux',
-	},
-	{
-		lesson: 8,
-		question: 'Hypervisor không thể là:',
-		answer: 'Một hệ thống mạng (network)',
-	},
-	{
-		lesson: 8,
-		question:
-			'Để ngăn tấn công DoS, một quản trị mạng chặn nguồn IP với tường lửa, nhưng tấn công vẫn tiếp diễn. Điều gì có khả năng xảy ra nhất ?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 8,
-		question:
-			'Lớp nào trong mô hình tham chiếu OSI đáp ứng việc thực thi các ứng dụng sau khi nhận đẩy đủ các bản tin từ bên gửi trong việc truyền thông giữa 2 bên?',
-		answer: 'Ứng dụng',
-	},
-	{
-		lesson: 8,
-		question:
-			'Khi giả quyết vấn đề kết nối trên mạng Ethernet. Bằng cách nào để kiểm tra một địa chỉ IP được gán như một thiết bị router?',
-		answer: 'Kiểm tra địa chỉ IP trong bảng ARP',
-	},
-	{
-		lesson: 8,
-		question:
-			'Tính năng bảo mật nào có thể được sử dụng đối với một máy trạm quay số truy cập từ xa sử dụng một username và mật khẩu ?',
-		answer: 'Mã hóa số điện thoại',
-	},
-	{
-		lesson: 8,
-		question:
-			'Cài đặt Windows 2012 trên máy ảo (VMWare) thì yêu cầu phần cứng như thế nào?',
-		answer: 'Tất cả các yếu tố trên',
-	},
-	{
-		lesson: 8,
-		question:
-			'Hãy xác định một thành phần dưới đây không phải là thành phần trong cấu trúc logic của AD.',
-		answer: 'Site',
-	},
-	{
-		lesson: 8,
-		question: 'Lệnh nào được sử dụng để kiểm tra một kết nối Telnet?',
-		answer: 'Show session',
-	},
-	{
-		lesson: 8,
-		question:
-			'Thông số nào ảnh hưởng tới việc lựa chọn một tuyến đường khi có nhiều bộ giao thức cùng có một tuyến đường tới 1 đích',
-		answer: 'Administrative distance',
-	},
-	{
-		lesson: 8,
-		question: 'Chương trình nào sau đây thường ít dùng trên VMWare:',
-		answer: 'Vmware Store',
-	},
-	{
-		lesson: 8,
-		question: 'Windows Hyper-V server là',
-		answer:
-			'Bản Hyper-V độc lập có thể được cài đặt trực tiếp trên phần cứng vật lý mà không cần Host OS',
-	},
-	{
-		lesson: 8,
-		question: 'Ảo hóa Hyper-V là:',
-		answer:
-			'Hyper-V là công nghệ ảo hóa server của microsoft được tích hợp sẵn trong Win 10',
-	},
-	{
-		lesson: 8,
-		question: 'Dịch vụ DNS Server có chức năng chính là gì?',
-		answer: 'Phân giải tên miền từ IP sang tên và ngược lại',
-	},
-	{
-		lesson: 8,
-		question:
-			'Bạn là người quản trị mạng trong công ty, công ty yêu cầu bạn cài đặt dịch vụ DHCP server để cấp IP cho các máy khác trong mạng. Trước khi cài đặt Dịch vụ DHCP trên Windows 2003 Server, bạn cần thiết lập các thành phần nào sau đây?',
-		answer: 'Địa chỉ IP tĩnh, subnet mask, default gateway và DNS',
-	},
-	{
-		lesson: 8,
-		question: 'Công nghệ ảo hóa VMWare và Hyper-V :',
-		answer:
-			'Hyper –V chỉ tích hợp trên Windows, còn VMWare thì tích hợp ở các hệ điều hành',
-	},
-	{
-		lesson: 8,
-		question:
-			'Khi công ty mua 1 domain name (tên miền) có dạng : tencongty.com thì địa chỉ email có dạng:',
-		answer: 'tennhanvien@tencongty.com',
-	},
-	{
-		lesson: 8,
-		question:
-			'Các giao thức nào sau đây làm việc trên lớp IP để bảo vệ thông tin IP trên mạng ?',
-		answer: 'IPSec',
-	},
-	{
-		lesson: 8,
-		question:
-			'Thiết bị router sẽ xử lý một gói tin đi tới router thế nào nếu nó không tìm thấy tuyến đường đích trong bảng định tuyến',
-		answer: 'Router sẽ loại bỏ gói tin',
-	},
-	{
-		lesson: 8,
-		question: 'Thuật ngữ nào sau đây liên quan đến miền',
-		answer: 'NTDS',
-	},
-	{
-		lesson: 8,
-		question:
-			'Hệ điều hành chủ (host OS): Hyper-V chỉ có thể được triển khai trên các nền tảng Windows sau:',
-		answer: 'Windows Desktop và Windows Server',
-	},
-	{
-		lesson: 8,
-		question:
-			'Bạn là người quản trị mạng cho một công ty, công ty bạn sử dụng 3 netID khác nhau, bạn làm thế nào để 3 netID này có thể truy xuất dữ liệu qua lại với nhau?',
-		answer: 'Trong hệ thống mạng cấu hình 3 server Routing and Remote Access',
-	},
-	{
-		lesson: 8,
-		question:
-			'Giao thức nào giúp người dùng có thể truy cập vào hộp thư và download thư về máy tính của mình:',
-		answer: 'SMTP',
-	},
-	{
-		lesson: 6,
-		question: 'Cái nào là tiền tố cho view thực thi chức năng?',
-		answer: 'V$',
-	},
-	{
-		lesson: 6,
-		question: 'Cái nào mđề ko phù hợp trong câu lệnh CREATE DATABASE?',
-		answer: 'MAXLOGGROUPS',
-	},
-	{
-		lesson: 6,
-		question:
-			'Là những thay đổi đối với cấu hình CSDL sẽ được thực hiện xuyên suốt qtrình shtdown và startup.',
-		answer: 'MOVE',
-	},
-	{
-		lesson: 6,
-		question:
-			'Khi một table được cập nhật, segment nào lưu lại thông tin cũ (cái mà được sử dụng để khôi phục lại dữ liệu)?',
-		answer: 'Rollback segment',
-	},
-	{
-		lesson: 6,
-		question: 'Đối tượng CSDL nào sau đây bao gồm nhiều hơn một segment?',
-		answer: 'Partitioned table',
-	},
-	{
-		lesson: 6,
-		question:
-			'Gía trị tham số nào được dùng để thiết lập đường dẫn thư mục nơi mà tập tin báo lỗi (alert log file) được ghi ra?',
-		answer: 'BACKGROUND_DUMP_DEST',
-	},
-	{
-		lesson: 6,
-		question:
-			'Cho một quan hệ cơ sơ dữ liệu HANG(MA_HANG, TEN_HANG, LOAI, NHACC, GIA). \nĐể xoá bỏ một mặt hàng có mã hàng là TV01 thì câu lệnh SQL nào sau đây được dùng?',
-		answer: 'DELETE From HANG where MA_HANG="TV01"',
-	},
-	{
-		lesson: 6,
-		question:
-			'Câu lệnh SQL nào sau đây dùng để chỉ loại bỏ dữ liệu từ bảng có tên STUDENT trong khi để lại nguyên vẹn cấu trúc bảng? COMMIT TRANSACTION',
-		answer: 'MOVE TABLE STUDENT',
-	},
-	{
-		lesson: 6,
-		question:
-			'Thủ tục hệ thống nào sau đây cho phép liệt kê tất cả các cơ sở dữ liệu bên trong server',
-		answer: 'Sp_databases',
-	},
-	{
-		lesson: 6,
-		question:
-			'Hãy chọn phương án đúng ứng với quy trình truy xuất lấy dữ liệu từ CSDL:',
-		answer:
-			'Datasource-> DataAdapter-> Connection->DataSet->WebForm/Windows Form',
-	},
-	{
-		lesson: 6,
-		question:
-			'Lệnh dùng để tạo 1 CSDL có giá trị chỉ đọc? (chọn đáp án đúng nhất)?',
-		answer: 'STARTUP MOUNT; ALTER DATABASE OPEN READ ONLY',
-	},
-	{
-		lesson: 6,
-		question:
-			'UPDATE products SET Price=Price+Price*0.1 WHERE Price BETWEEN 60 AND 70. Kết quả câu lệnh SQL trên là:',
-		answer:
-			'Tăng 10% giá (Price) trong bảng Products, cho những sản phẩm có giá từ 60 đến 70',
-	},
-	{
-		lesson: 6,
-		question:
-			'Phương thức ExcuteScalar() của đối tượng qlCommand có ý nghĩa như thế nào?',
-		answer:
-			'Với trường hợp phát biểu dạng select, phương thức sẽ trả về một giá trả kiểu object tương ứng với giá trả của cột và hàng đầu tiên',
-	},
-	{
-		lesson: 6,
-		question:
-			'Quá trình lập trình truy xuất CSDL có thể bao gồm các công việc theo thứ tự nào?',
-		answer:
-			'Kết nối đến CSDL; Thực hiện lấy dữ liệu để hiển thị hoặc Thực hiện việc xử lý dạng thêm, sửa, xóa',
-	},
-	{
-		lesson: 6,
-		question:
-			'Tính năng mới nào của Oracle cho phép nhiều user xem nội dung của table tại 1 số điểm trong quá khứ?',
-		answer: 'Oracle Flashback',
-	},
-	{
-		lesson: 6,
-		question:
-			'Anh (chị) xin vui lòng cho biết: Bằng cách nào bạn làm 1CSDL chỉ đọc?(chọn đáp án đúng nhất)?',
-		answer: 'STARTUP MOUNT; ALTER DATABASE OPEN READ ONLY',
-	},
-	{
-		lesson: 6,
-		question:
-			'Cho một quan hệ cơ sơ dữ liệu HANG(MA_HANG, TEN_HANG, LOAI, NHACC, GIA). Để chèn thêm mọt mặt hàng là: TV01, Tivi, 21 inc, Sony, 300. Thì câu lệnh SQL nào sau đây đúng?',
-		answer: 'Insert into HANG values(“TV01”, “Tivi”, “21 inc”, “Sony”,300).',
-	},
-	{
-		lesson: 6,
-		question: 'Câu lệnh SQL nào sau đây dùng để tạo Database mới trong SQL?',
-		answer: 'CREATE DATABASE',
-	},
-	{
-		lesson: 6,
-		question:
-			'Tùy chọn SHUTDOWN nào yêu cầu phục hồi instance khi CSDL được khởi động lần tiếp theo?',
-		answer: 'None of the above',
-	},
-	{
-		lesson: 6,
-		question:
-			'The Secure Application Role feature trong Oracle cho phép 1 user xác thực các đặc quyền bằng việc nào sau đây?',
-		answer: 'Gọi 1 stored procedure.',
-	},
-	{
-		lesson: 6,
-		question:
-			'Anh (chị) xin vui lòng cho biết: Tùy chọn SHUTDOWN nào sẽ đợi user hoàn thành các transaction chưa được commit của họ?',
-		answer: 'SHUTDOWN TRANSACTIONAL',
-	},
-	{
-		lesson: 6,
-		question:
-			'Câu lệnh nào sẽ “bounce” CSDL, có nghĩa là tắt CSDL và khởi động CSDL trong 1câu lệng duy nhất?',
-		answer: 'SHUTDOWN FORCE',
-	},
-	{
-		lesson: 6,
-		question:
-			'Tùy chọn nào sau đây không thể được thực hiện online mà không có bất kì gián đoạn nào để thực hiện liên tục trong giao dịch trực tuyến?',
-		answer: 'Dropping a user-defined column',
-	},
-	{
-		lesson: 6,
-		question:
-			'Cho một quan hệ cơ sơ dữ liệu HANG(MA_HANG, TEN_HANG, LOAI, NHACC, GIA). Để xoá bỏ một mặt hàng có mã hàng là TV01 thì câu lệnh SQL nào sau đây được dùng?',
-		answer: 'Delete From HANG Where MA_HANG=“TV01”.',
-	},
-	{
-		lesson: 6,
-		question: 'Ở bước nào trong việc khởi động CSDL thì control file được mở?',
-		answer: 'Database mounted',
-	},
-	{
-		lesson: 6,
-		question:
-			'Nếu bạn đang update 1dòng trong table dùng ROWID trong mệnh đề WHERE( giả sử rằng dòng đó khôngcó sẵn trong buffer cache), If you are updating one row in a table using the ROWID in the WHERE clause (assume that the row is not already in the buffer cache), số lượng nhỏ nhất của thông tin được đọc trong CSDL buffer cache là gì?',
-		answer: 'Khối được copy tới CSDL buffer cache.',
-	},
-	{
-		lesson: 6,
-		question:
-			'Mệnh đề nào trong câu lệnh ALTER TABLE mà bạn dùng để tổ chức lại table?',
-		answer: 'MOVE',
-	},
-	{
-		lesson: 6,
-		question:
-			'Để sử dụng HĐH xác thực kết nối CSDL như là Admin, gía trị nào của tham số REMOTE_LOGIN_PASSWORDFILE được thiết lập?',
-		answer: 'NONE',
-	},
-	{
-		lesson: 6,
-		question:
-			'Bạn là nhà quản trị CSDL SQL. Bạn đang phát triển 1 ứng dụng DB cho phòng kế toán của bạn. Ứng dụng này chứa nhiều modules được tích hợp nhau. Các user thường gặp phải dealock bất kỳ lúc nòa một người nào đó thực hiện 1 hàm mà nó cần tích hợp từ nhiều module. Làm thế nào để giảm thiểu các deadlock này?',
-		answer:
-			'Bạn cần phải bảo đảm là tất cả các transaction chỉnh sửa dữ liệu các bảng phải theo cùng 1 thứ tự',
-	},
-	{
-		lesson: 6,
-		question:
-			'Xử lý hậu cảnh nào chịu trách nhiệm cho việc ghi 1 dirty buffer trong file CSDL?',
-		answer: 'DBWn',
-	},
-	{
-		lesson: 6,
-		question:
-			'Bằng cách nào bạn làm một CSDL chỉ đọc? (chọn đáp án đúng nhất)?',
-		answer: 'STARTUP MOUNT; ALTER DATABASE OPEN READ ONLY',
-	},
-	{
-		lesson: 6,
-		question: 'Role nào được khởi tạo mặc định cho admin CSDL?',
-		answer: 'DBA',
-	},
-	{
-		lesson: 6,
-		question: 'Thành phần nào sau đây không là 1 phần của Oracle instance?',
-		answer: 'Control file',
-	},
-	{
-		lesson: 6,
-		question:
-			'Hãy cho biết đối tượng nào trong các đối tượng sau là đối tượng kết nối?',
-		answer: 'SqlConnection',
-	},
-	{
-		lesson: 6,
-		question:
-			'Phát biểu nào sau đây không là thuận lợi của việc có TĐDL trong redo log file khi dùng LogMiner cho DML và DDL activity?',
-		answer:
-			'Khối xấu (hư hỏng) trong 1 trong những redo log sẽ làm ngưng LogMiner Analysis với các TĐDL tĩnh.',
-	},
-	{
-		lesson: 6,
-		question: 'Câu lệnh nào sau đây là 1 tùy chọn khởi động CSDL không hợp lệ?',
-		answer: 'STARTUP NORMAL',
-	},
-	{
-		lesson: 6,
-		question: 'Tham số nào của ORAPWD là không bắt buộc?',
-		answer: 'ENTRIES',
-	},
-	{
-		lesson: 6,
-		question: 'Nhận định sau là đúng với SPFILEs.',
-		answer:
-			'Thay đổi được thực hiện trong SPFILE với câu lệnh ALTER SYSTEM có thể thay đổi đồng thời với thay đổi của bộ nhớ bản sao các tham số.',
-	},
-	{
-		lesson: 6,
-		question:
-			'Số lượng tối đa của database writer processes cho phép trong Oracle instance?',
-		answer: '10',
-	},
-	{
-		lesson: 6,
-		question:
-			'Phát biểu nào dưới đây là đúng về tính năng nâng cao để chia sẻ các câu lệnh SQL trong shared pool?',
-		answer:
-			'Thậm chí nếu chỉ có 1 sự khác nhau trong câu lệnh SQL là trong gía trị kí tự, câu lệnh SQL có thể khôngđược tái sử dụng nếu số liệu thống kê trong qúa khứ bị xuyên tạc cho cột trong mệnh đề WHERE.',
-	},
-	{
-		lesson: 6,
-		question: 'Cái nào sau đây không là 1 phần của CSDL buffer pool?',
-		answer: 'LIBRARY',
-	},
-	{
-		lesson: 6,
-		question: 'Mô tả nào sau đây là đúng nhất về Real Application Cluster?',
-		answer: '1 CSDL, nhiều instance.',
-	},
-	{
-		lesson: 6,
-		question:
-			'Julie, 1 trong các nhà phân tích CSDL, đang phàn nàn các vấn tin của cô ấy tốn nhiều thời gian để hoàn thành, mặc dù xuất ra kết quả đúng. DBA nghi ngờ rằng kích thước của buffer cache không đúng và là nguyên nhân trì hoãn do đó các khối DL khôngcó sẵn trong bộ nhớ. Tham số khởi tạo nào DBA có thể sử dụng để giám sát cách dùng của buffer cache?',
-		answer: 'DB_CACHE_ADVICE',
-	},
-	{
-		lesson: 6,
-		question:
-			'Đâu là lợi ích chính của việc sdụng SPFILE để duy trì tập tin tham số?',
-		answer:
-			'Là những thay đổi đối với cấu hình CSDL sẽ được thực hiện xuyên suốt qtrình shtdown và startup.',
-	},
-	{
-		lesson: 6,
-		question:
-			'Một lược đồ cơ sở dữ liệu về hàng hoá gồm có 2 quan hệ sau: HANG{MA_HANG, TEN_HANG, LOAI_HANG, SL_TON}. BAN{TEN_KH,MA_HANG, SL_BAN, NGAY_BAN}. Để hiện dữ liệu gồm TEN_HANG va HANG_TON trong đó HANG_TON = SL_TON – SL_BAN. Thì câu lệnh SQL nào sau đây được dùng?',
-		answer:
-			'Select HANG.TEN_HANG, HANG.SL_TON – BAN.SL_BAN as HANG_TON From HANG, BAN Where HANG.MA_HANG = BAN.MA_HANG.',
-	},
-	{
-		lesson: 6,
-		question:
-			'Xử lí hậu cảnh nào khôngđược khởi tạo mặc định khi khởi tạo 1 instance?',
-		answer: 'ARCn',
-	},
-	{
-		lesson: 6,
-		question:
-			'Tham số khởi tạo nào KHÔNG quyết định kích thước của buffer cache?',
-		answer: 'DB_BLOCK_SIZE',
-	},
-	{
-		lesson: 6,
-		question: 'Thành phần nào của SGA có cache từ điển?',
-		answer: 'Shared pool',
-	},
-	{
-		lesson: 6,
-		question:
-			'Điều gì xảy ra tiếp theo khi tiến trình server không thể tìm đủ free buffer để copy các khối từ ổ đĩa?',
-		answer: 'Signals the DBWn process to write the dirty buffers to disk',
-	},
-	{
-		lesson: 6,
-		question: 'Thông tin nào có sẵn trong tập tin alert (Alert log files )?',
-		answer: 'Chặn các khối bị lỗi.',
-	},
-	{
-		lesson: 9,
-		question: 'Khâu cuối cùng của quá trình xử lý yêu cầu dịch vụ là:',
-		answer: 'Request Handler',
-	},
-	{
-		lesson: 9,
-		question: 'Trung tâm điều hành CNTT và VNPT IT có nhiệm vụ và quyền hạn…',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Đơn vị chịu trách nhiệm kinh doanh bán hàng, và tiếp nhận yêu cầu dịch vụ từ khách hàng là:',
-		answer: 'VNPT VinaPhone',
-	},
-	{
-		lesson: 9,
-		question:
-			'Tổng công ty VNPT NET là đơn vị quản lý và điều hành cấp cao nhất đối với các hệ thống CNTT của Tập đoàn đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 9,
-		question: 'Nội dung cơ bản trong báo cáo định kỳ gồm',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Loại phiếu nào là yêu cầu cung cấp dịch vụ CNTT từ khách hàng với các dịch vụ có sẵn trong danh mục dịch vụ?',
-		answer: 'Phiếu yêu cầu triển khai dịch vụ',
-	},
-	{
-		lesson: 9,
-		question:
-			'Đơn vị nào phụ trách việc tiếp nhận vấn đề yêu cầu sửa đổi, bổ sung, nâng cấp đột xuất từ khách hàng',
-		answer: 'Trung tâm điều hành CNTT/VNPT-IT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Khi xảy ra sự cố, cán bộ kỹ thuật vận hành khai thác có trách nhiệm xử lý và thông báo ngay cho',
-		answer:
-			'Trung tâm Điều hành CNTT/VNPT-IT và các đơn vị liên quan để điều hành xử lý, hỗ trợ khắc phục',
-	},
-	{
-		lesson: 9,
-		question: 'Đối với sự cố nghiêm trọng, VNPT IT gửi báo cáo chi tiết đến',
-		answer: 'Lãnh đạo Tập đoàn (đồng gửi Ban Công nghệ, Ban Chất lượng).',
-	},
-	{
-		lesson: 9,
-		question:
-			'Theo quyết định 290, có bao nhiêu loại phiếu yêu cầu dịch vụ cần xử lý trong quá trình cung cấp dịch vụ và hỗ trợ khách hàng sử dụng dịch vụ?',
-		answer: '05 loại phiếu',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trung tâm điều hành CNTT/VNPT-IT, chủ trì giám sát toàn trình các dịch vụ CNTT đang hoạt động và chất lượng dịch vụ?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 9,
-		question: 'Sau khi kiểm tra, nếu lỗi thiết bị phần cứng chúng ta xử lý',
-		answer:
-			'Cách lý thiết bị lỗi, tổ chức sửa chữa, thay thế kích hoạt thiết bị',
-	},
-	{
-		lesson: 9,
-		question:
-			'Giai đoạn chiến lược dịch vụ trong vòng đời dịch vụ CNTT ở ITIL version 3 được chia làm bao nhiêu tiến trình?',
-		answer: '5 tiến trình',
-	},
-	{
-		lesson: 9,
-		question:
-			'Mô hình quản lý Service Desk của các công ty là khác nhau. Đúng hay Sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'TT điều hành CNTT/VNPT-IT phải thực hiện việc tổ chức đánh giá, kiểm tra, kiểm định chất lượng hạ tầng sau khi thực hiện hòa mạng, chuyển, nâng cấp hệ thống. Đúng hay sai',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 9,
-		question: 'An toàn thông tin bao gồm các hoạt động:',
-		answer: 'Quản lý, nghiệp vụ và kỹ thuật đối với hệ thống thông tin',
-	},
-	{
-		lesson: 9,
-		question:
-			'Sau khi nhận được thông tin về sự cố, đơn vị nào sẽ thực hiện sơ bộ chẩn đoán sự cố, mở phiếu báo sự cố, nhập các thông tin cần thiết phục vụ công tác xử lý sự cố để gửi các đơn vị liên quan xử lý',
-		answer: 'TT Điều hành IT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trung tâm điều hành CNTT/VNPT-IT phối hợp cùng với các Trung tâm giải pháp lập kế hoạch, phương án bảo trì hoặc nâng cấp định kỳ các sản phẩm, dịch vụ CNTT. Sau đó …',
-		answer: 'Thông báo, gửi cho các TCT ty, các VNPT TTP, các đơn vị liên quan',
-	},
-	{
-		lesson: 9,
-		question:
-			'Service Desk là điểm tiếp xúc duy nhất cho người dùng dịch vụ CNTT trong hoạt động hàng ngày. Đúng hay Sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Tập đoàn chỉ đạo toàn bộ mọi hoạt động của công tác Điều hành CNTT. Đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 9,
-		question: 'Sau khi đánh giá thay đổi dịch vụ, cần phân loại việc thay đổi:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Để thay đổi tài nguyên hạ tầng, Trung tâm điều hành CNTT/VNPT-IT cần phải thực hiện:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Theo số liệu khảo sát vào năm 2017 của Forbes, có bao nhiêu % doanh nghiệp trên thế giới sử dụng công cụ ITIL?',
-		answer: '47%',
-	},
-	{
-		lesson: 9,
-		question: 'Đơn vị tham gia trong chức năng quản lý ứng dụng là:',
-		answer: 'VNPT - IT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Hoạt động của hệ thống CNTT cung cấp cho khách hàng bị gián đoạn trên phạm vi toàn quốc hoặc cục bộ trên phạm vi từ 02 tỉnh thành phố trở lên',
-		answer: 'Là một trong những trường hợp của sự cố nghiêm trọng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Các Tổng Công ty Vinaphone, Media, NET, các VNPT TTP chịu trách nhiệm gì trong việc điều hành thông tin?',
-		answer:
-			'Xây dựng kế hoạch và phương án hòa mạng, chuyển hệ thống, nâng cấp hệ thống thuộc đơn vị, địa bàn quản lý',
-	},
-	{
-		lesson: 9,
-		question:
-			'Ngay sau khi sự cố nghiêm trọng được cập nhật lên hệ thống điều hành tập trung hoặc qua các kênh nóng, TT điều hành CNTT/VNPT-IT cần:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Việc cung cấp và triển khai dịch vụ CNTT, hỗ trợ tiếp nhận yêu cầu của người dùng tại VNPT được chia trách nhiệm cho bao nhiêu đươn vị?',
-		answer: '3 đơn vị',
-	},
-	{
-		lesson: 9,
-		question:
-			'Đơn vị phát triển sản phẩm dịch vụ mới và tiếp nhận xử lý các yêu cầu cải tiến liên tục dịch vụ, là:',
-		answer: 'VNPT - IT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Một trong những lợi ích mà service desk mang lại cho doanh nghiệp là:',
-		answer:
-			'Giảm thời gian xử lý cho các yêu cầu từ khách hàng hoặc người dùng cuối',
-	},
-	{
-		lesson: 9,
-		question:
-			'Giám sát sử dụng dung lượng hạ tầng CNTT, điều chuyển thiết bị và Quản lý, điều động thiết bị dự phòng tập trung. Đây là một trong những nhiệm vụ và trách nhiệm của TT điều hành CNTT và VNPT IT đúng hay sai',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 9,
-		question: 'Lợi ích của ITIL đối với doanh nghiệp là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Chủ trì thực hiện cấp 2 đối với phiếu service request cho đối tượng khách hàng địa phương là:',
-		answer: 'VNPT TTP',
-	},
-	{
-		lesson: 9,
-		question:
-			'Điền vào dấu "…" : VNPT Media chịu trách nhiệm … trong việc điều hành CNTT',
-		answer:
-			'Tiếp nhận các phản ánh của khách hàng về các, yêu cầu dịch vụ, sự cố CNTT và cập nhật lên hệ thống điều hành tập trung của Tập đoàn',
-	},
-	{
-		lesson: 9,
-		question:
-			'Thời gian tối đa xử lý yêu cầu cung cấp dịch vụ nhóm B từ khi nhận được yêu cầu cho đến khi thực hiện các thủ tục nghiệm thu là bao nhiêu ngày?',
-		answer: '30 ngày',
-	},
-	{
-		lesson: 9,
-		question:
-			'Để thay đổi tài nguyên hạ tầng, TT điều hành CNTT/VNPT-IT cần phối hợp với:',
-		answer:
-			'Các Ban chức năng của Công ty VNPT IT, các Trung tâm giải pháp, các TT IT khu vực, các Tổng Công ty Vinaphone, Media, NET, các VNPT TTP',
-	},
-	{
-		lesson: 9,
-		question:
-			'Sự cố xảy ra đối với Sản phẩm, dịch vụ CNTT thuộc danh mục trọng điểm được xác định của Tập đoàn là…',
-		answer: 'Sự cố nghiêm trọng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Chức năng quản lý ứng dụng chỉ được thực hiện cho phần mềm tự phát triển. Đúng hay Sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 9,
-		question:
-			'Chủ trì thực hiện đối với phiếu service order cho đối tượng khách hàng TW là đơn vị nào?',
-		answer: 'Trung tâm điều hành IT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Sau khi phân tích nguyên nhân suy giảm chất lượng dịch vụ. Nếu không có giải pháp xử lý sau thời gian 30 phút sẽ chuyển…',
-		answer: 'Yêu cầu lên Ban Chất lượng Sản phẩm',
-	},
-	{
-		lesson: 9,
-		question:
-			'Triển khai các biện pháp an toàn cho hạ tầng CNTT thụ động, đàm bảo điều kiện hoạt động của thiết bị hạ tầng\n CNTT theo quy định. Đây là công việc của Trung tâm Điều hành IT ?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 9,
-		question:
-			'Đảm bảo độ ổn định hoạt động các hệ thống CNTT của đơn vị trực tiếp quản lý, những hệ thống CNTT đặt tại \nhạ tầng của khách hàng thuộc phạm vi trực tiếp quản lý của các VTT/TP. Đây KHÔNG PHẢI là nhiệm vụ quyền \nhạn của các Tổng công ty, VNPT T/TP trong công tác điều hành thông tin?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 9,
-		question:
-			'Điều khoản thi hành trong công tác điều hành CNTT cũng quy định rõ về trách nhiệm của VNPT tỉnh/thành, \nVNPT Net, VNPT VinaPhone, VNPT Media, VNPT-IT',
-		answer: 'Tất cả các đáp án đều sai',
-	},
-	{
-		lesson: 9,
-		question:
-			'Sau khi phân tích nguyên nhân suy giảm chất lượng dịch vụ. Nếu có giải pháp xử lý được ngay sẽ chuyển…',
-		answer:
-			'TT Điều hành, TT ITKV, TT GPCN, TT IDC để khôi phục chất lượng dịch vụ',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trung tâm điều hành CNTT/VNPT-IT phối hợp cùng với các Trung tâm giải pháp lập kế hoạch, phương án bảo trì hoặc nâng \ncấp định kỳ các sản phẩm, dịch vụ CNTT. Sau đó …',
-		answer: 'Thông báo, gửi cho các TCT ty, các VNPT TTP, các đơn vị liên quan',
-	},
-	{
-		lesson: 9,
-		question:
-			'Phối hợp với các đơn vị liên quan triển khai sử dụng chung hạ tầng CNTT thụ động đặc biệt là phối hợp hỗ trợ đảm bảo \nnguồn điện, hệ thống điều hòa tại các IDC, phòng máy dùng chung để tiết giảm chi phí',
-		answer: 'Đây là trách nhiệm của đơn vị quản lý hạ tầng CNTT thụ động',
-	},
-	{
-		lesson: 9,
-		question:
-			'Rà soát hạ tầng, tập hợp các thiết bị hạ tầng đưa ra khỏi hệ thống thẩm định, trình phương án xử lý tái sử dụng, phù hợp đảm bảo khai thác hiệu quả hạ tầng.',
-		answer: 'Đây là công việc của tối ưu hạ tầng và điều chuyển thiết bị',
-	},
-	{
-		lesson: 9,
-		question: 'Hình thức kiểm tra điều hành CNTT',
-		answer: 'Định kỳ 6 tháng/1 lần',
-	},
-	{
-		lesson: 9,
-		question: 'Trách nhiệm của cán bộ sau khi kiểm tra CNTT',
-		answer:
-			'Phải lập biên bản ghi nhận kết quả kiểm tra, nhận xét ưu khuyết điểm, nguyên nhân và đề xuất biện pháp giải quyết, xử lý.',
-	},
-	{
-		lesson: 9,
-		question:
-			'Đơn vị chức năng gồm các nhân viên chịu trách nhiệm xử lý các hoạt động liên quan đến dịch vụ, thường được thực hiện\n qua các cuộc gọi điện thoại, giao diện web hoặc các cảnh báo tự động từ hạ tầng, là:',
-		answer: 'Service Desk',
-	},
-	{
-		lesson: 9,
-		question:
-			'Thời gian thỏa thuận mức hoạt động (OLA) xử lý yêu cầu lần đầu tiên đối với yêu cầu hỗ trợ dịch vụ do khách hàng yêu cầu là:',
-		answer: '10 giờ',
-	},
-	{
-		lesson: 9,
-		question:
-			'Rà soát hạ tầng, tập hợp các thiết bị hạ tầng đưa ra khỏi hệ thống thẩm định, trình phương án xử lý tái sử dụng, phù hợp đảm bảo khai thác hiệu quả hạ tầng.',
-		answer:
-			'Chủ trì thực hiện đối với phiếu service order cho đối tượng khách hàng TW là đơn vị nào?',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trực tiếp khai thác và phân quyền cho các Trung tâm giải pháp chuyên ngành, IT khu vực, Trung tâm CNTT Tỉnh thành phố và các đầu mối liên quan thuộc Tập đoàn tham gia khai thác các hệ thống quản lý giám sát CNTT tập trung.',
-		answer: 'Đây là công việc của Trung tâm Điều hành IT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Triển khai các biện pháp an toàn cho hạ tầng CNTT thụ động, đàm bảo điều kiện hoạt động của thiết bị hạ tầng CNTT theo quy định. Đây là công việc của Trung tâm Điều hành IT ?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 9,
-		question:
-			'Khi nhận được thông tin về sự cố thông thường xảy ra, Trung tâm điều hành CNTT/VNPT-IT cập nhật thông tin xử lý định kỳ ...',
-		answer: '30 phút/lần.',
-	},
-	{
-		lesson: 9,
-		question:
-			'Theo số liệu khảo sát vào năm 2017 của Forbes, có bao nhiêu % doanh nghiệp trên thế giới sử dụng công cụ eTOM?',
-		answer: '36%',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trong chức năng Service Desk, đơn vị đóng vai trò tiếp nhận yêu cầu là:',
-		answer: 'VNPT VNP',
-	},
-	{
-		lesson: 9,
-		question: 'Kích cỡ. Vị trí của Service Desk phụ thuộc vào:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 9,
-		question: 'Chức năng quản lý vận hành chịu trách nhiệm:',
-		answer: 'Quản lý và duy trì hạ tầng CNTT của doanh nghiệp',
-	},
-	{
-		lesson: 9,
-		question:
-			'Đảm bảo độ ổn định hoạt động các hệ thống CNTT của đơn vị trực tiếp quản lý, những hệ thống CNTT đặt tại hạ tầng của khách hàng thuộc phạm vi trực tiếp quản lý của các VTT/TP. Đây KHÔNG PHẢI là nhiệm vụ quyền hạn của các Tổng công ty, VNPT T/TP trong công tác điều hành thông tin?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 9,
-		question: 'Đơn vị tham gia trong chức năng quản lý vận hành là:',
-		answer: 'VNPT - IT và VTT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trung tâm Điều hành CNTT/VNPT IT xây dựng bộ phận chuyên trách nhằm',
-		answer:
-			'Theo dõi, giám sát, tiếp nhận, phân tích, đánh giá và chỉ đạo xử lý các sự cố và các vấn đề về an toàn thông tin 24/7.',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trung tâm Điều hành CNTT/VNPT-IT và Trung tâm IT khu vực, viễn thông tỉnh có trách nhiệm về việc bão dưỡng như:',
-		answer:
-			'Lưu giữ số liệu đo kiểm ít nhất 01 năm để theo dõi và phục vụ công tác quản lý chất lượng hạ tầng',
-	},
-	{
-		lesson: 9,
-		question: 'Đầu vào của quy trình tiếp nhận và xử lý yêu cầu dịch vụ là:',
-		answer: 'Phiếu yêu cầu dịch vụ từ các nguồn',
-	},
-	{
-		lesson: 9,
-		question:
-			'Các sự cố xảy ra đối với hệ thống CNTT cung cấp dịch vụ cho các cơ quan Đảng, Chính quyền địa phương có phạm vi ảnh hưởng mức độ toàn Quận/Huyện/ Sở ngành trong 01 tỉnh thành phố.',
-		answer: 'Là một trong những trường hợp của sự cố lớn',
-	},
-	{
-		lesson: 9,
-		question:
-			'Đơn vị chức năng gồm các nhân viên chịu trách nhiệm xử lý các hoạt động liên quan đến dịch vụ, thường được thực hiện qua các cuộc gọi điện thoại, giao diện web hoặc các cảnh báo tự động từ hạ tầng, là:',
-		answer: 'Service Desk',
-	},
-	{
-		lesson: 9,
-		question:
-			'Khi nhận được thông tin về sự cố nghiêm trọng xảy ra, TT điều hành CNTT/VNPT-IT cập nhật thông tin xử lý định kỳ ...',
-		answer: '20 phút/lần.',
-	},
-	{
-		lesson: 9,
-		question:
-			'Đơn vị nào được Tập đoàn ủy quyền, trực tiếp chỉ đạo và tổ chức thực hiện công tác Điều hành CNTT của Tập đoàn',
-		answer: 'Trung tâm điều hành CNTT/VNPT-IT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trung tâm điều hành CNTT/VNPT-IT xem xét cụ thể từng yêu cầu, khả năng và thời gian thực hiện sau đó thực hiện đánh giá, lập kế hoạch thực hiện đúng hay sai?',
-		answer: 'sai',
-	},
-	{
-		lesson: 9,
-		question:
-			'Điền vào chỗ trống: Trong trường hợp xử lý sự cố lớn vượt quá ... cần đưa về nguyên tắc mức sự cố nghiêm trọng để xử lý',
-		answer:
-			'Điền vào chỗ trống: Trong trường hợp xử lý sự cố lớn vượt quá ... cần đưa về nguyên tắc mức sự cố nghiêm trọng để xử lý',
-	},
-	{
-		lesson: 9,
-		question:
-			'Các Trung tâm giải pháp thực hiện đánh giá, lập kế hoạch thực hiện và thông báo lại cho Trung tâm điều hành CNTT/VNPT-IT để thông báo cho các đơn vị liên quan về việc nâng cấp các sản phẩm dịch vụ?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Các đơn vị thực hiện công việc bảo dưỡng phải thông báo cho đầu mối điều hành liên quan tối thiểu trước ... về kế hoạch thực hiện',
-		answer: '05 ngày',
-	},
-	{
-		lesson: 9,
-		question:
-			'Help Desk là phiên bản tinh vi và tiến bộ hơn Service Desk. Đúng hay Sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 9,
-		question:
-			'Điền vào chỗ trống: Trong trường hợp xử lý sự cố lớn vượt quá ... cần đưa về nguyên tắc mức sự cố nghiêm trọng để xử lý.',
-		answer: '4giờ',
-	},
-	{
-		lesson: 9,
-		question:
-			'Nhiệm vụ, quyền hạn của các Tổng công ty, VNPT T/TP trong công tác điều hành thông tin là:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Điều khoản thi hành trong công tác điều hành CNTT cũng quy định rõ về trách nhiệm của VNPT tỉnh/thành, VNPT Net, VNPT VinaPhone, VNPT Media, VNPT-IT',
-		answer: 'Tất cả các đáp án đều sai',
-	},
-	{
-		lesson: 9,
-		question:
-			'Vòng đời dịch vụ CNTT được ITIL version 3 chia làm mấy giai đoạn?',
-		answer: '5 giai đoạn',
-	},
-	{
-		lesson: 9,
-		question:
-			'Đảm bảo công tác quản trị, giám sát, vận hành, xử lý sự cố, nâng cao chất lượng, đảm bảo an toàn thông tin, bảo mật và, đảm bảo an toàn cho các hệ thống /phần tử liên quan đến Hệ thống CNTT. Là trách nhiệm của…',
-		answer: 'Công ty VNPT IT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trung tâm điều hành CNTT/VNPT-IT chủ trì điều hành các đơn vị thực hiện bảo trì, nâng cấp theo kế hoạch; và tổng hợp báo cáo kết quả thực hiện bảo trì, nâng cấp?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Thay đổi tiêu chuẩn đối với loại phiếu yêu cầu thay đổi dịch vụ là:',
-		answer:
-			'Thay đổi đã cho phép từ trước hoặc những thay đổi mang tính chất vận hành',
-	},
-	{
-		lesson: 9,
-		question:
-			'     Giám sát sử dụng dung lượng hạ tầng CNTT, điều chuyển thiết bị và Quản lý, điều động thiết bị dự phòng tập trung. Đây là một trong những nhiệm vụ và trách nhiệm của TT điều hành CNTT và VNPT IT đúng hay sai',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Nhiệm vụ của Trung tâm điều hành CNTT/VNPT-IT trong việc hòa mạng đưa dịch vụ CNTT mới vào hoạt động là',
-		answer:
-			'Tổ chức đánh giá, kiểm tra, kiểm định chất lượng các Platform sản phẩm, dịch vụ CNTT trước khi đưa vào triển khai cho khách hàng.',
-	},
-	{
-		lesson: 9,
-		question:
-			'     Tập đoàn chỉ đạo toàn bộ mọi hoạt động của công tác Điều hành CNTT. Đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 10,
-		question: 'Biến là gì?',
-		answer: 'Không là tên gọi của một vùng nhớ Một gía trị có thể thay đổi',
-	},
-	{
-		lesson: 10,
-		question:
-			'Nếu một tiến trình yêu cầu tài nguyên mà tài nguyên đang bị giữ bởi các tiến trình cũng đang ở trạng thái chờ khác được gọi là:',
-		answer: 'Deadlock',
-	},
-	{
-		lesson: 10,
-		question: 'Anh/chị cho biết Kiểm thử hệ thống (System testing) là',
-		answer:
-			'Kiểm thử các yêu cầu không chức năng của phần mềm như hiệu suất, bảo mật,…',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết đáp án đúng cho câu hỏi sau “Trong ngôn ngữ lập trình có cấu trúc, một biến được gọi là biến toàn cục nếu….”',
-		answer: 'Nó được khai báo ngoài tất cả các hàm, kể cả hàm main',
-	},
-	{
-		lesson: 10,
-		question:
-			'Cho biết kết quả sau khi đoạn mã sau đây thực thi int a=8; int b=3; float f = a ++ / b--; System.out.println(f);?',
-		answer: '3',
-	},
-	{
-		lesson: 10,
-		question: 'Cú pháp khai báo nào là sai?',
-		answer: 'if(){} else if () {} else() {};',
-	},
-	{
-		lesson: 10,
-		question: 'Cấu trúc dữ liệu nào tương ứng với LIFO',
-		answer: 'Stack',
-	},
-	{
-		lesson: 10,
-		question:
-			'Cái gì quyết định kích thước của vùng nhớ được cấp phát cho các biến:',
-		answer: 'Kiểu dữ liệu của biến',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết: Lập trình cấu trúc KHÔNG thể thực hiện việc nào trong các công việc dưới đây?',
-		answer: 'Xử lý đa luồng',
-	},
-	{
-		lesson: 10,
-		question:
-			'Đầu ra của chương trình dưới là gì? try { int x = 0; int y = 5 / x; } catch (Exception e) { System.out.println("Exception"); } catch (ArithmeticException ae) { System.out.println(" Arithmetic Exception"); } System.out.println("finished");?',
-		answer: 'Compilation fails.',
-	},
-	{
-		lesson: 10,
-		question: 'Sự khác nhau giữa GET và POST trong giao thức HTTP là gì?',
-		answer: 'GET gởi thông tin qua URL, POST chỉ được dùng trong form',
-	},
-	{
-		lesson: 10,
-		question: 'Định nghĩa nào là đúng với danh sách liên kết',
-		answer:
-			'Danh sách liên kết là tập hợp các phần tử mà giữa chúng có một sự nối kết với nhau thông qua vùng liên kết của chúng',
-	},
-	{
-		lesson: 10,
-		question: 'Một biến được gọi là biến toàn cục nếu:',
-		answer: 'Nó được khai báo ngoài tất cả các hàm kể cả hàm main()',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết Javascript là ngôn ngữ kịch bản có dấu được mã nguồn không?',
-		answer: 'Không dấu được, vì các kịch bản chạy ở phía client',
-	},
-	{
-		lesson: 10,
-		question: 'Ý nào sau đây là sai khi xử lý Exception?',
-		answer: 'Throw Exception nói chung chứ không throw Exception cụ thể',
-	},
-	{
-		lesson: 10,
-		question: 'Cú pháp khai báo vòng lặp nào là sai?',
-		answer: 'for (int i=10, j; i>j; i--);',
-	},
-	{
-		lesson: 10,
-		question: 'Anh chị cho biết đâu là đầu vào của thực hiện kiểm thử?',
-		answer: 'Software, Product,Test case, Test script, Test data',
-	},
-	{
-		lesson: 10,
-		question: 'Chọn câu đúng. Biến toàn cục?',
-		answer: 'Có ý nghĩa trong toàn chương trình',
-	},
-	{
-		lesson: 10,
-		question:
-			'Giả sử cần sắp xếp mảng M có N phần tử sau theo phương pháp sắp xếp chèn trực tiếp 11 16 12 75 51 54 5 73 36 52 98 Cần thực hiện ..................... chèn các phần tử vào dãy con đã có thứ tự tăng đứng đầu dãy M để sắp xếp mảng M có thứ tự tăng dần',
-		answer: '10 lần',
-	},
-	{
-		lesson: 10,
-		question: 'Cấu trúc dữ liệu mảng có các ưu điểm nào',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh chị hãy cho biết, trong lập trình hướng đối tượng cụ thể là java; để ngăn việc ghi đè một thuộc tính trong lớp thì sử dụng từ khóa nào ? public class Test { }',
-		answer: 'public Test()',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/chị cho biết đâu là khái niệm đúng về Tình huống kiểm định (Test-case)?',
-		answer:
-			'Tập hợp các yếu tố đầu vào, điều kiện thực hiện và kết quả mong muốn được xây dựng chot ừng trường hợp cụ thể',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết trong mô hình Client/Server 3 lớp gồm các lớp:Lớp khách (Clients), Lớp giao dịch (Business Tier), Lớp nguồn dữ liệu (Data Source). Liên kết giữa các lớp theo thứ tự nào?',
-		answer:
-			'Lớp khách (Clients) - Lớp giao dịch (Business Tier) - Lớp nguồn dữ liệu (Data Source)',
-	},
-	{
-		lesson: 10,
-		question: 'CSS là viết tắt của từ gì?',
-		answer: 'Cascading Style Sheets',
-	},
-	{
-		lesson: 10,
-		question: 'Biến con trỏ có thể chứa:',
-		answer: 'Địa chỉ vùng nhớ của một biến khác',
-	},
-	{
-		lesson: 10,
-		question: 'Lớp collections chuẩn được sử dụng cho mảng động?',
-		answer: 'ArrayList',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh chị hãy cho biết, nguyên tắc cơ bản trong thiết kế phần mềm hướng chức năng.',
-		answer: 'Tập trung vào các phương thức, xác các phương thức cần xây dựng',
-	},
-	{
-		lesson: 10,
-		question:
-			'Chọn câu đúng nhất để mô tả thuật toán sắp xếp nổi bọt (Bubble Sort) trên mảng M có N phần tử:',
-		answer:
-			'Đi từ cuối mảng về đầu mảng, trong quá trình đi nếu phần tử ở dưới (đứng phía sau) nhỏ hơn phần tử đứng ngay trên (trước) nó thì hai phần tử này sẽ được đổi chỗ cho nhau. Sau mỗi lần đi chúng ta đưa được một phần tử trồi lên đúng chỗ. Sau N–1 lần đi thì tất cả các phần tử trong mảng M sẽ có thứ tự tăng.',
-	},
-	{
-		lesson: 10,
-		question: 'Câu phát biểu nào sau đây đúng :',
-		answer: 'Một lớp là một định nghĩa trừu tượng của một đối tượng',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết, trong lập trình hướng đối tượng; “access modifier”nào cho phép các thuộc tính và phương thức được phép truy cập ngoài phạm vị object ?',
-		answer: 'public',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết đâu ngôn ngữ lập trình đóng vai trò lớn nhất trong giai đoạn nào của việc xây dựng phần mềm?',
-		answer: 'Cài đặt',
-	},
-	{
-		lesson: 10,
-		question:
-			'Hãy xem xét đoạn mã sau: class A { protected: int a, b; public: float F1, F2; private: string x, y; } class B: public A{...} Hỏi B sử dụng được các biến thành viên nào của A:',
-		answer: 'F1, F2, a, b',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết trong Javascript hàm parseInt() dùng để làm gì?',
-		answer: 'Chuyển một chuỗi thành số nguyên',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/chị cho biết đâu là nhiệm vụ CHÍNH của kế hoạch kiểm thử (Test Plan)',
-		answer: 'Lên kế hoạch phân tích kiểm thử và đưa ra các đầu việc',
-	},
-	{
-		lesson: 10,
-		question:
-			'Chọn câu lệnh cho kết quả tương đương với đoạn code dưới: boolean b = true; if ( b ) { x = y; } else { x = z; }?',
-		answer: 'x = b ? y : z',
-	},
-	{
-		lesson: 10,
-		question:
-			'Các thao tác xử lý việc người dùng bấm chuột vào một đối tượng được cài đặt trong phương thức nào dưới đây ?',
-		answer: 'onclick',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết đâu KHÔNG phải là từ khóa thể hiện phạm vi truy cập của Lớp (Class) trong lập trình hướng đối tượng?',
-		answer: 'Static',
-	},
-	{
-		lesson: 10,
-		question:
-			'Phát biểu đúng về kết quả thực hiện đoạn code sau: boolean flag = false; if (flag = true) { System.out.println("true"); } else { System.out.println("false"); }?',
-		answer: 'Đoạn code in "true" ra màn hình',
-	},
-	{
-		lesson: 10,
-		question: 'Lựa chọn định nghĩa về danh sách đúng nhất?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị cho biết: Để tổ chức các phần tử (elements) vào bên trong các nhóm (groups) ta sử dụng?',
-		answer: 'Package',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị cho biết một loại biểu đồ diễn tả sự phân rã dần dần các chức năng từ đại thể đến chi tiết được gọi là?',
-		answer: 'Biểu đồ phân cấp chức năng',
-	},
-	{
-		lesson: 10,
-		question:
-			'Đối với thuật toán sắp xếp chọn trực tiếp cho dãy các phần tử sau (10 pt) 16 60 2 25 15 45 5 30 33 20 Cần thực hiện ..................... chọn lựa phần tử nhỏ nhất để sắp xếp mảng M có thứ tự tăng dần.',
-		answer: '9 lần',
-	},
-	{
-		lesson: 10,
-		question: 'Một biến được gọi là biến địa phương nếu:',
-		answer: 'Nó được khai báo bên trong các hàm hoặc thủ tục, kể cả hàm main()',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết, trong ngôn ngữ lập trình JAVA, kiểu số nguyên Integer có kích thước bao nhiêu bit?',
-		answer: '16',
-	},
-	{
-		lesson: 10,
-		question: 'Cookie là một file nằm trên Client ?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết đâu không phải là đặc điểm của ngôn ngữ máy?',
-		answer: 'Dễ đọc, dễ hiểu.',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết một ngôn ngữ lập trình có những thành phần cơ bản nào?',
-		answer: 'Từ vựng, cú pháp và ngữ nghĩa.',
-	},
-	{
-		lesson: 10,
-		question:
-			'Cú pháp nào được sử dụng để thay đổi nội dung của một phần tử HTML dưới: <p id="message">This is a message</p>?',
-		answer: 'document.getElementById("message").innerHTML = "Hello World!";',
-	},
-	{
-		lesson: 10,
-		question: 'Javascript là ngôn ngữ kịch bản có thể dấu được mã nguồn?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 10,
-		question: 'Chọn định nghĩa đúng nhất về hàng đợi (Queue)?',
-		answer:
-			'Hàng đợi là một danh sách mà trong đó thao tác thêm 1 phần tử vào trong danh sách được thực hiện 1 đầu này và lấy 1 phần tử trong danh sách lại thực hiện bởi đầu kia.',
-	},
-	{
-		lesson: 10,
-		question: 'Anh/Chị hãy chọn khai báo đúng cho phương thức main()',
-		answer: 'Public static void main (String[] args)',
-	},
-	{
-		lesson: 10,
-		question: 'Trong lập trình thế nào gọi là hiện tượng nạp chồng?',
-		answer:
-			'Hiện tượng lớp con kế thừa định nghĩa một hàm hoàn toàn giống lớp cha',
-	},
-	{
-		lesson: 10,
-		question:
-			'Các tiêu chuẩn đánh giá cấu trúc dữ liệu. Để đánh giá một cấu trúc dữ liệu chúng ta thường dựa vào tiêu chí nào?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 10,
-		question:
-			'Đâu là cú pháp đúng của khai báo biến kiểu Object trong JavaScript?',
-		answer: 'var obj = {};',
-	},
-	{
-		lesson: 10,
-		question:
-			'Đáp án nào dưới đây là cấu trúc dữ liệu vào trước ra trước (Fist In First Out)?',
-		answer: 'Queue (hàng đợi)',
-	},
-	{
-		lesson: 10,
-		question: 'Chọn định nghĩa đúng nhất về hàng đợi (Queue)',
-		answer:
-			'Hàng đợi là một danh sách mà trong đó thao tác thêm 1 phần tử vào trong danh sách được thực hiện 1 đầu này và lấy 1 phần tử trong danh sách lại thực hiện bởi đầu kia',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy xem xét đoạn mã sau: class A { protected int a, b; public float f1, f2; } class B:public A { ... } Anh, chị hãy cho biết B sử dụng được các biến thành viên nào của A?',
-		answer: 'a, b, f1, f2',
-	},
-	{
-		lesson: 10,
-		question: 'Trong CSS thuộc tính nào để thay đổi kích cỡ chữ?',
-		answer: 'font-size',
-	},
-	{
-		lesson: 10,
-		question:
-			'Để kiểm tra unit test không cần thiết phải chuẩn bị trước tình huống (test case) hoặc kịch bản (script) test',
-		answer: 'Sai',
-	},
-	{
-		lesson: 10,
-		question: 'Trong HTTP, phương thức nào sau đây không có?',
-		answer: 'doPOST',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết: Trong các ngôn ngữ sau, ngôn ngữ nào KHÔNG phải ngôn ngữ lập trình hướng đối tượng?',
-		answer: 'C',
-	},
-	{
-		lesson: 10,
-		question:
-			'Tìm mô tả đúng cho hàm sau: int SC (int M[], int Len, int CM[]) { for (int i = 0; i < Len; i++) CM[i] = M[i]; return (Len); }',
-		answer:
-			'Hàm thực hiện việc sao chép nội dung mảng M có chiều dài Len về mảng CM có cùng chiều dài. Hàm trả về chiều dài của mảng CM sau khi sao chép',
-	},
-	{
-		lesson: 10,
-		question:
-			'Mối quan hệ giữa cấu trúc và giải thuật có thể minh họa bằng đẳng thức',
-		answer: 'Cấu trúc dữ liệu + Giải thuật = Chương trình',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/chị cho biết kiểu kỹ thuật thiết kế kiểm thử nào chỉ xây dựng Test-case dựa vào điều kiện đầu vào và đầu ra của cả một thành phần (Component)?',
-		answer: 'BlackBoxTechniques',
-	},
-	{
-		lesson: 10,
-		question: 'Bản tin SOAP được viết bằng ngôn ngữ đánh dấu nào?',
-		answer: 'XML',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết Lập trình dựa trên đối tượng có đặc tính nào sau đây?',
-		answer: 'Tất cả các phương án đều đúng',
-	},
-	{
-		lesson: 10,
-		question:
-			'Giả sử ta có bảng dữ liệu có tên "KHACHHANG" gồm các thuộc tính theo thứ tự "MAKH","TENKH". Câu lệnh truy vấn nào sau đây xóa khách hàng có mã "001" có tên là "Tuấn"',
-		answer: '',
-	},
-	{
-		lesson: 10,
-		question:
-			'Cho khai báo sau: itn x=15; int *p; Muốn p là con trỏ tới x phải thực hiện lệnh nào sau đây;',
-		answer: 'không phải đáp án *p=x',
-	},
-	{
-		lesson: 8,
-		question: 'Đâu không phải ưu điểm của Vmware',
-		answer: 'Mã nguồn mở vì được xây dựng dựa trên Linux',
-	},
-	{
-		lesson: 8,
-		question:
-			'Trong dịch vụ DHCP các gói tin Broadcast có thể đi qua Router được không',
-		answer: 'Có nhưng router phải có chuẩn RFC1542',
-	},
-	{
-		lesson: 8,
-		question:
-			'Các chức nào sau đây không phải là chức năng của ảo hóa với VMWare Workstation:',
-		answer: 'Hỗ trợ hệ thống cho hệ điều hành trên máy đang sử dụng',
-	},
-	{
-		lesson: 8,
-		question: 'Các loại client được hỗ trợ bởi Exchange Server:',
-		answer: 'Tất cả các câu đều đúng',
-	},
-	{
-		lesson: 8,
-		question: 'Công nghệ ảo hóa VMWare và Hyper-V :',
-		answer:
-			'Hyper –V chỉ tích hợp trên Windows, còn VMWare thì tích hợp ở các hệ điều hành',
-	},
-	{
-		lesson: 8,
-		question:
-			'Địa chỉ Ipv6 nào được sử dụng cho địa chỉ multicast của một nhóm các router?',
-		answer: 'FF02::2',
-	},
-	{
-		lesson: 8,
-		question:
-			'Muốn tạo và khởi chạy máy ảo trong Hyper-V, sau khi khởi động Hyper-V Manager cần phải:',
-		answer: 'Tạo một mạng chuyển đổi ảo (Virtual Switch) cho nó.',
-	},
-	{
-		lesson: 8,
-		question: 'Nhược điểm của Open VZ là gì?',
-		answer: 'Các máy chủ phải sử dụng chung 1 nhân duy nhất',
-	},
-	{
-		lesson: 8,
-		question:
-			'Cách thực hiện Activator Windows (Product key bản quyền ) hợp lệ là?',
-		answer: 'Active Windows key Online',
-	},
-	{
-		lesson: 8,
-		question:
-			'Với VMWare, để thiết lập quyền khởi động ưu tiên trên máy tính ảo:',
-		answer:
-			'Nhấn vào VM à chọn Removable à chọn tên USB của bạn à tích vào dòng Connect.',
-	},
-	{
-		lesson: 8,
-		question:
-			'Cho rằng các cấu hình interface trên các router đang hoạt động bình thường và không có lỗi gì. Việc cấu hình OSPF hoàn toàn đúng trên R2. Tuyến đường mặc định được cấu hình trên router R1 sẽ ảnh hưởng như thế nào tới R2',
-		answer:
-			'Bất cứ 1 gói tin nào đi tới đích mà không được tìm thấy thấy trong bảng định tuyến của R2 sẽ được gửi tới router R1. Tiếp đó gói tin lại được gửi tới R1 từ R2 và vòng lặp lại xảy ra.',
-	},
-	{
-		lesson: 8,
-		question:
-			'Ảo hóa giải quyết các thách thức của việc quản lý trung tâm dữ liệu và cung cấp một số lợi thế như sau:',
-		answer: 'Các ý trên đều đúng',
-	},
-	{
-		lesson: 8,
-		question: 'Điểm khác biệt cơ bản giữa mail online và mail offline là:',
-		answer: 'Mail online nhanh hơn mail offline.',
-	},
-	{
-		lesson: 8,
-		question: 'Windows Hyper-V Server là :',
-		answer:
-			'Bản Hyper-V độc lập (stand-alone) có thể được cài đặt trực tiếp trên phần cứng vật lý mà không cần host OS.',
-	},
-	{
-		lesson: 3,
-		question:
-			'Làm việc nhóm mang lại những kết quả tốt mà từng cá nhân không thể làm được, hoặc làm được mà không hiệu quả. Nhận định trên đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 3,
-		question:
-			'Mối quan hệ giữa các đồng nghiệp trong cùng phòng ban đơn vị, là mối quan hệ:',
-		answer: 'Đồng cấp',
-	},
-	{
-		lesson: 3,
-		question:
-			'Để việc phối hợp với đồng nghiệp đạt hiệu quả cao, thì khi phối hợp trong công việc nên:',
-		answer: 'Có thái độ cởi mở; Có tư duy tích cực; Trao đổi với nhau',
-	},
-	{
-		lesson: 3,
-		question:
-			'Nội dung nào dưới đây phản ánh đúng về phương pháp học tập &quot;lấy học viên làm trung tâm&quot;?',
-		answer: 'Học viên tham gia và tự khám phá nội dung',
-	},
-	{
-		lesson: 3,
-		question:
-			'Khi tổ chức có những thay đổi về văn hóa doanh nghiệp, khoa học công nghệ, đòi hỏi mỗi cá nhân phải…',
-		answer: 'Thích ứng',
-	},
-	{
-		lesson: 3,
-		question:
-			'"Tâm lý ổn định việc làm là một lý do cản trở sự thay đổi". Đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Việc lựa chọn phương thức đánh giá công việc được căn cứ vào:',
-		answer: 'Tính thực tiễn, chi phí hệ thống và hiệu quả',
-	},
-	{
-		lesson: 3,
-		question: 'Một trong những đặc điểm của bản kế hoạch tác nghiệp là:',
-		answer: 'Thời hạn ngắn, 1 năm trở xuống',
-	},
-	{
-		lesson: 3,
-		question:
-			'Khi gặp những thay đổi lớn trong nhiệm vụ hoặc môi trường làm việc, nhân viên VNPT nên:',
-		answer: 'Thích ứng, duy trì được hiệu quả làm việc',
-	},
-	{
-		lesson: 3,
-		question: 'Thông tin trong doanh nghiệp thường được ví như là:',
-		answer: 'Mạch máu',
-	},
-	{
-		lesson: 3,
-		question: 'Phương pháp Thử và sai được ứng dụng khi:',
-		answer: 'Đối diện với vấn đề mới phát sinh',
-	},
-	{
-		lesson: 3,
-		question:
-			'Một trong những cách thức để xây dựng hình ảnh tốt của bản thân là:',
-		answer: 'Kiểm soát lời nói và hành động của bản thân',
-	},
-	{
-		lesson: 3,
-		question: 'Bước cuối cùng để giải quyết xung đột trong nhóm bao gồm:',
-		answer: 'Thỏa thuận',
-	},
-	{
-		lesson: 3,
-		question: 'Năng lực học tập ứng dụng được định nghĩa là:',
-		answer:
-			'Việc kịp thời xử lý và ứng dụng những thông tin mới liên quan đến công việc',
-	},
-	{
-		lesson: 3,
-		question:
-			'Trong quá trình sáng tạo, chúng ta có thể gặp phải những rào cản như:',
-		answer: 'Rào cản từ bản thân; Rào cản từ bên ngoài',
-	},
-	{
-		lesson: 3,
-		question: 'Bảng tổng kết để đánh giá công việc nên có những nội dung nào?',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Phương pháp để thích ứng với sự thay đổi đó là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Cư xử lịch sự, văn minh trong quy tắc ứng xử trên mạng xã hội của người lao động VNPT, nghĩa là:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, khi kết thúc phần trình bày trên sân khấu, nhân viên VNPT có cần thực hiện chào theo quy chuẩn không?',
-		answer: 'Có',
-	},
-	{
-		lesson: 1,
-		question:
-			'Quy định về Bảo mật thông tin trong quy tắc ứng xử trên mạng xã hội bao gồm những nội dung:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, nhân viên có thể không cúi chào theo quy chuẩn trong các tình huống như:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question:
-			'Ở điều kiện phát triển bình thường, ai cũng có năng lực sáng tạo, chỉ khác nhau ở chỗ:',
-		answer: 'Năng lực sáng tạo cao hay thấp và có khả năng phát huy hay không.',
-	},
-	{
-		lesson: 3,
-		question:
-			'Theo quyết định số 1311/QĐ-VNPT-KHCN&amp;ĐT, ngày 21/10/2013 Năng lực sáng tạo được định nghĩa:',
-		answer:
-			'Là khả năng hiện có của cá nhân trong việc tạo ra cái mới có giá trị dựa trên tổ hợp các thuộc tính độc đáo của cá nhân đó phù hợp với yêu cầu của hoạt động sáng tạo sản phẩm trong một lĩnh vực hoạt động nhất định.',
-	},
-	{
-		lesson: 3,
-		question: 'Hành động có thái độ tích cực đối với thay đổi hoặc cái mới là:',
-		answer:
-			'Coi thay đổi và những tình huống mới là cơ hội để học tập và phát triển; tập trung vào phương diện lợi ích của thay đổi; Nói tốt về thay đổi với những người khác.',
-	},
-	{
-		lesson: 3,
-		question: 'Theo thời gian kế hoạch được phân loại thành:',
-		answer: 'Kế hoạch dài hạn; Kế hoạch trung hạn; Kế hoạch ngắn hạn',
-	},
-	{
-		lesson: 3,
-		question:
-			'Hành động tích cực tham gia vào các hoạt động học tập được định nghĩa là:',
-		answer:
-			'Tham gia vào những hoạt động học tập cần thiết một cách tích cực và hiệu quả nhất',
-	},
-	{
-		lesson: 3,
-		question: 'Việc học tập không ngừng sẽ giúp người học:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question:
-			'Theo quyết định số 1311/QĐ-VNPT-KHCN&amp;ĐT, năng lực xây dựng mối quan hệ công việc tốt là:',
-		answer:
-			'Phát triển và sử dụng các mối quan hệ cộng tác để thúc đẩy việc đạt tới mục tiêu.',
-	},
-	{
-		lesson: 3,
-		question: 'Việc xác định mục tiêu kế hoạch giúp doanh nghiệp:',
-		answer: 'Xác định những việc cần đạt được',
-	},
-	{
-		lesson: 3,
-		question: 'Tại sao đưa ra ý kiến phản hồi trong giao tiếp lại quan trọng?',
-		answer:
-			'Đó là quá trình giúp người nói kiểm chứng xem thông điệp truyền đi tới từ người nghe như thế nào',
-	},
-	{
-		lesson: 3,
-		question: 'Điều nào dưới đây KHÔNG PHẢI là rào cản của tư duy sáng tạo?',
-		answer: 'Không sợ thất bại',
-	},
-	{
-		lesson: 3,
-		question:
-			'Mỗi cá nhân cần phải điều chỉnh có hiệu quả để làm việc trong những cấu trúc, quy trình, yêu cầu hay văn hóa làm việc mới; Đây là yêu cầu của năng lực thích ứng đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 3,
-		question:
-			'Phương thức nào dưới đây có thể được sử dụng một cách hiệu quả để giảm thiểu sự chống đối trong quá trình thay đổi?',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Khung năng lực cốt lõi được xây dựng nhằm mục đích:',
-		answer:
-			'Làm thước đo xác định mục tiêu học tập đồng thời nâng cao năng lực cán bộ nhân viên trong Tập đoàn',
-	},
-	{
-		lesson: 3,
-		question:
-			'Trong các hoạt động tổ chức thực hiện công việc, hoạt động quan trọng nhất là:',
-		answer: 'Thực hiện',
-	},
-	{
-		lesson: 3,
-		question:
-			'Phương pháp sáu chiếc mũ tư duy giúp đánh giá sự việc từ nhiều góc nhìn khác nhau, qua đó:',
-		answer:
-			'Có thể hiểu rõ hơn mọi ngóc ngách của sự việc, nhận diện được những nguy cơ và cơ hội mà bình thường ta có thể không chú ý đến',
-	},
-	{
-		lesson: 3,
-		question:
-			'Ưu điểm của phương pháp triển khai MBO từ cấp công ty xuống cấp bộ phận:',
-		answer: 'Nhanh về mặt thời gian',
-	},
-	{
-		lesson: 3,
-		question:
-			'Yếu tố quan trọng nhất cho thành công quản lý thay đổi tổ chức bao gồm:',
-		answer: 'Tất cả dáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Nguyên tắc giao việc:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question:
-			'Thương lượng và thỏa thuận là một trong những phương pháp để giảm thiểu sự chống đối trong quá trình thay đổi, Phương pháp này được áp dụng trong hoàn cảnh nào?',
-		answer:
-			'Khi các cá nhân hoặc nhóm có quyền lực chống đối vì những quyền lợi riêng của họ bị đe dọa do thay đổi',
-	},
-	{
-		lesson: 3,
-		question: 'Đâu là những nhược điểm của phương pháp &quot;thử và sai&quot;?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Chăm chú lắng nghe giúp ích gì trong quá trình giao tiếp',
-		answer:
-			'Có thể nghe được đầy đủ thông tin, nắm bắt được tâm lý, nguyện vọng của đối tượng giao tiếp; Thể hiện thái độ lịch sự',
-	},
-	{
-		lesson: 3,
-		question: 'Hành động tìm hiểu về thay đổi có nghĩa là',
-		answer: 'Các đáp án đều đúng.',
-	},
-	{
-		lesson: 3,
-		question:
-			'Thường xuyên trao đổi để nhận thông tin phản hồi từ người khác, điều này giúp nhân viên VNPT:',
-		answer: 'Tìm kiếm thêm cơ hội; Phát triển ý tưởng; Thúc đẩy thỏa thuận',
-	},
-	{
-		lesson: 3,
-		question:
-			'Để nhân viên hiểu rõ việc mình cần làm, khi giao việc người có thẩm quyền nên:',
-		answer: 'Nêu rõ công việc và mục đích yêu cầu của công việc',
-	},
-	{
-		lesson: 6,
-		question: 'Thành phần nào của SGA dùng để phân tích đoạn code của SQL?',
-		answer: 'Library cache',
-	},
-	{
-		lesson: 6,
-		question:
-			'Khi tiến trình server được hoàn thành 1 cách không bình thường, xử lí hậu cảnh nào chịu trách nhiệm cho việc phát hành các khóa trợ giúp bởi user?',
-		answer: 'PMON',
-	},
-	{
-		lesson: 6,
-		question: 'Câu lệnh SQL nào sau đây dùng để tạo Database mới trong SQL??',
-		answer: 'CREATE DATABASE',
-	},
-	{
-		lesson: 6,
-		question:
-			'Bộ nhớ granules không được cấp phát tại instance khởi tạo cho thành phần nào của SGA sau đây?',
-		answer: 'None of the above',
-	},
-	{
-		lesson: 6,
-		question: 'Khi nào thì HĐH thay đổi số lượng được phân quyền?',
-		answer: 'Khi transaction kết thúc 1 cách không bình thường.',
-	},
-	{
-		lesson: 3,
-		question:
-			'Để lập kế hoạch tuần, chúng ta sẽ sử dụng nguồn thông tin nào dưới đây?',
-		answer: 'Các công việc trong kế hoạch tháng',
-	},
-	{
-		lesson: 3,
-		question: 'Một nhóm làm việc hiệu quả khi các thành viên trong nhóm:',
-		answer: 'Hoàn thành các mục tiêu của nhóm một cách hoàn hảo',
-	},
-	{
-		lesson: 3,
-		question: 'Một vài nguyên nhân gây lãng phí thời gian bao gồm:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question: 'Quản trị bằng mục tiêu MBO giúp doanh nghiệp:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 6,
-		question:
-			'Từ khóa nào được sử dụng trong câu lệnh CREATE INDEX để tạo một function-based index?',
-		answer: 'CREATE INDEX FUNCTION BASED',
-	},
-	{
-		lesson: 6,
-		question:
-			'Bình thường Chad chạy các vấn tin rất nhỏ trên table, nhưng đã có thông báo từ DBA là Chad sẽ sớm được chạy 1 vài vấn tin đối với kho Dữ Liệu cho các hoạt động quản lí. DBA có thể làm gì để chắc chắn rằng những vấn tin sẽ không chạy sau OLTP?(chọn câu trả lời đúng nhất)',
-		answer:
-			'The DBA can use the Active Session Pool feature to suspend the session if there are too many active OLTP sessions.',
-	},
-	{
-		lesson: 8,
-		question:
-			'Thông số nào ảnh hưởng tới việc lựa chọn một tuyến đường khi có nhiều bộ giao thức cùng có tuyến đường tới 1 đích?',
-		answer: 'Administrative distance',
-	},
-	{
-		lesson: 8,
-		question:
-			'Phương pháp thông tin truy cập từ xa nào được xem như kết nối điển hình đến Internet mọi lúc,nó làm gia tăng rủi ro bảo mật do luôn mở đối với mọi cuộc tấn công ?',
-		answer: 'Wireless',
-	},
-	{
-		lesson: 8,
-		question:
-			'Để thực hiện Share dữ liệu giữa máy thật và máy ảo,  trong hộp thoại hiệu chỉnh cấu hình máy ảo ta chọn:',
-		answer:
-			'Chọn tab Options à chọn mục Shared Folders àchọn nút  à Add để tạo một chia sẻ một thư mục trên máy tính thật cho máy ảo.',
-	},
-	{
-		lesson: 8,
-		question:
-			'Thực thi câu lệnh nào để chạy giao thức định tuyến OSPFv2 trên mạng?',
-		answer: 'router ospf process-id',
-	},
-	{
-		lesson: 8,
-		question: 'MX  Record dùng để làm gì?',
-		answer: ' Dùng cho dịch vụ chuyển mail',
-	},
-	{
-		lesson: 8,
-		question: 'Trong hình bên dưới. Chế độ nào đang được thiết lập mật khẩu?',
-		answer: 'Telnet',
-	},
-	{
-		lesson: 8,
-		question: 'ACL dạng chuẩn dựa vào thông tin nào để lọc gói tin',
-		answer: 'Địa chỉ đích và subnet mask',
-	},
-	{
-		lesson: 8,
-		question:
-			'Bạn là người quản trị mạng cho một công ty, công ty bạn muốn triển khai 2 NetID khác nhau cho hai phòng ban, bạn làm thế nào để trên mạng không bị trùng IP và 2 NetID này ít traffic nhất.',
-		answer: 'Sử dụng IP tĩnh trên mỗi nhánh mạng',
-	},
-	{
-		lesson: 8,
-		question:
-			'Phát biểu nào sau đây không đúng khi so sánh Ưu điểm của Hyper-v so với VMWare ',
-		answer: 'Hỗ trợ trên nhiều hệ điều hành khác nhau',
-	},
-	{
-		lesson: 8,
-		question:
-			'Câu lệnh nào thì cần thiết để cho phép SSH hoặc Telnet tới một thiết bị Switch Cisco?',
-		answer: 'transport input all',
-	},
-	{
-		lesson: 8,
-		question: 'Checkpointing:',
-		answer:
-			'Là cơ chế lưu lại trạng thái của tiền trình trong quá trình chạy không bị lỗi vào một thiết bị nhớ ổn định nhằm khôi phục lại sau đó hoặc phục hồi lại trên một máy khác.',
-	},
-	{ lesson: 8, question: 'Ảo hóa XEN có bao nhiêu bản chính', answer: '2' },
-	{
-		lesson: 8,
-		question:
-			'Bạn là người quản trị mạng cho một công ty. Công ty bạn có sử dụng 3 NetID khác nhau, trên đó có triển khai dịch vụ Routing and Remote Access, muốn xác định được đường đi của một NetID này sang NetID khác bạn làm cách nào?.',
-		answer: 'Xem thông tin trong Internet Protocol (IP) routing table',
-	},
-	{
-		lesson: 8,
-		question: 'Các tính năng nào sau đây không phải là công nghệ ảo hóa:',
-		answer: 'Tổ chức lưu trữ dữ liệu lớn',
-	},
-	{
-		lesson: 8,
-		question:
-			'Snapshot là một chức năng tạo ra các “điểm dừng” trên máy ảo, nó tương tự như backup. Để thực hiện, chọn:',
-		answer:
-			'Click chuột vào máy ảo, chọn Menu VM - Snapshot, chọn Take Snapshot, đặt tên sau click OK.',
-	},
-	{
-		lesson: 8,
-		question:
-			'Trong quá trình xác thực CHAP, để thực hiện mã hóa với một site từ xa có id là 177798 thông qua kết nối PPP thì giá trị nào được sử dụng?',
-		answer: 'Sử dụng hostname của thiết bị từ xa',
-	},
-	{
-		lesson: 9,
-		question: 'Một trong những mục tiêu của Service Desk là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 9,
-		question: 'Cơ cấu điều hành CNTT của VNPT bao gồm:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 9,
-		question:
-			'Điều khoản thi hành trong công tác điều hành CNTT cũng quy định rõ về trách nhiệm của VNPT tỉnh/thành, VNPT Net, VNPT VinaPhone, VNPT Media, VNPT-IT',
-		answer: 'Tất cả các đáp án đều sai',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trong chức năng Service Desk, đơn vị đóng vai trò xử lý yêu cầu là:',
-		answer: 'VNPT TTP và VNPT - IT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Để hòa mạng, chuyển hệ thống, nâng cấp hệ thống, một trong những việc TT điều hành CNTT/VNPT-IT phải thực hiện là',
-		answer:
-			'Chủ trì, chịu trách nhiệm phối hợp các Trung tâm Giải pháp xây dựng các kịch bản kiểm tra, kiểm định chất lượng về việc chuyển, hòa mạng, nâng cấp hạ tầng CNTT',
-	},
-	{
-		lesson: 9,
-		question:
-			'Trung tâm điều hành CNTT/VNPT-IT xem xét cụ thể từng yêu cầu, khả năng và thời gian thực hiện sau đó thực hiện đánh giá, lập kế hoạch thực hiện đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 9,
-		question:
-			'Phối hợp với các đơn vị liên quan triển khai sử dụng chung hạ tầng CNTT thụ động đặc biệt là phối hợp hỗ trợ đảm bảo nguồn điện, hệ thống điều hòa tại các IDC, phòng máy dùng chung để tiết giảm chi phí',
-		answer: '  Đây là trách nhiệm của đơn vị quản lý hạ tầng CNTT thụ động',
-	},
-	{
-		lesson: 2,
-		question: 'Công cụ nào được sử dụng để khai thác lỗ hổng SQL injection?',
-		answer: 'sqlmap',
-	},
-	{
-		lesson: 2,
-		question:
-			'Port nào được dịch vụ chia sẻ file, máy in trên mạng - SMB over TCP/IP sử dụng?',
-		answer: '445',
-	},
-	{
-		lesson: 2,
-		question: 'Cách sử dụng mật khẩu nào dưới đây là an toàn ?',
-		answer: 'Using a long and complex password',
-	},
-	{
-		lesson: 2,
-		question: 'Thiết bị bảo mật emai của Cisco chạy trên nền tảng nào',
-		answer: 'Cisco NX-OS',
-	},
-	{
-		lesson: 2,
-		question:
-			'Sau khi dùng Sniffing software để bắt thông tin phân tích gói thông tin gửi đi từ host, có dạng: Protocol :TCP; Destination Port: 80; Source IP 192.168.3.8; Destination IP 203. 162.4.132; SYN=1, ACK=0. Cho biết host trên đang làm gì?',
-		answer:
-			'Máy 192.168.3.8 đang yêu cầu kết nối với Web server tại 203. 162.4.132',
-	},
-	{
-		lesson: 2,
-		question:
-			'Dòng thiết bị nào thì có nhiều chức năng liên quan tới security solutions, including firewall, IPS, VPN, antispyware, antivirus, and antiphishing?',
-		answer: 'Cisco ASA 5500-X Series Next Gen. Security appliance',
-	},
-	{
-		lesson: 2,
-		question:
-			'Cisco FirePower triển khai loại cơ chế nào để bảo vệ các mối đe dọa với email khi di chuyển qua các mạng khác',
-		answer: 'reputation-based',
-	},
-	{
-		lesson: 2,
-		question:
-			'Loại tường lửa nào đóng vai trò làm trung gian giữa máy chủ và máy khách',
-		answer: 'Proxy firewall',
-	},
-	{
-		lesson: 2,
-		question:
-			'Công nghệ nào có thể sử dụng để ngăn chặn 1 máy tính bị nhiễm độc không cho kết nối mạng?',
-		answer: 'host IPS',
-	},
-	{
-		lesson: 2,
-		question: 'Đâu là thành phần bảo mật chính trong việc triển khai MDM',
-		answer: 'Using self-signed certificates to validate the server.',
-	},
-	{
-		lesson: 2,
-		question: 'Chương trình nào sau đây là malware ?',
-		answer: 'Viruses, worms và trojans',
-	},
-	{
-		lesson: 2,
-		question:
-			'Loại tấn công nào có thể dùng khai thác lỗ hổng thiết kế trong việc thực thi ứng dụng mà không gây chú ý',
-		answer: 'Low-rate DoS attacks.',
-	},
-	{
-		lesson: 2,
-		question:
-			'Anh/chị đang khai báo Vlan trên các cổng của thiết bị Switch R1, trị số Vlan nào sẽ được gán là Vlan mặc định',
-		answer: 'Vlan 1',
-	},
-	{
-		lesson: 2,
-		question:
-			'Trên Firewall Cisco ASA, tính năng nào được sử dụng để chống tấn cống TCP Syn flood ?',
-		answer: 'TCP intercept feature',
-	},
-	{
-		lesson: 2,
-		question: 'Bước nào đúng khi thực hiện bật AAA qua giao diện SDM',
-		answer: 'Configure > Additional Tasks > AAA',
-	},
-	{
-		lesson: 2,
-		question:
-			'Loại NAT nào thường được sử dụng để public web server từ trong mạng LAN ra ngoài internet?',
-		answer: 'Static NAT',
-	},
-	{
-		lesson: 2,
-		question: 'Giao thức IP Security (IPSec) được thực hiện tại lớp nào',
-		answer: 'Netwwork',
-	},
-	{
-		lesson: 2,
-		question:
-			'Phương pháp tấn công DoS có các gói tin gửi từ attacker có các thông số rất khó hiểu để chia ra các phần (fragment) là?',
-		answer: 'Teardrop',
-	},
-	{
-		lesson: 2,
-		question:
-			'Bạn là người quản trị mạng tại trung tâm. Máy Server ISA1 cung cấp truy cập Internet cho tất cả máy trong mạng. Để phòng tránh người dùng vô tình tải và thực thi các tập tin virus (dạng *.exe, *.com, *.dll,…). Bạn chọn giải pháp nào sau đây?',
-		answer:
-			'Tạo một “Content Type” trong đó chứa danh sách tập tin Virus. Tạo Access Rule cấm người dùng truy cập HTTP trên Content này.',
-	},
-	{
-		lesson: 2,
-		question: 'Sniffing là một phương thức tấn công kiểu:',
-		answer: 'Đánh cắp dữ liệu của nạn nhân truyền trên mạng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Mức bảo mật nào của SNMPv3 cung cấp xác thực với HMAC và MD5 nhưng không sử dụng mã hóa',
-		answer: 'authNoPriv',
-	},
-	{
-		lesson: 3,
-		question: 'Ý kiến nào cần lưu ý khi thiết lập một bản kế hoạch:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 2,
-		question:
-			'Giao thức nào ở tầng network được thực hiện khi ping đến 1 server ?',
-		answer: 'ICMP',
-	},
-	{
-		lesson: 3,
-		question:
-			'&quot;Các thông tin về công việc, mục tiêu – yêu cầu công việc, nhiệm vụ, quyền hạn, các mối quan hệ, tiêu chuẩn công việc, điều kiện làm việc&quot; là các nội dung nằm trong:',
-		answer: 'Bản mô tả công việc',
-	},
-	{
-		lesson: 3,
-		question: 'Hành động học nhanh, hiểu nhanh được định nghĩa là:',
-		answer:
-			'Sẵn sàng tiếp thu và hiểu những thông tin mới từ những trải nghiệm học tập chính thức và phi chính thức',
-	},
-	{
-		lesson: 3,
-		question:
-			'Trong học tập, người học có xu hướng ghi nhớ nhất những điều gì trong số những nội dung sau?',
-		answer: 'Những nội dung nổi bật',
-	},
-	{
-		lesson: 3,
-		question:
-			'Để đảm bảo công việc tại các vị trí, bộ phận, các phòng ban chức năng không bị chồng chéo nhau thì doanh nghiệp cần có:',
-		answer: 'Bản mô tả công việc',
-	},
-	{
-		lesson: 10,
-		question:
-			'Cho khai báo sau: itn x=15; int *p; Muốn p là con trỏ tới x phải thực hiện lệnh nào sau đây:',
-		answer: 'p=&x',
-	},
-	{
-		lesson: 2,
-		question:
-			'Cơ chế mã hóa dữ liệu bất đối xứng nào được sử dụng để mã hóa dữ liệu?',
-		answer: 'a public/private key pair',
-	},
-	{
-		lesson: 2,
-		question: 'Điều nào đúng khi sử dụng RADIUS? (chọn 2 đáp án)',
-		answer: '[2 chọn]\nSử dụng UDP cổng 1812/1813\nSử dụng TCP cổng 49',
-	},
-	{
-		lesson: 10,
-		question:
-			'Kết quả trả về khi chạy đoạn chương trình sau: class evaluate { public static void main(String args[]) { int arr[] = new int[] {0 , 1, 2, 3, 4, 5, 6, 7, 8, 9}; int n = 6; n = arr[arr[n] / 2]; System.out.println(arr[n] / 2); } }?',
-		answer: '1',
-	},
-	{
-		lesson: 10,
-		question: 'Anh/chị cho biết Kiểm thử đơn vị (Unit testing) là:',
-		answer:
-			'Kiểm thử sự hiện thực chi tiết của từng đơn vị nhỏ (hàm, class,…) có hoạt động đúng không.',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết: “Các yếu tố đặc trưng của ngôn ngữ lập trình hướng đối tượng (OOP) là: Tính trừu tượng, Tính đa hình, Tính đóng gói và ……”?',
-		answer: 'Tính kế thừa',
-	},
-	{
-		lesson: 10,
-		question: 'Anh/Chị cho biết đặc điểm của biểu đồ Phân cấp chức năng là?',
-		answer: 'Cả 2 đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, khi được mời lên sân khấu giới thiệu dịch vụ, nhân viên VNPT thực hiện:',
-		answer: 'Đứng giữa sân khấu và chào theo quy chuẩn',
-	},
-	{
-		lesson: 1,
-		question:
-			'Theo Sổ tay Văn hóa VNPT, Trách nhiệm của VNPT với cộng đồng xã hội là "Chung Vai góp sức" được hiểu như thế nào?',
-		answer:
-			'VNPT luôn thể hiện trách nhiệm với cộng đồng, xã hội; chủ động, tích cực tham gia các chương trình an sinh xã hội, chung tay, chung sức cùng cộng đồng vượt qua khó khăn, góp phần giải quyết các vấn đề của xã hội.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Với chiến lược phát triển trong kỷ nguyên mới, phù hợp với xu thế toàn cầu hóa và sự phát triển không ngừng của cuộc cách mạng công nghiệp 4.0, VNPT đã và đang từng bước chuyển đổi từ nhà cung cấp dịch vụ viễn thông truyền thống sang nhà cung cấp dịch vụ số (DSP), trở thành một Tập đoàn kinh tế năng động, chú trọng phát triển những sản phẩm, dịch vụ, giải pháp ICT sáng tạo.Tầm nhìn VNPT đang hướng tới là:',
-		answer:
-			'Trở thành nhà cung cấp dịch vụ số hàng đầu Việt Nam vào năm 2025; Trở thành Trung tâm số (Digital Hub) của châu Á vào năm 2030; Trở thành lựa chọn số 1 của khách hàng sử dụng sản phẩm, dịch vụ Công nghệ thông tin - Viễn thông (ICT) tại thị trường.',
-	},
-	{
-		lesson: 1,
-		question:
-			'Khi bàn luận về VNPT, về các công ty, sản phẩm, dịch vụ, thương hiệu của VNPT trên mạng xã hội, Tập đoàn khuyến khích:',
-		answer: 'Sử dụng danh tính thật của nhân viên VNPT',
-	},
-	{
-		lesson: 4,
-		question:
-			'NVKT nên tìm hiểu những thông tin gì về sản phẩm của đối thủ cạnh tranh?',
-		answer: 'Điểm mạnh - điểm yếu của sản phẩm tương đồng với VNPT',
-	},
-	{
-		lesson: 4,
-		question:
-			'Theo anh/chị, NVKT có nên chăm sóc khách hàng đang sử dụng dịch vụ của nhà mạng khác không?',
-		answer:
-			'Rất cần thiết vì có thể đây sẽ là khách hàng tiềm năng của VNPT hoặc khách hàng này có thể sẽ giới thiệu cho khách hàng khác sử dụng dịch vụ - sản phẩm của VNPT',
-	},
-	{
-		lesson: 4,
-		question:
-			'Khi trình bày cho khách hàng về dịch vụ của VNPT, NVKT không nên:',
-		answer: 'Nói không có chủ đích',
-	},
-	{
-		lesson: 4,
-		question:
-			'Khi trao đổi, giải thích với khách hàng qua điện thoại, NVKT KHÔNG nên:',
-		answer: 'Sử dụng các thuật ngữ chuyên ngành',
-	},
-	{
-		lesson: 4,
-		question: 'Việc bảo mật thông tin khách hàng được VNPT quy định thế nào?',
-		answer:
-			'Không được sử dụng, tiết lộ bất cứ thông tin nào của khách hàng vào mục đích riêng.',
-	},
-	{
-		lesson: 4,
-		question:
-			'Khi giao tiếp với khách hàng, để việc lắng nghe hiệu quả NVKT nên:',
-		answer: 'Kiểm soát cảm xúc của bản thân',
-	},
-	{
-		lesson: 4,
-		question:
-			'Để việc giao tiếp/ giao dịch với khách hàng đạt hiệu quả, NVKT nên:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 4,
-		question:
-			'Trong kinh doanh, khi khách hàng không hài lòng thì phương án tốt nhất doanh nghiệp mong muốn là:',
-		answer: 'Khách hàng nói trực tiếp với chúng ta.',
-	},
-	{
-		lesson: 4,
-		question: 'Chăm sóc khách hàng mang lại cho doanh nghiệp lợi ích gì ?',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 4,
-		question:
-			'NVKT nên đưa ấn phẩm, tài liệu, hợp đồng, brochure cho khách hàng như thế nào để thể hiện sự tôn trọng?',
-		answer:
-			'Đưa ấn phẩm, tài liệu, hợp đồng, brochure,…bằng hai tay và phải đưa cùng chiều với khách hàng.',
-	},
-	{
-		lesson: 4,
-		question:
-			'Quy định đối với NVKT về việc cung cấp thông tin cho khách hàng:',
-		answer:
-			'Cung cấp thông tin cho khách hàng đầy đủ, trung thực, theo phạm vi công việc được giao và chịu trách nhiệm về tính chính xác của thông tin',
-	},
-	{
-		lesson: 4,
-		question:
-			'Khi đến nhà Khách hàng để lắp đặt dịch vụ, NVKT nên sử dụng mẫu câu nào để giới thiệu bản thân:',
-		answer:
-			'"Chào anh/chị, em/tôi là... NVKT của VNPT... Theo hẹn, hôm nay em/tôi đến lắp đặt dịch vụ …cho gia đình mình ạ!".',
-	},
-	{
-		lesson: 3,
-		question: 'Lợi ích của năng lực thích ứng đối với Cá nhân đó là:',
-		answer: 'Tất cả các đáp án đều đúng.',
-	},
-	{
-		lesson: 3,
-		question:
-			'Một trong những kỹ thuật sử dụng phổ biến khi sử dụng phương pháp tập kích não trong học tập là quan sát kỹ những thứ nhìn thấy, quan sát từ cách nhìn của người khác, nhìn sự vật, sự việc theo một hướng khác. Đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 3,
-		question:
-			'Trong quy trình xây dựng kế hoạch, ở mỗi phương án thực hiện mục tiêu, doanh nghiệp cần cụ thể hóa về:',
-		answer: 'Giải pháp và công cụ thực hiện',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, khi chào khách hàng, nếu không nhìn khách hàng trước khi chào là đúng hay sai',
-		answer: 'Sai',
-	},
-	{
-		lesson: 4,
-		question:
-			'Phương thức "Giao tiếp phi ngôn ngữ" đối với Doanh nghiệp được thể hiện qua:',
-		answer: 'Thương hiệu; Logo; Đồng phục, cách trang trí cửa hàng',
-	},
-	{
-		lesson: 4,
-		question: 'Trước khi đến lắp đặt dịch vụ cho khách hàng, NVKT nên:',
-		answer: 'Gọi điện đặt lịch hẹn để xác nhận thời gian cụ thể với khách hàng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong quy tắc ứng xử trên mạng xã hội của VNPT, nhân viên VNPT phải "Chịu trách nhiệm với các hoạt động của bản thân trên mạng xã hội", thông qua việc:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, việc cúi chào của nhân viên khối Kỹ thuật Viễn thông được áp dụng tại các điểm chạm như:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 11,
-		question: 'Các nguyên tắc khi đặt mật khẩu nào dưới đây là đúng?',
-		answer: 'Tất cả các đáp án trên',
-	},
-	{
-		lesson: 11,
-		question: 'Một số phương pháp thu thập thông tin phản hồi của khách hàng:',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 11,
-		question:
-			'Không nên sử dụng khóa màn hình điện thoại bằng. (Chọn 2 đáp án)',
-		answer: '[2 chọn]\nMật khẩu 4 chữ số\nMật khẩu dùng hình vẽ đơn giản',
-	},
-	{
-		lesson: 11,
-		question: 'Khi sử dụng mạng xã hội, cần lưu ý những điều sau:',
-		answer: 'Tất cả các phương án',
-	},
-	{
-		lesson: 11,
-		question:
-			'Tiến hành công việc nào sau đây phát huy đầy đủ được tác dụng của biện pháp phòng chống tấn công mạng:',
-		answer: 'Không đáp án nào đầy đủ',
-	},
-	{
-		lesson: 11,
-		question:
-			'Theo khuyến cáo của Microsoft, nhà sản xuất hệ điều hành Windows, trên một máy tính nên sử dụng bao nhiêu phần mềm diệt virus?',
-		answer: '1',
-	},
-	{
-		lesson: 11,
-		question:
-			'Nhiều người dùng miếng băng dính đen che webcam máy tính. Mục đích là để phòng chống việc tin tặc tấn công lợi dụng webcam để thu thập thông tin.',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 11,
-		question:
-			'Có thể thiết lập firewall trong hệ điều hành Window bằng cách? (Chọn 2 đáp án)',
-		answer:
-			'[2 chọn]\nSử dụng giao điện đồ họa thông qua Control panel\nSử dụng cửa sổ dòng lệnh Command Prompt (cmd)',
-	},
-	{
-		lesson: 11,
-		question:
-			'VNPT đã triển khai hệ thống giám sát DNS Sinkhole tại Tập đoàn. Điều đó đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 11,
-		question:
-			'Luật An toàn thông tin mạng chính thức có hiệu lực thi hành từ ngày',
-		answer: '07/01/2016',
-	},
-	{
-		lesson: 11,
-		question:
-			'Bạn nhận được một email từ bộ phận IT của công ty bạn. Email yêu cầu thông tin tài khoản và mật khẩu email của bạn để phục vụ công tác điều tra. Hành động của bạn khi đó:',
-		answer: 'Gọi cho bộ phận IT xac nhận nếu đúng thì cung cấp cho họ',
-	},
-	{
-		lesson: 11,
-		question:
-			'Lựa chọn đáp án đúng: Việc xây dựng hệ thống phân tích mã độc tự động của Tập đoàn',
-		answer: 'Đã được thực hiện',
-	},
-	{
-		lesson: 11,
-		question:
-			'Theo giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT, VNPT được phép kinh doanh bao nhiêu lĩnh vực?',
-		answer: '9',
-	},
-	{
-		lesson: 11,
-		question: 'Dùng điện thoại Iphone không lo bị tấn công',
-		answer: 'Sai',
-	},
-	{
-		lesson: 11,
-		question:
-			'VNPT đã triển khai ISO/IEC 27001:2013 trên phạm vi toàn Tập đoàn, bao gồm Văn phòng Tập đoàn và các đơn vị VNPT thành viên. Điều đó đúng hay sai?',
-		answer: 'Sai',
-	},
-	{
-		lesson: 11,
-		question: 'Khi cài đặt phần mềm nên tải từ đâu?',
-		answer: 'Từ các trang chính thống',
-	},
-	{
-		lesson: 11,
-		question:
-			'Loại mã độc nào có khả năng che dấu danh tính bản thân nó trong hệ thống',
-		answer: 'Rootkit',
-	},
-	{
-		lesson: 11,
-		question:
-			'Tên gọi phần mềm Antivirus của Microsoft trên hệ điều hành Windows 10',
-		answer: 'Windows Defender',
-	},
-	{
-		lesson: 11,
-		question: 'Tường lửa có thể điều khiển',
-		answer: 'Lưu lượng vào, ra mạng',
-	},
-	{
-		lesson: 11,
-		question:
-			'Các phần mềm anti-virus có thể can thiệp vào tường lửa thông qua:',
-		answer: 'Tất cả các hồ sơ',
-	},
-	{
-		lesson: 9,
-		question:
-			'Nhiệm vụ, quyền hạn của các Trung Tâm IT khu vực thuộc VNPT- IT là',
-		answer:
-			'     Phối hợp tiếp nhận và xử lý các yêu cầu dịch vụ, sự cố dịch vụ tại khu vực quản lý trực tiếp trong khả năng.',
-	},
-	{
-		lesson: 2,
-		question: 'Kiểu tường lửa nào thì hoạt động ở lớp 4? (chọn 2 đáp án)',
-		answer: '[2 chọn]\nApplication level firewall\nCircuit-level gateway',
-	},
-	{
-		lesson: 2,
-		question:
-			'Những yếu tố nào cần được cân nhắc khi xem xét một công nghệ mới',
-		answer: 'risk',
-	},
-	{
-		lesson: 2,
-		question: 'Điều nào đúng khi sử dụng RADIUS? (chọn 2 đáp án)',
-		answer: '[2 chọn]\nSử dụng TCP cổng 49\nSử dụng UDP cổng 1812/1813',
-	},
-	{
-		lesson: 8,
-		question: 'Trong DAC, mô hình nào dung cấu trúc đồ thị tĩnh và đồ thị động',
-		answer: 'Mô hình truy cập CSDL đa mức',
-	},
-	{
-		lesson: 8,
-		question:
-			'VMWare vSphere là bộ sản phẩm của VMWare, dùng để phục vụ nhu cầu ảo hóa hệ thống, thành phần nào dưới đây không phải của',
-		answer: 'VMWare Store',
-	},
-	{
-		lesson: 8,
-		question:
-			'Để thực hiện một số cài đặt trên máy ảo, bạn thực hiện tuần tự các bước sau:',
-		answer:
-			'Chọn máy ảo và chọn Power on this virtual machine, Chọn Install Windows only (advanced)  để cài hệ điều hành, chọn phân vùng (partition) để cài đặt hệ điều hành và bước cuối cùng là cài đặt VMware Tools.',
-	},
-	{
-		lesson: 8,
-		question:
-			'Bạn là người quản trị mạng cho một công ty, công ty bạn có 1 chi nhánh ở cách xa trụ sở chính và kết nối với trụ sở chính qua mạng internet. Trên hệ thống mạng của chi nhánh, bạn cài đặt và cấu hình DNS server. Bạn cần cấu hình DNS như thế nào để DNS server tại trụ sở chính có thể phân giải tên cho DNS server tại chi nhánh và việc kết nối giữa hai nơi ít traffic nhất.',
-		answer:
-			'Cấu hình DNS server tại tại trụ sở chính một secondary zone và delegation đến chi nhánh',
-	},
-	{
-		lesson: 8,
-		question:
-			'Theo thứ tự câu lệnh nào được cấu hình trên một router chạy OSPF và thêm vùng mạng 10.1.1.0/24 vào vùng area 0.',
-		answer: 'router ospf 1 network 10.1.1.0 0.0.0.255 area 0',
-	},
-	{
-		lesson: 8,
-		question: 'Ưu điểm của Workgroup là:',
-		answer: 'Thiết kế được quản lý tập trung',
-	},
-	{
-		lesson: 8,
-		question: 'Sự khác nhau cơ bản giưa VMWare – Xen – Open VZ',
-		answer: 'Open VZ hoạt động dưa trên nhân Linux và hệ điều hành',
-	},
-	{
-		lesson: 8,
-		question:
-			'Có bao nhiêu lựa chọn cài đặt OS (Operating System) cho máy ảo khi sử dụng VMWare',
-		answer: '2',
-	},
-	{
-		lesson: 8,
-		question:
-			'Công ty bạn có dựng một FTP server, bạn là người quản trị FTP server này, bạn muốn tất cả các user khi truy cập vào FTP server này đều phải nhập user name và password, bạn làm thế nào?',
-		answer:
-			'Trên máy FTP server, chọn tab security accounts check vào ô Allow anonymous connections',
-	},
-	{
-		lesson: 5,
-		question: 'Lợi ích của Trung tâm điều hành giáo dục (vnEdu IOC) đó là:',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'Giải pháp cung cấp cho cơ quan quản lý giáo dục một bức tranh toàn cảnh về tình hình giáo dục tại địa bàn trên cơ sở tập hợp thông tin, dữ liệu của tất cả các hệ thống thông minh và các nguồn dữ liệu khác, góp phần nâng cao hiệu quả của công tác quản lý và chỉ đạo điều hành; đổi mới phương pháp dạy - học, kiểm tra, đánh giá, nâng cao chất lượng GD&ĐT tại địa phương. Đây là định nghĩa của dịch vụ:',
-		answer: 'Trung tâm điều hành giáo dục (vnEdu IOC)',
-	},
-	{
-		lesson: 4,
-		question:
-			'Khi tiếp xúc với một khách hàng phàn nàn về chất lượng dịch vụ của VNPT NVKT nên làm gì?',
-		answer:
-			'Xin lỗi khách hàng; đặt câu hỏi, xác định vấn đề, chủ động lắng nghe tích cực và tìm cách giải quyết theo quy định.',
-	},
-	{
-		lesson: 3,
-		question:
-			'Yếu tố nào sau đây quyết định sự thành công trong quá trình giao tiếp?',
-		answer:
-			'Thông điệp truyền tải rõ ràng, kỹ năng lắng nghe hiệu quả, sự khéo léo trong xử lý tình huống',
-	},
-	{
-		lesson: 3,
-		question: 'Để kiểm soát sự thay đổi hiệu quả, chúng ta cần:',
-		answer:
-			'Thực hiện kiểm soát liên tục cả bên trong và bên ngoài. Theo dõi tiến độ, đo lường kết quả đạt được và chú trọng thông tin phản hồi',
-	},
-	{
-		lesson: 3,
-		question:
-			'Trong quá trình sử dụng phương pháp tập kích não (brainstorming) để thúc đẩy quá trình học tập, người học cần phải',
-		answer: 'Tất cả đáp án đều đúng',
-	},
-	{
-		lesson: 3,
-		question:
-			'Trong phương pháp lập kế hoạch 5W-1H-2C-5M, để việc xác định nội dung công việc (What) được thực hiện hiệu quả, chúng ta cần:',
-		answer:
-			'Nắm được nội dung công việc đó là gì? Chỉ ra các bước cụ thể để thực hiện công việc. Bước sau là khách hàng của bước công việc trước.',
-	},
-	{
-		lesson: 1,
-		question:
-			'"Tín với Nhà nước; Tín với cộng đồng; Tín với khách hàng; Tín với người lao động" là yếu tố thuộc về ..., đây là một trong các yếu tố tạo nên Tinh thần VNPT trong VNPT - 5 Giá trị cốt lõi.',
-		answer: 'Đạo đức',
-	},
-	{
-		lesson: 7,
-		question:
-			'Thứ tự sắp xếp các phiên bản của công nghệ Blockchain nào sau đây là đúng?',
-		answer:
-			'1. Tiền điện tử và thanh toán; 2. Tài chính và Thị trường; 3. Thiết kế và Giám sát hoạt động; 4. Doanh nghiệp và ứng dụng giao dịch',
-	},
-	{
-		lesson: 7,
-		question: 'Phát biểu nào sau đây là đúng về Big Data?',
-		answer:
-			'Dữ liệu phải đảm bảo có được cả 3 thuộc tính là : dữ liệu có kích thước lớn, dữ liệu có tốc độ xử lý nhanh và dữ liệu có sự đa dạng thì mới được coi là Big Data.',
-	},
-	{
-		lesson: 7,
-		question: 'Dữ liệu lớn (Big Data) khác dữ liệu thường điểm nào ?',
-		answer: 'Khả năng lưu trữ lớn hơn (Khả năng lưu trữ và xử lý dữ liệu )',
-	},
-	{
-		lesson: 11,
-		question:
-			'Theo quy định 1771/QĐ-VNPT-IT&VAS về an toàn bảo mật trong mạng điều hành sản xuất kinh doanh, mật khẩu mức người sử dụng phải thay đổi ít nhất bao lâu một lần:',
-		answer: '2 tháng',
-	},
-	{
-		lesson: 11,
-		question:
-			'Đối với các USB lạ có nghi ngờ bị nhiễm mã độc, nên quét virus hoặc format trước khi sử dụng',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 11,
-		question:
-			'Khi truy cập vào các trang HTTPS, người dùng đều được cam kết và đảm bảo rằng mình an toàn. Nếu người dùng chỉ ra được trang HTTPS đó không an toàn, người dùng sẽ nhận được chính sách bồi thường. Điều đó đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 11,
-		question: 'Để đảm bảo an toàn cho dữ liệu USB, đáp án nào dưới đây là sai?',
-		answer: 'Tránh để USB lưu trữ dữ liệu >80% dung lượng',
-	},
-	{
-		lesson: 11,
-		question: 'Các nguy cơ bị đánh cắp mật khẩu nào dưới đây là đúng?',
-		answer: 'Tất cả các đáp án trên',
-	},
-	{
-		lesson: 11,
-		question:
-			'Khi tạo tài khoản, nhóm, để máy chủ có thể teamview vào máy khách trong nhóm thì máy chủ cần biết:',
-		answer: 'Xác nhận cho phép thâm nhập của máy khách hoặc password máy khách',
-	},
-	{
-		lesson: 11,
-		question:
-			'VNPT đã được cấp giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 11,
-		question:
-			'Tên gọi phần mềm tường lửa của Microsoft trên hệ điều hành Windows 10',
-		answer: 'Windows Firewall',
-	},
-	{
-		lesson: 11,
-		question:
-			'Để phòng chống tấn công webcam, người dùng nên thực hiện những hành động nào sau đây?',
-		answer: 'Tất cả đều đúng',
-	},
-	{
-		lesson: 11,
-		question: 'Hệ điều hành được Tập đoàn trang bị bản quyền tập trung là gì?',
-		answer: 'Windows 10',
-	},
-	{
-		lesson: 11,
-		question: 'Khi kết thúc công việc và ra ngoài buổi trưa 1 tiếng, ta nên',
-		answer: 'Logout khỏi máy tính',
-	},
-	{
-		lesson: 11,
-		question:
-			'Giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT có hiệu lực trong thời gian bao lâu',
-		answer: '10 năm',
-	},
-	{
-		lesson: 11,
-		question: 'Nguyên nhân nào có thể dẫn đến việc bị đánh cắp thông tin:',
-		answer: 'Mất mật khẩu',
-	},
-	{
-		lesson: 11,
-		question:
-			'Chức năng nào của Window giúp xóa bỏ các chương trình không cần thiết:',
-		answer: 'Programs and Futures trong Control Panel',
-	},
-	{
-		lesson: 11,
-		question:
-			'Các biện pháp bảo mật cơ bản để giữ máy tính an toàn. (Chọn 3 đáp án)',
-		answer:
-			'[3 chọn]\nCài đặt các bản vá “Security Update” của hệ điều hành cho máy tính\nCài đặt các bản vá “Security Update” của chương trình ứng dụng trên máy tính (như là Adobe Acrobat reader, Java, Office…)\nCài đặt ứng dụng Anti-Spyware/Adware/Malware',
-	},
-	{
-		lesson: 11,
-		question:
-			'Biện pháp xử lý nào sau đây phù hợp cho việc mất kết nối Router-Hub/SW:',
-		answer: 'Các biện pháp trên',
-	},
-	{
-		lesson: 11,
-		question: 'Từ viết tắt của giao thức an ninh trên mạng không dây:',
-		answer: 'WPA2',
-	},
-	{
-		lesson: 11,
-		question: 'Địa chỉ liên kết không an toàn là:',
-		answer: 'Tất cả các đáp án đều đúng',
-	},
-	{
-		lesson: 11,
-		question:
-			'Để đảm bảo an toàn khi sử dụng USB, người dùng cần: (Chọn 2 đáp án)',
-		answer:
-			'[2 chọn]\nKhóa chức năng Autorun khi sử dụng USB\nQuét virus cho USB trước khi sử dụng',
-	},
-	{
-		lesson: 11,
-		question: 'Những thông tin không nên cung cấp khi sử dụng mạng xã hội',
-		answer: 'Tài khoản ngân hàng',
-	},
-	{
-		lesson: 11,
-		question: 'Mật khẩu nào được coi là mật khẩu mạnh',
-		answer: '$aLtNb83',
-	},
-	{
-		lesson: 11,
-		question:
-			'Kiểu tấn công bằng cách can thiệp vào giữa phiên liên lạc của 2 hệ thống gọi là',
-		answer: 'Tấn công dạng Man in the middle',
-	},
-	{
-		lesson: 11,
-		question:
-			'Thiết lập tắt cookies trên trình duyệt web giúp ngăn chặn nguy cơ mất:',
-		answer: 'User và Password',
-	},
-	{
-		lesson: 9,
-		question:
-			'  Rà soát hạ tầng, tập hợp các thiết bị hạ tầng đưa ra khỏi hệ thống thẩm định, trình phương án xử lý tái sử dụng, phù hợp đảm bảo khai thác hiệu quả hạ tầng.',
-		answer: 'Đây là công việc của tối ưu hạ tầng và điều chuyển thiết bị',
-	},
-	{
-		lesson: 9,
-		question: 'Các công cụ giám sát, hỗ trợ :',
-		answer:
-			'Công cụ điều hành tập trung, Công cụ giám sát tài nguyên, hạ tầng, Công cụ hệ thống báo cáo tập trung',
-	},
-	{
-		lesson: 6,
-		question:
-			'Anh (chị) xin vui lòng cho biết: Quyền nào mà bạn cần có để kết nối CSDL, nếu CSDL đang được khởi động bằng STARTUP RESTRICT?',
-		answer: 'RESTRICTED SESSION',
-	},
-	{
-		lesson: 5,
-		question:
-			'"Có tính năng phòng chống virus, phần mềm độc hại, chống tấn công ddos. Có khả năng sao lưu, backup dữ liệu tự động, Việc phân quyền người dùng có thể tùy biến theo yêu cầu của người quản trị" đây là:',
-		answer: 'Những ưu điểm của dịch vụ VNPT Elearning',
-	},
-	{
-		lesson: 10,
-		question: 'Chọn định nghĩa đúng nhất đối với cây nhị phân tìm kiếm',
-		answer:
-			'Cây nhị phân tìm kiếm là cây nhị phân có thành phần khóa của mọi nút lớn hơn thành phần khóa của tất cả các nút trong cây con trái của nó và nhỏ hơn thành phần khóa của tất cả các nút trong cây con phải của nó.',
-	},
-	{
-		lesson: 10,
-		question:
-			'Anh/Chị hãy cho biết, trong ngôn ngữ lập trình JAVA, kiểu số nguyên Integer có kích thước bao nhiêu bit?',
-		answer: '32',
-	},
-	{
-		lesson: 4,
-		question: 'Khi giới thiệu và tự giới thiệu NVKT nên:',
-		answer:
-			'Tự giới thiệu ngắn gọn tên, đơn vị làm việc với thái độ lịch sự, khiêm nhường. Giới thiệu người có địa vị cao hoặc người lớn tuổi trước và giới thiệu tên kèm theo chức vụ.',
-	},
-	{
-		lesson: 11,
-		question:
-			'Website cập nhật thông tin về an toàn thông tin do Trung tâm ATTT – Ban IT&VAS xây dựng',
-		answer: 'https://vnptcert.vnpt.vn/',
-	},
-	{
-		lesson: 11,
-		question:
-			'Khuyến nghị nào dưới đây là SAI khi sử dụng điện thoại thông minh?',
-		answer:
-			'Cài đặt ứng dụng từ các nguồn appstore, google play, website, diễn đàn chia sẻ,…',
-	},
-	{
-		lesson: 11,
-		question: 'Tường lửa (Firewall) không có tác dụng với',
-		answer: 'Social Engineering',
-	},
-	{
-		lesson: 11,
-		question: 'Chiều dài tối thiểu của 1 mật khẩu mạnh',
-		answer: '8 ký tự',
-	},
-	{
-		lesson: 11,
-		question: 'Điểm yếu nhất trong an ninh mạng là:',
-		answer:
-			'Thiết lập không đúng trên các trang thiết bị và phần mềm được cung cấp',
-	},
-	{
-		lesson: 11,
-		question: 'Phương án đảm bảo an toàn bảo mật cho điện thoại di động',
-		answer: 'Tất cả các phương án',
-	},
-	{
-		lesson: 11,
-		question: 'Tên gọi tiếng Việt của kho ứng dụng trên hệ điều hành Android',
-		answer: 'CH Play',
-	},
-	{
-		lesson: 11,
-		question:
-			'Rút trực tiếp USB ra khỏi máy tính mà không cần thực hiện các thao tác ngắt kết nối có thể làm dữ liệu trong USB bị lỗi. Điều đó đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 5,
-		question:
-			'"Khóa bí mật" trong dịch vụ VNPT - MobileID là loại khóa thuộc hệ thống:',
-		answer: 'Mã không đối xứng',
-	},
-	{
-		lesson: 10,
-		question:
-			'Giả sử ta có bảng dữ liệu có tên “KHACHHANG” gồm các thuộc tính theo thứ tự “MAKH”, “TENKH”. Câu lệnh truy vấn nào sau đây để xóa khách hàng có mã “001” có tên là “Tuấn”.',
-		answer:
-			'$str= “delete from KHACHHANG where MAKH= ‘001’ and TENKH= ‘Tuấn’”;',
-	},
-	{
-		lesson: 1,
-		question:
-			'Một trong các tình huống chào chưa đúng quy chuẩn trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, bao gồm:   ',
-		answer:
-			'Vừa chào vừa giới thiệu/ nói chuyện; Một tay bỏ vào túi quần, 1 tay chào; Cúi chào quá thấp so với quy chuẩn',
-	},
-	{
-		lesson: 2,
-		question:
-			'Khi thiết lập VPN với mã hóa PSK trên thiết bị router cisco, hai yếu tố nào phải cấu hình dưới cryto map? (chọn 2 đáp án)',
-		answer: '[2 chọn]\npeer\ntransform-set',
-	},
-	{
-		lesson: 2,
-		question:
-			'Giải pháp IDS/IPS nào được dùng giám sát tiến trình và tài nguyên',
-		answer: 'HIPS',
-	},
-	{
-		lesson: 2,
-		question:
-			'Điều nào đúng khi tường lửa ASA cho phép các gói tin HTTP GET đi vào trong suốt quá trình hoạt động (chọn 3 đáp án)',
-		answer:
-			'[3 chọn]\nKhi khớp với một kết nối TCP được tìm thấy\nKhi cấu hình phù hợp các mục NAT\nKhi các mục ACL được cấu hình phù hợp',
-	},
-	{
-		lesson: 2,
-		question:
-			'Chế độ nào được sử dụng để mã hóa lưu lượng trực tiếp giữa máy chủ và máy khách trên kênh truyền VPN',
-		answer: 'transport mode',
-	},
-	{
-		lesson: 2,
-		question:
-			'3 trường thông tin nào được dùng để mã hóa ESP trong quá trình truyền thông tin? (chọn 3 đáp án)',
-		answer: '[3 chọn]\nPad Length\nNext Header\nPadding',
-	},
-	{
-		lesson: 2,
-		question:
-			'Hai tính năng nào thường được sử dụng CoPP và CPPr để bảo vệ luồng dữ liệu? (chọn 2 đáp án)',
-		answer: '[2 chọn]\ntraffic classification\nQoS',
-	},
-	{
-		lesson: 8,
-		question:
-			'Máy tính dùng hệ điều hành nào có thể gia nhập AD (Active Directory) domain?',
-		answer: 'Windows OS',
-	},
-	{
-		lesson: 8,
-		question: 'Đặc điểm của mail offline là (chọn 2 đáp án):',
-		answer:
-			'[2 chọn]\nServer mail nội bộ không cần chạy liên tục.\nThuê host mail của nhà cung cấp dịch vụ.',
-	},
-	{
-		lesson: 8,
-		question: 'Cơ chế point-to-point trong việc giải đáp tên máy, đó là kiểu',
-		answer: 'P node',
-	},
-	{
-		lesson: 8,
-		question: 'Các thành phần chính của Hyper V:',
-		answer: 'Hypervisor, ngăn ảo hóa và mô hình I/O (nhập / Xuất) ảo hóa mới.',
-	},
-	{
-		lesson: 8,
-		question:
-			'Khi đang xử lý lỗi về mạng, bạn nhận thấy rằng máy tính có thể ping được tới một địa chri webserver nhưng lại không thể kết nối TCP qua port 80 trên server đó. Vậy đâu là nguyên nhân chính trong việc?',
-		answer: 'Một ACL đã chặn port TCP',
-	},
-	{
-		lesson: 1,
-		question:
-			'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, thời gian hợp lý khi thực hiện cúi chào khách hàng là:',
-		answer: 'Từ 01 đến 03 giây',
-	},
-	{
-		lesson: 6,
-		question: 'Cấu trúc bộ nhớ nào được chia sẽ? (chọn 2 đáp án)',
-		answer: '[2 chọn]\nLibrary cache\nLarge pool',
-	},
-	{
-		lesson: 11,
-		question: 'Nguyên nhân chủ quan trong nguy cơ tiêu hủy thông tin là:',
-		answer: 'Bản thân người dùng vô tình xóa thông tin',
-	},
-	{
-		lesson: 11,
-		question: 'Quy tắc đặt mật khẩu nào sau đây dễ bị bẻ khóa, dễ lộ mật khẩu?',
-		answer: 'Sử dụng các mật khẩu đơn giản như 123456, qwerty…',
-	},
-	{
-		lesson: 11,
-		question:
-			'Giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT có hiệu lực từ ngày',
-		answer: '10/09/2017',
-	},
-	{
-		lesson: 11,
-		question:
-			'Loại mã độc nào chỉ gây khó chịu cho người dùng mà không có tính phá hoại',
-		answer: 'Adware',
-	},
-	{
-		lesson: 11,
-		question:
-			'Theo quy định hiện hành của VNPT về tài khoản/mật khẩu, mật khẩu của các máy chủ, máy trạm phải được thiết lập đủ độ mạnh, bao gồm?',
-		answer:
-			'Tối thiểu 8 ký tự, có chữ in thường, in hoa, chữ số và ký tự đặc biệt',
-	},
-	{
-		lesson: 11,
-		question:
-			'Để cấp phát động địa chỉ IP, ta có thể sử dụng dịch vụ có giao thức nào?',
-		answer: 'Dùng giao thức DHCP',
-	},
-	{
-		lesson: 11,
-		question:
-			'Khi máy chủ teamview vào máy khách việc trao đổi thông tin có thể được thực hiện thông qua chức năng:',
-		answer: 'Voice Chat và Video Chat',
-	},
-	{
-		lesson: 11,
-		question: 'Theo mặc định, cổng nào được HTTPS sử dụng',
-		answer: '443',
-	},
-	{
-		lesson: 11,
-		question: 'Google Authenticator là phần mêm',
-		answer: 'Tạo mã xác thực OTP (One time password)',
-	},
-	{
-		lesson: 11,
-		question: 'Cú pháp nhắn tin để lấy lại mật khẩu truy cập Portal VNPT',
-		answer: 'MP gửi 993',
-	},
-	{
-		lesson: 11,
-		question: 'Phải thực hiện thay đổi mật khẩu ngay khi:',
-		answer: 'Tát cả đều đúng',
-	},
-	{
-		lesson: 11,
-		question: 'Chữ ký số được dùng cho mục đích gì',
-		answer: 'Để kiểm tra định danh người gửi',
-	},
-	{
-		lesson: 11,
-		question:
-			'Loại mã độc nào yêu cầu trả tiền để có thể khôi phục lại điều khiển hệ thống',
-		answer: 'Ransomware',
-	},
-	{
-		lesson: 11,
-		question:
-			'Để tăng cường bảo mật dữ liệu trong USB, đáp án nào dưới đây là sai?',
-		answer:
-			'Sao lưu từng tệp tin vào USB và không sử dụng mật khẩu cho các tệp tin',
-	},
-	{
-		lesson: 11,
-		question:
-			'Trong suốt quá trình kiểm định một bản ghi hệ thống máy chủ, các mục nào sau đây có thể được xem như một khả năng đe dọa bảo mật',
-		answer: 'Năm trăm ngàn công việc in được gửi đến một máy in',
-	},
-	{
-		lesson: 11,
-		question: 'Tổ hợp phím tắt để khóa màn hình trên Windows 10 là:',
-		answer: 'Windows + L',
-	},
-	{
-		lesson: 11,
-		question: 'Mật khẩu mạnh bao gồm:',
-		answer: 'Tất cả các yếu tố',
-	},
-	{
-		lesson: 8,
-		question:
-			'Câu lệnh nào có thể sử dụng để giải quyết các vấn đề về mạng (chọn 3 đáp án):',
-		answer: '[3 chọn]\nPing\nShow ip route\nShow ip interface',
-	},
-	{
-		lesson: 8,
-		question: 'Câu lệnh nào được sử dụng để xem thông tin CPU',
-		answer: 'Show process',
-	},
-	{
-		lesson: 8,
-		question: 'Sau khi cài Terminal service, để cài 1 phần mềm, ta sử dụng',
-		answer: 'Cài thông qua Add/Remove program',
-	},
-	{
-		lesson: 8,
-		question: 'Bản quyền phần mềm của Microsoft cung cấp loại nào?',
-		answer: 'Tất cả các đáp án trên',
-	},
-	{
-		lesson: 8,
-		question: 'Các phương pháp ảo hóa phổ biến là:',
-		answer: 'Ảo hóa máy chủ, ảo hóa ứng dụng, ảo hóa lưu trữ',
-	},
-	{
-		lesson: 8,
-		question:
-			'Khi cài đặt, VMWare tạo ra ở máy thật bao nhiêu card mạng ảo để máy thật giao tiếp với các máy tính ảo.',
-		answer: '2',
-	},
-	{
-		lesson: 2,
-		question:
-			'Khi áp dụng chính sách tường lửa “zone base policy”. Ba hành động nào được áp dụng cho lưu lượng lớp truy cập? (chọn 3 đáp án)',
-		answer: '[3 chọn]\npass\ninspect\ndrop',
-	},
-	{
-		lesson: 8,
-		question:
-			'Để thiết lập quyền khởi động ưu tiên cho file boot DLC (*.iso) trong VMWare :',
-		answer: 'Vào VM  à chọn CD/DVD (SATA) à chọn đường dẫn đến file DLC ',
-	},
-	{
-		lesson: 8,
-		question:
-			'Chính sách tài khoản nào nên được thiết lập để ngăn chặn các cuộc tấn công ác ý vào tài khoản của user?',
-		answer: 'Giới hạn số lần logon',
-	},
-	{
-		lesson: 8,
-		question:
-			'Để không phải thực hiện thao tác cài lại các máy ảo, có thể sử dụng chức năng khôi phục tại thời điểm được tao ra, ta chọn tính năng',
-		answer: 'Snapshots',
-	},
-	{
-		lesson: 8,
-		question: 'Chọn 2 địa chỉ lớp A (chọn 2 đáp án):',
-		answer: '[2 chọn]\n11.0.0.1/8\n10.0.0.2/8',
-	},
-	{
-		lesson: 8,
-		question:
-			'Nếu một router có 3 hosts kết nối trên một port và 2 host còn lại kết nối tới 2 port khác. Vậy có bao nhiêu miền quảng bá được thể hiện trên router?',
-		answer: '2',
-	},
-	{
-		lesson: 8,
-		question: 'Khôi phục lại Snapshot trên VMWare',
-		answer:
-			'Chọn Menu VM –> Snapshot –> Revert  to Snapshot: tên Snapshot bạn cần khôi phục',
-	},
-	{
-		lesson: 8,
-		question:
-			'Thiết lập VMWare Workstation, để tạo mới 1 máy ảo thực hiện trình tư các bước như sau',
-		answer:
-			'Chọn File >New Virtual Machine, chọn File ISO, chọn Next để thực hiện một số điều chỉnh cho đến tùy chỉnh lại RAM và CPU cho máy ảo và chọn thư mục để lưu trữ máy ảo.',
-	},
-	{
-		lesson: 8,
-		question: 'Chiều dài tối thiểu của mật khẩu cần phải là :',
-		answer: '8 ký tự',
-	},
-	{
-		lesson: 8,
-		question: 'Port mặc định của WorldClient là bao nhiêu:',
-		answer: '3000',
-	},
-	{
-		lesson: 2,
-		question:
-			'Bạn cần cấm việc dò quét từ mạng khác theo giao thức ICMP. Bạn phải set lệnh deny ICMP với tham số nào?',
-		answer: 'Type = 3, Code = 1',
-	},
-	{
-		lesson: 2,
-		question:
-			'Trong Active FTP mode, port nào được sử dụng để thiết lập kênh điều khiển ?',
-		answer: '21',
-	},
-	{
-		lesson: 2,
-		question: 'Ba điều nào đúng khi nói về DHCP Snooping? (chọn 3 đáp án)',
-		answer:
-			'[3 chọn]\nModify Traffic in transit\nArp Poisoning\nUsed to perform man-in-the-middle attack',
-	},
-	{
-		lesson: 8,
-		question: 'DHCPOFFER  đây là gói tin nhằm giúp',
-		answer: 'DHCP Server đề nghị danh sách các IP cho thuê đến Client',
-	},
-	{
-		lesson: 8,
-		question: 'Công nghệ Hyper-V trong Windows Server là gì?',
-		answer: 'Công nghệ ảo hóa của Microsoft',
-	},
-	{
-		lesson: 8,
-		question: 'Ảo hóa mức hệ điều hành còn gọi là',
-		answer: 'Containers Virtualizazation hay Isolation',
-	},
-	{
-		lesson: 8,
-		question:
-			'Sử dụng mặt subnet nào được sử dụng cho 8 dải mạng con, mỗi mạng chứa từ 6 cho tới 26 hosts?',
-		answer: '255.255.255.224',
-	},
-	{
-		lesson: 8,
-		question: 'Đâu là điểm khác giữa thiết bị CSU/DSU và modem?',
-		answer:
-			'Thiết bị CSU/DSU chuyển đổi tín hiệu số từ một router tới đường truyền leased; thiết bị modem chuyển đổi tín hiệu số từ router tới đường truyên điện thoại.',
-	},
-	{
-		lesson: 8,
-		question: 'Trình tự các bước Export máy ảo trong Hyper-V gồm:',
-		answer:
-			'Mở Hyper-V, sau đó chọn Export,  nhấn Browse để lựa chọn nơi muốn Export máy ảo trong Hyper-V.',
-	},
-	{
-		lesson: 8,
-		question:
-			'Để kích Hyper-V Manager trên Windows, thực hiện trình tự các bước sau:',
-		answer:
-			'Ở cửa sổ Control Panel, chọn Programs - truy cập Programs and Features rồi chọn Turn Windows features on or off. Tích vào Hyper-V rồi nhấn OK',
-	},
-	{
-		lesson: 2,
-		question:
-			'Hai tính năng nào thường được sử dụng CoPP và CPPr để bảo vệ luồng dữ liệu? (chọn 2 đáp án)',
-		answer: '[2 chọn]\nQoS\ntraffic classification',
-	},
-	{
-		lesson: 2,
-		question:
-			'Hai lệnh nào được sử dụng để bảo mật file cấu hình cho thiết bị cisco (chọn 2 đáp án)',
-		answer: '[2 chọn]\nsecure boot-config\nsecure boot-image',
-	},
-	{
-		lesson: 11,
-		question: 'Quy trình để tiếp cận đơn vị triển khai phần mềm:',
-		answer:
-			'Chuẩn bị - Tiếp cận - Giới thiệu tư vấn lợi ích dịch vụ - Xử lý tình huống trong quá trình tư vấn - Một số giải pháp hỗ trợ khi tư vấn - Chăm sóc khách hàng',
-	},
-	{
-		lesson: 11,
-		question:
-			'Theo khuyến cáo của Microsoft, nhà sản xuất hệ điều hành Windows, trên một máy tính bạn chỉ nên sử dụng duy nhất một phần mềm diệt virus. Điều đó đúng hay sai?',
-		answer: 'Đúng',
-	},
-	{
-		lesson: 8,
-		question: 'Chọn 2 đáp án đúng về địa chỉ Ipv6 ? (chọn 2 đáp án):',
-		answer:
-			'[2 chọn]\nfd15:db8::700:3:400F:572B\nfd15:0db8:0000:0000:700:3:400F:527B',
-	},
-	{
-		lesson: 8,
-		question:
-			'Bạn có thể cấu hình Hyper – V để chạy nhiều máy ảo cùng lúc. Số lượng máy ảo nhiêu hay ít tùy thuộc vào mấy yếu tố',
-		answer: '3',
-	},
-	{
-		lesson: 8,
-		question:
-			'Sau khi cài Terminal Service(Software Deployment) , để cài một phần mềm người ta sử dụng',
-		answer: 'Thông qua Add/Remove Program',
-	},
-	{
-		lesson: 2,
-		question:
-			'Điều nào đúng về thiết bị ASA khi ở chế độ trong suốt (transparent)',
-		answer: 'It requires a management IP address',
-	},
-	{
-		lesson: 2,
-		question:
-			'Hai lệnh nào được sử dụng để bảo mật file cấu hình cho thiết bị cisco (chọn 2 đáp án)',
-		answer: '[2 chọn]\nsecure boot-image\nsecure boot-config',
-	},
-	{
-		lesson: 8,
-		question:
-			'Các giao thức xác thực nào sau đây là được sử dụng trong các mạng không dây ?',
-		answer: '802.11b',
-	},
-	{
-		lesson: 2,
-		question:
-			'Khi áp dụng chính sách tường lửa “zone base policy”. Ba hành động nào được áp dụng cho lưu lượng lớp truy cập? (chọn 3 đáp án)',
-		answer: '[3 chọn]\npass\ndrop\ninspect',
-	},
+	{lesson:1, question:'Các cá nhân/đoàn thể nào tham gia tổ chức triển khai và phổ biến, tuyên truyền Quy tắc ứng xử trên mạng xã hội đến người lao động tại đơn vị?', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Khi đăng tải nội dung lên mạng xã hội, chúng ta cần:', answer:'Kiểm tra kỹ thông tin trước khi đăng tải để đảm bảo nội dung đúng sự thật và phù hợp.'}, 
+{lesson:1, question:'Nếu nhân viên VNPT "Một tay bỏ vào túi quần, 1 tay chào" đây là tình huống', answer:'Chào chưa đúng quy chuẩn trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT'}, 
+{lesson:1, question:'Theo sổ tay Văn hóa VNPT, Sức mạnh thương hiệu "VNPT- Cuộc sống đích thực" phải được tạo ra từ các giá trị đích thực bên trong VNPT với:', answer:'Con người đích thực, Môi trường đích thực, Sản phẩm đích thực.'}, 
+{lesson:1, question:'Trong Chuẩn mực VNPT, chuẩn mực về "Văn hóa ứng xử" của cấp dưới với cấp trên là:', answer:'Thẳng thắn, chấp hành'}, 
+{lesson:1, question:'Theo anh chị, Câu Khẩu hiệu (Slogan) của VNPT là gì?', answer:'VNPT - Cuộc sống đích thực'}, 
+{lesson:1, question:'Theo anh/chị thì đâu là thách thức/mối đe dọa (Threats) của VNPT?', answer:'Nhiều nhà cung cấp dịch vụ quốc tế đang tìm kiếm cơ hội kinh doanh tại thị trường Việt Nam; hạ tầng băng rộng đang thay thế hạ tầng cáp đồng, thị trường di động Việt Nam chủ yếu vẫn là thị trường trả trước và có tỷ lệ rời mạng cao; việc triển khai dịch vụ chậm có thể làm mất thị trường nhanh chóng'}, 
+{lesson:1, question:'Theo anh/chị thì đâu là điểm yếu (Weaknesses) của VNPT?', answer:'Thiếu sự khác biệt rõ ràng cả về thương hiệu và sản phẩm; quy trình nội bộ kéo dài; thiếu công cụ mạnh tiếp cận thị trường; thiếu lực lượng lao động CNTT có tay nghề cao; thương hiệu VNPT không được biết đến bên ngoài thị trường Việt Nam'}, 
+{lesson:1, question:'Người lao động thực hiện tốt Quy tắc ứng xử trên mạng xã hội sẽ được xem xét biểu dương, khen thưởng. Đúng hay Sai?', answer:'Đúng'}, 
+{lesson:1, question:'Chỉ có phát triển nhanh, vượt trội, bền vững, VNPT mới có thể chiến thắng trong cạnh tranh và hội nhập.Yếu tố "Nhanh" được hiểu là:', answer:'Bàn nhanh - Quyết nhanh - Làm nhanh'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, tình huống chào chưa đúng quy chuẩn VNPT bao gồm:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Theo anh/chị thì đâu là cơ hội (Opportunities) của VNPT?', answer:'Tăng trưởng mạnh mẽ của thị trường CNTT cùng với nhận thức cao về IT trên toàn quốc; tăng trưởng mạnh mẽ của thị trường di động với nhu cầu thay đổi từ thoại sang dữ liệu và tỷ lệ sử dụng điện thoại thông minh cao; Chính phủ thúc đẩy lĩnh vực ICT phát triển'}, 
+{lesson:1, question:'Theo sổ tay văn hóa VNPT quy định "Trách nhiệm của VNPT" bao gồm:', answer:'Với nhà nước: Thực thi pháp luật Với khách hàng: Luôn làm hài lòng Với đối tác: Hợp tác cùng phát triển Với cộng đồng xã hội: Cùng chung vai góp sức Với người lao động: Tôn trọng và bảo vệ Với môi trường: Vì một hành tinh xanh'}, 
+{lesson:1, question:'Trong Chuẩn mực VNPT, chuẩn mực về "Văn hóa ứng xử" trong đơn vị đó là:', answer:'Với đồng nghiệp: Hợp tác – Cởi mở Với cấp dưới: Lắng nghe – Chân thành Với cấp trên: Thẳng thắn – Chấp hành Với bản thân: Vượt qua chính mình'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, khi thực hiện cúi chào, "Các ngón tay xòe ra và đặt ở bên trái" đây là tình huống', answer:'Chào chưa đúng quy chuẩn VNPT'}, 
+{lesson:1, question:'Kỹ thuật cúi chào nào là đúng theo nội dung Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT?', answer:'Cúi nhẹ cả người từ thắt lưng xuống 15 độ.'}, 
+{lesson:1, question:'Việc xây dựng Quy tắc ứng xử trên mạng xã hội của người lao động VNPT, nhằm mục đích:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Tập đoàn VNPT đang bước vào giai đoạn tăng tốc trong chuyển đổi số. Theo Anh/Chị, để việc này thành công thì mỗi Người VNPT cần phải làm gì ?', answer:'Để thành công và giữ vị trí chủ đạo trong công cuộc chuyển đổi số quốc gia, điều này đòi hỏi mỗi người VNPT phải tự chuyển đổi chính bản thân mình'}, 
+{lesson:1, question:'Quy tắc Tôn trọng bản quyền trong Quy tắc ứng xử trên mạng xã hội của VNPT, nói đến việc:', answer:'Không sử dụng tên, logo, hình ảnh, bản quyền thương hiệu của VNPT, sản phẩm dịch vụ của VNPT vào mục đích cá nhân'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, khoảng cách hợp lý khi thực hiện cúi chào khách hàng là:', answer:'Từ 1 đến 1,5m'}, 
+{lesson:1, question:'Theo Sổ tay Văn hóa VNPT, Trách nhiệm của VNPT với người lao động là "Tôn trọng và Bảo vệ" được hiểu như thế nào?', answer:'VNPT xác định đội ngũ lao động là tài sản quý giá nhất của VNPT, là những người làm nên lịch sử truyền thống hào hùng, cũng như đang tạo dựng những bậc thang cho tương lai, do vậy mọi chủ trương, ý tưởng, cơ chế, chính sách hay giải pháp triển khai cũng đều hướng về người lao động.'}, 
+{lesson:1, question:'Trong Chuẩn mực VNPT, chuẩn mực về "Văn hóa ứng xử" của cấp trên với cấp dưới là:', answer:'Lắng nghe, chân thành'}, 
+{lesson:1, question:'Chỉ có phát triển nhanh, vượt trội, bền vững, VNPT mới có thể chiến thắng trong cạnh tranh và hội nhập. Theo anh chị, Yếu tố "Bền vững" được hiểu là:', answer:'Đạo lý bền vững - Hạ tầng bền vững - Lợi nhuận bền vững'}, 
+{lesson:1, question:'Sức mạnh gắn kết của VNPT - Một mái nhà chung được thể hiện ở những yếu tố nào sau đây?', answer:'Hạ tầng chung, Sản phẩm chung, Thương hiệu chung, Lợi ích chung'}, 
+{lesson:1, question:'Khi thấy những thông tin mang tính chất tiêu cực về VNPT, nhân viên VNPT cần:', answer:'Thông báo với Bộ phận truyền thông của Tập đoàn'}, 
+{lesson:1, question:'Anh/chị cho biết VNPT lựa chọn yếu tố nào để tạo nên "Đạo đức" trong văn hoá VNPT:', answer:'Tín với Nhà nước, Tín với Cộng đồng, Tín với Khách hàng, Tín với Người lao động'}, 
+{lesson:1, question:'Quy tắc ứng xử trên mạng xã hội áp dụng đối với tất cả người lao động VNPT làm việc tại Công ty mẹ và các Công ty con do VNPT sở hữu 100% vốn điều lệ. Đúng hay sai?', answer:'Đúng'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, việc cúi chào được áp dụng tại các điểm chạm như:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Trong sổ tay văn hóa VNPT, anh chị hiểu trách nhiệm của người VNPT với "Môi trường" là:', answer:'Vì một hành tinh xanh _ Cam kết xây dựng cơ quan Xanh - Sạch - Đẹp, bảo đảm an toàn, PCCN, ứng dụng công nghệ tiên tiến thân thiện và bảo vệ môi trường.'}, 
+{lesson:1, question:'Theo anh chị, khi VNPT thực hiện chuyển đổi số, chiến lược về văn hóa nào sau đây sẽ hỗ trợ tốt nhất cho chiến lược dài hạn của VNPT?', answer:'Áp dụng những thông lệ tốt nhất của một doanh nghiệp số, bảo tồn những thông lệ của doanh nghiệp truyền thống vẫn có giá trị cho sự phát triển bền vững của doanh nghiệp số'}, 
+{lesson:1, question:'Các lĩnh vực chính cụ thể của "Chiến lược phát triển Tập đoàn BCVTVN cho giai đoạn 2017 - 2025, tầm nhìn 2030" là gì?', answer:'IoT; mạng lưới tin cậy; đám mây; phân tích dữ liệu; an ninh mạng và trí tuệ nhân tạo'}, 
+{lesson:1, question:'Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT được áp dụng cho:', answer:'Tất cả CBNV từ lãnh đạo đến nhân viên, lao động thuê ngoài'}, 
+{lesson:2, question:'Anh/chị cho biết giao thức https sử dụng port nào?', answer:'443'}, 
+{lesson:2, question:'Câu lệnh nào được sử dụng để hiển thị bảng routing trên HĐH Linux?', answer:'Route -n'}, 
+{lesson:2, question:'Anh/chị hay cho biết khi một kẻ tấn công lợi dụng lỗ hổng của việc kiểm tra dữ liệu đầu vào trong các ứng dụng web để thêm vào và thực thi các lệnh SQL bất hợp pháp thì cách tấn công đó được gọi là gì?', answer:'SQL Injection attack'}, 
+{lesson:2, question:'Kỹ thuật sử dụng các gói tin giả mạo chiếm đoạt kết nối giữa máy tính nạn nhân với máy đích?', answer:'TCP Hijacking'}, 
+{lesson:2, question:'Người dùng mở 2 trình duyệt chrome cùng một lúc và cùng truy vấn vào trang web http://vnpt.vn, trường nào sau đây là khác nhau giữa 2 connection này?', answer:'Source port number'}, 
+{lesson:2, question:'Việc sử dụng đội quân zombie tấn công trên mạng là hình thức?', answer:'DDOS'}, 
+{lesson:2, question:'Câu lệnh nào được sử dụng để bật xác thực AAA nếu người dùng truy cập vào chế độ privilege', answer:'aaa authentication enable default local'}, 
+{lesson:2, question:'Hình thức mã hóa nào dưới đây không dựa trên block cipher?', answer:'RC4'}, 
+{lesson:2, question:'Để thực hiện cuộc tấn công Trojan-Backdoor. Hacker sẽ thực hiện:', answer:'Trojan Client được cài trên máy nạn nhân – Hacker điều khiển bằng Trojan Server'}, 
+{lesson:2, question:'Kỹ thuật nhằm tăng tốc độ thực thi và giảm kích thước chương trình virus được gọi là?', answer:'Biến hình'}, 
+{lesson:2, question:'Phương thức thông dụng để chia sẻ một kết nối internet cho nhiều máy khác trong mạng là:', answer:'ICS (Internet Connection Sharring)'}, 
+{lesson:2, question:'Nếu không phải do attacker tấn công thì backdoor có thể lây nhiễm từ cách nào sau đây?', answer:'Left in the code by a programmer.'}, 
+{lesson:2, question:'Có thể kiểm tra các port đang mở với?', answer:'Netstat'}, 
+{lesson:2, question:'Trên firewall ASA, access list entry nào được sử dụng trong cấu hình access-list mà cho phép match multiple entries với chỉ 1 câu lệnh?', answer:'Object groups'}, 
+{lesson:2, question:'Câu lệnh nào được sử dụng để bật tính năng tự động học MAC trên switch', answer:'switchport port-security mac-address sticky'}, 
+{lesson:2, question:'Trong môi trường Cisco Cloud Web Security khi nào lưu lượng truy cập mạng được phép cho qua các quét proxies', answer:'Khi máy client đã kết nối tới dịch vụ VPN đã cho qua proxies.'}, 
+{lesson:2, question:'Các server như: Web, Mail thường được đặt trong vùng nào dưới đây?', answer:'Demilitarized Zones'}, 
+{lesson:2, question:'HTTPS sử dụng giao thức nào để mã hóa dữ liệu ?', answer:'SSL hoặc TLS.'}, 
+{lesson:2, question:'Thành phần nào trong bộ 802.1x thực thi chính sách mạng', answer:'authentication server'}, 
+{lesson:2, question:'Điều quan trọng nhất khi triển khai firewall là gì ?', answer:'Writing a firewall policy'}, 
+{lesson:2, question:'Kỹ thuật nào sau đây được hacker sử dụng để vượt qua MAC filtering ở thiết bị phát wifi ?', answer:'Spoof a physical address'}, 
+{lesson:2, question:'3 yếu tố quan trọng nhất của an toàn an ninh thông tin (Information Security) ?', answer:'Confidentiality, Integrity and Availability'}, 
+{lesson:2, question:'Giao thức nào cung cấp tính toàn vẹn dữ liệu, mã hóa, xác thực và anti-replay cho Ipsec VPN', answer:'ESP protocol'}, 
+{lesson:2, question:'Metasploit Framework là công cụ tấn công khai thác lỗ hổng để lấy Shell của máy nạn nhân. Ngay sau khi cài đặt, chạy công cụ này thì gặp sự cố: tất cả các lệnh gõ trên Metasploit không được thi hành. Nguyên nhân là do:', answer:'Do không kết nối được tới máy nạn nhân'}, 
+{lesson:2, question:'Nếu bạn mở cổng TCP/21 mà dịch vụ FTP vẫn bị firewall block, vậy bạn cần thực hiện bước nào dưới đây để dịch vụ ftp hoạt động được ?', answer:'Open TCP/20'}, 
+{lesson:2, question:'Tính năng nào được sử dụng để chọn địa chỉ tiếp theo thay vì chọn cổng trong cơ chế dịch chuyển địa chỉ PAT pool', answer:'round robin'}, 
+{lesson:2, question:'Phải vào mode nào để sử dụng lệnh “ip ospf authentication-key c1$c0?”', answer:'Interface'}, 
+{lesson:2, question:'Máy Windows Server 2003 có 2 thiết bị giao tiếp mạng: một giao tiếp Internet và một giao tiếp với các Client. Người quản trị triển khai NAT trên Windows Server này để chia sẻ kết nối internet. Sau khi triển khai xong thì Server giao tiếp internet tốt, còn các Client thì không giao tiếp được mặc dùng đã khai báo đúng và đủ các thông số IP cho Clients. Nguyên nhân dẫn đến tình trạng trên:', answer:'Do dịch vụ “Basic Firewall” ngăn không cho các Client giao tiếp internet'}, 
+{lesson:2, question:'Anh/Chị cho biết cách thức nào sau đây được sử dụng phổ biến trong kỷ thuật Social engineering attack?', answer:'Qua điện thoại'}, 
+{lesson:2, question:'Anh/chị cho biết passwords được lưu ở đâu trong hệ điều hành Linux', answer:'/etc/shadow'}, 
+{lesson:2, question:'Hình thức nào sau đây không phải là hình thức tấn công DoS?', answer:'ARP Spoofing'}, 
+{lesson:2, question:'Anh/chị cho biết cách tốt nhất để bảo mật cho thiết bị switch tránh việc truy cập ở lớp vật lý là gì?', answer:'Disable tất cả các port không sử dụng'}, 
+{lesson:2, question:'Chế độ nào kém an toàn hơn các tùy chọn khác nhưng cho phép tối ưu thông lượng mạng', answer:'Promiscuous mode'}, 
+{lesson:2, question:'Loại nào được dùng để đại diện cho nhiều yếu tố trong chính sách truy cập Cisco', answer:'object groups'}, 
+{lesson:2, question:'Câu lệnh nào được sử dụng để cấu hình tưởng lửa có chức năng che giấu các địa chỉ nội bộ', answer:'no proxy-arp'}, 
+{lesson:2, question:'Tùy chọn nào được dùng để duy trì kết nối khi đi qua tường lửa ASA', answer:'Routing table'}, 
+{lesson:2, question:'Trên Firewall Cisco ASA, Interface nào có giá trị security-level lớn nhất ?', answer:'Interface inside'}, 
+{lesson:2, question:'Trên Firewall Cisco ASA, căn cứ vào hình vẽ trên hãy chỉ ra loại NAT được sử dụng ?', answer:'Dynamic NAT'}, 
+{lesson:2, question:'Giá trị mặc định TTL trên hệ điều hành Linux là bao nhiêu ?', answer:'64'}, 
+{lesson:2, question:'Kiểu tường lửa nào có thể thực hiện kiểm tra lớp tận cùng gói tin', answer:'application firewall'}, 
+{lesson:2, question:'Anh/chị cho biết thứ tự đúng của các gói tin gửi đi trong quá trình khởi tạo TCP theo phương pháp bắt tay 03 bước', answer:'SYN, SYN-ACK, ACK'}, 
+{lesson:2, question:'Trường nào dưới đây được sử dụng để nhận biết gói tin được gửi đi trong cùng mạng hay khác mạng?', answer:'Subnet Mask'}, 
+{lesson:3, question:'Các chương trình học tập thiết kế cho người lớn cần tuân thủ nguyên tắc nào trong số các nội dung sau?', answer:'Sử dụng kinh nghiệm của học viên trong các ví dụ và hoạt động học tập'}, 
+{lesson:3, question:'Hình thức học tập phổ biến hiện nay là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:3, question:'Sự tham gia của nhân viên vào sự thay đổi là cần thiết bởi vì:', answer:'Giúp kiểm soát quá trình thay đổi'}, 
+{lesson:3, question:'Lợi ích của làm việc nhóm là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:3, question:'Một trong những nguyên tắc để lập kế hoạch là:', answer:'Có tính linh hoạt phù hợp với sự thay đổi của môi trường'}, 
+{lesson:3, question:'Phương pháp 6 chiếc mũ tư duy hướng mọi người cùng tập trung vào vấn đề từ cùng một góc nhìn, nhằm:', answer:'Triệt tiêu hoàn toàn các tranh cãi xuất phát từ các góc nhìn khác nhau.'}, 
+{lesson:3, question:'Khi bắt đầu học nên bắt đầu bằng tư tưởng:', answer:'Tiếp thu cái mới'}, 
+{lesson:3, question:'Đảm bảo sự phù hợp trong năng lực sáng tạo có nghĩa là:', answer:'Phải đúng đối tượng, đúng mục tiêu và đúng cách'}, 
+{lesson:3, question:'Lợi ích khi có mối quan hệ tốt là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:3, question:'Đầu ra của hoạch định chiến lược là:', answer:'Bản kế hoạch kinh doanh'}, 
+{lesson:3, question:'"Thay đổi là một quá trình chứ không phải là một sự kiện". Đúng hay sai?', answer:'Đúng'}, 
+{lesson:3, question:'Tìm kiếm cơ hội được định nghĩa là:', answer:'Chủ động tìm cách xây dựng những mối quan hệ công việc với người khác'}, 
+{lesson:3, question:'"Luôn cố gắng tuân theo logic là một trong những nguyên tắc phải tuân thủ khi sử dụng phương pháp Tập kích não". Đúng hay sai?', answer:'Sai'}, 
+{lesson:3, question:'Mô hình học tập &quot;lấy người học làm trung tâm&quot; là mô hình trong đó giảng viên là nhà diễn thuyết, nhà truyền đạt thông tin nhằm đi hết nội dung của chương trình học. Đúng hay sai?', answer:'Sai'}, 
+{lesson:3, question:'Quy trình sáng tạo thường bắt đầu từ việc:', answer:'Tìm kiếm ý tưởng trong thực tế'}, 
+{lesson:3, question:'Để tìm ý tưởng cho phương pháp mở rộng hay thu nhỏ, nhân viên VNPT nên:', answer:'Suy nghĩ việc mở rộng hay thu nhỏ sản phẩm, dịch vụ sẵn có'}, 
+{lesson:3, question:'Đối với Doanh nghiệp, sự sáng tạo có những lợi ích:', answer:'Các đáp án đều đúng'}, 
+{lesson:3, question:'Đâu là hành động chính trong năng lực học tập ứng dụng ?', answer:'Tích cực tham gia các hoạt động học tập'}, 
+{lesson:3, question:'Những lợi ích của sáng tạo đối với cá nhân bao gồm', answer:'Các đáp án đều đúng'}, 
+{lesson:3, question:'Trong ma trận quản lý thời gian, đối với công việc quan trọng nhưng không khẩn cấp thì nên:', answer:'Có kế hoạch làm hợp lý'}, 
+{lesson:4, question:'Sau khi thực hiện lắp đặt/sửa chữa dịch vụ tại nhà khách hàng, NVKT KHÔNG nên:', answer:'Nhờ khách hàng dọn giúp vệ sinh khu vực đã thi công'}, 
+{lesson:4, question:'Khi giao tiếp với khách hàng, chúng ta luôn mong muốn nhận được thông tin phản hồi từ khách hàng. Đúng hay Sai?', answer:'Đúng'}, 
+{lesson:4, question:'NVKT sẽ ứng xử thế nào khi khách hàng yêu cầu ngừng sử dụng dịch vụ/sản phẩm của VNPT?', answer:'Tìm hiểu nguyên nhân, thuyết phục khách hàng tiếp tục sử dụng dịch vụ. Trong trường hợp khách hàng thực sự không còn nhu cầu thì hướng dẫn khách hàng làm thủ tục chấm dứt hợp đồng.'}, 
+{lesson:4, question:'Lý do khiến thuê bao rời mạng có thể là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:4, question:'Sau khi lắp đặt dịch vụ Internet tại nhà khách hàng, một trong những vấn đề mà NVKT cần lưu ý khách hàng là:', answer:'Số lượng thiết bị tối đa truy cập cùng lúc trên đường truyền'}, 
+{lesson:4, question:'NVKT nên ứng xử thế nào khi gặp khách hàng lần đầu?', answer:'Chủ động cúi chào theo quy chuẩn và hướng ánh mắt về phía khách hàng với thái độ vui vẻ, nhiệt tình; giới thiệu bản thân để khách hàng yên tâm; xác nhận lại với khách hàng về yêu cầu lắp đặt, sửa chữa ... dịch vụ.'}, 
+{lesson:4, question:'NVKT khi thực hiện chăm sóc khách hàng, nếu khách hàng phản ánh "Mạng bị chậm", sẽ xử lý như thế nào?', answer:'Xin lỗi khách hàng; khảo sát và kiểm tra dịch vụ; đưa ra khuyến nghị hoặc đo sóng WIFI và tối ưu WIFI cho khách hàng.'}, 
+{lesson:4, question:'Khi lắp đặt, xử lý sự cố dịch vụ cho khách hàng xong, nội dung nào NVKT không nên khuyến nghị khách hàng:', answer:'Chủ động mua và lắp thêm repeater nếu muốn mở rộng thêm vùng phủ sóng'}, 
+{lesson:4, question:'Để tạo thiện cảm với khách hàng, chúng ta nên:', answer:'Giữ đúng lời hứa với khách hàng'}, 
+{lesson:4, question:'Các lỗi thường mắc phải trong bán hàng', answer:'Tất cả đều đúng'}, 
+{lesson:4, question:'Sau khi xử lý khu vực sóng yếu hoặc xử lý chất lượng mạng tại nhà khách hàng. NVKT nên:', answer:'Thông báo cho khách hàng về tình hình chất lượng dịch vụ sau xử lý; Hỏi khách hàng xem còn thắc mắc điều gì nữa không; Gửi lời cảm ơn khách hàng đã tin tưởng và sử dụng dịch vụ của VNPT; Giới thiệu đầu số hỗ trợ khách hàng; Chào tạm biệt khách hàng theo quy chuẩn VNPT.'}, 
+{lesson:4, question:'Theo anh/chị thì khách hàng ngày nay có xu hướng thế nào?', answer:'Tất cả đều đúng'}, 
+{lesson:4, question:'Khi tiếp cận khách hàng để tư vấn dịch vụ, nếu khách hàng đang bận việc, NVKT nên:', answer:'Tạm biệt khách hàng và gợi ý khách hàng xin một cuộc hẹn khác'}, 
+{lesson:4, question:'Lắng nghe tích cực KHÔNG có đặc điểm nào, sau đây:', answer:'Khi khách hàng đang trình bày, nếu có điều gì khách hàng nói chưa đúng thì nên ngắt lời để giải thích ngay, tránh để khách hàng hiểu lầm'}, 
+{lesson:4, question:'NVKT đến tối ưu mạng WIFI cho khách hàng hiện hữu nhằm mục đích', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:4, question:'Khi khách hàng có ý so sánh các dịch vụ của VNPT với dịch vụ của các đối thủ cạnh tranh về mức giá sử dụng, NVKT nên:', answer:'Nêu và chứng minh tính ưu việt về chất lượng sản phẩm dịch vụ của VNPT cùng những chính sách chăm sóc khách hàng, dịch vụ hậu mãi; Định hướng cho khách hàng hiểu về chất lượng quan trọng hơn giá cả.'}, 
+{lesson:4, question:'Theo anh/chị, mục đích quan trọng nhất khi một doanh nghiệp yêu cầu nhân viên tiếp xúc với khách hàng phải đeo thẻ nhân viên và mặc đồng phục là gì ?', answer:'Thể hiện tính chuyên nghiệp và thái độ tôn trọng trong phục vụ khách hàng'}, 
+{lesson:4, question:'Khi giao tiếp với khách hàng, NVKT nên tránh:', answer:'Nói với tốc độ và ngữ điệu đều đều'}, 
+{lesson:4, question:'Những phàn nàn của khách hàng sẽ giúp cho đơn vị:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:5, question:'VNPT Pay có tính năng thanh toán tự động các hóa đơn, đảm bảo cho các thanh toán định kỳ luôn đúng hạn. Đúng hay sai?', answer:'Đúng'}, 
+{lesson:5, question:'Khi sử dụng hệ thống VNPT HMIS, người dân sẽ hưởng được lợi ích gì?', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'Trong tính năng Quản trị của giải pháp VNPT VXP không có chức năng nào:', answer:'Chức năng trọng tài'}, 
+{lesson:5, question:'Các tính năng chính của giải pháp VNPT VXP là:', answer:'Tính năng nhận gửi và Tính năng quản trị'}, 
+{lesson:5, question:'Hóa đơn điện tử không có mã cơ quan Thuế:', answer:'Là Hóa đơn điện tử do Tổ chức bán hàng hóa, cung cấp dịch vụ gửi cho Người mua không có mã của cơ quan Thuế'}, 
+{lesson:5, question:'Hệ thống VNPT VSR có thể tích hợp dữ liệu với hệ thống báo cáo chính phủ?', answer:'Có'}, 
+{lesson:5, question:'So với việc sử dụng Phòng họp không giấy tờ VNPT e-Cabinet, một trong những hạn chế của phòng họp truyền thống là:', answer:'Các thành viên tham gia cuộc họp, không thể tham gia cùng lúc tại nhiều địa điểm'}, 
+{lesson:5, question:'Khi sử dụng phần mềm VNPT e-Cabinet sẽ mang lại những lợi ích gì?', answer:'- Tích hợp dễ dàng với các ứng dụng thông qua hệ thống API - Kết nối thông minh với các thiết bị: Màn hình TV, Máy QR Code, Laptop/Tablet, SMS/Email,… - Giao diện thân thiện với người sử dụng, tính năng tương tác cao. - Quản lý ghi chú tài liệu họp trực tuyến từ xa. - Hỗ trợ ký số trên Sim Mobile PKI.'}, 
+{lesson:5, question:'Nạp tiền vào Ví điện tử VNPT Pay bằng cách nào? :', answer:'Đăng nhập Ví VNPT Pay->Chọn “Nạp tiền” trên màn hình chính-> Nhập số tiền cần nạp->Ấn “Tiếp tục”-> Nạp tiền thành công'}, 
+{lesson:5, question:'Các chức năng chính của hệ thống vnEdu IOC', answer:'Trực quan hóa: Giám sát cảnh báo; Lịch công tác; Gửi thông báo; Đồng bộ Cơ sở dữ liệu ngành'}, 
+{lesson:5, question:'vnEdu Portal ra đời hướng đến mục đích gì?', answer:'Giới thiệu, quảng bá hình ảnh các đơn vị giáo dục'}, 
+{lesson:5, question:'Trong tính năng Nhận gửi của giải pháp VNPT VXP không có chức năng nào:', answer:'Tra cứu'}, 
+{lesson:5, question:'"VNPT PAY chỉ có thể thực hiện việc thu hộ cho các đối tác cung cấp dịch vụ trong nội bộ VNPT". Đúng hay sai?', answer:'Sai'}, 
+{lesson:5, question:'Lợi ích khi sử dụng hóa đơn điện tử:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'Định nghĩa đầy đủ của Dịch vụ SIP Trunking cố định là:', answer:'Đường dây trung kế thoại chạy trên giao thức SIP được cung cấp trên phạm vi tất cả các T/TP trên toàn quốc cho đối tượng KH là các tổ chức doanh nghiệp có trang bị tổng đài IP PBX dùng để tạo kết nối cho các đầu số điện thoại cố định.'}, 
+{lesson:5, question:'Đối tượng sử dụng hệ thống vnEdu IOC', answer:'Các đối tượng trong khối quản lý điều hành (Sở Giáo dục, Phòng Giáo dục)'}, 
+{lesson:5, question:'"Khóa công khai" trong dịch vụ VNPT - MobileID là loại khóa được tạo bởi:', answer:'Khóa bí mật tương ứng'}, 
+{lesson:5, question:'Trong hệ thống VNPT VSR, hệ thống thông tin thu thập, tổng hợp, phân tích số liệu báo cáo từ các bộ, cơ quan, địa phương để phục vụ công tác chỉ đạo, điều hành của Chính phủ, Thủ tướng Chính phủ, là định nghĩa của:', answer:'Hệ thống thông tin báo cáo Chính phủ ( GRIS)'}, 
+{lesson:5, question:'Khách hàng dùng SIM số bình thường là đã có thể sử dụng VNPT - MobileID. Đúng hay Sai?', answer:'Sai'}, 
+{lesson:5, question:'"Theo dõi, giám sát thông tin y tế cơ sở toàn Huyện trực tuyến." là lợi ích mà hệ thống VNPT HMIS đem đến cho đối tượng nào sau đây?', answer:'Trung tâm y tế'}, 
+{lesson:6, question:'Cấu trúc bộ nhớ nào ghi tất cả những thay đổi CSDL của instance?', answer:'Redo log buffer'}, 
+{lesson:6, question:'Có bao nhiêu pan tồn tại trong phiên bản mới của Oracle Enterprise Manager (OEM)?', answer:'Two, in a master/detail format'}, 
+{lesson:6, question:'Tác vụ nào được phép thực thi trên tablespace chỉ đọc?', answer:'Drop table'}, 
+{lesson:6, question:'Tùy chọn SHUTDOWN nào sẽ đợi user hoàn thành các transaction chưa được commit của họ?', answer:'SHUTDOWN TRANSACTIONAL'}, 
+{lesson:6, question:'Số tối thiểu của online redo log file yêu cầu trong CSDL?', answer:'2'}, 
+{lesson:6, question:'Cho một quan hệ cơ sơ dữ liệu HANG(MA_HANG, TEN_HANG, LOAI, NHACC, GIA). Để giảm giá 20% các mặt hàng thuộc nhà cung cấp là Sony thì câu lệnh SQL nào sau được dùng?', answer:'Update HANG set GIA = GIA – GIA*20/100 where NHACC=“Sony”.'}, 
+{lesson:6, question:'Tùy chọn mới nào của RMAN có thể được DBA dùng để lưu thời gian khi việc sao lưu không thành công?', answer:'Khởi động lại sao lưu với tùy chọn NOT BACKED UP .'}, 
+{lesson:6, question:'Xử lí hậu cảnh và liên kết các thành phần CSDL bảo đảm rằng dữ liệu được commit ngay cả khi những thay đổi chưa được ghi lại trong các tập tin DL?', answer:'LGWR and online redo log file'}, 
+{lesson:6, question:'User SCOTT đã mở 1session SQL*Plus và tạm thời không sử dụng đến. Khi bạn vấn tin view V$SESSION, STATUS thì INACTIVE. Bạn kết thúc session của SCOTT. Cái gì sẽ là hiện trạng của session của SCOTT trong V$SESSION?', answer:'KILLED'}, 
+{lesson:6, question:'Role nào được khởi tạo mặc định cho Quản trị viên CSDL?', answer:'DBA'}, 
+{lesson:6, question:'UPDATE products SET Price=Price+Price*0.1 WHERE Price IN(60,70). Kết quả câu lệnh SQL trên là:', answer:'Tăng 10% giá (Price) trong bảng Products, cho những sản phẩm có giá là 60 hoặc 70'}, 
+{lesson:6, question:'Những kiểu nối nào sau đây được cho phép trong mệnh đề FROM của câu lệnh SQL?', answer:'Tất cả đều đúng'}, 
+{lesson:6, question:'Bạn cần phải bảo đảm là tất cả các transaction chỉnh sửa dữ liệu các bảng phải theo cùng 1 thứ tự', answer:'Bạn cần phải bảo đảm là tất cả các transaction chỉnh sửa dữ liệu các bảng phải theo cùng 1 thứ tự'}, 
+{lesson:6, question:'Câu lệnh nào sau đây có thể yêu cầu cấp phát temporary segment ?', answer:'CREATE INDEX'}, 
+{lesson:6, question:'Dirty buffer là gì?', answer:'Data buffer đã được thay đổi nhưng khôngđược ghi vào ổ đĩa.'}, 
+{lesson:6, question:'Anh (chị) xin vui lòng cho biết: Những điều nào sau đây ko phải quyền hệ thống?', answer:'SELECT'}, 
+{lesson:6, question:'Quyền nào mà bạn cần có để kết nối CSDL, nếu CSDL đang được khởi động bằng STARTUP RESTRICT?', answer:'RESTRICTED SESSION'}, 
+{lesson:6, question:'Chọn các cấp hệ thống đúng, từ lớn nhất tới nhỏ nhất', answer:'Database, tablespace, segment, extent, block'}, 
+{lesson:6, question:'Anh (chị) xin vui lòng cho biết: Ở bước nào trong việc khởi động CSDL thì control file được mở?', answer:'Database mounted'}, 
+{lesson:7, question:'Nhằm đón nhận xu hướng công nghiệp 4.0, ngày 04/5/2017, Thủ tướng Chính phủ đã có Chỉ thị số 16/CT-TTg về việc tăng cường năng lực tiếp cận cuộc Cách mạng công nghiệp lần thứ thư để yêu cầu các Bộ, ngành, địa phương tạo điều kiện tốt nhất cho sự tăng tốc phát triển của cuộc Cách mạng công nghiệp 4.0 ở Việt Nam. Điều này đúng hay sai?', answer:'Đúng'}, 
+{lesson:7, question:'Khung chuyển đổi số của VNPT ban hành theo quyết định số 357/VNPT-QĐ-CN bao gồm:', answer:'Doanh nghiệp số, Khách hàng số, Nghiệp vụ số , Vận hành số, Dữ liệu số và Hạ tầng số.'}, 
+{lesson:7, question:'Thiết bị IoT cần 1 nguồn năng lượng lớn để hoạt động, điều này đúng hay sai?', answer:'Sai'}, 
+{lesson:7, question:'Con người và máy móc được kết nối với nhau qua quá trình nào sau đây?', answer:'Quá trình xử lý ngôn ngữ tự nhiên'}, 
+{lesson:7, question:'Hiện nay, có 4 mô hình dịch vụ triển khai điện toán đám mây chính đang được sử dụng phổ biến. Đó là những mô hình nào sau đây?', answer:'Public Cloud, Private Cloud, Hybrid Cloud và Community Cloud.'}, 
+{lesson:7, question:'Hiện nay thuật ngữ IoT được nhắc đến nhiều trên các phương tiện truyền thông liên quan đến Cách mạng công nghiệp 4.0. IoT là viết tắt của từ nào ?', answer:'Internet Of Things'}, 
+{lesson:7, question:'VNPT IoT Platform: Nền tảng IoT đầu tiên của Việt Nam nhận chứng chỉ oneM2M (Chứng chỉ toàn cầu dành cho chuẩn hóa phát triển về IoT/M2M), điều này đúng hay sai?', answer:'Đúng'}, 
+{lesson:7, question:'Doanh nghiệp viễn thông nào được UBND TP.HCM chọn là đơn vị tư vấn xây dựng khung kiến trúc Đô thị thông minh cho TP.Hồ Chí Minh?', answer:'VNPT'}, 
+{lesson:7, question:'Những lĩnh vực nào sau đây chưa ứng dụng trí tuệ nhân tạo (AI)?', answer:'Trị liệu tâm lý'}, 
+{lesson:7, question:'Trí tuệ nhân tạo (AI) đã được tích hợp trên các ứng dụng cho Smart Phone nhằm giúp smartphone "thông minh" hơn. Điều này đúng hay sai?', answer:'Đúng'}, 
+{lesson:7, question:'Khối dữ liệu Block Chain được lưu trữ trên mô hình mạng nào?', answer:'Peer to Peer'}, 
+{lesson:7, question:'Phát biều nào sau đây là phát biểu chính xác về khái niệm của Blockchain?', answer:'Tất cả đều đúng'}, 
+{lesson:7, question:'Phát biểu nào sau đây được gọi là khái niệm của Trí tuệ nhân tạo hay Trí thông minh nhân tạo (Artificial Intelligence – viết tắt là AI)', answer:'Là một ngành thuộc lĩnh vực khoa học máy tính (Computer science). Là trí tuệ do con người lập trình tạo nên với mục tiêu giúp máy tính có thể tự động hóa các hành vi thông minh như con người.'}, 
+{lesson:7, question:'Trung tâm điều hành thông minh (IOC - Intelligent Operation Center) của VNPT được triển khai đầu tiên cho đơn vị nào?', answer:'Thành phố Đà Lạt'}, 
+{lesson:7, question:'________ dự đoán xu hướng và hành vi trong tương lai, hỗ trợ các nhà quản lý đưa ra quyết định tác động đến hoạt động kinh doanh của doanh nghiệp.', answer:'Data mining - Khai phá dữ liệu'}, 
+{lesson:7, question:'VNPT đã phát triển hệ sinh thái các giải pháp để có thể giúp số hóa doanh nghiệp. Đó là:', answer:'Tất cả các giải pháp đều đúng'}, 
+{lesson:7, question:'nh hướng chiến lược VNPT 4.0 của tập đoàn VNPT là gì?', answer:'Chuyển đổi VNPT thành nhà cung cấp dịch vụ số'}, 
+{lesson:7, question:'Trong Internet of Things (IoT), các thiết bị máy tính, máy móc, vật thể, động vật (với chip sinh học có khả năng tự động nhận và truyền tín hiệu radio) hoặc người (có bộ cấy ghép để giám sát hoạt động của tim chẳng hạn) phải được gán một địa chỉ IP và có khả năng truyền dữ liệu qua mạng. Điều này đúng hay sai?', answer:'Đúng'}, 
+{lesson:7, question:'Cuộc cách mạng công nghiệp lần thứ tư phát triển trên 03 lĩnh vực chính là gì ?', answer:'Kỹ thuật số, công nghệ sinh học, vật lý'}, 
+{lesson:7, question:'Các nhà cung cấp dịch vụ điện toán đám mây (Cloud computing) cung cấp các dịch vụ của họ theo những mô hình cơ bản nào?', answer:'IaaS (Hạ tầng như một dịch vụ), PaaS (Nền tảng như một dịch vụ) và SaaS (Phần mềm như một dịch vụ).'}, 
+{lesson:7, question:'Phát biểu nào sau đây là không đúng về mục tiêu, tính năng và công nghệ của Trung tâm điều hành thông minh (Trung tâm IOC – Intelligent Operation Center)?', answer:'Trung tâm điều hành thông minh (Trung tâm IOC – Intelligent Operation Center) là một cái tiến của sản phẩm Smart City.'}, 
+{lesson:7, question:'Về cơ bản, Big Data có thuộc tính đặc trưng như thế nào ?', answer:'.Đặc trưng của Big Data được mô tả qua 5V (Volume, Velocity, Variety, Veracity, Value)'}, 
+{lesson:7, question:'Các thành phần công nghệ cốt lõi nào của kỹ thuật số tác động đến Cách mạng công nghiệp 4.0?', answer:'Trí tuệ nhân tạo; Kết nối Internet vạn vật; Big Data'}, 
+{lesson:7, question:'Big Data lại chứa rất nhiều thông tin quý giá, mà nếu trích xuất thành công sẽ giúp rất nhiều cho việc nắm bắt xu thế trong kinh doanh, nghiên cứu khoa học, dự đoán để phòng tránh các dịch bệnh sắp phát sinh, phát hiện sớm tội phạm, hay đo lường điều kiện giao thông theo thời gian thực,...Theo anh chị nhận định này đúng hay sai?', answer:'Đúng'}, 
+{lesson:7, question:'Các phát biểu nào sau đây là khái niệm về Điện toán đám mấy (Cloud Computing) ?', answer:'Cloud Computing là mô hình dịch vụ cho phép người dùng truy cập tài nguyên điện toán dùng chung (mạng, sever, lưu trữ, ứng dụng, dịch vụ) thông qua kết nối mạng một cách dễ dàng, mọi lúc mọi nơi, theo yêu cầu.'}, 
+{lesson:7, question:'Nền tảng IoT được VNPT Technology ứng dụng trong giải pháp nào sau đây?', answer:'Tất cả các giải pháp đều đúng'}, 
+{lesson:7, question:'Sự khác nhau giữa máy chủ ảo dùng riêng (VPS - Virtual Private Server) và máy chủ ảo Cloud Server là :', answer:'VPS (Virtual Private Server): là máy chủ ảo hoạt động dưới dạng chia sẻ tài nguyên từ một máy chủ vật lý. Cloud Server: là máy chủ ảo được triển khai trên nền tảng điện toán đám mây, hoạt động trên nhiều kết nối server vật lý khác nhau.'}, 
+{lesson:7, question:'Định hướng chiến lược VNPT 4.0 của tập đoàn VNPT là gì?', answer:'Chuyển đổi VNPT thành nhà cung cấp dịch vụ số'}, 
+{lesson:7, question:'Khối dữ liệu Block Chain hợp pháp có thể chỉnh sửa thông tin hay không?', answer:'Không'}, 
+{lesson:7, question:'Xu hướng Big Data (Dữ liệu lớn) trong cách mạng công nghệ 4.0 được hiểu là ?', answer:'Big Data là thuật ngữ dùng để chỉ một tập hợp dữ liệu rất lớn và phức tạp mà những công cụ, ứng dụng xử lý dữ liệu truyền thống KHÔNG THỂ thu thập, quản lý và xử lý dữ liệu trong một khoảng thời gian hợp lý.'}, 
+{lesson:7, question:'Trung tâm điều hành thông minh (IOC - Intelligent Operation Center) với khả năng tích hợp dữ liệu và các hệ thống sẵn có cùng các phần mềm điều khiển trung tâm, tạo ra một cái nhìn toàn cảnh về tỉnh/thành phố trên mọi lĩnh vực. IOC được ví như là ?', answer:'“Bộ não điều hành số” của các địa phương'}, 
+{lesson:7, question:'Chiến lược phát triển giai đoạn 2018-2025 và tầm nhìn đến năm 2030, gọi tắt là Chiến lược VNPT 4.0. có mục tiêu chính là gì?', answer:'Tất cả đều đúng'}, 
+{lesson:7, question:'Phát biểu nào sau đây được gọi là khái niệm của IoT (Internet of Things):', answer:'IoT là thuật ngữ dùng để chỉ các đối tượng có thể được nhận biết (identifiable) cũng như chỉ sự tồn tại của chúng trong một kiến trúc mang tính kết nối.'}, 
+{lesson:7, question:'Điều gì đã thúc đẩy sự phát triển của trí tuệ nhân tạo (AI) trong giai đoạn hiện tại?', answer:'Tất cả đều đúng'}, 
+{lesson:7, question:'Sản phẩm tự động đọc thẻ ngân hàng và phát hiện gian lận trong ứng dụng VNPT PAY ứng dụng công nghệ nào?', answer:'AI'}, 
+{lesson:7, question:'Giải pháp VNPT eKYC (Giải pháp xác thực định danh điện tử) đột phá dựa trên nền tảng là công nghệ nào sau đây?', answer:'Công nghệ AI và Blockchain'}, 
+{lesson:7, question:'Internet of Things (IoT) là một hệ thống các thiết bị máy tính, máy móc, vật thể, động vật hoặc người có liên quan đến nhau, được cung cấp định danh duy nhất và có khả năng để truyền dữ liệu qua mạng mà không cần sự tương tác giữa con người với con người hay giữa con người với máy tính. Điều này đúng hay sai?', answer:'Đúng'}, 
+{lesson:7, question:'OLAP là tên viết tắt của kỹ thuật nào?', answer:'Online Analytical Processing'}, 
+{lesson:7, question:'AI (Trí tuệ nhân tạo) được viết tắt từ thuật ngữ tiếng Anh nào sau đây ?', answer:'Artificial Intelligence'}, 
+{lesson:7, question:'Đến nay, thế giới vẫn chưa có một định nghĩa thống nhất về Đô thị thông minh. Nhưng về cơ bản, đó là mô hình thành phố ứng dụng công nghệ thông tin, trí tuệ nhân tạo để:', answer:'Quản lý nâng cao tiêu chuẩn cuộc sống đô thị; cải thiện chất lượng phục vụ của chính quyền thành phố; sử dụng hiệu quả các nguồn năng lượng, tài nguyên thiên nhiên'}, 
+{lesson:7, question:'VNPT đã triển khai công nghệ trí tuệ nhân tạo (AI) trên ứng dụng nào sau đây?', answer:'Ứng dụng quản lý đăng ký và cập nhật thông tin thuê bao (SMCS Mobile), Smartcity'}, 
+{lesson:7, question:'Phát biểu nào sau đây được gọi là khái niệm của Big Data?', answer:'Dữ liệu lớn (Big Data) là một thuật ngữ cho việc xử lý một tập hợp dữ liệu rất lớn và phức tạp khác với cách truyền thống.'}, 
+{lesson:7, question:'Theo anh chị thì nhận định sau đây về Big Data là đúng hay sai: Điều thực sự mang lại giá trị từ các tổ chức dữ liệu lớn là phân tích dữ liệu. Nếu không có phân tích, nó chỉ là một tập dữ liệu với việc sử dụng hạn chế trong kinh doanh.', answer:'Đúng'}, 
+{lesson:7, question:'IoT Platform là một hạ tầng duy nhất kết nối mọi vật (connected things) và cung cấp dịch vụ end – to – end cho nhiều lĩnh vực, bao gồm các thành phần chính nào sau đây? (chọn trả phương án đúng nhất)', answer:'Kết nối thiết bị; Trung tâm xử lý dữ liệu; Quản lý MSIM; Quản lý tập trung ứng dụng'}, 
+{lesson:7, question:'Hệ thống Blockchain được chia thành bao nhiêu loại chính:', answer:'3'}, 
+{lesson:7, question:'Những dịch vụ nào sau đây không dùng điện toán đám mây (Cloud Computing)?', answer:'Máy chủ ảo VPS (Virtual Private Server) hay Shared Hosting'}, 
+{lesson:7, question:'Hiện nay, có bao nhiêu mô hình dịch vụ triển khai điện toán đám mây đang được sử dụng phổ biến ?', answer:'4'}, 
+{lesson:7, question:'Công nghệ nào dưới đây giúp máy tính tự động tương tác với người dùng?', answer:'Chatbot'}, 
+{lesson:7, question:'Google Drive là một trong các ứng dụng của nền tảng điện toán đám mây, điều này đúng hay sai?', answer:'Đúng'}, 
+{lesson:5, question:'Việc tính toán, tổng hợp số học lực, hạnh kiểm của học sinh được hệ thống vnEdu thực hiện tự động. Đúng hay Sai?', answer:'Đúng'}, 
+{lesson:5, question:'Cung cấp một đường truyền dẫn tạm thời giữa hai điểm, đây là', answer:'Đặc điểm của dịch vụ'}, 
+{lesson:5, question:'Dịch vụ Mobile ID KHÔNG có khả năng cung cấp chứng thư số cho số lượng thuê bao lớn. Đúng hay Sai?', answer:'Sai'}, 
+{lesson:5, question:'Thông qua hệ thống vnEdu, các Phòng/Sở giáo dục có thể quản lý được các cơ sở giáo dục trên địa bàn mình phụ trách. Đúng hay Sai?', answer:'Đúng'}, 
+{lesson:5, question:'Để sử dụng các ứng dụng có trong vnEdu Portal và các hệ thống tích hợp từ ngoài vào, người dùng chỉ cần đăng nhập và xác thực 01 lần. Đúng hay Sai?', answer:'Đúng'}, 
+{lesson:5, question:'Chức năng Quản lý phát hành trong dịch vụ Hóa đơn điện tử cho phép:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:5, question:'Chế độ báo cáo đột xuất trong hệ thống VNPT VSR được hiểu là:', answer:'Chế độ báo cáo được ban hành để đáp ứng yêu cầu thông tin về vấn đề phát sinh bất thường.'}, 
+{lesson:5, question:'Chức năng Trực quan hóa trong hệ thống vnEdu IOC cho phép:', answer:'Cung cấp các Thống kê báo cáo, biểu đồ, chức năng tra cứu hồ sơ, đồng bộ dữ liệu'}, 
+{lesson:5, question:'Có tính năng phòng chống virus, phần mềm độc hại, chống tấn công ddos. Có khả năng sao lưu, backup dữ liệu tự động, Việc phân quyền người dùng có thể tùy biến theo yêu cầu của người quản trị đây là:', answer:'Những ưu điểm của dịch vụ VNPT Elearning'}, 
+{lesson:5, question:'Để đăng ký công việc cá nhân trên hệ thống HRM, bạn thực hiện các bước sau:', answer:'Bước 1: Đăng nhập vào HRM từ web: https://hrm.vnpt.vn/\n Bước 2: Chọn QLCV cá nhân, chọn Công việc cá nhân\n Bước 3: Chọn Đăng ký công việc cá nhân, nhấn Tạo và nhập các thông tin đăng ký.'}, 
+{lesson:5, question:'Tiết kiệm chi phí, nhân lực, tăng cường hiệu quả trong quản lý, xử lý thủ tục hồ sơ BHXH. Đây là', answer:'lợi ích của dịch vụ'}, 
+{lesson:5, question:'Hệ thống vnEdu được thiết kế dành cho những đối tượng nào?', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'Thuê bao MyTV hiện đang ở hệ thống VMP muốn chuyển sang hệ thống MyTV thường hoặc ngược lại thì có thực hiện được trên VNPT Cab hay không?', answer:'Có'}, 
+{lesson:5, question:'Sử dụng chức năng Thu thập thông tin dung lượng thị trường trong VNPT Cab nhằm mục đích nào sau đây?', answer:'Cập nhật các thông tin hộ dân và thu thập bằng hình ảnh giúp nhà quản lý đưa ra các định hướng mới trong việc phát triển dịch vụ.'}, 
+{lesson:5, question:'Để xem hướng dẫn về công tác an toàn và bảo hộ lao động trên hệ thống HRM, bạn thực hiện :', answer:'Bước 1: Đăng nhập vào HRM từ web: https://hrm.vnpt.vn/\n Bước 2: Chọn (+) , chọn Hỗ trợ\n Bước 3: Chọn Hướng dẫn HRM, chọn An toàn vệ sinh lao động và bảo hộ lao động.'}, 
+{lesson:5, question:'Chức năng lọc phiếu trong danh sách máy hỏng (Xử lý phiếu báo hỏng ở phần mềm VNPT Cab) gồm nhóm tiêu chí lọc nào sau đây?', answer:'Danh sách, theo nhóm khách hàng và theo dịch vụ'}, 
+{lesson:5, question:'Số lượng account hoặc port tối đa trong một lần đo kiểm chất lượng GPON là bao nhiêu ?', answer:'50'}, 
+{lesson:5, question:'Sử dụng VNPT Cab, để tra cứu ra các dòng TV nào hỗ trợ cài đặt APP Mytv, ta thực hiện trình tự các bước nào sau đây?', answer:'Mở phần mềm VNPT Cab trên Smart Phone, chọn Điều Hành thi công, chọn Công cụ, Công cụ hỗ trợ, nhập model TV vào mục tra cứu thông tin cài đặt App MyTV.'}, 
+{lesson:5, question:'Trình tự thực hiện xoá “storage backup” trên OLT đối với 1 thuê bao GPON là ?', answer:'Tất cả các bước trên đều đúng'}, 
+{lesson:5, question:'Sử dụng VNPT Cab, các lưu ý nào sau đây là không cần thiết trước khi cấp Port cho thuê bao Fiber trên đường không số?', answer:'Tất cả các thuê bao phải được cấp port trước khi kích hoạt.'}, 
+{lesson:5, question:'Sử dụng VNPT Cab, Để thực hiện chuyển đổi thuê bao MyTV ở hệ thống thường sang hệ thống VMP, ta thực hiện trình tự nào sau đây?', answer:'Mở phần mềm VNPT Cab trên Smart Phone, chọn Điều Hành thi công, chọn Công cụ, Chọn MyTV <-> VMP, nhập tìm thuê bao muốn đổi và xác nhận chuyển đổi.'}, 
+{lesson:5, question:'Khi sử dụng hệ thống vnEdu, người dùng sẽ:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'VNPT Pay là sản phẩm thanh toán điện tử của công ty nào?', answer:'Tổng Công ty Truyền thông VNPT-Media'}, 
+{lesson:5, question:'Cách tạo tài khoản và sử dụng ví VNPT Pay là:', answer:'Tải app VNPT Pay ->Mở ứng dụng VNPT Pay và đăng ký Ví bằng số điện thoại -> Nhập mã OTP xác nhận SĐT ->Nhập mật khẩu khi đăng nhập ứng dụng -> Liên kết ngân hàng qua chức năng liên kết Ví -> Nạp tiền vào Ví thông qua ngân hàng liên kết ->Trải nghiệm các chức năng của VNPT Pay'}, 
+{lesson:5, question:'Đường dây trung kế thoại chạy trên giao thức nào?', answer:'SIP'}, 
+{lesson:5, question:'Dịch vụ VNPT VXP được khái niệm là:', answer:'là giải pháp nền tảng tích hợp chia sẻ dữ liệu được kết hợp các ưu điểm của kiến trúc chia sẻ dữ liệu ngang hàng và tập trung nhằm hạn chế các nhược điểm của 2 mô hình chia sẻ dữ liệu (ngang hàng, tập trung).'}, 
+{lesson:5, question:'Khóa bí mật trong dịch vụ VNPT - MobileID là loại khóa thuộc hệ thống:', answer:'Mã không đối xứng'}, 
+{lesson:5, question:'Giảm được chi phí quản lý, in ấn, kiểm đếm, bảo quản và vận chuyển tiền mặt, sử dụng giao dịch không dùng tiền mặt giúp các giao dịch sẽ minh bạch hơn, góp phần đẩy mạnh công tác phòng chống tham nhũng, đây là:', answer:'Lợi ích mang lại cho nhà nước khi sử dụng dịch vụ VNPT Pay'}, 
+{lesson:5, question:'Hệ thống VNPT VSR đang được áp dụng triển khai cho hệ thống nào?', answer:'Hệ thống báo cáo của Chính phủ; Hệ thống báo cáo của Bộ ngành địa phương'}, 
+{lesson:5, question:'VNPT VXP sử dụng trung tâm tích hợp và chia sẻ dữ liệu đảm bảo:', answer:'Liên thông giữa các sở, ban ngành, UBND quận/huyện, UBND phường/xã. Và Có thể kết nối vào Trục liên thông Quốc gia'}, 
+{lesson:5, question:'Các chức năng nào sau đây không có trên App VNPT HRM cài trên Smart Phone?', answer:'Đánh giá năng lực'}, 
+{lesson:5, question:'Để thực hiện đo kiểm chất lượng cổng GPON, cho phép ta đo cùng lúc nhiều account hoặc port, điều này đúng hay sai?', answer:'Đúng'}, 
+{lesson:5, question:'Sử dụng phần mềm VNPT Cab, để thi công một máy mới, bạn thực hiện trình tự theo các bước nào sau đây ?', answer:'B1: Mở phần mềm VNPT Cab trên Smart Phone\n B2: Chọn "Điều Hành thi công", chọn "Phiếu thi công"\n B3: Chọn "Chờ thi công" trên giao diện, chọn thuê bao để thi công ở danh sách.'}, 
+{lesson:5, question:'Theo dõi, giám sát thông tin y tế cơ sở toàn Huyện trực tuyến. là lợi ích mà hệ thống VNPT HMIS đem đến cho đối tượng nào sau đây?', answer:'Trung tâm y tế'}, 
+{lesson:5, question:'Tính tới tháng 7 năm 2020, VNPT HMIS đã kết nối liên thông với những hệ thống nào?', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'Dịch vụ VNPT - MobileID với hệ thống phân tải thông minh, sẽ giúp người dùng:', answer:'Tiếp nhận nhiều yêu cầu truy vấn cùng lúc'}, 
+{lesson:5, question:'Có mấy phương thức phát hành hóa đơn điện tử?', answer:'2'}, 
+{lesson:5, question:'vnEdu ra đời hướng đến mục đích gì?', answer:'Tin học hóa toàn diện công tác quản lý, điều hành trong giáo dục'}, 
+{lesson:5, question:'Ở dịch vụ VNPT - MobileID, việc đưa khóa bí mật vào một phần mềm để tự động tạo và gắn chữ ký số vào thông điệp dữ liệu nào đó, được gọi là Ký số. Đúng hay sai?', answer:'Đúng'}, 
+{lesson:5, question:'Một trong những lợi ích mà hệ thống vnEdu đem đến cho người dùng là:', answer:'Tổ chức và quản lý kỳ thi một cách nhanh chóng, hiệu quả'}, 
+{lesson:5, question:'Cập nhật thường xuyên và kịp thời thông tin trên vnEdu Portal, là yêu cầu cơ bản của hệ thống cổng thông tin điện tử. Đúng hay Sai?', answer:'Đúng'}, 
+{lesson:5, question:'Chức năng thu thập thông tin hạ tầng mạng trong phần mềm VNPT Cab, ở mục Quản lý kết cuối có bao nhiêu chế độ hiển thị kết cuối?', answer:'3 chế độ là: Kết cuối xung quanh (hiển thị trong bán kính xung quanh từ 50 – 300m), kết cuối đối thủ mà bạn đã thu thập trong N ngày, Kết cuối đối thủ mà bạn đã thu thập.'}, 
+{lesson:5, question:'Để xem lại số liệu và thông tin các bài thi đánh giá năng lực trên hệ thống HRM của VNPT, ta thực hiện các bước sau:', answer:'Bước 1: Đăng nhập vào web: https://hrm.vnpt.vn\n Bươc 2: Chọn mục Tham gia KS-ĐGNL\n Bước 3: Chọn Đánh giá năng lực, chọn nội dung thông tin cần xem.'}, 
+{lesson:5, question:'Để xem giao KPI cá nhân trên thống HRM của VNPT, ta thực hiện các bước sau:', answer:'Bước 1: Đăng nhập vào web: https://hrm.vnpt.vn/\n Bước 2: Chọn KPI cá nhân, chọn KPI cá nhân được giao, nhập các tiêu chí để tìm kiếm, điều kiện hay bộ lọc,..'}, 
+{lesson:5, question:'Dịch vụ VNPT - MobileID là:', answer:'Một dạng chữ ký điện tử được dùng để cam kết lời hứa của mình'}, 
+{lesson:5, question:'Một số ưu điểm của dịch vụ VNPT Elearning là:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:5, question:'vnEdu đã kết nối được phụ huynh học sinh với nhà trường thông qua:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'Tại sao nói dịch vu SIP Trunking có đường tín hiệu ổn định?', answer:'Là vì triển khai trên các kênh truyền: cáp quang, FTTH, kênh truyền số liệu, kênh thuê riêng, Internet Leasedline'}, 
+{lesson:5, question:'Cổng thông tin điện tử nhà trường vnEdu Portal là:', answer:'Trang thông tin điện tử khối giáo dục, nhằm giới thiệu quảng bá hình ảnh các đơn vị giáo dục, tích hợp các thông tin về giáo dục theo một phương thức thống nhất, thông qua một điểm truy cập duy nhất đối với người sử dụng.'}, 
+{lesson:5, question:'Dịch vụ nền tảng học và thi trực tuyến VNPT Elearning được triển khai dựa trên nền tảng nào?', answer:'Nền tảng điện toán đám mây hiện đại.'}, 
+{lesson:5, question:'Người dùng có thể sử dụng tài khoản của hệ thống vnEdu để đăng nhập hệ thống vnEdu IOC được không?', answer:'Có'}, 
+{lesson:5, question:'Hệ thống Hóa đơn điện tử có bao nhiêu tính năng cơ bản?', answer:'Có 6 tính năng cơ bản'}, 
+{lesson:5, question:'Hệ thống VNPT HMIS có tạo lập được hồ sơ sức khỏe điện tử không?', answer:'Có'}, 
+{lesson:5, question:'Để thực hiện đo kiểm chất lượng cổng GPON, ta thực hiện tuần tự theo bước nào sau đây?', answer:'B1: Chọn "Đo kiểm", chọn "Đo kiểm chất lượng cổng GPON"\n B2: Nhập account hoặc Port, chọn Đo.'}, 
+{lesson:5, question:'Thực hiện đăng ký nghỉ phép trên Ứng dụng trên di động (Mobile App) VNPT HRM, ta thực hiện trình tự nào sau đây?', answer:'B1: Mở ứng dụng VNPT HRM, chọn "Đăng ký nghỉ phép", chọn nút (+)\n B2: Nhập thông tin đăng ký, lưu nghỉ phép và gửi phê duyệt.'}, 
+{lesson:5, question:'Để tham gia bài khảo sát hoặc bài đánh giá năng lực trên hệ thống HRM, bạn thực hiện:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'Sử dụng chức năng xóa file Backup cấu hình modem trong phần mềm VNPT Cab, ta thực hiện theo các bước nào sau đây?', answer:'B1: Chọn "Điều hành thi công",chọn "công cụ", chọn "công cụ hỗ trợ"\n B2: Nhập Account và thực hiện xóa file Backup cấu hình Modem.'}, 
+{lesson:5, question:'Khi sử dụng hệ thống VNPT VXP "Dữ liệu được trao đổi trực tiếp giữa các thành viên và - không có sự can thiệp của bên thứ ba". Đúng hay sai?', answer:'Đúng'}, 
+{lesson:5, question:'Hiệu quả sử dụng của VNPT e-Cabinet?', answer:'Tiết kiệm chi phí; Tiết kiệm thời gian; Dễ dàng quản trị; Sử dụng linh hoạt.'}, 
+{lesson:5, question:'Đối tượng khách hàng sử dụng dịch vụ VNPT-BHXH', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:5, question:'VNPT PAY chỉ có thể thực hiện việc thu hộ cho các đối tác cung cấp dịch vụ trong nội bộ VNPT. Đúng hay sai?', answer:'Sai'}, 
+{lesson:5, question:'Thực hiện chức năng Đo kiểm theo Account/Port (FTTH), để tải file Backup ta thực hiện theo các bước nào sau đây ?', answer:'Tất cả đều đúng.'}, 
+{lesson:5, question:'Ở dịch vụ VNPT - MobileID, thuê bao dùng khóa bí mật của mình để ký số vào một thông điệp dữ liệu nào đó dưới tên mình, được gọi là:', answer:'Người ký'}, 
+{lesson:5, question:'Để thống kê tình hình xử lý đường dây kém chất lượng theo đơn vị, ta thực hiện tuần tự các bước nào sau đây?', answer:'Chọn Thống Kê trên giao diện --> GPON -->Tình hình xử lý đường dây kém theo tuần (GPON) --> chọn ngày, đơn vị và bấm nút Xem.'}, 
+{lesson:5, question:'Định nghĩa đầy đủ của Hóa đơn điện tử là:', answer:'Hóa đơn được thể hiện ở dạng dữ liệu điện tử do tổ chức, cá nhân bán hàng hóa, cung cấp dịch vụ lập, ghi nhận thông tin bán hàng hóa cung cấp dịch vụ, ký số, ký điện tử theo quy định bằng phương tiện điển tử, bao gồm cả trường hợp hóa đơn được khởi tạo từ máy tính tiền có kết nối chuyển dữ liệu điện tử với cơ quan thuế'}, 
+{lesson:5, question:'Đối tượng khách hàng sử dụng dịch vụ SIP Trucking là', answer:'Các tổ chức, doanh nghiệp có nhu cầu thoại lớn cần trang bị tổng đài để phục vụ công tác liên lạc của đơn vị'}, 
+{lesson:5, question:'Để xem công việc cá nhân được giao trên hệ thống HRM, bạn thực hiện tuần tự các bước sau:', answer:'Bước 1: Đăng nhập vào HRM từ web: https://hrm.vnpt.vn/Bước 2: Chọn QLCV cá nhân, chọn Công việc cá nhânBước 3: Chọn công việc được giao, nhập các thông tin để tìm kiếm.'}, 
+{lesson:5, question:'Số lượng cổng thành phần trên hệ thống vnEdu Portal là:', answer:'Không hạn chế số lượng'}, 
+{lesson:5, question:'Hệ thống vnEdu Portal KHÔNG được tích hợp với các hệ thống như: văn bản điện tử, thư điện tử... Đúng hay Sai?', answer:'Sai'}, 
+{lesson:5, question:'Lợi ích của hệ thống VNPT VXP', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'Định nghĩa đầy đủ của dịch vụ VNPT – BHXH là:', answer:'Giải pháp giao dịch điện tử giữa các tổ chức, doanh nghiệp, các đơn vị hành chính sự nghiệp, trường học,... Với cơ quan bảo hiểm xã hội trên toàn quốc'}, 
+{lesson:5, question:'vnEdu là giải pháp được xây dựng trên nền tảng nào?', answer:'Nền tảng web công nghệ điện toán đám mây'}, 
+{lesson:5, question:'Một số lợi ích của dịch vụ VNPT Elearning đối với học sinh là', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:5, question:'Dịch vụ nền tảng đào tạo và thi trực tuyến có thể áp dụng cho đối tượng nào?', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:5, question:'Mục đích xây dựng hệ thống vnEdu IOC', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'vnEdu Portal được tích hợp với hệ thống:', answer:'Hệ thống thông tin quản lý giáo dục, quản lý trực tuyến trường học'}, 
+{lesson:5, question:'Lợi ích của dịch vụ SIP Trunking là', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:5, question:'Định nghĩa đầy đủ của phần mềm VNPT e-Cabinet?', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'Một trong những lợi ích mà dịch vụ VNPT-BHXH đem đến cho người dùng là:', answer:'Giúp khách hàng lập tờ khai, hồ sơ BHXH theo chuẩn quy định của Ngành BHXH'}, 
+{lesson:5, question:'VNPT e-Cabinet là tên thương hiệu của dịch vụ nào sau đây?', answer:'Phần mềm phòng họp không giấy tờ'}, 
+{lesson:5, question:'Khóa công khai trong dịch vụ VNPT - MobileID là loại khóa được tạo bởi:', answer:'Khóa bí mật tương ứng'}, 
+{lesson:5, question:'Việc thực hiện nghiệp vụ hóa đơn được thao tác trên', answer:'Hệ thống quản lý nội bộ của doanh nghiệp'}, 
+{lesson:5, question:'Hệ thống VNPT HMIS có liên thông được dữ liệu ở các tuyến tỉnh, huyện, xã không?', answer:'Có'}, 
+{lesson:5, question:'Dịch vụ hóa đơn điện tử được định nghĩa là:', answer:'Là dịch vụ do nhà cung cấp được Tổng cục Thuế lựa chọn, ủy quyền cung cấp việc tạo lập, phát hành và lưu trữ hóa đợn điện tử cho các Tổ chức, Doanh nghiệp'}, 
+{lesson:5, question:'Dịch vụ VNPT - MobileID cho phép nhà mạng cung cấp dịch vụ di động triển khai các ứng dụng:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'Dịch vụ Thu hộ, chi hộ thông qua VNPT PAY có thể:', answer:'Thực hiện việc thu hộ cho các đối tác cung cấp dịch vụ ngoài xã hội có nhu cầu thu hộ qua hệ thống ngân hàng đầy đủ đã kết nối với VNPT Pay'}, 
+{lesson:2, question:'Luật an toàn thông tin mạng chính thức có hiệu lực từ ngày', answer:'07/01/2016'}, 
+{lesson:2, question:'Tên gọi tiếng việt của kho ứng dụng trên hệ điều hành Android', answer:'CH play'}, 
+{lesson:2, question:'Tổ hợp phím tắt để khóa màn hình trên windows 10 là', answer:'Windows + L'}, 
+{lesson:2, question:'Điểm yếu nhất trong an ninh mạng là', answer:'Thiết lập không đúng trên các trang thiết bị và phần mềm được cung cấp'}, 
+{lesson:2, question:'Loại mã độc nào có khả năng che dấu tung tích bản thân trong hệ thống', answer:'Rootkit'}, 
+{lesson:2, question:'Theo quy định hiện hành của VNPT về tài khoản/mật khẩu, mật khẩu của các máy chủ, máy trạm phải được thiết lập đủ độ mạnh, bao gồm?', answer:'Tối thiểu 8 ký tự, có chữ in thường, in hoa, chữ số và ký tự đặc biệt'}, 
+{lesson:2, question:'Các nguyên tắc khi đặt mật khẩu dưới đây là đúng?', answer:'Tất cả các đáp án trên'}, 
+{lesson:2, question:'Theo khuyến cáo của Microsoft, nhà sản xuất hệ điều hành windows, trên một máy tính bạn chỉ nên sử dụng duy nhất một phần mềm diệt virus. Điều đó đúng hay sai', answer:'Đúng'}, 
+{lesson:2, question:'Khi tạo tài khoản, nhóm, để máy chủ có thể teamview vào máy khách trong nhóm thì máy chủ cần biết', answer:'Xác nhận cho phép thâm nhập của máy khách hoặc password máy khách'}, 
+{lesson:2, question:'Nguyên nhân chủ quan trong nguy cơ tiêu hủy thông tin là:', answer:'Bản thân người dùng vô tình xóa thông tin'}, 
+{lesson:2, question:'Giao thức nào sau đây được sử dụng để đảm bảo an toàn kết nối HTTP?', answer:'SSL'}, 
+{lesson:2, question:'Nhiều người dùng miếng băng dính đen che webcam máy tính. Mục đích là để phòng chống việc tin tặc tấn công lợi dụng webcam để thu thập thông tin', answer:'Đúng'}, 
+{lesson:2, question:'Loại mã độc nào chỉ gây khó chịu cho người dùng mà không có tính phá hoại', answer:'Adware'}, 
+{lesson:2, question:'Biện pháp xử lý nào sau đây phù hợp cho việc mất kết nối Router-Hub/SW:', answer:'Các biện pháp trên'}, 
+{lesson:2, question:'Đối với các USB lạ có nghi ngờ bị nhiễm mã độc, nên quét virus hoặc format trước khi sử dụng', answer:'Đúng'}, 
+{lesson:2, question:'Khi cài đặt phần mềm nên tải từ đâu?', answer:'Từ các trang chính thống'}, 
+{lesson:2, question:'Theo khuyến cáo của Microsoft, nhà sản xuất hệ điều hành Windows, trên một máy tính nên sử dụng bao nhiêu phần mềm diệt virus?', answer:'1'}, 
+{lesson:2, question:'Địa chỉ liên kết không an toàn là', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:2, question:'Một số phương pháp thu thập thông tin phản hồi của khách hàng:', answer:'Tất cả đều đúng'}, 
+{lesson:2, question:'Tên gọi phần mềm Antivirus của Microsoft trên hệ điều hành Windows 10', answer:'Windows defender'}, 
+{lesson:2, question:'Những thông tin không nên cung cấp khi sử dụng mạng xã hội', answer:'Tài khoản ngân hàng'}, 
+{lesson:2, question:'Tiến hành công việc nào sau đây phát huy đầy đủ được tác dụng của biện pháp phòng chống tấn công mạng:', answer:'Không đáp án nào đầy đủ'}, 
+{lesson:2, question:'Tên gọi phần mềm tường lửa của Microsoft trên hệ điều hành Windows 10', answer:'Windows Firewall'}, 
+{lesson:2, question:'VNPT đã triển khai ISO/IEC 27001:2013 trên phạm vi toàn Tập đoàn, bao gồm Văn phòng Tập đoàn và các đơn vị VNPT thành viên. Điều đó đúng hay sai?', answer:'Sai'}, 
+{lesson:2, question:'Phương án đảm bảo an toàn bảo mật cho điện thoại di động', answer:'Tất cả các phương án'}, 
+{lesson:2, question:'Chữ ký số được dùng cho mục đích gì', answer:'Để kiểm tra định danh người gửi'}, 
+{lesson:2, question:'Chức năng nào của Window giúp xóa bỏ các chương trình không cần thiết:', answer:'Programs and Futures trong Control Panel'}, 
+{lesson:2, question:'Mật khẩu nào được coi là mật khẩu mạnh', answer:'$aLtNb83'}, 
+{lesson:2, question:'Các biện pháp bảo mật cơ bản để giữ máy tính an toàn', answer:'Tích cả 3 đáp án còn lại ngoại trừ "Tắt firewall"'}, 
+{lesson:2, question:'Giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT có hiệu lực trong thời gian bao lâu', answer:'10 năm'}, 
+{lesson:2, question:'Theo giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT, VNPT được phép kinh doanh bao nhiêu lĩnh vực?', answer:'9'}, 
+{lesson:2, question:'Tường lửa (Firewall) không có tác dụng với', answer:'Social Engineering'}, 
+{lesson:2, question:'Website cập nhật thông tin về an toàn thông tin do Trung tâm ATTT – Ban IT&VAS xây dựng', answer:'https://vnptcert.vnpt.vn/'}, 
+{lesson:2, question:'Từ viết tắt của giao thức an ninh trên mạng không dây:', answer:'WPA2'}, 
+{lesson:2, question:'Khi sử dụng mạng xã hội, cần lưu ý những điều sau:', answer:'Tất cả các phương án'}, 
+{lesson:2, question:'Mật khẩu mạnh bao gồm:', answer:'Tất cả các yếu tố'}, 
+{lesson:2, question:'Để cấp phát động địa chỉ IP, ta có thể sử dụng dịch vụ có giao thức nào?', answer:'Dùng giao thức DHCP'}, 
+{lesson:2, question:'Nguyên nhân nào có thể dẫn đến việc bị đánh cắp thông tin:', answer:'Mất mật khẩu'}, 
+{lesson:2, question:'Để đảm bảo an toàn cho dữ liệu USB, đáp án nào dưới đây là sai?', answer:'Tránh để USB lưu trữ dữ liệu >80% dung lượng'}, 
+{lesson:2, question:'Đường dẫn (URL) để thay đổi mật khẩu Email VNPT', answer:'https://mail.vnpt.vn/ecp'}, 
+{lesson:2, question:'Theo mặc định, cổng nào được HTTPS sử dụng', answer:'443'}, 
+{lesson:2, question:'Trong suốt quá trình kiểm định một bản ghi hệ thống máy chủ, các mục nào sau đây có thể được xem như một khả năng đe dọa bảo mật', answer:'Năm trăm ngàn công việc in được gửi đến một máy in'}, 
+{lesson:2, question:'Các phần mềm anti-virus có thể can thiệp vào tường lửa thông qua:', answer:'Tất cả các hồ sơ'}, 
+{lesson:2, question:'Khi máy chủ teamview vào máy khách việc trao đổi thông tin có thể được thực hiện thông qua chức năng:', answer:'Voice chat và video chat'}, 
+{lesson:2, question:'Chiều dài tối thiểu của một mật khẩu mạnh', answer:'8 ký tự'}, 
+{lesson:2, question:'Để phòng chống tấn công webcam, người dùng nên thực hiện những hành động nào sau đây?', answer:'Tất cả đều đúng'}, 
+{lesson:2, question:'Lựa chọn đáp án đúng: Việc xây dựng hệ thống phân tích mã độc tự động của Tập đoàn', answer:'Đã được thực hiện'}, 
+{lesson:2, question:'Tường lửa có thể điều khiển', answer:'Lưu lượng vào, ra mạng'}, 
+{lesson:2, question:'Hệ điều hành được Tập đoàn trang bị bản quyền tập trung là gì?', answer:'Windows 10'}, 
+{lesson:2, question:'Rút trực tiếp USB ra khỏi máy tính mà không cần thực hiện các thao tác ngắt kết nối có thể làm dữ liệu trong USB bị lỗi. Điều đó đúng hay sai?', answer:'Đúng'}, 
+{lesson:2, question:'Giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT có hiệu lực từ ngày', answer:'10/09/2017'}, 
+{lesson:2, question:'Dùng điện thoại Iphone không lo bị tấn công', answer:'Sai'}, 
+{lesson:2, question:'Để tăng cường bảo mật dữ liệu trong USB, đáp án nào dưới đây là sai?', answer:'Sao lưu từng tệp tin vào USB và không sử dụng mật khẩu cho các tệp tin'}, 
+{lesson:2, question:'Khi kết thúc công việc và ra ngoài buổi trưa 1 tiếng, ta nên', answer:'Logout khỏi máy tính'}, 
+{lesson:2, question:'Quy trình để tiếp cận đơn vị triển khai phần mềm:', answer:'Chuẩn bị - Tiếp cận - Giới thiệu tư vấn lợi ích dịch vụ - Xử lý tình huống trong quá trình tư vấn - Một số giải pháp hỗ trợ khi tư vấn - Chăm sóc khách hàng'}, 
+{lesson:2, question:'Google Authenticator là phần mêm', answer:'Tạo mã xác thực OTP (One time password)'}, 
+{lesson:2, question:'Thiết lập tắt cookies trên trình duyệt web giúp ngăn chặn nguy cơ mất:', answer:'User và password'}, 
+{lesson:2, question:'VNPT đã được cấp giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng', answer:'Đúng'}, 
+{lesson:2, question:'Khi truy cập vào các trang HTTPS, người dùng đều được cam kết và đảm bảo rằng mình an toàn. Nếu người dùng chỉ ra được trang HTTPS đó không an toàn, người dùng sẽ nhận được chính sách bồi thường.\nĐiều đó đúng hay sai?', answer:'Đúng'}, 
+{lesson:2, question:'Phải thực hiện thay đổi mật khẩu ngay khi:', answer:'Tát cả đều đúng'}, 
+{lesson:2, question:'Bạn nhận được một email từ bộ phận IT của công ty bạn. Email yêu cầu thông tin tài khoản và mật khẩu email của bạn để phục vụ công tác điều tra. Hành động của bạn khi đó:', answer:'Gọi cho bộ phận IT xac nhận nếu đúng thì cung cấp cho họ'}, 
+{lesson:2, question:'Kiểu tấn công bằng cách can thiệp vào giữa phiên liên lạc của 2 hệ thống gọi là', answer:'Tấn công dạng Man in the middle'}, 
+{lesson:2, question:'Quy tắc đặt mật khẩu nào sau đây dễ bị bẻ khóa, dễ lộ mật khẩu?', answer:'Sử dụng các mật khẩu đơn giản như 123456, qwerty…'}, 
+{lesson:2, question:'VNPT đã triển khai hệ thống giám sát DNS Sinkhole tại Tập đoàn. Điều đó đúng hay sai?', answer:'Đúng'}, 
+{lesson:2, question:'Theo quy định 1771/QĐ-VNPT-IT&VAS về an toàn bảo mật trong mạng điều hành sản xuất kinh doanh, mật khẩu mức người sử dụng phải thay đổi ít nhất bao lâu một lần:', answer:'2 tháng'}, 
+{lesson:2, question:'Khuyến nghị nào dưới đây là SAI khi sử dụng điện thoại thông minh?', answer:'Cài đặt ứng dụng từ các nguồn appstore, google play, website, diễn đàn chia sẻ,…'}, 
+{lesson:2, question:'Các nguy cơ bị đánh cắp mật khẩu nào dưới đây là đúng?', answer:'Tất cả các đáp án trên'}, 
+{lesson:1, question:'Tín với Nhà nước; Tín với cộng đồng; Tín với khách hàng; Tín với người lao động là yếu tố thuộc về ..., đây là một trong các yếu tố tạo nên Tinh thần VNPT trong VNPT - 5 Giá trị cốt lõi.', answer:'Đạo đức'}, 
+{lesson:1, question:'Bảng tổng kết để đánh giá công việc nên có những nội dung nào?', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Bước cuối cùng để giải quyết xung đột trong nhóm bao gồm', answer:'Thỏa thuận'}, 
+{lesson:1, question:'Các chương trình học tập thiết kế cho người lớn cần tuân thủ nguyên tắc nào trong số các nội dung sau?', answer:'Sử dụng kinh nghiệm của học viên trong các ví dụ và hoạt động học tập'}, 
+{lesson:1, question:'Đảm bảo sự phù hợp trong năng lực sáng tạo có nghĩa là:', answer:'Phải đúng đối tượng, đúng mục tiêu và đúng cách'}, 
+{lesson:1, question:'Để bảo mật thông tin nội bộ trên môi trường mạng xã hội, người lao động làm việc tại VNPT cần:', answer:'Không tự ý phát ngôn, cung cấp thông tin, tài liệu không đúng thẩm quyền'}, 
+{lesson:1, question:'Để đảm bảo công việc tại các vị trí, bộ phận, các phòng ban chức năng không bị chồng chéo nhau thì doanh nghiệp cần có:', answer:'Bản mô tả công việc'}, 
+{lesson:1, question:'Để lập kế hoạch tuần, chúng ta sẽ sử dụng nguồn thông tin nào dưới đây?', answer:'Các công việc trong kế hoạch tháng'}, 
+{lesson:1, question:'Để tìm ý tưởng cho phương pháp mở rộng hay thu nhỏ, nhân viên VNPT nên:', answer:'Suy nghĩ việc mở rộng hay thu nhỏ sản phẩm, dịch vụ sẵn có'}, 
+{lesson:1, question:'Để việc phối hợp với đồng nghiệp đạt hiệu quả cao, thì khi phối hợp trong công việc nên:', answer:'Có thái độ cởi mở; Có tư duy tích cực; Trao đổi với nhau'}, 
+{lesson:1, question:'Hành động tích cực tham gia vào các hoạt động học tập được định nghĩa là:', answer:'Tham gia vào những hoạt động học tập cần thiết một cách tích cực và hiệu quả nhất'}, 
+{lesson:1, question:'Hình thức học tập phổ biến hiện nay là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Khung năng lực cốt lõi được xây dựng nhằm mục đích:', answer:'Làm thước đo xác định mục tiêu học tập đồng thời nâng cao năng lực cán bộ nhân viên trong Tập đoàn'}, 
+{lesson:1, question:'Luôn cố gắng tuân theo logic là một trong những nguyên tắc phải tuân thủ khi sử dụng phương pháp Tập kích não. Đúng hay sai?', answer:'Sai'}, 
+{lesson:1, question:'Một trong những cách thức để xây dựng hình ảnh tốt của bản thân là:', answer:'Kiểm soát lời nói và hành động của bản thân'}, 
+{lesson:1, question:'Một trong những kỹ thuật sử dụng phổ biến khi sử dụng phương pháp tập kích não trong học tập là quan sát kỹ những thứ nhìn thấy, quan sát từ cách nhìn của người khác, nhìn sự vật, sự việc theo một hướng khác. Đúng hay sai?', answer:'Đúng'}, 
+{lesson:1, question:'Một vài nguyên nhân gây lãng phí thời gian bao gồm', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Năng lực học tập ứng dụng được định nghĩa là:', answer:'Việc kịp thời xử lý và ứng dụng những thông tin mới liên quan đến công việc'}, 
+{lesson:1, question:'Nguyên tắc giao việc:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Nội dung "Chịu trách nhiệm với các hoạt động của bản thân trên mạng xã hội" tại Quy tắc ứng xử trên Mạng xã hội yêu cầu người lao động thực hiện hành động nào sau đây:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Nội dung nào dưới đây phản ánh đúng về phương pháp học tập "lấy học viên làm trung tâm"?', answer:'Học viên tham gia và tự khám phá nội dung'}, 
+{lesson:1, question:'Nội dung nào nằm trong 5 cam kết phục vụ khách hàng của VNPT?', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Phương pháp để thích ứng với sự thay đổi đó là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Phương thức nào dưới đây có thể được sử dụng một cách hiệu quả để giảm thiểu sự chống đối trong quá trình thay đổi?', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Quy trình sáng tạo thường bắt đầu từ việc:', answer:'Tìm kiếm ý tưởng trong thực tế'}, 
+{lesson:1, question:'Sự tham gia của nhân viên vào sự thay đổi là cần thiết bởi vì', answer:'Giúp kiểm soát quá trình thay đổi'}, 
+{lesson:1, question:'Sức mạnh của VNPT nằm ở những khía cạnh nào sau đây?', answer:'Sức mạnh truyền thống, Sức mạnh thương hiệu, Sức mạnh gắn kết, Sức mạnh phát triển, Sức mạnh kỷ cương'}, 
+{lesson:1, question:'Tại sao đưa ra ý kiến phản hồi trong giao tiếp lại quan trọng?', answer:'Đó là quá trình giúp người nói kiểm chứng xem thông điệp truyền đi tới từ người nghe như thế nào'}, 
+{lesson:1, question:'Tại sao VNPT 4.0 phải chuyển dịch mạnh mẽ từ viễn thông sang công nghệ thông tin?', answer:'Để tăng thị phần và giữ được mức tăng trưởng doanh thu; do thị trường viễn thông trở nên bão hòa; việc phát triển thuê bao mới ngày càng khó khăn'}, 
+{lesson:1, question:'Tập đoàn VNPT khởi động xây dựng Chiến lược VNPT 4.0 với mục tiêu thế nào?', answer:'Thực hiện chuyển đổi mạnh mẽ nhà cung cấp các sản phẩm dịch vụ số hiện đại, thực hiện số hóa toàn bộ để vai trò của Tập đoàn được khẳng định trong nền kinh tế số.'}, 
+{lesson:1, question:'Theo quyết định số 1311/QĐ-VNPT-KHCN&amp;ĐT, ngày 21/10/2013 Năng lực sáng tạo được định nghĩa:', answer:'Là khả năng hiện có của cá nhân trong việc tạo ra cái mới có giá trị dựa trên tổ hợp các thuộc tính độc đáo của cá nhân đó phù hợp với yêu cầu của hoạt động sáng tạo sản phẩm trong một lĩnh vực hoạt động nhất định.'}, 
+{lesson:1, question:'Theo quyết định số 1311/QĐ-VNPT-KHCN&ĐT, năng lực xây dựng mối quan hệ công việc tốt là:', answer:'Phát triển và sử dụng các mối quan hệ cộng tác để thúc đẩy việc đạt tới mục tiêu.'}, 
+{lesson:1, question:'Theo Sổ tay Văn hóa VNPT, Trách nhiệm của VNPT với đối tác là "Hợp tác cùng phát triển" được hiểu như thế nào?', answer:'VNPT coi hợp tác, hỗ trợ giúp đỡ đối tác cũng chính là giúp mình. VNPT coi trọng mở rộng hợp tác, VNPT luôn là đối tác tin cậy của bạn hàng và xây dựng các quan hệ hợp tác bình đẳng, hữu nghị, hợp tác cùng có lợi.'}, 
+{lesson:1, question:'Theo thời gian kế hoạch được phân loại thành:', answer:'Kế hoạch dài hạn; Kế hoạch trung hạn; Kế hoạch ngắn hạn'}, 
+{lesson:1, question:'Thông tin trong doanh nghiệp thường được ví như là:', answer:'Mạch máu'}, 
+{lesson:1, question:'Thường xuyên trao đổi để nhận thông tin phản hồi từ người khác, điều này giúp nhân viên VNPT:', answer:'Tìm kiếm thêm cơ hội; Phát triển ý tưởng; Thúc đẩy thỏa thuận'}, 
+{lesson:1, question:'Trong học tập, người học có xu hướng ghi nhớ nhất những điều gì trong số những nội dung sau?', answer:'Những nội dung nổi bật'}, 
+{lesson:1, question:'Trong ma trận quản lý thời gian, đối với công việc quan trọng nhưng không khẩn cấp thì nên:', answer:'Có kế hoạch làm hợp lý'}, 
+{lesson:1, question:'Trong quá trình sáng tạo, chúng ta có thể gặp phải những rào cản như', answer:'Rào cản từ bản thân; Rào cản từ bên ngoài'}, 
+{lesson:1, question:'Trong quy tắc ứng xử trên mạng XH của người lao động VNPT. Nội dung "Tuyệt đối không đăng tải, chia sẻ hay bình luận về các thông tin không được công bố hay các thông tin mật của VNPT trên mạng xã hội." Là thuộc:', answer:'Quy định về Bảo mật thông tin'}, 
+{lesson:1, question:'Trước đây, VNPT thực hiện văn hóa học tập chủ yếu theo cách cử nhân sự tham gia các khóa đào tạo. Trong thời gian gần đây, Tập đoàn dần dần chuyển dịch sang văn hóa Học hỏi & Chia sẻ - nghĩa là khuyến khích sự chủ động học tập và chia sẻ kiến thức từ mọi cấp bậc. Theo anh chị, VNPT có những công cụ, hoạt động nào sau đây giúp khuyến khích sự chủ động học tập và chia sẻ kiến thức trong Tập đoàn:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Ưu điểm của phương pháp triển khai MBO từ cấp công ty xuống cấp bộ phận:', answer:'Nhanh về mặt thời gian'}, 
+{lesson:1, question:'Việc lựa chọn phương thức đánh giá công việc được căn cứ vào', answer:'Tính thực tiễn, chi phí hệ thống và hiệu quả'}, 
+{lesson:1, question:'Việc xác định mục tiêu kế hoạch giúp doanh nghiệp:', answer:'Xác định những việc cần đạt được'}, 
+{lesson:1, question:'VNPT đang trong quá trình chuyển đổi từ một công ty viễn thông truyền thống sang một nhà cung cấp dịch vụ số. Song hành với những chuyển đổi về công nghệ, sản phẩm, mô hình tổ chức…, những chuyển đổi về văn hóa - chuyển đổi về khía cạnh con người của doanh nghiệp là hợp phần quan trọng, hỗ trợ cho sự thành công của những chuyển đổi khác. Theo anh chị, nhận định trên đúng hay sai?', answer:'Đúng'}, 
+{lesson:1, question:'VNPT khuyến khích toàn bộ người lao động trở thành những đại sứ thông tin của VNPT bằng cách thông báo với Bộ phận Truyền thông khi thấy những thông tin tích cực về VNPT mà chưa được đăng tải trên kênh truyền thông chính thức của Tập đoàn. Đúng hay Sai?', answer:'Đúng'}, 
+{lesson:1, question:'Với chiến lược phát triển trong kỷ nguyên mới, phù hợp với xu thế toàn cầu hóa\n và sự phát triển không ngừng của cuộc cách mạng công nghiệp 4.0, VNPT đã và đang từng bước chuyển đổi từ nhà cung cấp dịch vụ viễn thông truyền thống sang nhà cung cấp dịch vụ số (DSP), trở thành một Tập đoàn kinh tế năng động, chú trọng phát triển những sản phẩm, dịch vụ, giải pháp ICT sáng tạo. Các sứ mệnh của VNPT là:', answer:'Cung cấp cho khách hàng và đối tác các sản phẩm, dịch vụ Viễn thông - CNTT - Truyền thông và Dịch vụ số chất lượng, đột phá, sáng tạo; Trở thành trung tâm số (Digital Hub) của khu vực châu Á; Tôn vinh và đánh giá giá trị đích thực của người lao động; Tiên phong trong các hoạt động về cộng đồng.'}, 
+{lesson:1, question:'Khi có những thông tin quan trọng, có khả năng ảnh hưởng đến lợi ích và hình ảnh của VNPT, người lao động nên thực hiện hành động nào sau đây?', answer:'Thông báo với Bộ phận Truyền thông của Tập đoàn (Email: prnoibovnpt@vnpt.vn)'}, 
+{lesson:1, question:'Chuẩn mực cá nhân của người VNPT bao gồm Ý thức, Thái độ và Ứng xử. Anh/chị cho biết thái độ nào sau đây thể hiện đúng nhất chuẩn mực cá nhân của VNPT khi tham gia hội họp?', answer:'Nghiêm túc - đúng giờ. Đến trước ít nhất 5 phút, không bỏ họp về sớm; phát biểu, thảo luận nghiêm túc, đúng chủ đề; để điện thoại ở chế độ rung, hạn chế nghe điện thoại trong khi họp.'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, nếu khách hàng đến trụ sở VNPT từ 03 người trở lên, nhân viên VNPT thực hiện chào:', answer:'01 lần cho cả nhóm khách hàng'}, 
+{lesson:1, question:'Theo anh chị, những nét văn hóa nào sau đây sẽ hỗ trợ tốt cho việc thực hiện thành công Chiến lược VNPT 4.0?', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, hành động cúi chào được áp dụng khi:', answer:'Khi gặp khách hàng và khi khách hàng ra về'}, 
+{lesson:1, question:'Yếu tố "Thái độ" thuộc Chuẩn mực cá nhân trong sổ tay Văn hóa VNPT được thể hiện qua:', answer:'Công việc: Hết mình – Hết việc Hội họp: Nghiêm túc – Đúng giờ Học tập: Tự giác – Kiên trì'}, 
+{lesson:1, question:'Lợi ích khi có mối quan hệ tốt là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Một nhóm làm việc hiệu quả khi các thành viên trong nhóm:', answer:'Hoàn thành các mục tiêu của nhóm một cách hoàn hảo'}, 
+{lesson:1, question:'Mỗi cá nhân cần phải điều chỉnh có hiệu quả để làm việc trong những cấu trúc, quy trình, yêu cầu hay văn hóa làm việc mới Đây là yêu cầu của năng lực thích ứng đúng hay sai?', answer:'Đúng'}, 
+{lesson:1, question:'Trong quy trình xây dựng kế hoạch, ở mỗi phương án thực hiện mục tiêu, doanh nghiệp cần cụ thể hóa về:', answer:'Giải pháp và công cụ thực hiện'}, 
+{lesson:1, question:'Theo quyết định số 1311/QĐ-VNPT-KHCN&ĐT, ngày 21/10/2013 Năng lực sáng tạo được định nghĩa:', answer:'Là khả năng hiện có của cá nhân trong việc tạo ra cái mới có giá trị dựa trên tổ hợp các thuộc tính độc đáo của cá nhân đó phù hợp với yêu cầu của hoạt động sáng tạo sản phẩm trong một lĩnh vực hoạt động nhất định.'}, 
+{lesson:1, question:'Phương pháp sáu chiếc mũ tư duy giúp đánh giá sự việc từ nhiều góc nhìn khác nhau, qua đó:', answer:'Có thể hiểu rõ hơn mọi ngóc ngách của sự việc, nhận diện được những nguy cơ và cơ hội mà bình thường ta có thể không chú ý đến'}, 
+{lesson:1, question:'Thay đổi là một quá trình chứ không phải là một sự kiện', answer:'Đúng'}, 
+{lesson:1, question:'Đầu ra của hoạch định chiến lược là:', answer:'Bản kế hoạch kinh doanh'}, 
+{lesson:1, question:'Trong quá trình sử dụng phương pháp tập kích não (brainstorming) để thúc đẩy quá trình học tập, người học cần phải', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Phương pháp 6 chiếc mũ tư duy hướng mọi người cùng tập trung vào vấn đề từ cùng một góc nhìn, nhằm:', answer:'Triệt tiêu hoàn toàn các tranh cãi xuất phát từ các góc nhìn khác nhau.'}, 
+{lesson:1, question:'Lợi ích của làm việc nhóm là', answer:'Tất cả đều đúng'}, 
+{lesson:1, question:'Trong các hoạt động tổ chức thực hiện công việc, hoạt động quan trọng nhất là:', answer:'Thực hiện'}, 
+{lesson:1, question:'Mô hình học tập "lấy người học làm trung tâm" là mô hình trong đó giảng viên là nhà diễn thuyết, nhà truyền đạt thông tin nhằm đi hết nội dung của chương trình học. Đúng hay sai?', answer:'Sai'}, 
+{lesson:1, question:'Tìm kiếm cơ hội được định nghĩa là:', answer:'Chủ động tìm cách xây dựng những mối quan hệ công việc với người khác'}, 
+{lesson:1, question:'Trong văn hóa cuối chào khi giao tiếp với khách hàng của VNPT, thời gian hợp lý khi thực hiện cuối chào khách hàng là:', answer:'Từ 01 đến 03 giây'}, 
+{lesson:1, question:'Một trong những đặc điểm của bản kế hoạch tác nghiệp là', answer:'Thời hạn ngắn, 1 năm trở xuống'}, 
+{lesson:1, question:'Đâu là hành động chính trong năng lực học tập ứng dụng', answer:'Tích cực tham gia các hoạt động học tập'}, 
+{lesson:1, question:'Văn hóa giới thiệu và tự giới thiệu trong Văn hóa giao tiếp công sở và lễ nghi ngoại giao của VNPT, bao gồm những nội dung sau:', answer:'Giới thiệu người có địa vị cao hoặc người lớn tuổi trước, giới thiệu tên kèm theo chức vụ; Tự giới thiệu ngắn gọn tên, đơn vị làm việc, thái độ lịch sự, khiêm nhường.'}, 
+{lesson:1, question:'Các thông tin về công việc, mục tiêu – yêu cầu công việc, nhiệm vụ, quyền hạn, các mối quan hệ, tiêu chuẩn công việc, điều kiện làm việc là các nội dung nằm trong:', answer:'Bản mô tả công việc'}, 
+{lesson:1, question:'Một trong những đặc điểm của bản kế hoạch tác nghiệp là:', answer:'Thời hạn ngắn, 1 năm trở xuống'}, 
+{lesson:1, question:'Trong Chuẩn mực VNPT, theo anh chị thái độ nào của cá nhân được khuyến khích thế nào?', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'VNPT khuyến khích người lao động thực hiện hành vi nào sau đây khi tham gia mạng xã hội?', answer:'Sử dụng danh tính thật khi bàn luận về VNPT, các công ty, sản phẩm, dịch vụ, thương hiệu của VNPT trên mạng xã hội'}, 
+{lesson:1, question:'Người lao động VNPT vi phạm các quy định về sử dụng mạng xã hội gây ra hậu quả nghiêm trọng cho Tập đoàn sẽ bị xử lý như thế nào?', answer:'Xử lý kỷ luật lao động và/hoặc kiến nghị cơ quan nhà nước có thẩm quyền xử lý theo quy định pháp luật'}, 
+{lesson:1, question:'Đâu là những nhược điểm của phương pháp "thử và sai"?', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Theo Sổ tay Văn hóa VNPT, Trách nhiệm của VNPT đối với khách hàng là "Luôn làm hài lòng" được hiểu như thế nào?', answer:'VNPT coi khách hàng là trung tâm và là mục tiêu trong chiến lược phát triển. Mọi thành viên của VNPT luôn chú ý phải chân thành, nhã nhặn, chú ý lời chào, lời cảm ơn. Lắng nghe nhu cầu, giải thích cặn kẽ, rõ ràng. Tôn trọng lời hứa, đúng thời gian, không sách nhiễu hoặc gây phiền hà cho khách hàng.'}, 
+{lesson:1, question:'Triết lý của VNPT là gì?', answer:'Khách hàng là trung tâm; Chất lượng là linh hồn; Hiệu quả là thước đo'}, 
+{lesson:1, question:'Điều nào dưới đây KHÔNG PHẢI là rào cản của tư duy sáng tạo?', answer:'Không sợ thất bại'}, 
+{lesson:1, question:'Tâm lý ổn định việc làm là một lý do cản trở sự thay đổi', answer:'Đúng'}, 
+{lesson:1, question:'Phương pháp Thử và sai được ứng dụng khi', answer:'Đáp án sai: Giới thiệu ý tưởng cho đơn vị'}, 
+{lesson:1, question:'Một môi trường làm việc cởi mở, chân thành sẽ mang lại lợi ích nào sau đây?', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Người lao động làm việc theo ca được nghỉ ít nhất …....... trước khi chuyển sang ca làm việc khác.', answer:'12 giờ'}, 
+{lesson:1, question:'đối với người làm công việc trong điều kiện bình thường, khi có đủ 12 tháng làm việc cho một người sử dụng lao động thì thời gian được nghỉ hàng năm hưởng nguyên lương theo hợp đồng lao động là ?', answer:'12 ngày'}, 
+{lesson:1, question:'Nghỉ trong giờ làm việc theo quy định được tính vào thời giờ làm việc được hưởng lương.', answer:'Đúng'}, 
+{lesson:1, question:'Đối với người lao động cao tuổi trong năm cuối cùng trước khi nghỉ hưu. Thời giờ làm việc được rút ngắn mỗi ngày ít nhất là ?', answer:'01 giờ và được tính vào thời gian làm việc được hưởng lương'}, 
+{lesson:1, question:'Cứ ….. Làm việc cho một người sử dụng lao động thì số ngày nghỉ hằng năm của người lao động được tăng thêm tương ứng 01 ngày', answer:'5 năm'}, 
+{lesson:1, question:'Khi giao tiếp với khách hàng, chúng ta luôn mong muốn nhận được thông tin phản hồi từ khách hàng', answer:'Đúng'}, 
+{lesson:1, question:'NVKT nên đưa ấn phẩm, tài liệu, hợp đồng, brochure cho khách hàng như thế nào để thể hiện sự tôn trọng', answer:'Bằng hai tay và phải đưa cùng chiều với khách hàng'}, 
+{lesson:1, question:'Theo anh/chị thì khách hàng ngày nay có xu hướng thế nào ?', answer:'Tất cả đều đúng'}, 
+{lesson:1, question:'Khi đến nhà khách hàng để lắp đặt dịch vụ, nvkt nên sử dụng mẫu câu nào để giới thiệu bản thân', answer:'Chào anh/chị, em/tôi là … nvkt của VNPT… Theo hẹn, hôm nay em/tôi đến lắp đặt dịch vụ… cho gia đình mình ạ'}, 
+{lesson:1, question:'Để việc giao tiếp/ giao dịch với khách hàng đạt hiệu quả, nvkt nên:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Lợi ích của năng lực thích ứng đối với Cá nhân đó là:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Một trong những nguyên tắc để lập kế hoạch là:', answer:'Có tính linh hoạt phù hợp với sự thay đổi của môi trường'}, 
+{lesson:1, question:'Thời giờ học tập, huấn luyện an toàn lao động, vệ sinh lao động không được tính vào thời giờ làm việc được hưởng lương', answer:'Sai'}, 
+{lesson:1, question:'Người sử dụng lao động có quyền quyết định sắp xếp ngày nghỉ hàng tuần vào ….. Trong tuần nhưng phải ghi vào nội quy lao động', answer:'Ngày chủ nhật hoặc một ngày cố định khác'}, 
+{lesson:1, question:'Thời giờ hội họp, học tập, tập huấn do yêu cầu của người sử dụng lao động hoặc được người sử dụng lao động đồng ý được tính vào thời giờ làm việc được hưởng lương', answer:'Đúng'}, 
+{lesson:1, question:'Người lao động có thể thỏa thuận với người sử dụng lao động để nghỉ hằng năm thành nhiều lần hoặc nghỉ gộp tối đa là ?', answer:'03 năm một lần'}, 
+{lesson:1, question:'Mỗi tuần người lao động được nghỉ ít nhất ?', answer:'24 giờ liên tục'}, 
+{lesson:1, question:'NVKT nên ứng xử như thế nào khi gặp khách hàng lần đầu?', answer:'Chủ động cúi chào….. Dịch vụ'}, 
+{lesson:1, question:'Lý do khiến thuê bao rời mạng có thể là :', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Sau khi lắp đặt thiết bị MODEM WIFI xong, NVKT cần lưu ý với khách điều gì ?', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'người sử dụng lao động có quyền quy định làm việc theo', answer:'Tất cả đều đúng'}, 
+{lesson:1, question:'Người sử dụng lao động có quyền yêu cầu người lao động làm thêm giờ vào bất kỳ ngày nào và người lao động không được từ chối trong các trường hợp nào sau đây?', answer:'Thực hiện các công việc nhằm bảo vệ tính mạng con người, tài sản của cơ quan, tổ chức, cá nhân trong phòng ngừa và khắc phục hậu quả thiên tai, hỏa hoạn, dịch bệnh và thảm họa'}, 
+{lesson:1, question:'Nghỉ cần thiết trong quá trình lao động đã được tính trong định mức lao động cho nhu cầu sinh lý tự nhiên của con người được tính vào thời giờ làm việc được hưởng lương.', answer:'Đúng'}, 
+{lesson:1, question:'Trường hợp làm việc ban đêm, thì người lao động được nghỉ giữa giờ ít nhất … tính vào thời giờ làm việc', answer:'45 phút'}, 
+{lesson:1, question:'Phương thức "giao tiếp phi ngôn ngữ" đối với Doanh nghiệp được thể hiện qua', answer:'Thương hiệu; logo; đồng phục, cách trang trí cửa hàng'}, 
+{lesson:1, question:'NVKT sẽ ứng xử như thế nào khi khách hàng yêu cầu ngừng sử dụng dịch vụ/sản phẩm của VNPT', answer:'Tìm hiểu nguyên nhân, thuyết phục khách hàng tiếp tục sử dụng dịch vụ. Trong trường hợp khách hàng thực sự không còn như cầu thì hướng dẫn khách hàng làm thủ tục chấm dứt hợp đồng'}, 
+{lesson:1, question:'Khi trình bày cho khách hàng về dịch vụ của VNPT, NVKT không nên :', answer:'Nói không có chủ đích'}, 
+{lesson:1, question:'Quản trị mục tiêu bằng MBO giúp doanh nghiệp', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Ý kiến nào cần lưu ý khi thiết lập một bản kế hoạch', answer:'Tất cả đều đúng'}, 
+{lesson:1, question:'Trong trường hợp người sử dụng lao động quy định làm việc theo tuần thì thời gian làm việc bình thường không quá …....... trong 01 ngày, nhưng không quá 48 giờ trong 01 tuần.', answer:'10 giờ'}, 
+{lesson:1, question:'Tiền tàu xe và tiền lương những ngày đi đường do hai bên thỏa thuận ?', answer:'Đúng'}, 
+{lesson:1, question:'Đối với những người làm công việc nặng nhọc, độc hại, nguy hiểm, khi có đủ 12 tháng làm việc cho một người sử dụng lao động thì thời gian được nghỉ hàng năm được hưởng nguyên lương theo hợp đồng lao động là ?', answer:'14 ngày'}, 
+{lesson:1, question:'Thời giờ làm việc bình thường không quá …. Trong 01 ngày và 48 giờ trong một tuần', answer:'08 giờ'}, 
+{lesson:1, question:'Khi lắp đặt, xử lý sự cố cho khách hàng xong, nội dung nào nvkt không nên khuyến nghị khách hàng', answer:'Chủ động mua và lắp thêm repeater nếu muốn mở rộng thêm vùng phủ sóng'}, 
+{lesson:1, question:'Theo anh/chị, mục đích quan trọng nhất khi một doanh nghiệp yêu cầu nhân viên tiếp xúc với khách hàng phải đeo thẻ nhân viên và mặc đồng phục là gì ?', answer:'Thể hiện tính chuyên nghiệp và thái độ tôn trọng trong phục vụ khách hàng'}, 
+{lesson:1, question:'Khi trao đổi, giải thích với khách hàng qua điện thoại, nvkt KHÔNG nên', answer:'Sử dụng các thuật ngữ chuyên nghành'}, 
+{lesson:1, question:'Sau khi lắp đặt dịch vụ Internet tại nhà khách hàng, một trong những vấn đề mà nhân viên kỹ thuật cần lưu ý khách hàng là :', answer:'Số lượng thiết bị tối đa truy cập cùng lúc trên đường truyền'}, 
+{lesson:1, question:'Mối quan hệ giữa các đồng nghiệp trong cùng phòng ban đơn vị , là mối quan hệ:', answer:'Đồng cấp'}, 
+{lesson:1, question:'Thời giờ làm việc không quá …. Trong 01 ngày đối với những người làm các công việc đặc biệt nặng nhọc, độc hại, nguy hiểm theo danh mục do Bộ Lao động - Thương binh và Xã hội chủ trì phối hợp với Bộ Y tế ban hành', answer:'06 giờ'}, 
+{lesson:1, question:'NVKT khi thi công tại địa chỉ khách hàng nên thực hiện thể nào để thể hiện sự chuyên nghiệp ?', answer:'Phục vụ khách hàng với thao tác nhanh, chính xác; hạn chế nói chuyện riêng, hạn chế giải quyết việc khác hoặc mượn thiết bị của khách hàng; Dọn dẹp sạch sẽ tại vị trí thi công; xin lỗi khách hàng nếu trong quá trình thi công đã làm phiền khách hàng'}, 
+{lesson:1, question:'Lắng nghe tích cực Không có đặc điểm nào, sau đây:', answer:'Khi khách hàng đang trình bày, nếu có điều gì khách hàng nói chưa đúng thì nên ngắt lời để giải thích ngay, tránh để khách hàng hiểu lầm'}, 
+{lesson:1, question:'Khi giao tiếp với khách hàng, nvkt nên tránh', answer:'Nói với tốc độ và ngữ điệu đều đều'}, 
+{lesson:1, question:'Trong kinh doanh, khi khách hàng không hài lòng thì phương án tốt nhất doanh nghiệp mong muốn là', answer:'Khách hàng nói trực tiếp với chúng ta'}, 
+{lesson:1, question:'Thời giờ phải ngừng việc do lỗi của người lao động vẫn được tính vào thời giờ làm việc được hưởng lương', answer:'Sai'}, 
+{lesson:1, question:'Người lao động làm việc liên tục 08 giờ hoặc 06 giờ được nghỉ giữa giờ ít nhất … tính vào thời giờ làm việc', answer:'30 phút'}, 
+{lesson:1, question:'Khi nghỉ hằng năm, người lao động được tạm ứng trước một khoản tiền ít nhất bằng tiền lương….', answer:'của những ngày nghỉ'}, 
+{lesson:1, question:'Chăm sóc khách hàng mang lại cho doanh nghiệp lợi ích gì?', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Khi nghỉ hằng năm, nếu người lao động đi bằng các phương tiện đường bộ, đường sắt, đường thủy mà số ngày đi đường cả đi và về trên 02 ngày thì ngày thứ 03 trở đi được tính thêm thời gian đi đường ngoài ngày nghỉ hằng năm và được tính cho…...', answer:'01 lần nghỉ trong năm'}, 
+{lesson:1, question:'Khi tiếp xúc với khách hàng, lý do nào là quan trọng nhất khiến chùng ta nên gọi đúng tên khách hàng?', answer:'Để thể hiện sự tôn trọng và tạo thiện cảm với khách hàng'}, 
+{lesson:1, question:'NVKT khi thực hiện chăm sóc khách hàng, nếu khách hàng phản ánh "Mạng bị chậm", sẽ xử lý như thế nào?', answer:'Xin lỗi khách hàng; khảo sát và kiểm tra dịch vụ; đưa ra khuyến nghị hoặc đo sóng WIFI và tối ưu WIFI cho khách hàng.'}, 
+{lesson:1, question:'Người sử dụng lao động phải chi trả chế độ gì cho người lao động bị tai nạn lao động?', answer:'Tất cả đều đúng'}, 
+{lesson:1, question:'Trong quá trình phục vụ, nếu khách hàng không hài lòng với dịch vụ hoặc thái độ của nhân viên, NVKT nên ứng xử thế nào?', answer:'Chân thành xin lỗi khách hàng cho dù nhân viên có lỗi hay không; chủ động lắng nghe, thể hiện đồng cảm với khách hàng và có hướng giải thích rõ ràng, nhẹ nhàng để khách hàng hiểu cũng như thông cảm'}, 
+{lesson:1, question:'Sau khi thực hiện lắp đặt/sửa chữa dịch vụ tại nhà khách hàng, NVKT KHÔNG nên:', answer:'Nhờ khách hàng dọn giúp vệ sinh khu vực đã thi công'}, 
+{lesson:1, question:'Khi tiếp xúc với một khách hàng phàn nàn về chất lượng dịch vụ của VNPT NVKT nên làm gì?', answer:'Xin lỗi khách hàng; đặt câu hỏi, xác định vấn đề, chủ động lắng nghe tích cực và tìm cách giải quyết theo quy định.'}, 
+{lesson:1, question:'Việc học tập không ngừng sẽ giúp người học', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Khi tổ chức có những thay đổi về văn hóa doanh nghiệp, khoa học công nghệ, đòi hỏi mỗi cá nhân phải…', answer:'Thích ứng'}, 
+{lesson:1, question:'NVKT nên tìm hiểu những thông tin gì về sản phẩm của đối thủ cạnh tranh?', answer:'Điểm mạnh - điểm yếu của sản phẩm tương đồng với VNPT'}, 
+{lesson:1, question:'Trước khi đến lắp đặt dịch vụ cho khách hàng, NVKT nên:', answer:'Gọi điện đặt lịch hẹn để xác nhận thời gian cụ thể với khách hàng'}, 
+{lesson:1, question:'Khi trao đổi, giải thích với khách hàng qua điện thoại, NVKT KHÔNG nên:', answer:'Sử dụng các thuật ngữ chuyên ngành'}, 
+{lesson:1, question:'Phương thức "Giao tiếp phi ngôn ngữ" đối với Doanh nghiệp được thể hiện qua:', answer:'Thương hiệu; Logo; Đồng phục, cách trang trí cửa hàng'}, 
+{lesson:1, question:'Khi khách hàng có ý so sánh các dịch vụ của VNPT với dịch vụ của các đối thủ cạnh tranh về mức giá sử dụng, NVKT nên:', answer:'Nêu và chứng minh tính ưu việt về chất lượng sản phẩm dịch vụ của VNPT cùng những chính sách chăm sóc khách hàng, dịch vụ hậu mãi; Định hướng cho khách hàng hiểu về chất lượng quan trọng hơn giá cả.'}, 
+{lesson:1, question:'Để tạo thiện cảm với khách hàng, chúng ta nên:', answer:'Giữ đúng lời hứa với khách hàng'}, 
+{lesson:1, question:'Khi tiếp xúc với khách hàng, lý do nào là quan trọng nhất khiến chúng ta nên gọi đúng tên khách hàng?', answer:'Để thể hiện sự tôn trọng và tạo thiện cảm với khách hàng'}, 
+{lesson:1, question:'NVKT nên đưa ấn phẩm, tài liệu, hợp đồng, brochure cho khách hàng như thế nào để thể hiện sự tôn trọng?', answer:'Đưa ấn phẩm, tài liệu, hợp đồng, brochure,…bằng hai tay và phải đưa cùng chiều với khách hàng.'}, 
+{lesson:1, question:'Khi giao tiếp với khách hàng, chúng ta luôn mong muốn nhận được thông tin phản hồi từ khách hàng. Đúng hay Sai?', answer:'Đúng'}, 
+{lesson:1, question:'Khi giao tiếp với khách hàng, NVKT nên tránh:', answer:'Nói với tốc độ và ngữ điệu đều đều'}, 
+{lesson:1, question:'Khi chăm sóc khách hàng, nếu gặp trường hợp khách hàng trước đây đã từng dùng mạng của VNPT phản ánh "Mạng bị chậm, hay bị quay,..", vì vậy khách hàng đã chuyển sang dùng của nhà mạng khác, NVKT nên xử lý:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Quy định đối với NVKT về việc cung cấp thông tin cho khách hàng:', answer:'Cung cấp thông tin cho khách hàng đầy đủ, trung thực, theo phạm vi công việc được giao và chịu trách nhiệm về tính chính xác của thông tin'}, 
+{lesson:1, question:'Khi giao tiếp với khách hàng, để việc lắng nghe hiệu quả NVKT nên:', answer:'Kiểm soát cảm xúc của bản thân'}, 
+{lesson:1, question:'NVKT khi thi công tại địa chỉ khách hàng nên thực hiện thế nào để thể hiện sự chuyên nghiệp?', answer:'Phục vụ khách hàng với thao tác nhanh, chính xác; Hạn chế nói chuyện riêng, hạn chế giải quyết việc khác hoặc mượn thiết bị của khách hàng; Dọn dẹp sạch sẽ tại vị trí thi công; Xin lỗi khách hàng nếu trong quá trình thi công đã làm phiền khách hàng.'}, 
+{lesson:1, question:'Sau khi lắp đặt thiết bị MODEM WIFI xong, NVKT cần lưu ý với khách hàng điều gì?', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'NVKT sẽ ứng xử thế nào khi khách hàng yêu cầu ngừng sử dụng dịch vụ/sản phẩm của VNPT?', answer:'Tìm hiểu nguyên nhân, thuyết phục khách hàng tiếp tục sử dụng dịch vụ. Trong trường hợp khách hàng thực sự không còn nhu cầu thì hướng dẫn khách hàng làm thủ tục chấm dứt hợp đồng.'}, 
+{lesson:1, question:'NVKT đến tối ưu mạng WIFI cho khách hàng hiện hữu nhằm mục đích', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Khi lắp đặt, xử lý sự cố dịch vụ cho khách hàng xong, nội dung nào NVKT không nên khuyến nghị khách hàng:', answer:'Chủ động mua và lắp thêm repeater nếu muốn mở rộng thêm vùng phủ sóng'}, 
+{lesson:1, question:'Sau khi lắp đặt dịch vụ Internet tại nhà khách hàng, một trong những vấn đề mà NVKT cần lưu ý khách hàng là:', answer:'Số lượng thiết bị tối đa truy cập cùng lúc trên đường truyền'}, 
+{lesson:1, question:'Việc bảo mật thông tin khách hàng được VNPT quy định thế nào?', answer:'Không được sử dụng, tiết lộ bất cứ thông tin nào của khách hàng vào mục đích riêng.'}, 
+{lesson:1, question:'Trong kinh doanh, khi khách hàng không hài lòng thì phương án tốt nhất doanh nghiệp mong muốn là:', answer:'Khách hàng nói trực tiếp với chúng ta.'}, 
+{lesson:1, question:'Khi trình bày cho khách hàng về dịch vụ của VNPT, NVKT không nên:', answer:'Nói không có chủ đích'}, 
+{lesson:1, question:'Những phàn nàn của khách hàng sẽ giúp cho đơn vị:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Người sử dụng lao động có quyền quy định lịch nghỉ hằng năm sau khi tham khảo ý kiến của người lao động và phải thông báo trước cho người lao động ?', answer:'Đúng'}, 
+{lesson:1, question:'Với chiến lược phát triển trong kỷ nguyên mới, phù hợp với xu thế toàn cầu hóa và sự phát triển không ngừng của cuộc cách mạng công nghiệp 4.0, VNPT đã và đang từng bước chuyển đổi từ nhà cung cấp dịch vụ viễn thông truyền thống sang nhà cung cấp dịch vụ số (DSP), trở thành một Tập đoàn kinh tế năng động, chú trọng phát triển những sản phẩm, dịch vụ, giải pháp ICT sáng tạo. Các sứ mệnh của VNPT là:', answer:'Cung cấp cho khách hàng và đối tác các sản phẩm, dịch vụ Viễn thông - CNTT - Truyền thông và Dịch vụ số chất lượng, đột phá, sáng tạo; Trở thành trung tâm số (Digital Hub) của khu vực châu Á; Tôn vinh và đánh giá giá trị đích thực của người lao động; Tiên phong trong các hoạt động về cộng đồng.'}, 
+{lesson:1, question:'Người sử dụng lao động được sử dụng người lao động làm thêm giờ khi đáp ứng đủ điều kiện ?', answer:'cả 3 ý còn lại'}, 
+{lesson:1, question:'Trong trường hợp đặc biệt do chu kỳ lao động không thể nghỉ hằng tuần, thì người sử dụng lao động có trách nhiệm bảo đảm cho người lao động được nghỉ tính bình quân 01 tháng ít nhất là ?', answer:'04 ngày'}, 
+{lesson:1, question:'Luật An toàn, vệ sinh lao động năm 2015 quy định yếu tố có hại là gì?', answer:'Yếu tố có hại là yếu tố gây bệnh tật, làm suy giảm sức khỏe con người trong quá trình lao động.'}, 
+{lesson:1, question:'Đối với Doanh nghiệp, sự sáng tạo có những lợi ích:', answer:'Các đáp án đều đúng'}, 
+{lesson:1, question:'Nghỉ giải lao theo tính chất của công việc được tính vào thời giờ làm việc được hưởng lương.', answer:'Đúng'}, 
+{lesson:1, question:'Thời giờ hội họp, học tập, tập huấn do yêu cầu của người sử dụng lao động hoặc được người sử dụng lao động đồng ý được tính vào thời giờ làm việc được hưởng lương.', answer:'Đúng'}, 
+{lesson:1, question:'Thời giờ làm việc không quá …....... trong 01 ngày đối với những người làm các công việc đặc biệt nặng nhọc, độc hại, nguy hiểm theo danh mục do Bộ Lao động - Thương binh và Xã hội chủ trì phối hợp với Bộ Y tế ban hành.', answer:'06 giờ'}, 
+{lesson:1, question:'Người sử dụng lao động có quyền quyết định sắp xếp ngày nghỉ hàng tuần vào .......... trong tuần nhưng phải ghi vào nội quy lao động.', answer:'ngày chủ nhật hoặc một ngày cố định khác'}, 
+{lesson:1, question:'Quản trị bằng mục tiêu MBO giúp doanh nghiệp:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Nhà nước khuyến khích người sử dụng lao động thực hiện tuần làm việc ….......', answer:'40 giờ'}, 
+{lesson:1, question:'Mỗi tuần, người lao động được nghỉ ít nhất ?', answer:'24 giờ liên tục'}, 
+{lesson:1, question:'Khi gặp những thay đổi lớn trong nhiệm vụ hoặc môi trường làm việc, nhân viên VNPT nên:', answer:'Thích ứng, duy trì được hiệu quả làm việc'}, 
+{lesson:1, question:'Khi nghỉ hằng năm, người lao động được tạm ứng trước một khoản tiền ít nhất bằng tiền lương ..........', answer:'của những ngày nghỉ'}, 
+{lesson:1, question:'Thời giờ làm việc bình thường không quá …....... trong 01 ngày và 48 giờ trong một tuần.', answer:'08 giờ'}, 
+{lesson:1, question:'Người lao động có đủ …....... làm việc cho một người sử dụng lao động thì được nghỉ hằng năm, hưởng nguyên lương theo hợp đồng lao động.', answer:'12 tháng'}, 
+{lesson:1, question:'Theo anh/chị, mục đích quan trọng nhất khi một doanh nghiệp yêu cầu nhân viên tiếp xúc với khách hàng phải đeo thẻ nhân viên và mặc đồng phục là gì ?', answer:'Thể hiện tính chuyên nghiệp và thái độ tôn trọng trong phục vụ khách hàng'}, 
+{lesson:1, question:'Đối với người làm công việc trong điều kiện bình thường, khi có đủ 12 tháng làm việc cho một người sử dụng lao động thì thời gian được nghỉ hằng năm hưởng nguyên lương theo hợp đồng lao động là ?', answer:'12 ngày'}, 
+{lesson:1, question:'Người sử dụng lao động có quyền quy định làm việc theo ?', answer:'Tất cả đều đúng'}, 
+{lesson:8, question:'Công ty bạn có dựng một FTP Server, bạn là người quản trị FTP server này, bạn muốn tất cả các user khi truy cập vào FTP này đều phải nhập user name và password, bạn làm thế nào', answer:'Trên máy FTP Server, chọn tab security account check vào ô Allow anonymous connections'}, 
+{lesson:8, question:'Công ty bạn có 2 văn phòng sử dụng 2 NetID khác nhau, bạn sử dụng máy tính xách tay sử dụng hệ điều hành Windows XP, bạn thường di chuyển qua lại giữa hai văn phòng này, bạn cấu hình địa chỉ IP trên máy tính xách tay như thế nào để mỗi lần qua lại giữa hai trụ sở này mà không cần phải cấu hình lại địa chỉ IP?', answer:'Cấu hình Alternate Configuration trên máy tính xách tay'}, 
+{lesson:8, question:'Thực thi câu lệnh nào để chạy giao thức OSPFv2 trên mạng', answer:'router ospf process-id'}, 
+{lesson:8, question:'Các giao thức xác thực nào sau đây là được sử dụng trong các mạng ko dây', answer:'802.11b'}, 
+{lesson:8, question:'Việc xác minh và cấp phép là nhiệm vụ của', answer:'AD'}, 
+{lesson:8, question:'Để kích Hyper-V Manager trên Windows, thực hiện trình tự các bước sau:', answer:'Ở cửa sổ Control Panel, chọn Programs - truy cập Programs and Features rồi chọn Turn Windows features on or off. Tích vào Hyper-V rồi nhấn OK'}, 
+{lesson:8, question:'Cài đặt Win 2012 trên máy ảo VMWare thì yêu cầu phần cứng ntn', answer:'Tất cả yếu tố trên'}, 
+{lesson:8, question:'Bạn là người quản trị mạng trong công ty, trong hệ thống mạng bạn đã cài đặt và cấu hình DHCP server, bạn muốn bổ sung thêm một số địa chỉ loại trừ mới, để cấp địa chỉ này cho các máy server, trường hợp này bản thực hiện như thế nào?', answer:'Trong DHCP Server chọn DHCP reservation'}, 
+{lesson:8, question:'Bạn là người QTM cho một cty, cty bạn muốn triển khai 2 NetID khác nhau cho 2 phòng ban, bạn làm thế nào để trên mạng ko bị trùng IP và 2 NetID này ít traffic nhất', answer:'Sử dụng Ip tĩnh trên mỗi nhánh mạng'}, 
+{lesson:8, question:'Hyper-V phân chia mỗi máy ảo thành', answer:'Một partition'}, 
+{lesson:8, question:'Máy tính dùng hđh nào có thể gia nhập AD(Active Directory) domain', answer:'Windows OS'}, 
+{lesson:8, question:'Máy ảo khách chạy trên Xen được gọi là', answer:'Domains'}, 
+{lesson:8, question:'Để phân chia quyền hành của một miền trong AD người ta dùng', answer:'OU'}, 
+{lesson:8, question:'Địa chỉ Ipv6 nào được sử dụng cho địa chỉ multicast của một nhóm các router', answer:'FF02::2'}, 
+{lesson:8, question:'Ảo hóa giải quyết các thách thức của việc quản lý trung tâm dữ liệu và cung cấp một số lợi ích ntn', answer:'Các ý trên đều đúng'}, 
+{lesson:8, question:'Hyper V Windows Server 2008 64 có mấy phiên bản', answer:'3 phiên bản'}, 
+{lesson:8, question:'Bạn là người quản trị mạng trong cty, cty yêu cầu bạn cài dịch vụ DHCP Server để cấp Ip cho các máy khác trong mạng. Trước khi cài DHCP trên Windows 2003 Server, bạn cần thiết lập các thành phần nào', answer:'Địa chỉ Ip tĩnh, subnet mask, default gateway và DNS'}, 
+{lesson:8, question:'Công nghệ Hyper V trong window server là gì', answer:'E. Công nghệ ảo hóa của Microsoft'}, 
+{lesson:8, question:'Giao thức nào sau đây làm việc trên lớp IP để bảo vệ thông tin IP trên mạng', answer:'IPSec'}, 
+{lesson:8, question:'Ảo hóa mức hđh còn gọi là', answer:'Container Virtualization hay Isolation'}, 
+{lesson:8, question:'Để thiết lập quyền khởi động ưu tiên cho file boot DLC(*.iso) trong VMWare', answer:'Vào VM và chọn CD/DVD (SATA) và chọn đường dẫn đến file DLC'}, 
+{lesson:8, question:'Khi cài đặt Hyper-V yêu cầu processor', answer:'Hyper-V chỉ có thể triển khai trên máy chủ sử dụng processor 64bit (x86-64) có hỗ trợ ảo hóa (Intel VT hay AMD-V)'}, 
+{lesson:8, question:'Chiều dài tối thiếu của mật khẩu là', answer:'8 ký tự'}, 
+{lesson:8, question:'Nhược điểm của Open VZ là gì', answer:'Các máy chủ phải sử dụng chung 1 nhân duy nhất'}, 
+{lesson:8, question:'2 đáp án đúng về địa chỉ Ipv6', answer:'[2 chọn]\nfd15:0db8:0000:0000:700:3:400F:527B\nfd15:db8::700:3:400F:527B'}, 
+{lesson:8, question:'Trong hình bên dưới chế độ nào đang đc thiết lập mật khẩu', answer:'Telnet'}, 
+{lesson:8, question:'Các chức năng nào sau đây không phải là chức năng của ảo hóa với VMware Workstation', answer:'Hỗ trợ hệ thống cho hệ điều hành trên máy đang sử dụng'}, 
+{lesson:8, question:'VMWare vSphere là bộ sản phẩm của VMWare, dùng để phục vụ nhu cầu ảo hóa hệ thống, thành phần nào dưới đây không phải của nó', answer:'VMWare Store'}, 
+{lesson:8, question:'Thông số nào được dùng để tính toán tuyến đường đối với giao thức OSPF', answer:'Bandwith'}, 
+{lesson:8, question:'Trong quá trình xác thực CHAP, để thực hiện mã hóa với một site từ xa có id là 177798 thông qua kết nối PPP thì giá trị nào đc sử dụng', answer:'Sử dụng host name của thiết bị từ xa'}, 
+{lesson:8, question:'Ưu điểm của Xen là gì?', answer:'Công nghệ ảo hóa thực sự cho phép chạy cùng lúc nhiều máy ảo VPS trên máy chủ vật lý'}, 
+{lesson:8, question:'Công ty bạn có dựng một web server, bạn là người quản trị web server này, bạn muốn quản trị web server này qua mạng, để có thể quản trị web server từ xa bạn phải cài đặt công cụ gì?', answer:'Remote Administration (HTML)'}, 
+{lesson:8, question:'Bạn có thể cấu hình Hyper-V để chạy nhiều máy ảo cùng lúc. Số lượng máy ảo nhiều hay ít tùy thuộc vào mấy yếu tố', answer:'3'}, 
+{lesson:8, question:'Các thực hiện Activator Windows (Product key bản quyền) hợp lệ là gì', answer:'Active Window Key Online'}, 
+{lesson:8, question:'Để ko phải thực hiện thao tác cài lại máy ảo, có thể sủe dụng chức năng khôi phục tại thời điểm đc tạo ra, ta chon tính năng', answer:'Snapshots'}, 
+{lesson:8, question:'Có bao nhiêu bit trong 1 ô địa chỉ IPv6', answer:'16'}, 
+{lesson:8, question:'Thông số nào ảnh hưởng tới việc lựa chọn một tuyến đường khi có nhiều bộ giao thức cùng có 1 tuyến đường tới 1 đích', answer:'Administrative distance'}, 
+{lesson:8, question:'Nếu sử dụng câu lệnh “ service password-encrytion” điều gì xảy ra', answer:'Tất cả pass hiện tai và tương lại đều mã hóa'}, 
+{lesson:8, question:'Để thực hiện Share dữ liệu giữa máy thật và máy ảo, trong hộp thoại hiệu chỉnh cấu hình máy ảo ta chọn:', answer:'Chọn tab Options và chọn mục Share Folder và chọn nút Add để tạo một chia sẻ một thư mục trên máy tính thật cho máy ảo'}, 
+{lesson:8, question:'Trong dịch vụ DHCP các gói tin Broadcast có thể đi qua Route đc ko', answer:'Có nhưng route phải có chuẩn RFC1542'}, 
+{lesson:8, question:'Mục đích của một máy chủ RADIUS là', answer:'Xác thực'}, 
+{lesson:8, question:'Tạo mới máy ảo Hyper-V thực hiện các bước sau', answer:'Ở cưa sổ Hyper-V chọn Virtual Switch Manager - chọn External và chọn create Virtual Switch. Chọn tên máy tính chủ (máy tính đang chạy Hyper-V). Sau đó dưới khung Actions, nhấn New-> Virtual Machine'}, 
+{lesson:8, question:'Dịch vụ DNS server có chức năng chính là', answer:'Phân giải tên miền từ IP sang tên và ngược lai'}, 
+{lesson:8, question:'Khi “gắn” một card mạng vào một máy ảo, card mạng này không chọn loại nào sau đây:', answer:'Network'}, 
+{lesson:8, question:'Điểm khác biệt cơ bản giữa mail onl và offline là', answer:'Mail online nhanh hơn mail offiline'}, 
+{lesson:8, question:'DHCPACK đây là gói tin nhằm giúp', answer:'DHCP Server chấp nhận yêu cầu cho Client'}, 
+{lesson:8, question:'Cơ chế point to point trg việc giải đáp tên máy là kiểu', answer:'P node'}, 
+{lesson:8, question:'Theo thứ tự câu lệnh nào đc cấu hình trên cùng một router chạy OSPF và thêm vùng mạng 10.1.1.0/24 vào vùng area 0', answer:'router ospf 1 network 10.1.1.0 0.0.0.255 area 0'}, 
+{lesson:8, question:'Tính năng chính của VMWare Workstation là', answer:'Tạo máy ảo đa hệ điều hành'}, 
+{lesson:8, question:'Dịch vụ phải có khi cài AD', answer:'DNS'}, 
+{lesson:8, question:'DHCP Relay Agent là', answer:'Đại lý chuyển tiếp DHCP Server'}, 
+{lesson:8, question:'Thành phần nào sau đây không phải của một hệ thống ảo hóa:', answer:'iCloud'}, 
+{lesson:8, question:'Các loại client đc hỗ trợ bởi Exchange Server', answer:'Tất cả đúng'}, 
+{lesson:8, question:'MX Record dùng để làm gì?', answer:'Dùng cho dịch vụ chuyển mail'}, 
+{lesson:8, question:'Các tính năng nào sau đây ko phải là công nghệ ảo hóa', answer:'Tổ chức lưu trữ dữ liệu lớn'}, 
+{lesson:8, question:'Sự khác nhau cơ bản giữa VMWare-Xen-OpenVZ', answer:'Open VZ hoạt động dựa trên nhân Linux và hđh'}, 
+{lesson:8, question:'Câu lệnh nào thì cần thiết để cho phép SSH hoặc Telnet tới một thiết bị switch cisco', answer:'transport input all'}, 
+{lesson:8, question:'Quyền truy cập nào cho phép ta lưu giữ một tập tin?', answer:'Ghi'}, 
+{lesson:8, question:'Tính năng bảo mật nào có thể đc sử dụng đối với 1 máy trạm quay số truy cập từ xa sử dụng một user name và mật khẩu', answer:'Mã hóa sđt'}, 
+{lesson:8, question:'Các công nghệ nào sau đây không hỗ trợn hệ thống ảo hóa', answer:'Công nghệ Beamforming'}, 
+{lesson:8, question:'Tính năng nào được sử dụng khi tagging 1 vùng Vlan?', answer:'Encapsulation'}, 
+{lesson:8, question:'Phát biểu nào sau đây ko đúng khi so sánh ưu điểm của hyper-v so với VMWare', answer:'Hỗ trợ nhiều hđh khác nhau'}, 
+{lesson:8, question:'Hđh chủ (host OS) hyper-v chỉ có thể đc triển khai trên các nền tảng window sau', answer:'Window Server và Window Desktop'}, 
+{lesson:8, question:'Điểm khác nhau giữa CSU/DSU và modem', answer:'Thiết bị CSU/DSU chuyển đổi tín hiệu số từ 1 router tới đường truyền leased, thiết bị moderm chuyển đổi tín hiệu tương tự từ một router tới đường truyền diện thoại'}, 
+{lesson:8, question:'Hypervisor ko thể là', answer:'Một hệ thống mạng (network)'}, 
+{lesson:8, question:'VMWare cso tính năng cấp IP Động (DHCP) để cấu hình cho chức năng này thực hiện các bước sau', answer:'Edit -> Chọn Virtual Network Editor trên thanh toolbar để cấu hình'}, 
+{lesson:8, question:'Sử dụng mặt subnet nào đc sử dụng cho 8 dải mạng con, mỗi mạng chưa từ 6 cho tới 26 host', answer:'255.255.255.224'}, 
+{lesson:8, question:'Trình tự các bước Export máy ảo trong hyper-v', answer:'Mở hyper-v sau đó chọn export nhấn browser để lựa chọn nơi muốn export máy ảo trong hyper-v'}, 
+{lesson:8, question:'DHCPOFFER đây là gói tin nhằm giúp', answer:'DHCP Server đề nghị danh sách các IP cho thuê đến Client'}, 
+{lesson:8, question:'Câu lệnh nào đc sử dụng để cấu hình 1 port của Switch hoạt động ở mode Trunk', answer:'D Show interfaces switch port'}, 
+{lesson:8, question:'Danh sách Black List trong Spam (của chương trình MDemon) có ý nghĩa gì:', answer:'Danh sách các địa chỉ email và các miền không muốn nhận'}, 
+{lesson:8, question:'Phương pháp thông tin truy cập từ xa nào được xem như kết nối điển hình tớ Internet mọi lúc, nó làm gia tăng rủi ro bảo mật do luôn mở đối với mọi cuộc tấn công', answer:'Wireless'}, 
+{lesson:8, question:'Chọn đáp án đúng khi tổng hợp lại 4 mạng trong hình', answer:'10.0.0.0/22'}, 
+{lesson:8, question:'Các phương pháp ảo hóa phổ biến là', answer:'ảo hóa máy chủ, ảo hóa ứng dụng, ảo hóa lưu trữ'}, 
+{lesson:8, question:'Trong Microsoft Hyper-V, Integration Services:', answer:'Tất cả các ý trên'}, 
+{lesson:8, question:'Giao thức giúp ng dùng có thể truy cập vào hộp thư và download về máy tính của mình', answer:'SMTP'}, 
+{lesson:8, question:'Đâu không phải là ưu điểm của Vmware', answer:'Mã nguồn mở vì đc xây dựng dựa trên Linux'}, 
+{lesson:8, question:'Hypervisor không thể là:', answer:'Một hệ thống mạng (network)'}, 
+{lesson:8, question:'Để ngăn tấn công DoS, một quản trị mạng chặn nguồn IP với tường lửa, nhưng tấn công vẫn tiếp diễn. Điều gì có khả năng xảy ra nhất ?', answer:'Tất cả đều đúng'}, 
+{lesson:8, question:'Lớp nào trong mô hình tham chiếu OSI đáp ứng việc thực thi các ứng dụng sau khi nhận đẩy đủ các bản tin từ bên gửi trong việc truyền thông giữa 2 bên?', answer:'Ứng dụng'}, 
+{lesson:8, question:'Khi giả quyết vấn đề kết nối trên mạng Ethernet. Bằng cách nào để kiểm tra một địa chỉ IP được gán như một thiết bị router?', answer:'Kiểm tra địa chỉ IP trong bảng ARP'}, 
+{lesson:8, question:'Tính năng bảo mật nào có thể được sử dụng đối với một máy trạm quay số truy cập từ xa sử dụng một username và mật khẩu ?', answer:'Mã hóa số điện thoại'}, 
+{lesson:8, question:'Cài đặt Windows 2012 trên máy ảo (VMWare) thì yêu cầu phần cứng như thế nào?', answer:'Tất cả các yếu tố trên'}, 
+{lesson:8, question:'Hãy xác định một thành phần dưới đây không phải là thành phần trong cấu trúc logic của AD.', answer:'Site'}, 
+{lesson:8, question:'Lệnh nào được sử dụng để kiểm tra một kết nối Telnet?', answer:'Show session'}, 
+{lesson:8, question:'Thông số nào ảnh hưởng tới việc lựa chọn một tuyến đường khi có nhiều bộ giao thức cùng có một tuyến đường tới 1 đích', answer:'Administrative distance'}, 
+{lesson:8, question:'Chương trình nào sau đây thường ít dùng trên VMWare:', answer:'Vmware Store'}, 
+{lesson:8, question:'Windows Hyper-V server là', answer:'Bản Hyper-V độc lập có thể được cài đặt trực tiếp trên phần cứng vật lý mà không cần Host OS'}, 
+{lesson:8, question:'Ảo hóa Hyper-V là:', answer:'Hyper-V là công nghệ ảo hóa server của microsoft được tích hợp sẵn trong Win 10'}, 
+{lesson:8, question:'Dịch vụ DNS Server có chức năng chính là gì?', answer:'Phân giải tên miền từ IP sang tên và ngược lại'}, 
+{lesson:8, question:'Bạn là người quản trị mạng trong công ty, công ty yêu cầu bạn cài đặt dịch vụ DHCP server để cấp IP cho các máy khác trong mạng. Trước khi cài đặt Dịch vụ DHCP trên Windows 2003 Server, bạn cần thiết lập các thành phần nào sau đây?', answer:'Địa chỉ IP tĩnh, subnet mask, default gateway và DNS'}, 
+{lesson:8, question:'Công nghệ ảo hóa VMWare và Hyper-V :', answer:'Hyper –V chỉ tích hợp trên Windows, còn VMWare thì tích hợp ở các hệ điều hành'}, 
+{lesson:8, question:'Khi công ty mua 1 domain name (tên miền) có dạng : tencongty.com thì địa chỉ email có dạng:', answer:'tennhanvien@tencongty.com'}, 
+{lesson:8, question:'Các giao thức nào sau đây làm việc trên lớp IP để bảo vệ thông tin IP trên mạng ?', answer:'IPSec'}, 
+{lesson:8, question:'Thiết bị router sẽ xử lý một gói tin đi tới router thế nào nếu nó không tìm thấy tuyến đường đích trong bảng định tuyến', answer:'Router sẽ loại bỏ gói tin'}, 
+{lesson:8, question:'Thuật ngữ nào sau đây liên quan đến miền', answer:'NTDS'}, 
+{lesson:8, question:'Hệ điều hành chủ (host OS): Hyper-V chỉ có thể được triển khai trên các nền tảng Windows sau:', answer:'Windows Desktop và Windows Server'}, 
+{lesson:8, question:'Bạn là người quản trị mạng cho một công ty, công ty bạn sử dụng 3 netID khác nhau, bạn làm thế nào để 3 netID này có thể truy xuất dữ liệu qua lại với nhau?', answer:'Trong hệ thống mạng cấu hình 3 server Routing and Remote Access'}, 
+{lesson:8, question:'Giao thức nào giúp người dùng có thể truy cập vào hộp thư và download thư về máy tính của mình:', answer:'SMTP'}, 
+{lesson:6, question:'Cái nào là tiền tố cho view thực thi chức năng?', answer:'V$'}, 
+{lesson:6, question:'Cái nào mđề ko phù hợp trong câu lệnh CREATE DATABASE?', answer:'MAXLOGGROUPS'}, 
+{lesson:6, question:'Là những thay đổi đối với cấu hình CSDL sẽ được thực hiện xuyên suốt qtrình shtdown và startup.', answer:'MOVE'}, 
+{lesson:6, question:'Khi một table được cập nhật, segment nào lưu lại thông tin cũ (cái mà được sử dụng để khôi phục lại dữ liệu)?', answer:'Rollback segment'}, 
+{lesson:6, question:'Đối tượng CSDL nào sau đây bao gồm nhiều hơn một segment?', answer:'Partitioned table'}, 
+{lesson:6, question:'Gía trị tham số nào được dùng để thiết lập đường dẫn thư mục nơi mà tập tin báo lỗi (alert log file) được ghi ra?', answer:'BACKGROUND_DUMP_DEST'}, 
+{lesson:6, question:'Cho một quan hệ cơ sơ dữ liệu HANG(MA_HANG, TEN_HANG, LOAI, NHACC, GIA). \nĐể xoá bỏ một mặt hàng có mã hàng là TV01 thì câu lệnh SQL nào sau đây được dùng?', answer:'DELETE From HANG where MA_HANG="TV01"'}, 
+{lesson:6, question:'Câu lệnh SQL nào sau đây dùng để chỉ loại bỏ dữ liệu từ bảng có tên STUDENT trong khi để lại nguyên vẹn cấu trúc bảng? COMMIT TRANSACTION', answer:'MOVE TABLE STUDENT'}, 
+{lesson:6, question:'Thủ tục hệ thống nào sau đây cho phép liệt kê tất cả các cơ sở dữ liệu bên trong server', answer:'Sp_databases'}, 
+{lesson:6, question:'Hãy chọn phương án đúng ứng với quy trình truy xuất lấy dữ liệu từ CSDL:', answer:'Datasource-> DataAdapter-> Connection->DataSet->WebForm/Windows Form'}, 
+{lesson:6, question:'Lệnh dùng để tạo 1 CSDL có giá trị chỉ đọc? (chọn đáp án đúng nhất)?', answer:'STARTUP MOUNT; ALTER DATABASE OPEN READ ONLY'}, 
+{lesson:6, question:'UPDATE products SET Price=Price+Price*0.1 WHERE Price BETWEEN 60 AND 70. Kết quả câu lệnh SQL trên là:', answer:'Tăng 10% giá (Price) trong bảng Products, cho những sản phẩm có giá từ 60 đến 70'}, 
+{lesson:6, question:'Phương thức ExcuteScalar() của đối tượng qlCommand có ý nghĩa như thế nào?', answer:'Với trường hợp phát biểu dạng select, phương thức sẽ trả về một giá trả kiểu object tương ứng với giá trả của cột và hàng đầu tiên'}, 
+{lesson:6, question:'Quá trình lập trình truy xuất CSDL có thể bao gồm các công việc theo thứ tự nào?', answer:'Kết nối đến CSDL; Thực hiện lấy dữ liệu để hiển thị hoặc Thực hiện việc xử lý dạng thêm, sửa, xóa'}, 
+{lesson:6, question:'Tính năng mới nào của Oracle cho phép nhiều user xem nội dung của table tại 1 số điểm trong quá khứ?', answer:'Oracle Flashback'}, 
+{lesson:6, question:'Anh (chị) xin vui lòng cho biết: Bằng cách nào bạn làm 1CSDL chỉ đọc?(chọn đáp án đúng nhất)?', answer:'STARTUP MOUNT; ALTER DATABASE OPEN READ ONLY'}, 
+{lesson:6, question:'Cho một quan hệ cơ sơ dữ liệu HANG(MA_HANG, TEN_HANG, LOAI, NHACC, GIA). Để chèn thêm mọt mặt hàng là: TV01, Tivi, 21 inc, Sony, 300. Thì câu lệnh SQL nào sau đây đúng?', answer:'Insert into HANG values(“TV01”, “Tivi”, “21 inc”, “Sony”,300).'}, 
+{lesson:6, question:'Câu lệnh SQL nào sau đây dùng để tạo Database mới trong SQL?', answer:'CREATE DATABASE'}, 
+{lesson:6, question:'Tùy chọn SHUTDOWN nào yêu cầu phục hồi instance khi CSDL được khởi động lần tiếp theo?', answer:'None of the above'}, 
+{lesson:6, question:'The Secure Application Role feature trong Oracle cho phép 1 user xác thực các đặc quyền bằng việc nào sau đây?', answer:'Gọi 1 stored procedure.'}, 
+{lesson:6, question:'Anh (chị) xin vui lòng cho biết: Tùy chọn SHUTDOWN nào sẽ đợi user hoàn thành các transaction chưa được commit của họ?', answer:'SHUTDOWN TRANSACTIONAL'}, 
+{lesson:6, question:'Câu lệnh nào sẽ “bounce” CSDL, có nghĩa là tắt CSDL và khởi động CSDL trong 1câu lệng duy nhất?', answer:'SHUTDOWN FORCE'}, 
+{lesson:6, question:'Tùy chọn nào sau đây không thể được thực hiện online mà không có bất kì gián đoạn nào để thực hiện liên tục trong giao dịch trực tuyến?', answer:'Dropping a user-defined column'}, 
+{lesson:6, question:'Cho một quan hệ cơ sơ dữ liệu HANG(MA_HANG, TEN_HANG, LOAI, NHACC, GIA). Để xoá bỏ một mặt hàng có mã hàng là TV01 thì câu lệnh SQL nào sau đây được dùng?', answer:'Delete From HANG Where MA_HANG=“TV01”.'}, 
+{lesson:6, question:'Ở bước nào trong việc khởi động CSDL thì control file được mở?', answer:'Database mounted'}, 
+{lesson:6, question:'Nếu bạn đang update 1dòng trong table dùng ROWID trong mệnh đề WHERE( giả sử rằng dòng đó khôngcó sẵn trong buffer cache), If you are updating one row in a table using the ROWID in the WHERE clause (assume that the row is not already in the buffer cache), số lượng nhỏ nhất của thông tin được đọc trong CSDL buffer cache là gì?', answer:'Khối được copy tới CSDL buffer cache.'}, 
+{lesson:6, question:'Mệnh đề nào trong câu lệnh ALTER TABLE mà bạn dùng để tổ chức lại table?', answer:'MOVE'}, 
+{lesson:6, question:'Để sử dụng HĐH xác thực kết nối CSDL như là Admin, gía trị nào của tham số REMOTE_LOGIN_PASSWORDFILE được thiết lập?', answer:'NONE'}, 
+{lesson:6, question:'Bạn là nhà quản trị CSDL SQL. Bạn đang phát triển 1 ứng dụng DB cho phòng kế toán của bạn. Ứng dụng này chứa nhiều modules được tích hợp nhau. Các user thường gặp phải dealock bất kỳ lúc nòa một người nào đó thực hiện 1 hàm mà nó cần tích hợp từ nhiều module. Làm thế nào để giảm thiểu các deadlock này?', answer:'Bạn cần phải bảo đảm là tất cả các transaction chỉnh sửa dữ liệu các bảng phải theo cùng 1 thứ tự'}, 
+{lesson:6, question:'Xử lý hậu cảnh nào chịu trách nhiệm cho việc ghi 1 dirty buffer trong file CSDL?', answer:'DBWn'}, 
+{lesson:6, question:'Bằng cách nào bạn làm một CSDL chỉ đọc? (chọn đáp án đúng nhất)?', answer:'STARTUP MOUNT; ALTER DATABASE OPEN READ ONLY'}, 
+{lesson:6, question:'Role nào được khởi tạo mặc định cho admin CSDL?', answer:'DBA'}, 
+{lesson:6, question:'Thành phần nào sau đây không là 1 phần của Oracle instance?', answer:'Control file'}, 
+{lesson:6, question:'Hãy cho biết đối tượng nào trong các đối tượng sau là đối tượng kết nối?', answer:'SqlConnection'}, 
+{lesson:6, question:'Phát biểu nào sau đây không là thuận lợi của việc có TĐDL trong redo log file khi dùng LogMiner cho DML và DDL activity?', answer:'Khối xấu (hư hỏng) trong 1 trong những redo log sẽ làm ngưng LogMiner Analysis với các TĐDL tĩnh.'}, 
+{lesson:6, question:'Câu lệnh nào sau đây là 1 tùy chọn khởi động CSDL không hợp lệ?', answer:'STARTUP NORMAL'}, 
+{lesson:6, question:'Tham số nào của ORAPWD là không bắt buộc?', answer:'ENTRIES'}, 
+{lesson:6, question:'Nhận định sau là đúng với SPFILEs.', answer:'Thay đổi được thực hiện trong SPFILE với câu lệnh ALTER SYSTEM có thể thay đổi đồng thời với thay đổi của bộ nhớ bản sao các tham số.'}, 
+{lesson:6, question:'Số lượng tối đa của database writer processes cho phép trong Oracle instance?', answer:'10'}, 
+{lesson:6, question:'Phát biểu nào dưới đây là đúng về tính năng nâng cao để chia sẻ các câu lệnh SQL trong shared pool?', answer:'Thậm chí nếu chỉ có 1 sự khác nhau trong câu lệnh SQL là trong gía trị kí tự, câu lệnh SQL có thể khôngđược tái sử dụng nếu số liệu thống kê trong qúa khứ bị xuyên tạc cho cột trong mệnh đề WHERE.'}, 
+{lesson:6, question:'Cái nào sau đây không là 1 phần của CSDL buffer pool?', answer:'LIBRARY'}, 
+{lesson:6, question:'Mô tả nào sau đây là đúng nhất về Real Application Cluster?', answer:'1 CSDL, nhiều instance.'}, 
+{lesson:6, question:'Julie, 1 trong các nhà phân tích CSDL, đang phàn nàn các vấn tin của cô ấy tốn nhiều thời gian để hoàn thành, mặc dù xuất ra kết quả đúng. DBA nghi ngờ rằng kích thước của buffer cache không đúng và là nguyên nhân trì hoãn do đó các khối DL khôngcó sẵn trong bộ nhớ. Tham số khởi tạo nào DBA có thể sử dụng để giám sát cách dùng của buffer cache?', answer:'DB_CACHE_ADVICE'}, 
+{lesson:6, question:'Đâu là lợi ích chính của việc sdụng SPFILE để duy trì tập tin tham số?', answer:'Là những thay đổi đối với cấu hình CSDL sẽ được thực hiện xuyên suốt qtrình shtdown và startup.'}, 
+{lesson:6, question:'Một lược đồ cơ sở dữ liệu về hàng hoá gồm có 2 quan hệ sau: HANG{MA_HANG, TEN_HANG, LOAI_HANG, SL_TON}. BAN{TEN_KH,MA_HANG, SL_BAN, NGAY_BAN}. Để hiện dữ liệu gồm TEN_HANG va HANG_TON trong đó HANG_TON = SL_TON – SL_BAN. Thì câu lệnh SQL nào sau đây được dùng?', answer:'Select HANG.TEN_HANG, HANG.SL_TON – BAN.SL_BAN as HANG_TON From HANG, BAN Where HANG.MA_HANG = BAN.MA_HANG.'}, 
+{lesson:6, question:'Xử lí hậu cảnh nào khôngđược khởi tạo mặc định khi khởi tạo 1 instance?', answer:'ARCn'}, 
+{lesson:6, question:'Tham số khởi tạo nào KHÔNG quyết định kích thước của buffer cache?', answer:'DB_BLOCK_SIZE'}, 
+{lesson:6, question:'Thành phần nào của SGA có cache từ điển?', answer:'Shared pool'}, 
+{lesson:6, question:'Điều gì xảy ra tiếp theo khi tiến trình server không thể tìm đủ free buffer để copy các khối từ ổ đĩa?', answer:'Signals the DBWn process to write the dirty buffers to disk'}, 
+{lesson:6, question:'Thông tin nào có sẵn trong tập tin alert (Alert log files )?', answer:'Chặn các khối bị lỗi.'}, 
+{lesson:9, question:'Khâu cuối cùng của quá trình xử lý yêu cầu dịch vụ là:', answer:'Request Handler'}, 
+{lesson:9, question:'Trung tâm điều hành CNTT và VNPT IT có nhiệm vụ và quyền hạn…', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:9, question:'Đơn vị chịu trách nhiệm kinh doanh bán hàng, và tiếp nhận yêu cầu dịch vụ từ khách hàng là:', answer:'VNPT VinaPhone'}, 
+{lesson:9, question:'Tổng công ty VNPT NET là đơn vị quản lý và điều hành cấp cao nhất đối với các hệ thống CNTT của Tập đoàn đúng hay sai?', answer:'Sai'}, 
+{lesson:9, question:'Nội dung cơ bản trong báo cáo định kỳ gồm', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:9, question:'Loại phiếu nào là yêu cầu cung cấp dịch vụ CNTT từ khách hàng với các dịch vụ có sẵn trong danh mục dịch vụ?', answer:'Phiếu yêu cầu triển khai dịch vụ'}, 
+{lesson:9, question:'Đơn vị nào phụ trách việc tiếp nhận vấn đề yêu cầu sửa đổi, bổ sung, nâng cấp đột xuất từ khách hàng', answer:'Trung tâm điều hành CNTT/VNPT-IT'}, 
+{lesson:9, question:'Khi xảy ra sự cố, cán bộ kỹ thuật vận hành khai thác có trách nhiệm xử lý và thông báo ngay cho', answer:'Trung tâm Điều hành CNTT/VNPT-IT và các đơn vị liên quan để điều hành xử lý, hỗ trợ khắc phục'}, 
+{lesson:9, question:'Đối với sự cố nghiêm trọng, VNPT IT gửi báo cáo chi tiết đến', answer:'Lãnh đạo Tập đoàn (đồng gửi Ban Công nghệ, Ban Chất lượng).'}, 
+{lesson:9, question:'Theo quyết định 290, có bao nhiêu loại phiếu yêu cầu dịch vụ cần xử lý trong quá trình cung cấp dịch vụ và hỗ trợ khách hàng sử dụng dịch vụ?', answer:'05 loại phiếu'}, 
+{lesson:9, question:'Trung tâm điều hành CNTT/VNPT-IT, chủ trì giám sát toàn trình các dịch vụ CNTT đang hoạt động và chất lượng dịch vụ?', answer:'Đúng'}, 
+{lesson:9, question:'Sau khi kiểm tra, nếu lỗi thiết bị phần cứng chúng ta xử lý', answer:'Cách lý thiết bị lỗi, tổ chức sửa chữa, thay thế kích hoạt thiết bị'}, 
+{lesson:9, question:'Giai đoạn chiến lược dịch vụ trong vòng đời dịch vụ CNTT ở ITIL version 3 được chia làm bao nhiêu tiến trình?', answer:'5 tiến trình'}, 
+{lesson:9, question:'Mô hình quản lý Service Desk của các công ty là khác nhau. Đúng hay Sai?', answer:'Đúng'}, 
+{lesson:9, question:'TT điều hành CNTT/VNPT-IT phải thực hiện việc tổ chức đánh giá, kiểm tra, kiểm định chất lượng hạ tầng sau khi thực hiện hòa mạng, chuyển, nâng cấp hệ thống. Đúng hay sai', answer:'Đúng'}, 
+{lesson:9, question:'An toàn thông tin bao gồm các hoạt động:', answer:'Quản lý, nghiệp vụ và kỹ thuật đối với hệ thống thông tin'}, 
+{lesson:9, question:'Sau khi nhận được thông tin về sự cố, đơn vị nào sẽ thực hiện sơ bộ chẩn đoán sự cố, mở phiếu báo sự cố, nhập các thông tin cần thiết phục vụ công tác xử lý sự cố để gửi các đơn vị liên quan xử lý', answer:'TT Điều hành IT'}, 
+{lesson:9, question:'Trung tâm điều hành CNTT/VNPT-IT phối hợp cùng với các Trung tâm giải pháp lập kế hoạch, phương án bảo trì hoặc nâng cấp định kỳ các sản phẩm, dịch vụ CNTT. Sau đó …', answer:'Thông báo, gửi cho các TCT ty, các VNPT TTP, các đơn vị liên quan'}, 
+{lesson:9, question:'Service Desk là điểm tiếp xúc duy nhất cho người dùng dịch vụ CNTT trong hoạt động hàng ngày. Đúng hay Sai?', answer:'Đúng'}, 
+{lesson:9, question:'Tập đoàn chỉ đạo toàn bộ mọi hoạt động của công tác Điều hành CNTT. Đúng hay sai?', answer:'Đúng'}, 
+{lesson:9, question:'Sau khi đánh giá thay đổi dịch vụ, cần phân loại việc thay đổi:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:9, question:'Để thay đổi tài nguyên hạ tầng, Trung tâm điều hành CNTT/VNPT-IT cần phải thực hiện:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:9, question:'Theo số liệu khảo sát vào năm 2017 của Forbes, có bao nhiêu % doanh nghiệp trên thế giới sử dụng công cụ ITIL?', answer:'47%'}, 
+{lesson:9, question:'Đơn vị tham gia trong chức năng quản lý ứng dụng là:', answer:'VNPT - IT'}, 
+{lesson:9, question:'Hoạt động của hệ thống CNTT cung cấp cho khách hàng bị gián đoạn trên phạm vi toàn quốc hoặc cục bộ trên phạm vi từ 02 tỉnh thành phố trở lên', answer:'Là một trong những trường hợp của sự cố nghiêm trọng'}, 
+{lesson:9, question:'Các Tổng Công ty Vinaphone, Media, NET, các VNPT TTP chịu trách nhiệm gì trong việc điều hành thông tin?', answer:'Xây dựng kế hoạch và phương án hòa mạng, chuyển hệ thống, nâng cấp hệ thống thuộc đơn vị, địa bàn quản lý'}, 
+{lesson:9, question:'Ngay sau khi sự cố nghiêm trọng được cập nhật lên hệ thống điều hành tập trung hoặc qua các kênh nóng, TT điều hành CNTT/VNPT-IT cần:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:9, question:'Việc cung cấp và triển khai dịch vụ CNTT, hỗ trợ tiếp nhận yêu cầu của người dùng tại VNPT được chia trách nhiệm cho bao nhiêu đươn vị?', answer:'3 đơn vị'}, 
+{lesson:9, question:'Đơn vị phát triển sản phẩm dịch vụ mới và tiếp nhận xử lý các yêu cầu cải tiến liên tục dịch vụ, là:', answer:'VNPT - IT'}, 
+{lesson:9, question:'Một trong những lợi ích mà service desk mang lại cho doanh nghiệp là:', answer:'Giảm thời gian xử lý cho các yêu cầu từ khách hàng hoặc người dùng cuối'}, 
+{lesson:9, question:'Giám sát sử dụng dung lượng hạ tầng CNTT, điều chuyển thiết bị và Quản lý, điều động thiết bị dự phòng tập trung. Đây là một trong những nhiệm vụ và trách nhiệm của TT điều hành CNTT và VNPT IT đúng hay sai', answer:'Đúng'}, 
+{lesson:9, question:'Lợi ích của ITIL đối với doanh nghiệp là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:9, question:'Chủ trì thực hiện cấp 2 đối với phiếu service request cho đối tượng khách hàng địa phương là:', answer:'VNPT TTP'}, 
+{lesson:9, question:'Điền vào dấu "…" : VNPT Media chịu trách nhiệm … trong việc điều hành CNTT', answer:'Tiếp nhận các phản ánh của khách hàng về các, yêu cầu dịch vụ, sự cố CNTT và cập nhật lên hệ thống điều hành tập trung của Tập đoàn'}, 
+{lesson:9, question:'Thời gian tối đa xử lý yêu cầu cung cấp dịch vụ nhóm B từ khi nhận được yêu cầu cho đến khi thực hiện các thủ tục nghiệm thu là bao nhiêu ngày?', answer:'30 ngày'}, 
+{lesson:9, question:'Để thay đổi tài nguyên hạ tầng, TT điều hành CNTT/VNPT-IT cần phối hợp với:', answer:'Các Ban chức năng của Công ty VNPT IT, các Trung tâm giải pháp, các TT IT khu vực, các Tổng Công ty Vinaphone, Media, NET, các VNPT TTP'}, 
+{lesson:9, question:'Sự cố xảy ra đối với Sản phẩm, dịch vụ CNTT thuộc danh mục trọng điểm được xác định của Tập đoàn là…', answer:'Sự cố nghiêm trọng'}, 
+{lesson:9, question:'Chức năng quản lý ứng dụng chỉ được thực hiện cho phần mềm tự phát triển. Đúng hay Sai?', answer:'Sai'}, 
+{lesson:9, question:'Chủ trì thực hiện đối với phiếu service order cho đối tượng khách hàng TW là đơn vị nào?', answer:'Trung tâm điều hành IT'}, 
+{lesson:9, question:'Sau khi phân tích nguyên nhân suy giảm chất lượng dịch vụ. Nếu không có giải pháp xử lý sau thời gian 30 phút sẽ chuyển…', answer:'Yêu cầu lên Ban Chất lượng Sản phẩm'}, 
+{lesson:9, question:'Triển khai các biện pháp an toàn cho hạ tầng CNTT thụ động, đàm bảo điều kiện hoạt động của thiết bị hạ tầng\n CNTT theo quy định. Đây là công việc của Trung tâm Điều hành IT ?', answer:'Sai'}, 
+{lesson:9, question:'Đảm bảo độ ổn định hoạt động các hệ thống CNTT của đơn vị trực tiếp quản lý, những hệ thống CNTT đặt tại \nhạ tầng của khách hàng thuộc phạm vi trực tiếp quản lý của các VTT/TP. Đây KHÔNG PHẢI là nhiệm vụ quyền \nhạn của các Tổng công ty, VNPT T/TP trong công tác điều hành thông tin?', answer:'Sai'}, 
+{lesson:9, question:'Điều khoản thi hành trong công tác điều hành CNTT cũng quy định rõ về trách nhiệm của VNPT tỉnh/thành, \nVNPT Net, VNPT VinaPhone, VNPT Media, VNPT-IT', answer:'Tất cả các đáp án đều sai'}, 
+{lesson:9, question:'Sau khi phân tích nguyên nhân suy giảm chất lượng dịch vụ. Nếu có giải pháp xử lý được ngay sẽ chuyển…', answer:'TT Điều hành, TT ITKV, TT GPCN, TT IDC để khôi phục chất lượng dịch vụ'}, 
+{lesson:9, question:'Trung tâm điều hành CNTT/VNPT-IT phối hợp cùng với các Trung tâm giải pháp lập kế hoạch, phương án bảo trì hoặc nâng \ncấp định kỳ các sản phẩm, dịch vụ CNTT. Sau đó …', answer:'Thông báo, gửi cho các TCT ty, các VNPT TTP, các đơn vị liên quan'}, 
+{lesson:9, question:'Phối hợp với các đơn vị liên quan triển khai sử dụng chung hạ tầng CNTT thụ động đặc biệt là phối hợp hỗ trợ đảm bảo \nnguồn điện, hệ thống điều hòa tại các IDC, phòng máy dùng chung để tiết giảm chi phí', answer:'Đây là trách nhiệm của đơn vị quản lý hạ tầng CNTT thụ động'}, 
+{lesson:9, question:'Rà soát hạ tầng, tập hợp các thiết bị hạ tầng đưa ra khỏi hệ thống thẩm định, trình phương án xử lý tái sử dụng, phù hợp đảm bảo khai thác hiệu quả hạ tầng.', answer:'Đây là công việc của tối ưu hạ tầng và điều chuyển thiết bị'}, 
+{lesson:9, question:'Hình thức kiểm tra điều hành CNTT', answer:'Định kỳ 6 tháng/1 lần'}, 
+{lesson:9, question:'Trách nhiệm của cán bộ sau khi kiểm tra CNTT', answer:'Phải lập biên bản ghi nhận kết quả kiểm tra, nhận xét ưu khuyết điểm, nguyên nhân và đề xuất biện pháp giải quyết, xử lý.'}, 
+{lesson:9, question:'Đơn vị chức năng gồm các nhân viên chịu trách nhiệm xử lý các hoạt động liên quan đến dịch vụ, thường được thực hiện\n qua các cuộc gọi điện thoại, giao diện web hoặc các cảnh báo tự động từ hạ tầng, là:', answer:'Service Desk'}, 
+{lesson:9, question:'Thời gian thỏa thuận mức hoạt động (OLA) xử lý yêu cầu lần đầu tiên đối với yêu cầu hỗ trợ dịch vụ do khách hàng yêu cầu là:', answer:'10 giờ'}, 
+{lesson:9, question:'Rà soát hạ tầng, tập hợp các thiết bị hạ tầng đưa ra khỏi hệ thống thẩm định, trình phương án xử lý tái sử dụng, phù hợp đảm bảo khai thác hiệu quả hạ tầng.', answer:'Chủ trì thực hiện đối với phiếu service order cho đối tượng khách hàng TW là đơn vị nào?'}, 
+{lesson:9, question:'Trực tiếp khai thác và phân quyền cho các Trung tâm giải pháp chuyên ngành, IT khu vực, Trung tâm CNTT Tỉnh thành phố và các đầu mối liên quan thuộc Tập đoàn tham gia khai thác các hệ thống quản lý giám sát CNTT tập trung.', answer:'Đây là công việc của Trung tâm Điều hành IT'}, 
+{lesson:9, question:'Triển khai các biện pháp an toàn cho hạ tầng CNTT thụ động, đàm bảo điều kiện hoạt động của thiết bị hạ tầng CNTT theo quy định. Đây là công việc của Trung tâm Điều hành IT ?', answer:'Sai'}, 
+{lesson:9, question:'Khi nhận được thông tin về sự cố thông thường xảy ra, Trung tâm điều hành CNTT/VNPT-IT cập nhật thông tin xử lý định kỳ ...', answer:'30 phút/lần.'}, 
+{lesson:9, question:'Theo số liệu khảo sát vào năm 2017 của Forbes, có bao nhiêu % doanh nghiệp trên thế giới sử dụng công cụ eTOM?', answer:'36%'}, 
+{lesson:9, question:'Trong chức năng Service Desk, đơn vị đóng vai trò tiếp nhận yêu cầu là:', answer:'VNPT VNP'}, 
+{lesson:9, question:'Kích cỡ. Vị trí của Service Desk phụ thuộc vào:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:9, question:'Chức năng quản lý vận hành chịu trách nhiệm:', answer:'Quản lý và duy trì hạ tầng CNTT của doanh nghiệp'}, 
+{lesson:9, question:'Đảm bảo độ ổn định hoạt động các hệ thống CNTT của đơn vị trực tiếp quản lý, những hệ thống CNTT đặt tại hạ tầng của khách hàng thuộc phạm vi trực tiếp quản lý của các VTT/TP. Đây KHÔNG PHẢI là nhiệm vụ quyền hạn của các Tổng công ty, VNPT T/TP trong công tác điều hành thông tin?', answer:'Sai'}, 
+{lesson:9, question:'Đơn vị tham gia trong chức năng quản lý vận hành là:', answer:'VNPT - IT và VTT'}, 
+{lesson:9, question:'Trung tâm Điều hành CNTT/VNPT IT xây dựng bộ phận chuyên trách nhằm', answer:'Theo dõi, giám sát, tiếp nhận, phân tích, đánh giá và chỉ đạo xử lý các sự cố và các vấn đề về an toàn thông tin 24/7.'}, 
+{lesson:9, question:'Trung tâm Điều hành CNTT/VNPT-IT và Trung tâm IT khu vực, viễn thông tỉnh có trách nhiệm về việc bão dưỡng như:', answer:'Lưu giữ số liệu đo kiểm ít nhất 01 năm để theo dõi và phục vụ công tác quản lý chất lượng hạ tầng'}, 
+{lesson:9, question:'Đầu vào của quy trình tiếp nhận và xử lý yêu cầu dịch vụ là:', answer:'Phiếu yêu cầu dịch vụ từ các nguồn'}, 
+{lesson:9, question:'Các sự cố xảy ra đối với hệ thống CNTT cung cấp dịch vụ cho các cơ quan Đảng, Chính quyền địa phương có phạm vi ảnh hưởng mức độ toàn Quận/Huyện/ Sở ngành trong 01 tỉnh thành phố.', answer:'Là một trong những trường hợp của sự cố lớn'}, 
+{lesson:9, question:'Đơn vị chức năng gồm các nhân viên chịu trách nhiệm xử lý các hoạt động liên quan đến dịch vụ, thường được thực hiện qua các cuộc gọi điện thoại, giao diện web hoặc các cảnh báo tự động từ hạ tầng, là:', answer:'Service Desk'}, 
+{lesson:9, question:'Khi nhận được thông tin về sự cố nghiêm trọng xảy ra, TT điều hành CNTT/VNPT-IT cập nhật thông tin xử lý định kỳ ...', answer:'20 phút/lần.'}, 
+{lesson:9, question:'Đơn vị nào được Tập đoàn ủy quyền, trực tiếp chỉ đạo và tổ chức thực hiện công tác Điều hành CNTT của Tập đoàn', answer:'Trung tâm điều hành CNTT/VNPT-IT'}, 
+{lesson:9, question:'Trung tâm điều hành CNTT/VNPT-IT xem xét cụ thể từng yêu cầu, khả năng và thời gian thực hiện sau đó thực hiện đánh giá, lập kế hoạch thực hiện đúng hay sai?', answer:'sai'}, 
+{lesson:9, question:'Điền vào chỗ trống: Trong trường hợp xử lý sự cố lớn vượt quá ... cần đưa về nguyên tắc mức sự cố nghiêm trọng để xử lý', answer:'Điền vào chỗ trống: Trong trường hợp xử lý sự cố lớn vượt quá ... cần đưa về nguyên tắc mức sự cố nghiêm trọng để xử lý'}, 
+{lesson:9, question:'Các Trung tâm giải pháp thực hiện đánh giá, lập kế hoạch thực hiện và thông báo lại cho Trung tâm điều hành CNTT/VNPT-IT để thông báo cho các đơn vị liên quan về việc nâng cấp các sản phẩm dịch vụ?', answer:'Đúng'}, 
+{lesson:9, question:'Các đơn vị thực hiện công việc bảo dưỡng phải thông báo cho đầu mối điều hành liên quan tối thiểu trước ... về kế hoạch thực hiện', answer:'05 ngày'}, 
+{lesson:9, question:'Help Desk là phiên bản tinh vi và tiến bộ hơn Service Desk. Đúng hay Sai?', answer:'Sai'}, 
+{lesson:9, question:'Điền vào chỗ trống: Trong trường hợp xử lý sự cố lớn vượt quá ... cần đưa về nguyên tắc mức sự cố nghiêm trọng để xử lý.', answer:'4giờ'}, 
+{lesson:9, question:'Nhiệm vụ, quyền hạn của các Tổng công ty, VNPT T/TP trong công tác điều hành thông tin là:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:9, question:'Điều khoản thi hành trong công tác điều hành CNTT cũng quy định rõ về trách nhiệm của VNPT tỉnh/thành, VNPT Net, VNPT VinaPhone, VNPT Media, VNPT-IT', answer:'Tất cả các đáp án đều sai'}, 
+{lesson:9, question:'Vòng đời dịch vụ CNTT được ITIL version 3 chia làm mấy giai đoạn?', answer:'5 giai đoạn'}, 
+{lesson:9, question:'Đảm bảo công tác quản trị, giám sát, vận hành, xử lý sự cố, nâng cao chất lượng, đảm bảo an toàn thông tin, bảo mật và, đảm bảo an toàn cho các hệ thống /phần tử liên quan đến Hệ thống CNTT. Là trách nhiệm của…', answer:'Công ty VNPT IT'}, 
+{lesson:9, question:'Trung tâm điều hành CNTT/VNPT-IT chủ trì điều hành các đơn vị thực hiện bảo trì, nâng cấp theo kế hoạch; và tổng hợp báo cáo kết quả thực hiện bảo trì, nâng cấp?', answer:'Đúng'}, 
+{lesson:9, question:'Thay đổi tiêu chuẩn đối với loại phiếu yêu cầu thay đổi dịch vụ là:', answer:'Thay đổi đã cho phép từ trước hoặc những thay đổi mang tính chất vận hành'}, 
+{lesson:9, question:'     Giám sát sử dụng dung lượng hạ tầng CNTT, điều chuyển thiết bị và Quản lý, điều động thiết bị dự phòng tập trung. Đây là một trong những nhiệm vụ và trách nhiệm của TT điều hành CNTT và VNPT IT đúng hay sai', answer:'Đúng'}, 
+{lesson:9, question:'Nhiệm vụ của Trung tâm điều hành CNTT/VNPT-IT trong việc hòa mạng đưa dịch vụ CNTT mới vào hoạt động là', answer:'Tổ chức đánh giá, kiểm tra, kiểm định chất lượng các Platform sản phẩm, dịch vụ CNTT trước khi đưa vào triển khai cho khách hàng.'}, 
+{lesson:9, question:'     Tập đoàn chỉ đạo toàn bộ mọi hoạt động của công tác Điều hành CNTT. Đúng hay sai?', answer:'Đúng'}, 
+{lesson:10, question:'Biến là gì?', answer:'Không là tên gọi của một vùng nhớ Một gía trị có thể thay đổi'}, 
+{lesson:10, question:'Nếu một tiến trình yêu cầu tài nguyên mà tài nguyên đang bị giữ bởi các tiến trình cũng đang ở trạng thái chờ khác được gọi là:', answer:'Deadlock'}, 
+{lesson:10, question:'Anh/chị cho biết Kiểm thử hệ thống (System testing) là', answer:'Kiểm thử các yêu cầu không chức năng của phần mềm như hiệu suất, bảo mật,…'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết đáp án đúng cho câu hỏi sau “Trong ngôn ngữ lập trình có cấu trúc, một biến được gọi là biến toàn cục nếu….”', answer:'Nó được khai báo ngoài tất cả các hàm, kể cả hàm main'}, 
+{lesson:10, question:'Cho biết kết quả sau khi đoạn mã sau đây thực thi int a=8; int b=3; float f = a ++ / b--; System.out.println(f);?', answer:'3'}, 
+{lesson:10, question:'Cú pháp khai báo nào là sai?', answer:'if(){} else if () {} else() {};'}, 
+{lesson:10, question:'Cấu trúc dữ liệu nào tương ứng với LIFO', answer:'Stack'}, 
+{lesson:10, question:'Cái gì quyết định kích thước của vùng nhớ được cấp phát cho các biến:', answer:'Kiểu dữ liệu của biến'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết: Lập trình cấu trúc KHÔNG thể thực hiện việc nào trong các công việc dưới đây?', answer:'Xử lý đa luồng'}, 
+{lesson:10, question:'Đầu ra của chương trình dưới là gì? try { int x = 0; int y = 5 / x; } catch (Exception e) { System.out.println("Exception"); } catch (ArithmeticException ae) { System.out.println(" Arithmetic Exception"); } System.out.println("finished");?', answer:'Compilation fails.'}, 
+{lesson:10, question:'Sự khác nhau giữa GET và POST trong giao thức HTTP là gì?', answer:'GET gởi thông tin qua URL, POST chỉ được dùng trong form'}, 
+{lesson:10, question:'Định nghĩa nào là đúng với danh sách liên kết', answer:'Danh sách liên kết là tập hợp các phần tử mà giữa chúng có một sự nối kết với nhau thông qua vùng liên kết của chúng'}, 
+{lesson:10, question:'Một biến được gọi là biến toàn cục nếu:', answer:'Nó được khai báo ngoài tất cả các hàm kể cả hàm main()'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết Javascript là ngôn ngữ kịch bản có dấu được mã nguồn không?', answer:'Không dấu được, vì các kịch bản chạy ở phía client'}, 
+{lesson:10, question:'Ý nào sau đây là sai khi xử lý Exception?', answer:'Throw Exception nói chung chứ không throw Exception cụ thể'}, 
+{lesson:10, question:'Cú pháp khai báo vòng lặp nào là sai?', answer:'for (int i=10, j; i>j; i--);'}, 
+{lesson:10, question:'Anh chị cho biết đâu là đầu vào của thực hiện kiểm thử?', answer:'Software, Product,Test case, Test script, Test data'}, 
+{lesson:10, question:'Chọn câu đúng. Biến toàn cục?', answer:'Có ý nghĩa trong toàn chương trình'}, 
+{lesson:10, question:'Giả sử cần sắp xếp mảng M có N phần tử sau theo phương pháp sắp xếp chèn trực tiếp 11 16 12 75 51 54 5 73 36 52 98 Cần thực hiện ..................... chèn các phần tử vào dãy con đã có thứ tự tăng đứng đầu dãy M để sắp xếp mảng M có thứ tự tăng dần', answer:'10 lần'}, 
+{lesson:10, question:'Cấu trúc dữ liệu mảng có các ưu điểm nào', answer:'Tất cả đều đúng'}, 
+{lesson:10, question:'Anh chị hãy cho biết, trong lập trình hướng đối tượng cụ thể là java; để ngăn việc ghi đè một thuộc tính trong lớp thì sử dụng từ khóa nào ? public class Test { }', answer:'public Test()'}, 
+{lesson:10, question:'Anh/chị cho biết đâu là khái niệm đúng về Tình huống kiểm định (Test-case)?', answer:'Tập hợp các yếu tố đầu vào, điều kiện thực hiện và kết quả mong muốn được xây dựng chot ừng trường hợp cụ thể'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết trong mô hình Client/Server 3 lớp gồm các lớp:Lớp khách (Clients), Lớp giao dịch (Business Tier), Lớp nguồn dữ liệu (Data Source). Liên kết giữa các lớp theo thứ tự nào?', answer:'Lớp khách (Clients) - Lớp giao dịch (Business Tier) - Lớp nguồn dữ liệu (Data Source)'}, 
+{lesson:10, question:'CSS là viết tắt của từ gì?', answer:'Cascading Style Sheets'}, 
+{lesson:10, question:'Biến con trỏ có thể chứa:', answer:'Địa chỉ vùng nhớ của một biến khác'}, 
+{lesson:10, question:'Lớp collections chuẩn được sử dụng cho mảng động?', answer:'ArrayList'}, 
+{lesson:10, question:'Anh chị hãy cho biết, nguyên tắc cơ bản trong thiết kế phần mềm hướng chức năng.', answer:'Tập trung vào các phương thức, xác các phương thức cần xây dựng'}, 
+{lesson:10, question:'Chọn câu đúng nhất để mô tả thuật toán sắp xếp nổi bọt (Bubble Sort) trên mảng M có N phần tử:', answer:'Đi từ cuối mảng về đầu mảng, trong quá trình đi nếu phần tử ở dưới (đứng phía sau) nhỏ hơn phần tử đứng ngay trên (trước) nó thì hai phần tử này sẽ được đổi chỗ cho nhau. Sau mỗi lần đi chúng ta đưa được một phần tử trồi lên đúng chỗ. Sau N–1 lần đi thì tất cả các phần tử trong mảng M sẽ có thứ tự tăng.'}, 
+{lesson:10, question:'Câu phát biểu nào sau đây đúng :', answer:'Một lớp là một định nghĩa trừu tượng của một đối tượng'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết, trong lập trình hướng đối tượng; “access modifier”nào cho phép các thuộc tính và phương thức được phép truy cập ngoài phạm vị object ?', answer:'public'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết đâu ngôn ngữ lập trình đóng vai trò lớn nhất trong giai đoạn nào của việc xây dựng phần mềm?', answer:'Cài đặt'}, 
+{lesson:10, question:'Hãy xem xét đoạn mã sau: class A { protected: int a, b; public: float F1, F2; private: string x, y; } class B: public A{...} Hỏi B sử dụng được các biến thành viên nào của A:', answer:'F1, F2, a, b'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết trong Javascript hàm parseInt() dùng để làm gì?', answer:'Chuyển một chuỗi thành số nguyên'}, 
+{lesson:10, question:'Anh/chị cho biết đâu là nhiệm vụ CHÍNH của kế hoạch kiểm thử (Test Plan)', answer:'Lên kế hoạch phân tích kiểm thử và đưa ra các đầu việc'}, 
+{lesson:10, question:'Chọn câu lệnh cho kết quả tương đương với đoạn code dưới: boolean b = true; if ( b ) { x = y; } else { x = z; }?', answer:'x = b ? y : z'}, 
+{lesson:10, question:'Các thao tác xử lý việc người dùng bấm chuột vào một đối tượng được cài đặt trong phương thức nào dưới đây ?', answer:'onclick'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết đâu KHÔNG phải là từ khóa thể hiện phạm vi truy cập của Lớp (Class) trong lập trình hướng đối tượng?', answer:'Static'}, 
+{lesson:10, question:'Phát biểu đúng về kết quả thực hiện đoạn code sau: boolean flag = false; if (flag = true) { System.out.println("true"); } else { System.out.println("false"); }?', answer:'Đoạn code in "true" ra màn hình'}, 
+{lesson:10, question:'Lựa chọn định nghĩa về danh sách đúng nhất?', answer:'Tất cả đều đúng'}, 
+{lesson:10, question:'Anh/Chị cho biết: Để tổ chức các phần tử (elements) vào bên trong các nhóm (groups) ta sử dụng?', answer:'Package'}, 
+{lesson:10, question:'Anh/Chị cho biết một loại biểu đồ diễn tả sự phân rã dần dần các chức năng từ đại thể đến chi tiết được gọi là?', answer:'Biểu đồ phân cấp chức năng'}, 
+{lesson:10, question:'Đối với thuật toán sắp xếp chọn trực tiếp cho dãy các phần tử sau (10 pt) 16 60 2 25 15 45 5 30 33 20 Cần thực hiện ..................... chọn lựa phần tử nhỏ nhất để sắp xếp mảng M có thứ tự tăng dần.', answer:'9 lần'}, 
+{lesson:10, question:'Một biến được gọi là biến địa phương nếu:', answer:'Nó được khai báo bên trong các hàm hoặc thủ tục, kể cả hàm main()'}, 
+{lesson:10, question:'Cookie là một file nằm trên Client ?', answer:'Đúng'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết đâu không phải là đặc điểm của ngôn ngữ máy?', answer:'Dễ đọc, dễ hiểu.'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết một ngôn ngữ lập trình có những thành phần cơ bản nào?', answer:'Từ vựng, cú pháp và ngữ nghĩa.'}, 
+{lesson:10, question:'Cú pháp nào được sử dụng để thay đổi nội dung của một phần tử HTML dưới: <p id="message">This is a message</p>?', answer:'document.getElementById("message").innerHTML = "Hello World!";'}, 
+{lesson:10, question:'Javascript là ngôn ngữ kịch bản có thể dấu được mã nguồn?', answer:'Sai'}, 
+{lesson:10, question:'Chọn định nghĩa đúng nhất về hàng đợi (Queue)?', answer:'Hàng đợi là một danh sách mà trong đó thao tác thêm 1 phần tử vào trong danh sách được thực hiện 1 đầu này và lấy 1 phần tử trong danh sách lại thực hiện bởi đầu kia.'}, 
+{lesson:10, question:'Anh/Chị hãy chọn khai báo đúng cho phương thức main()', answer:'Public static void main (String[] args)'}, 
+{lesson:10, question:'Trong lập trình thế nào gọi là hiện tượng nạp chồng?', answer:'Hiện tượng lớp con kế thừa định nghĩa một hàm hoàn toàn giống lớp cha'}, 
+{lesson:10, question:'Các tiêu chuẩn đánh giá cấu trúc dữ liệu. Để đánh giá một cấu trúc dữ liệu chúng ta thường dựa vào tiêu chí nào?', answer:'Tất cả đều đúng'}, 
+{lesson:10, question:'Đâu là cú pháp đúng của khai báo biến kiểu Object trong JavaScript?', answer:'var obj = {};'}, 
+{lesson:10, question:'Đáp án nào dưới đây là cấu trúc dữ liệu vào trước ra trước (Fist In First Out)?', answer:'Queue (hàng đợi)'}, 
+{lesson:10, question:'Chọn định nghĩa đúng nhất về hàng đợi (Queue)', answer:'Hàng đợi là một danh sách mà trong đó thao tác thêm 1 phần tử vào trong danh sách được thực hiện 1 đầu này và lấy 1 phần tử trong danh sách lại thực hiện bởi đầu kia'}, 
+{lesson:10, question:'Anh/Chị hãy xem xét đoạn mã sau: class A { protected int a, b; public float f1, f2; } class B:public A { ... } Anh, chị hãy cho biết B sử dụng được các biến thành viên nào của A?', answer:'a, b, f1, f2'}, 
+{lesson:10, question:'Trong CSS thuộc tính nào để thay đổi kích cỡ chữ?', answer:'font-size'}, 
+{lesson:10, question:'Để kiểm tra unit test không cần thiết phải chuẩn bị trước tình huống (test case) hoặc kịch bản (script) test', answer:'Sai'}, 
+{lesson:10, question:'Trong HTTP, phương thức nào sau đây không có?', answer:'doPOST'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết: Trong các ngôn ngữ sau, ngôn ngữ nào KHÔNG phải ngôn ngữ lập trình hướng đối tượng?', answer:'C'}, 
+{lesson:10, question:'Tìm mô tả đúng cho hàm sau: int SC (int M[], int Len, int CM[]) { for (int i = 0; i < Len; i++) CM[i] = M[i]; return (Len); }', answer:'Hàm thực hiện việc sao chép nội dung mảng M có chiều dài Len về mảng CM có cùng chiều dài. Hàm trả về chiều dài của mảng CM sau khi sao chép'}, 
+{lesson:10, question:'Mối quan hệ giữa cấu trúc và giải thuật có thể minh họa bằng đẳng thức', answer:'Cấu trúc dữ liệu + Giải thuật = Chương trình'}, 
+{lesson:10, question:'Anh/chị cho biết kiểu kỹ thuật thiết kế kiểm thử nào chỉ xây dựng Test-case dựa vào điều kiện đầu vào và đầu ra của cả một thành phần (Component)?', answer:'BlackBoxTechniques'}, 
+{lesson:10, question:'Bản tin SOAP được viết bằng ngôn ngữ đánh dấu nào?', answer:'XML'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết Lập trình dựa trên đối tượng có đặc tính nào sau đây?', answer:'Tất cả các phương án đều đúng'}, 
+{lesson:10, question:'Giả sử ta có bảng dữ liệu có tên "KHACHHANG" gồm các thuộc tính theo thứ tự "MAKH","TENKH". Câu lệnh truy vấn nào sau đây xóa khách hàng có mã "001" có tên là "Tuấn"', answer:''}, 
+{lesson:10, question:'Cho khai báo sau: itn x=15; int *p; Muốn p là con trỏ tới x phải thực hiện lệnh nào sau đây;', answer:'không phải đáp án *p=x'}, 
+{lesson:8, question:'Đâu không phải ưu điểm của Vmware', answer:'Mã nguồn mở vì được xây dựng dựa trên Linux'}, 
+{lesson:8, question:'Trong dịch vụ DHCP các gói tin Broadcast có thể đi qua Router được không', answer:'Có nhưng router phải có chuẩn RFC1542'}, 
+{lesson:8, question:'Các chức nào sau đây không phải là chức năng của ảo hóa với VMWare Workstation:', answer:'Hỗ trợ hệ thống cho hệ điều hành trên máy đang sử dụng'}, 
+{lesson:8, question:'Các loại client được hỗ trợ bởi Exchange Server:', answer:'Tất cả các câu đều đúng'}, 
+{lesson:8, question:'Công nghệ ảo hóa VMWare và Hyper-V :', answer:'Hyper –V chỉ tích hợp trên Windows, còn VMWare thì tích hợp ở các hệ điều hành'}, 
+{lesson:8, question:'Địa chỉ Ipv6 nào được sử dụng cho địa chỉ multicast của một nhóm các router?', answer:'FF02::2'}, 
+{lesson:8, question:'Muốn tạo và khởi chạy máy ảo trong Hyper-V, sau khi khởi động Hyper-V Manager cần phải:', answer:'Tạo một mạng chuyển đổi ảo (Virtual Switch) cho nó.'}, 
+{lesson:8, question:'Nhược điểm của Open VZ là gì?', answer:'Các máy chủ phải sử dụng chung 1 nhân duy nhất'}, 
+{lesson:8, question:'Cách thực hiện Activator Windows (Product key bản quyền ) hợp lệ là?', answer:'Active Windows key Online'}, 
+{lesson:8, question:'Với VMWare, để thiết lập quyền khởi động ưu tiên trên máy tính ảo:', answer:'Nhấn vào VM à chọn Removable à chọn tên USB của bạn à tích vào dòng Connect.'}, 
+{lesson:8, question:'Cho rằng các cấu hình interface trên các router đang hoạt động bình thường và không có lỗi gì. Việc cấu hình OSPF hoàn toàn đúng trên R2. Tuyến đường mặc định được cấu hình trên router R1 sẽ ảnh hưởng như thế nào tới R2', answer:'Bất cứ 1 gói tin nào đi tới đích mà không được tìm thấy thấy trong bảng định tuyến của R2 sẽ được gửi tới router R1. Tiếp đó gói tin lại được gửi tới R1 từ R2 và vòng lặp lại xảy ra.'}, 
+{lesson:8, question:'Ảo hóa giải quyết các thách thức của việc quản lý trung tâm dữ liệu và cung cấp một số lợi thế như sau:', answer:'Các ý trên đều đúng'}, 
+{lesson:8, question:'Điểm khác biệt cơ bản giữa mail online và mail offline là:', answer:'Mail online nhanh hơn mail offline.'}, 
+{lesson:8, question:'Windows Hyper-V Server là :', answer:'Bản Hyper-V độc lập (stand-alone) có thể được cài đặt trực tiếp trên phần cứng vật lý mà không cần host OS.'}, 
+{lesson:3, question:'Làm việc nhóm mang lại những kết quả tốt mà từng cá nhân không thể làm được, hoặc làm được mà không hiệu quả. Nhận định trên đúng hay sai?', answer:'Đúng'}, 
+{lesson:3, question:'Mối quan hệ giữa các đồng nghiệp trong cùng phòng ban đơn vị, là mối quan hệ:', answer:'Đồng cấp'}, 
+{lesson:3, question:'Để việc phối hợp với đồng nghiệp đạt hiệu quả cao, thì khi phối hợp trong công việc nên:', answer:'Có thái độ cởi mở; Có tư duy tích cực; Trao đổi với nhau'}, 
+{lesson:3, question:'Nội dung nào dưới đây phản ánh đúng về phương pháp học tập &quot;lấy học viên làm trung tâm&quot;?', answer:'Học viên tham gia và tự khám phá nội dung'}, 
+{lesson:3, question:'Khi tổ chức có những thay đổi về văn hóa doanh nghiệp, khoa học công nghệ, đòi hỏi mỗi cá nhân phải…', answer:'Thích ứng'}, 
+{lesson:3, question:'"Tâm lý ổn định việc làm là một lý do cản trở sự thay đổi". Đúng hay sai?', answer:'Đúng'}, 
+{lesson:3, question:'Việc lựa chọn phương thức đánh giá công việc được căn cứ vào:', answer:'Tính thực tiễn, chi phí hệ thống và hiệu quả'}, 
+{lesson:3, question:'Một trong những đặc điểm của bản kế hoạch tác nghiệp là:', answer:'Thời hạn ngắn, 1 năm trở xuống'}, 
+{lesson:3, question:'Khi gặp những thay đổi lớn trong nhiệm vụ hoặc môi trường làm việc, nhân viên VNPT nên:', answer:'Thích ứng, duy trì được hiệu quả làm việc'}, 
+{lesson:3, question:'Thông tin trong doanh nghiệp thường được ví như là:', answer:'Mạch máu'}, 
+{lesson:3, question:'Phương pháp Thử và sai được ứng dụng khi:', answer:'Đối diện với vấn đề mới phát sinh'}, 
+{lesson:3, question:'Một trong những cách thức để xây dựng hình ảnh tốt của bản thân là:', answer:'Kiểm soát lời nói và hành động của bản thân'}, 
+{lesson:3, question:'Bước cuối cùng để giải quyết xung đột trong nhóm bao gồm:', answer:'Thỏa thuận'}, 
+{lesson:3, question:'Năng lực học tập ứng dụng được định nghĩa là:', answer:'Việc kịp thời xử lý và ứng dụng những thông tin mới liên quan đến công việc'}, 
+{lesson:3, question:'Trong quá trình sáng tạo, chúng ta có thể gặp phải những rào cản như:', answer:'Rào cản từ bản thân; Rào cản từ bên ngoài'}, 
+{lesson:3, question:'Bảng tổng kết để đánh giá công việc nên có những nội dung nào?', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:3, question:'Phương pháp để thích ứng với sự thay đổi đó là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:1, question:'Cư xử lịch sự, văn minh trong quy tắc ứng xử trên mạng xã hội của người lao động VNPT, nghĩa là:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, khi kết thúc phần trình bày trên sân khấu, nhân viên VNPT có cần thực hiện chào theo quy chuẩn không?', answer:'Có'}, 
+{lesson:1, question:'Quy định về Bảo mật thông tin trong quy tắc ứng xử trên mạng xã hội bao gồm những nội dung:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, nhân viên có thể không cúi chào theo quy chuẩn trong các tình huống như:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:3, question:'Ở điều kiện phát triển bình thường, ai cũng có năng lực sáng tạo, chỉ khác nhau ở chỗ:', answer:'Năng lực sáng tạo cao hay thấp và có khả năng phát huy hay không.'}, 
+{lesson:3, question:'Theo quyết định số 1311/QĐ-VNPT-KHCN&amp;ĐT, ngày 21/10/2013 Năng lực sáng tạo được định nghĩa:', answer:'Là khả năng hiện có của cá nhân trong việc tạo ra cái mới có giá trị dựa trên tổ hợp các thuộc tính độc đáo của cá nhân đó phù hợp với yêu cầu của hoạt động sáng tạo sản phẩm trong một lĩnh vực hoạt động nhất định.'}, 
+{lesson:3, question:'Hành động có thái độ tích cực đối với thay đổi hoặc cái mới là:', answer:'Coi thay đổi và những tình huống mới là cơ hội để học tập và phát triển; tập trung vào phương diện lợi ích của thay đổi; Nói tốt về thay đổi với những người khác.'}, 
+{lesson:3, question:'Theo thời gian kế hoạch được phân loại thành:', answer:'Kế hoạch dài hạn; Kế hoạch trung hạn; Kế hoạch ngắn hạn'}, 
+{lesson:3, question:'Hành động tích cực tham gia vào các hoạt động học tập được định nghĩa là:', answer:'Tham gia vào những hoạt động học tập cần thiết một cách tích cực và hiệu quả nhất'}, 
+{lesson:3, question:'Việc học tập không ngừng sẽ giúp người học:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:3, question:'Theo quyết định số 1311/QĐ-VNPT-KHCN&amp;ĐT, năng lực xây dựng mối quan hệ công việc tốt là:', answer:'Phát triển và sử dụng các mối quan hệ cộng tác để thúc đẩy việc đạt tới mục tiêu.'}, 
+{lesson:3, question:'Việc xác định mục tiêu kế hoạch giúp doanh nghiệp:', answer:'Xác định những việc cần đạt được'}, 
+{lesson:3, question:'Tại sao đưa ra ý kiến phản hồi trong giao tiếp lại quan trọng?', answer:'Đó là quá trình giúp người nói kiểm chứng xem thông điệp truyền đi tới từ người nghe như thế nào'}, 
+{lesson:3, question:'Điều nào dưới đây KHÔNG PHẢI là rào cản của tư duy sáng tạo?', answer:'Không sợ thất bại'}, 
+{lesson:3, question:'Mỗi cá nhân cần phải điều chỉnh có hiệu quả để làm việc trong những cấu trúc, quy trình, yêu cầu hay văn hóa làm việc mới; Đây là yêu cầu của năng lực thích ứng đúng hay sai?', answer:'Đúng'}, 
+{lesson:3, question:'Phương thức nào dưới đây có thể được sử dụng một cách hiệu quả để giảm thiểu sự chống đối trong quá trình thay đổi?', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:3, question:'Khung năng lực cốt lõi được xây dựng nhằm mục đích:', answer:'Làm thước đo xác định mục tiêu học tập đồng thời nâng cao năng lực cán bộ nhân viên trong Tập đoàn'}, 
+{lesson:3, question:'Trong các hoạt động tổ chức thực hiện công việc, hoạt động quan trọng nhất là:', answer:'Thực hiện'}, 
+{lesson:3, question:'Phương pháp sáu chiếc mũ tư duy giúp đánh giá sự việc từ nhiều góc nhìn khác nhau, qua đó:', answer:'Có thể hiểu rõ hơn mọi ngóc ngách của sự việc, nhận diện được những nguy cơ và cơ hội mà bình thường ta có thể không chú ý đến'}, 
+{lesson:3, question:'Ưu điểm của phương pháp triển khai MBO từ cấp công ty xuống cấp bộ phận:', answer:'Nhanh về mặt thời gian'}, 
+{lesson:3, question:'Yếu tố quan trọng nhất cho thành công quản lý thay đổi tổ chức bao gồm:', answer:'Tất cả dáp án đều đúng'}, 
+{lesson:3, question:'Nguyên tắc giao việc:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:3, question:'Thương lượng và thỏa thuận là một trong những phương pháp để giảm thiểu sự chống đối trong quá trình thay đổi, Phương pháp này được áp dụng trong hoàn cảnh nào?', answer:'Khi các cá nhân hoặc nhóm có quyền lực chống đối vì những quyền lợi riêng của họ bị đe dọa do thay đổi'}, 
+{lesson:3, question:'Đâu là những nhược điểm của phương pháp &quot;thử và sai&quot;?', answer:'Tất cả đều đúng'}, 
+{lesson:3, question:'Chăm chú lắng nghe giúp ích gì trong quá trình giao tiếp', answer:'Có thể nghe được đầy đủ thông tin, nắm bắt được tâm lý, nguyện vọng của đối tượng giao tiếp; Thể hiện thái độ lịch sự'}, 
+{lesson:3, question:'Hành động tìm hiểu về thay đổi có nghĩa là', answer:'Các đáp án đều đúng.'}, 
+{lesson:3, question:'Thường xuyên trao đổi để nhận thông tin phản hồi từ người khác, điều này giúp nhân viên VNPT:', answer:'Tìm kiếm thêm cơ hội; Phát triển ý tưởng; Thúc đẩy thỏa thuận'}, 
+{lesson:3, question:'Để nhân viên hiểu rõ việc mình cần làm, khi giao việc người có thẩm quyền nên:', answer:'Nêu rõ công việc và mục đích yêu cầu của công việc'}, 
+{lesson:6, question:'Thành phần nào của SGA dùng để phân tích đoạn code của SQL?', answer:'Library cache'}, 
+{lesson:6, question:'Khi tiến trình server được hoàn thành 1 cách không bình thường, xử lí hậu cảnh nào chịu trách nhiệm cho việc phát hành các khóa trợ giúp bởi user?', answer:'PMON'}, 
+{lesson:6, question:'Câu lệnh SQL nào sau đây dùng để tạo Database mới trong SQL??', answer:'CREATE DATABASE'}, 
+{lesson:6, question:'Bộ nhớ granules không được cấp phát tại instance khởi tạo cho thành phần nào của SGA sau đây?', answer:'None of the above'}, 
+{lesson:6, question:'Khi nào thì HĐH thay đổi số lượng được phân quyền?', answer:'Khi transaction kết thúc 1 cách không bình thường.'}, 
+{lesson:3, question:'Để lập kế hoạch tuần, chúng ta sẽ sử dụng nguồn thông tin nào dưới đây?', answer:'Các công việc trong kế hoạch tháng'}, 
+{lesson:3, question:'Một nhóm làm việc hiệu quả khi các thành viên trong nhóm:', answer:'Hoàn thành các mục tiêu của nhóm một cách hoàn hảo'}, 
+{lesson:3, question:'Một vài nguyên nhân gây lãng phí thời gian bao gồm:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:3, question:'Quản trị bằng mục tiêu MBO giúp doanh nghiệp:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:6, question:'Từ khóa nào được sử dụng trong câu lệnh CREATE INDEX để tạo một function-based index?', answer:'CREATE INDEX FUNCTION BASED'}, 
+{lesson:6, question:'Bình thường Chad chạy các vấn tin rất nhỏ trên table, nhưng đã có thông báo từ DBA là Chad sẽ sớm được chạy 1 vài vấn tin đối với kho Dữ Liệu cho các hoạt động quản lí. DBA có thể làm gì để chắc chắn rằng những vấn tin sẽ không chạy sau OLTP?(chọn câu trả lời đúng nhất)', answer:'The DBA can use the Active Session Pool feature to suspend the session if there are too many active OLTP sessions.'}, 
+{lesson:8, question:'Thông số nào ảnh hưởng tới việc lựa chọn một tuyến đường khi có nhiều bộ giao thức cùng có tuyến đường tới 1 đích?', answer:'Administrative distance'}, 
+{lesson:8, question:'Phương pháp thông tin truy cập từ xa nào được xem như kết nối điển hình đến Internet mọi lúc,nó làm gia tăng rủi ro bảo mật do luôn mở đối với mọi cuộc tấn công ?', answer:'Wireless'}, 
+{lesson:8, question:'Để thực hiện Share dữ liệu giữa máy thật và máy ảo,  trong hộp thoại hiệu chỉnh cấu hình máy ảo ta chọn:', answer:'Chọn tab Options à chọn mục Shared Folders àchọn nút  à Add để tạo một chia sẻ một thư mục trên máy tính thật cho máy ảo.'}, 
+{lesson:8, question:'Thực thi câu lệnh nào để chạy giao thức định tuyến OSPFv2 trên mạng?', answer:'router ospf process-id'}, 
+{lesson:8, question:'MX  Record dùng để làm gì?', answer:' Dùng cho dịch vụ chuyển mail'}, 
+{lesson:8, question:'Trong hình bên dưới. Chế độ nào đang được thiết lập mật khẩu?', answer:'Telnet'}, 
+{lesson:8, question:'ACL dạng chuẩn dựa vào thông tin nào để lọc gói tin', answer:'Địa chỉ đích và subnet mask'}, 
+{lesson:8, question:'Bạn là người quản trị mạng cho một công ty, công ty bạn muốn triển khai 2 NetID khác nhau cho hai phòng ban, bạn làm thế nào để trên mạng không bị trùng IP và 2 NetID này ít traffic nhất.', answer:'Sử dụng IP tĩnh trên mỗi nhánh mạng'}, 
+{lesson:8, question:'Phát biểu nào sau đây không đúng khi so sánh Ưu điểm của Hyper-v so với VMWare ', answer:'Hỗ trợ trên nhiều hệ điều hành khác nhau'}, 
+{lesson:8, question:'Câu lệnh nào thì cần thiết để cho phép SSH hoặc Telnet tới một thiết bị Switch Cisco?', answer:'transport input all'}, 
+{lesson:8, question:'Checkpointing:', answer:'Là cơ chế lưu lại trạng thái của tiền trình trong quá trình chạy không bị lỗi vào một thiết bị nhớ ổn định nhằm khôi phục lại sau đó hoặc phục hồi lại trên một máy khác.'}, 
+{lesson:8, question:'Ảo hóa XEN có bao nhiêu bản chính', answer:'2'}, 
+{lesson:8, question:'Bạn là người quản trị mạng cho một công ty. Công ty bạn có sử dụng 3 NetID khác nhau, trên đó có triển khai dịch vụ Routing and Remote Access, muốn xác định được đường đi của một NetID này sang NetID khác bạn làm cách nào?.', answer:'Xem thông tin trong Internet Protocol (IP) routing table'}, 
+{lesson:8, question:'Các tính năng nào sau đây không phải là công nghệ ảo hóa:', answer:'Tổ chức lưu trữ dữ liệu lớn'}, 
+{lesson:8, question:'Snapshot là một chức năng tạo ra các “điểm dừng” trên máy ảo, nó tương tự như backup. Để thực hiện, chọn:', answer:'Click chuột vào máy ảo, chọn Menu VM - Snapshot, chọn Take Snapshot, đặt tên sau click OK.'}, 
+{lesson:8, question:'Trong quá trình xác thực CHAP, để thực hiện mã hóa với một site từ xa có id là 177798 thông qua kết nối PPP thì giá trị nào được sử dụng?', answer:'Sử dụng hostname của thiết bị từ xa'}, 
+{lesson:9, question:'Một trong những mục tiêu của Service Desk là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:9, question:'Cơ cấu điều hành CNTT của VNPT bao gồm:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:9, question:'Điều khoản thi hành trong công tác điều hành CNTT cũng quy định rõ về trách nhiệm của VNPT tỉnh/thành, VNPT Net, VNPT VinaPhone, VNPT Media, VNPT-IT', answer:'Tất cả các đáp án đều sai'}, 
+{lesson:9, question:'Trong chức năng Service Desk, đơn vị đóng vai trò xử lý yêu cầu là:', answer:'VNPT TTP và VNPT - IT'}, 
+{lesson:9, question:'Để hòa mạng, chuyển hệ thống, nâng cấp hệ thống, một trong những việc TT điều hành CNTT/VNPT-IT phải thực hiện là', answer:'Chủ trì, chịu trách nhiệm phối hợp các Trung tâm Giải pháp xây dựng các kịch bản kiểm tra, kiểm định chất lượng về việc chuyển, hòa mạng, nâng cấp hạ tầng CNTT'}, 
+{lesson:9, question:'Trung tâm điều hành CNTT/VNPT-IT xem xét cụ thể từng yêu cầu, khả năng và thời gian thực hiện sau đó thực hiện đánh giá, lập kế hoạch thực hiện đúng hay sai?', answer:'Sai'}, 
+{lesson:9, question:'Phối hợp với các đơn vị liên quan triển khai sử dụng chung hạ tầng CNTT thụ động đặc biệt là phối hợp hỗ trợ đảm bảo nguồn điện, hệ thống điều hòa tại các IDC, phòng máy dùng chung để tiết giảm chi phí', answer:'  Đây là trách nhiệm của đơn vị quản lý hạ tầng CNTT thụ động'}, 
+{lesson:2, question:'Công cụ nào được sử dụng để khai thác lỗ hổng SQL injection?', answer:'sqlmap'}, 
+{lesson:2, question:'Port nào được dịch vụ chia sẻ file, máy in trên mạng - SMB over TCP/IP sử dụng?', answer:'445'}, 
+{lesson:2, question:'Cách sử dụng mật khẩu nào dưới đây là an toàn ?', answer:'Using a long and complex password'}, 
+{lesson:2, question:'Thiết bị bảo mật emai của Cisco chạy trên nền tảng nào', answer:'Cisco NX-OS'}, 
+{lesson:2, question:'Sau khi dùng Sniffing software để bắt thông tin phân tích gói thông tin gửi đi từ host, có dạng: Protocol :TCP; Destination Port: 80; Source IP 192.168.3.8; Destination IP 203. 162.4.132; SYN=1, ACK=0. Cho biết host trên đang làm gì?', answer:'Máy 192.168.3.8 đang yêu cầu kết nối với Web server tại 203. 162.4.132'}, 
+{lesson:2, question:'Dòng thiết bị nào thì có nhiều chức năng liên quan tới security solutions, including firewall, IPS, VPN, antispyware, antivirus, and antiphishing?', answer:'Cisco ASA 5500-X Series Next Gen. Security appliance'}, 
+{lesson:2, question:'Cisco FirePower triển khai loại cơ chế nào để bảo vệ các mối đe dọa với email khi di chuyển qua các mạng khác', answer:'reputation-based'}, 
+{lesson:2, question:'Loại tường lửa nào đóng vai trò làm trung gian giữa máy chủ và máy khách', answer:'Proxy firewall'}, 
+{lesson:2, question:'Công nghệ nào có thể sử dụng để ngăn chặn 1 máy tính bị nhiễm độc không cho kết nối mạng?', answer:'host IPS'}, 
+{lesson:2, question:'Đâu là thành phần bảo mật chính trong việc triển khai MDM', answer:'Using self-signed certificates to validate the server.'}, 
+{lesson:2, question:'Chương trình nào sau đây là malware ?', answer:'Viruses, worms và trojans'}, 
+{lesson:2, question:'Loại tấn công nào có thể dùng khai thác lỗ hổng thiết kế trong việc thực thi ứng dụng mà không gây chú ý', answer:'Low-rate DoS attacks.'}, 
+{lesson:2, question:'Anh/chị đang khai báo Vlan trên các cổng của thiết bị Switch R1, trị số Vlan nào sẽ được gán là Vlan mặc định', answer:'Vlan 1'}, 
+{lesson:2, question:'Trên Firewall Cisco ASA, tính năng nào được sử dụng để chống tấn cống TCP Syn flood ?', answer:'TCP intercept feature'}, 
+{lesson:2, question:'Bước nào đúng khi thực hiện bật AAA qua giao diện SDM', answer:'Configure > Additional Tasks > AAA'}, 
+{lesson:2, question:'Loại NAT nào thường được sử dụng để public web server từ trong mạng LAN ra ngoài internet?', answer:'Static NAT'}, 
+{lesson:2, question:'Giao thức IP Security (IPSec) được thực hiện tại lớp nào', answer:'Netwwork'}, 
+{lesson:2, question:'Phương pháp tấn công DoS có các gói tin gửi từ attacker có các thông số rất khó hiểu để chia ra các phần (fragment) là?', answer:'Teardrop'}, 
+{lesson:2, question:'Bạn là người quản trị mạng tại trung tâm. Máy Server ISA1 cung cấp truy cập Internet cho tất cả máy trong mạng. Để phòng tránh người dùng vô tình tải và thực thi các tập tin virus (dạng *.exe, *.com, *.dll,…). Bạn chọn giải pháp nào sau đây?', answer:'Tạo một “Content Type” trong đó chứa danh sách tập tin Virus. Tạo Access Rule cấm người dùng truy cập HTTP trên Content này.'}, 
+{lesson:2, question:'Sniffing là một phương thức tấn công kiểu:', answer:'Đánh cắp dữ liệu của nạn nhân truyền trên mạng'}, 
+{lesson:2, question:'Mức bảo mật nào của SNMPv3 cung cấp xác thực với HMAC và MD5 nhưng không sử dụng mã hóa', answer:'authNoPriv'}, 
+{lesson:3, question:'Ý kiến nào cần lưu ý khi thiết lập một bản kế hoạch:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:2, question:'Giao thức nào ở tầng network được thực hiện khi ping đến 1 server ?', answer:'ICMP'}, 
+{lesson:3, question:'&quot;Các thông tin về công việc, mục tiêu – yêu cầu công việc, nhiệm vụ, quyền hạn, các mối quan hệ, tiêu chuẩn công việc, điều kiện làm việc&quot; là các nội dung nằm trong:', answer:'Bản mô tả công việc'}, 
+{lesson:3, question:'Hành động học nhanh, hiểu nhanh được định nghĩa là:', answer:'Sẵn sàng tiếp thu và hiểu những thông tin mới từ những trải nghiệm học tập chính thức và phi chính thức'}, 
+{lesson:3, question:'Trong học tập, người học có xu hướng ghi nhớ nhất những điều gì trong số những nội dung sau?', answer:'Những nội dung nổi bật'}, 
+{lesson:3, question:'Để đảm bảo công việc tại các vị trí, bộ phận, các phòng ban chức năng không bị chồng chéo nhau thì doanh nghiệp cần có:', answer:'Bản mô tả công việc'}, 
+{lesson:10, question:'Cho khai báo sau: itn x=15; int *p; Muốn p là con trỏ tới x phải thực hiện lệnh nào sau đây:', answer:'p=&x'}, 
+{lesson:2, question:'Cơ chế mã hóa dữ liệu bất đối xứng nào được sử dụng để mã hóa dữ liệu?', answer:'a public/private key pair'}, 
+{lesson:2, question:'Điều nào đúng khi sử dụng RADIUS? (chọn 2 đáp án)', answer:'[2 chọn]\nSử dụng UDP cổng 1812/1813\nSử dụng TCP cổng 49'}, 
+{lesson:10, question:'Kết quả trả về khi chạy đoạn chương trình sau: class evaluate { public static void main(String args[]) { int arr[] = new int[] {0 , 1, 2, 3, 4, 5, 6, 7, 8, 9}; int n = 6; n = arr[arr[n] / 2]; System.out.println(arr[n] / 2); } }?', answer:'1'}, 
+{lesson:10, question:'Anh/chị cho biết Kiểm thử đơn vị (Unit testing) là:', answer:'Kiểm thử sự hiện thực chi tiết của từng đơn vị nhỏ (hàm, class,…) có hoạt động đúng không.'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết: “Các yếu tố đặc trưng của ngôn ngữ lập trình hướng đối tượng (OOP) là: Tính trừu tượng, Tính đa hình, Tính đóng gói và ……”?', answer:'Tính kế thừa'}, 
+{lesson:10, question:'Anh/Chị cho biết đặc điểm của biểu đồ Phân cấp chức năng là?', answer:'Cả 2 đáp án đều đúng'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, khi được mời lên sân khấu giới thiệu dịch vụ, nhân viên VNPT thực hiện:', answer:'Đứng giữa sân khấu và chào theo quy chuẩn'}, 
+{lesson:1, question:'Theo Sổ tay Văn hóa VNPT, Trách nhiệm của VNPT với cộng đồng xã hội là "Chung Vai góp sức" được hiểu như thế nào?', answer:'VNPT luôn thể hiện trách nhiệm với cộng đồng, xã hội; chủ động, tích cực tham gia các chương trình an sinh xã hội, chung tay, chung sức cùng cộng đồng vượt qua khó khăn, góp phần giải quyết các vấn đề của xã hội.'}, 
+{lesson:1, question:'Với chiến lược phát triển trong kỷ nguyên mới, phù hợp với xu thế toàn cầu hóa và sự phát triển không ngừng của cuộc cách mạng công nghiệp 4.0, VNPT đã và đang từng bước chuyển đổi từ nhà cung cấp dịch vụ viễn thông truyền thống sang nhà cung cấp dịch vụ số (DSP), trở thành một Tập đoàn kinh tế năng động, chú trọng phát triển những sản phẩm, dịch vụ, giải pháp ICT sáng tạo.Tầm nhìn VNPT đang hướng tới là:', answer:'Trở thành nhà cung cấp dịch vụ số hàng đầu Việt Nam vào năm 2025; Trở thành Trung tâm số (Digital Hub) của châu Á vào năm 2030; Trở thành lựa chọn số 1 của khách hàng sử dụng sản phẩm, dịch vụ Công nghệ thông tin - Viễn thông (ICT) tại thị trường.'}, 
+{lesson:1, question:'Khi bàn luận về VNPT, về các công ty, sản phẩm, dịch vụ, thương hiệu của VNPT trên mạng xã hội, Tập đoàn khuyến khích:', answer:'Sử dụng danh tính thật của nhân viên VNPT'}, 
+{lesson:4, question:'NVKT nên tìm hiểu những thông tin gì về sản phẩm của đối thủ cạnh tranh?', answer:'Điểm mạnh - điểm yếu của sản phẩm tương đồng với VNPT'}, 
+{lesson:4, question:'Theo anh/chị, NVKT có nên chăm sóc khách hàng đang sử dụng dịch vụ của nhà mạng khác không?', answer:'Rất cần thiết vì có thể đây sẽ là khách hàng tiềm năng của VNPT hoặc khách hàng này có thể sẽ giới thiệu cho khách hàng khác sử dụng dịch vụ - sản phẩm của VNPT'}, 
+{lesson:4, question:'Khi trình bày cho khách hàng về dịch vụ của VNPT, NVKT không nên:', answer:'Nói không có chủ đích'}, 
+{lesson:4, question:'Khi trao đổi, giải thích với khách hàng qua điện thoại, NVKT KHÔNG nên:', answer:'Sử dụng các thuật ngữ chuyên ngành'}, 
+{lesson:4, question:'Việc bảo mật thông tin khách hàng được VNPT quy định thế nào?', answer:'Không được sử dụng, tiết lộ bất cứ thông tin nào của khách hàng vào mục đích riêng.'}, 
+{lesson:4, question:'Khi giao tiếp với khách hàng, để việc lắng nghe hiệu quả NVKT nên:', answer:'Kiểm soát cảm xúc của bản thân'}, 
+{lesson:4, question:'Để việc giao tiếp/ giao dịch với khách hàng đạt hiệu quả, NVKT nên:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:4, question:'Trong kinh doanh, khi khách hàng không hài lòng thì phương án tốt nhất doanh nghiệp mong muốn là:', answer:'Khách hàng nói trực tiếp với chúng ta.'}, 
+{lesson:4, question:'Chăm sóc khách hàng mang lại cho doanh nghiệp lợi ích gì ?', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:4, question:'NVKT nên đưa ấn phẩm, tài liệu, hợp đồng, brochure cho khách hàng như thế nào để thể hiện sự tôn trọng?', answer:'Đưa ấn phẩm, tài liệu, hợp đồng, brochure,…bằng hai tay và phải đưa cùng chiều với khách hàng.'}, 
+{lesson:4, question:'Quy định đối với NVKT về việc cung cấp thông tin cho khách hàng:', answer:'Cung cấp thông tin cho khách hàng đầy đủ, trung thực, theo phạm vi công việc được giao và chịu trách nhiệm về tính chính xác của thông tin'}, 
+{lesson:4, question:'Khi đến nhà Khách hàng để lắp đặt dịch vụ, NVKT nên sử dụng mẫu câu nào để giới thiệu bản thân:', answer:'"Chào anh/chị, em/tôi là... NVKT của VNPT... Theo hẹn, hôm nay em/tôi đến lắp đặt dịch vụ …cho gia đình mình ạ!".'}, 
+{lesson:3, question:'Lợi ích của năng lực thích ứng đối với Cá nhân đó là:', answer:'Tất cả các đáp án đều đúng.'}, 
+{lesson:3, question:'Một trong những kỹ thuật sử dụng phổ biến khi sử dụng phương pháp tập kích não trong học tập là quan sát kỹ những thứ nhìn thấy, quan sát từ cách nhìn của người khác, nhìn sự vật, sự việc theo một hướng khác. Đúng hay sai?', answer:'Đúng'}, 
+{lesson:3, question:'Trong quy trình xây dựng kế hoạch, ở mỗi phương án thực hiện mục tiêu, doanh nghiệp cần cụ thể hóa về:', answer:'Giải pháp và công cụ thực hiện'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, khi chào khách hàng, nếu không nhìn khách hàng trước khi chào là đúng hay sai', answer:'Sai'}, 
+{lesson:4, question:'Phương thức "Giao tiếp phi ngôn ngữ" đối với Doanh nghiệp được thể hiện qua:', answer:'Thương hiệu; Logo; Đồng phục, cách trang trí cửa hàng'}, 
+{lesson:4, question:'Trước khi đến lắp đặt dịch vụ cho khách hàng, NVKT nên:', answer:'Gọi điện đặt lịch hẹn để xác nhận thời gian cụ thể với khách hàng'}, 
+{lesson:1, question:'Trong quy tắc ứng xử trên mạng xã hội của VNPT, nhân viên VNPT phải "Chịu trách nhiệm với các hoạt động của bản thân trên mạng xã hội", thông qua việc:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, việc cúi chào của nhân viên khối Kỹ thuật Viễn thông được áp dụng tại các điểm chạm như:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:11, question:'Các nguyên tắc khi đặt mật khẩu nào dưới đây là đúng?', answer:'Tất cả các đáp án trên'}, 
+{lesson:11, question:'Một số phương pháp thu thập thông tin phản hồi của khách hàng:', answer:'Tất cả đều đúng'}, 
+{lesson:11, question:'Không nên sử dụng khóa màn hình điện thoại bằng. (Chọn 2 đáp án)', answer:'[2 chọn]\nMật khẩu 4 chữ số\nMật khẩu dùng hình vẽ đơn giản'}, 
+{lesson:11, question:'Khi sử dụng mạng xã hội, cần lưu ý những điều sau:', answer:'Tất cả các phương án'}, 
+{lesson:11, question:'Tiến hành công việc nào sau đây phát huy đầy đủ được tác dụng của biện pháp phòng chống tấn công mạng:', answer:'Không đáp án nào đầy đủ'}, 
+{lesson:11, question:'Theo khuyến cáo của Microsoft, nhà sản xuất hệ điều hành Windows, trên một máy tính nên sử dụng bao nhiêu phần mềm diệt virus?', answer:'1'}, 
+{lesson:11, question:'Nhiều người dùng miếng băng dính đen che webcam máy tính. Mục đích là để phòng chống việc tin tặc tấn công lợi dụng webcam để thu thập thông tin.', answer:'Đúng'}, 
+{lesson:11, question:'Có thể thiết lập firewall trong hệ điều hành Window bằng cách? (Chọn 2 đáp án)', answer:'[2 chọn]\nSử dụng giao điện đồ họa thông qua Control panel\nSử dụng cửa sổ dòng lệnh Command Prompt (cmd)'}, 
+{lesson:11, question:'VNPT đã triển khai hệ thống giám sát DNS Sinkhole tại Tập đoàn. Điều đó đúng hay sai?', answer:'Đúng'}, 
+{lesson:11, question:'Luật An toàn thông tin mạng chính thức có hiệu lực thi hành từ ngày', answer:'07/01/2016'}, 
+{lesson:11, question:'Bạn nhận được một email từ bộ phận IT của công ty bạn. Email yêu cầu thông tin tài khoản và mật khẩu email của bạn để phục vụ công tác điều tra. Hành động của bạn khi đó:', answer:'Gọi cho bộ phận IT xac nhận nếu đúng thì cung cấp cho họ'}, 
+{lesson:11, question:'Lựa chọn đáp án đúng: Việc xây dựng hệ thống phân tích mã độc tự động của Tập đoàn', answer:'Đã được thực hiện'}, 
+{lesson:11, question:'Theo giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT, VNPT được phép kinh doanh bao nhiêu lĩnh vực?', answer:'9'}, 
+{lesson:11, question:'Dùng điện thoại Iphone không lo bị tấn công', answer:'Sai'}, 
+{lesson:11, question:'VNPT đã triển khai ISO/IEC 27001:2013 trên phạm vi toàn Tập đoàn, bao gồm Văn phòng Tập đoàn và các đơn vị VNPT thành viên. Điều đó đúng hay sai?', answer:'Sai'}, 
+{lesson:11, question:'Khi cài đặt phần mềm nên tải từ đâu?', answer:'Từ các trang chính thống'}, 
+{lesson:11, question:'Loại mã độc nào có khả năng che dấu danh tính bản thân nó trong hệ thống', answer:'Rootkit'}, 
+{lesson:11, question:'Tên gọi phần mềm Antivirus của Microsoft trên hệ điều hành Windows 10', answer:'Windows Defender'}, 
+{lesson:11, question:'Tường lửa có thể điều khiển', answer:'Lưu lượng vào, ra mạng'}, 
+{lesson:11, question:'Các phần mềm anti-virus có thể can thiệp vào tường lửa thông qua:', answer:'Tất cả các hồ sơ'}, 
+{lesson:9, question:'Nhiệm vụ, quyền hạn của các Trung Tâm IT khu vực thuộc VNPT- IT là', answer:'     Phối hợp tiếp nhận và xử lý các yêu cầu dịch vụ, sự cố dịch vụ tại khu vực quản lý trực tiếp trong khả năng.'}, 
+{lesson:2, question:'Kiểu tường lửa nào thì hoạt động ở lớp 4? (chọn 2 đáp án)', answer:'[2 chọn]\nApplication level firewall\nCircuit-level gateway'}, 
+{lesson:2, question:'Những yếu tố nào cần được cân nhắc khi xem xét một công nghệ mới', answer:'risk'}, 
+{lesson:2, question:'Điều nào đúng khi sử dụng RADIUS? (chọn 2 đáp án)', answer:'[2 chọn]\nSử dụng TCP cổng 49\nSử dụng UDP cổng 1812/1813'}, 
+{lesson:8, question:'Trong DAC, mô hình nào dung cấu trúc đồ thị tĩnh và đồ thị động', answer:'Mô hình truy cập CSDL đa mức'}, 
+{lesson:8, question:'VMWare vSphere là bộ sản phẩm của VMWare, dùng để phục vụ nhu cầu ảo hóa hệ thống, thành phần nào dưới đây không phải của', answer:'VMWare Store'}, 
+{lesson:8, question:'Để thực hiện một số cài đặt trên máy ảo, bạn thực hiện tuần tự các bước sau:', answer:'Chọn máy ảo và chọn Power on this virtual machine, Chọn Install Windows only (advanced)  để cài hệ điều hành, chọn phân vùng (partition) để cài đặt hệ điều hành và bước cuối cùng là cài đặt VMware Tools.'}, 
+{lesson:8, question:'Bạn là người quản trị mạng cho một công ty, công ty bạn có 1 chi nhánh ở cách xa trụ sở chính và kết nối với trụ sở chính qua mạng internet. Trên hệ thống mạng của chi nhánh, bạn cài đặt và cấu hình DNS server. Bạn cần cấu hình DNS như thế nào để DNS server tại trụ sở chính có thể phân giải tên cho DNS server tại chi nhánh và việc kết nối giữa hai nơi ít traffic nhất.', answer:'Cấu hình DNS server tại tại trụ sở chính một secondary zone và delegation đến chi nhánh'}, 
+{lesson:8, question:'Theo thứ tự câu lệnh nào được cấu hình trên một router chạy OSPF và thêm vùng mạng 10.1.1.0/24 vào vùng area 0.', answer:'router ospf 1 network 10.1.1.0 0.0.0.255 area 0'}, 
+{lesson:8, question:'Ưu điểm của Workgroup là:', answer:'Thiết kế được quản lý tập trung'}, 
+{lesson:8, question:'Sự khác nhau cơ bản giưa VMWare – Xen – Open VZ', answer:'Open VZ hoạt động dưa trên nhân Linux và hệ điều hành'}, 
+{lesson:8, question:'Có bao nhiêu lựa chọn cài đặt OS (Operating System) cho máy ảo khi sử dụng VMWare', answer:'2'}, 
+{lesson:8, question:'Công ty bạn có dựng một FTP server, bạn là người quản trị FTP server này, bạn muốn tất cả các user khi truy cập vào FTP server này đều phải nhập user name và password, bạn làm thế nào?', answer:'Trên máy FTP server, chọn tab security accounts check vào ô Allow anonymous connections'}, 
+{lesson:5, question:'Lợi ích của Trung tâm điều hành giáo dục (vnEdu IOC) đó là:', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:5, question:'Giải pháp cung cấp cho cơ quan quản lý giáo dục một bức tranh toàn cảnh về tình hình giáo dục tại địa bàn trên cơ sở tập hợp thông tin, dữ liệu của tất cả các hệ thống thông minh và các nguồn dữ liệu khác, góp phần nâng cao hiệu quả của công tác quản lý và chỉ đạo điều hành; đổi mới phương pháp dạy - học, kiểm tra, đánh giá, nâng cao chất lượng GD&ĐT tại địa phương. Đây là định nghĩa của dịch vụ:', answer:'Trung tâm điều hành giáo dục (vnEdu IOC)'}, 
+{lesson:4, question:'Khi tiếp xúc với một khách hàng phàn nàn về chất lượng dịch vụ của VNPT NVKT nên làm gì?', answer:'Xin lỗi khách hàng; đặt câu hỏi, xác định vấn đề, chủ động lắng nghe tích cực và tìm cách giải quyết theo quy định.'}, 
+{lesson:3, question:'Yếu tố nào sau đây quyết định sự thành công trong quá trình giao tiếp?', answer:'Thông điệp truyền tải rõ ràng, kỹ năng lắng nghe hiệu quả, sự khéo léo trong xử lý tình huống'}, 
+{lesson:3, question:'Để kiểm soát sự thay đổi hiệu quả, chúng ta cần:', answer:'Thực hiện kiểm soát liên tục cả bên trong và bên ngoài. Theo dõi tiến độ, đo lường kết quả đạt được và chú trọng thông tin phản hồi'}, 
+{lesson:3, question:'Trong quá trình sử dụng phương pháp tập kích não (brainstorming) để thúc đẩy quá trình học tập, người học cần phải', answer:'Tất cả đáp án đều đúng'}, 
+{lesson:3, question:'Trong phương pháp lập kế hoạch 5W-1H-2C-5M, để việc xác định nội dung công việc (What) được thực hiện hiệu quả, chúng ta cần:', answer:'Nắm được nội dung công việc đó là gì? Chỉ ra các bước cụ thể để thực hiện công việc. Bước sau là khách hàng của bước công việc trước.'}, 
+{lesson:1, question:'"Tín với Nhà nước; Tín với cộng đồng; Tín với khách hàng; Tín với người lao động" là yếu tố thuộc về ..., đây là một trong các yếu tố tạo nên Tinh thần VNPT trong VNPT - 5 Giá trị cốt lõi.', answer:'Đạo đức'}, 
+{lesson:7, question:'Thứ tự sắp xếp các phiên bản của công nghệ Blockchain nào sau đây là đúng?', answer:'1. Tiền điện tử và thanh toán; 2. Tài chính và Thị trường; 3. Thiết kế và Giám sát hoạt động; 4. Doanh nghiệp và ứng dụng giao dịch'}, 
+{lesson:7, question:'Phát biểu nào sau đây là đúng về Big Data?', answer:'Dữ liệu phải đảm bảo có được cả 3 thuộc tính là : dữ liệu có kích thước lớn, dữ liệu có tốc độ xử lý nhanh và dữ liệu có sự đa dạng thì mới được coi là Big Data.'}, 
+{lesson:11, question:'Theo quy định 1771/QĐ-VNPT-IT&VAS về an toàn bảo mật trong mạng điều hành sản xuất kinh doanh, mật khẩu mức người sử dụng phải thay đổi ít nhất bao lâu một lần:', answer:'2 tháng'}, 
+{lesson:11, question:'Đối với các USB lạ có nghi ngờ bị nhiễm mã độc, nên quét virus hoặc format trước khi sử dụng', answer:'Đúng'}, 
+{lesson:11, question:'Khi truy cập vào các trang HTTPS, người dùng đều được cam kết và đảm bảo rằng mình an toàn. Nếu người dùng chỉ ra được trang HTTPS đó không an toàn, người dùng sẽ nhận được chính sách bồi thường. Điều đó đúng hay sai?', answer:'Đúng'}, 
+{lesson:11, question:'Để đảm bảo an toàn cho dữ liệu USB, đáp án nào dưới đây là sai?', answer:'Tránh để USB lưu trữ dữ liệu >80% dung lượng'}, 
+{lesson:11, question:'Các nguy cơ bị đánh cắp mật khẩu nào dưới đây là đúng?', answer:'Tất cả các đáp án trên'}, 
+{lesson:11, question:'Khi tạo tài khoản, nhóm, để máy chủ có thể teamview vào máy khách trong nhóm thì máy chủ cần biết:', answer:'Xác nhận cho phép thâm nhập của máy khách hoặc password máy khách'}, 
+{lesson:11, question:'VNPT đã được cấp giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng', answer:'Đúng'}, 
+{lesson:11, question:'Tên gọi phần mềm tường lửa của Microsoft trên hệ điều hành Windows 10', answer:'Windows Firewall'}, 
+{lesson:11, question:'Để phòng chống tấn công webcam, người dùng nên thực hiện những hành động nào sau đây?', answer:'Tất cả đều đúng'}, 
+{lesson:11, question:'Hệ điều hành được Tập đoàn trang bị bản quyền tập trung là gì?', answer:'Windows 10'}, 
+{lesson:11, question:'Khi kết thúc công việc và ra ngoài buổi trưa 1 tiếng, ta nên', answer:'Logout khỏi máy tính'}, 
+{lesson:11, question:'Giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT có hiệu lực trong thời gian bao lâu', answer:'10 năm'}, 
+{lesson:11, question:'Nguyên nhân nào có thể dẫn đến việc bị đánh cắp thông tin:', answer:'Mất mật khẩu'}, 
+{lesson:11, question:'Chức năng nào của Window giúp xóa bỏ các chương trình không cần thiết:', answer:'Programs and Futures trong Control Panel'}, 
+{lesson:11, question:'Các biện pháp bảo mật cơ bản để giữ máy tính an toàn. (Chọn 3 đáp án)', answer:'[3 chọn]\nCài đặt các bản vá “Security Update” của hệ điều hành cho máy tính\nCài đặt các bản vá “Security Update” của chương trình ứng dụng trên máy tính (như là Adobe Acrobat reader, Java, Office…)\nCài đặt ứng dụng Anti-Spyware/Adware/Malware'}, 
+{lesson:11, question:'Biện pháp xử lý nào sau đây phù hợp cho việc mất kết nối Router-Hub/SW:', answer:'Các biện pháp trên'}, 
+{lesson:11, question:'Từ viết tắt của giao thức an ninh trên mạng không dây:', answer:'WPA2'}, 
+{lesson:11, question:'Địa chỉ liên kết không an toàn là:', answer:'Tất cả các đáp án đều đúng'}, 
+{lesson:11, question:'Để đảm bảo an toàn khi sử dụng USB, người dùng cần: (Chọn 2 đáp án)', answer:'[2 chọn]\nKhóa chức năng Autorun khi sử dụng USB\nQuét virus cho USB trước khi sử dụng'}, 
+{lesson:11, question:'Những thông tin không nên cung cấp khi sử dụng mạng xã hội', answer:'Tài khoản ngân hàng'}, 
+{lesson:11, question:'Mật khẩu nào được coi là mật khẩu mạnh', answer:'$aLtNb83'}, 
+{lesson:11, question:'Kiểu tấn công bằng cách can thiệp vào giữa phiên liên lạc của 2 hệ thống gọi là', answer:'Tấn công dạng Man in the middle'}, 
+{lesson:11, question:'Thiết lập tắt cookies trên trình duyệt web giúp ngăn chặn nguy cơ mất:', answer:'User và Password'}, 
+{lesson:9, question:'  Rà soát hạ tầng, tập hợp các thiết bị hạ tầng đưa ra khỏi hệ thống thẩm định, trình phương án xử lý tái sử dụng, phù hợp đảm bảo khai thác hiệu quả hạ tầng.', answer:'Đây là công việc của tối ưu hạ tầng và điều chuyển thiết bị'}, 
+{lesson:9, question:'Các công cụ giám sát, hỗ trợ :', answer:'Công cụ điều hành tập trung, Công cụ giám sát tài nguyên, hạ tầng, Công cụ hệ thống báo cáo tập trung'}, 
+{lesson:6, question:'Anh (chị) xin vui lòng cho biết: Quyền nào mà bạn cần có để kết nối CSDL, nếu CSDL đang được khởi động bằng STARTUP RESTRICT?', answer:'RESTRICTED SESSION'}, 
+{lesson:5, question:'"Có tính năng phòng chống virus, phần mềm độc hại, chống tấn công ddos. Có khả năng sao lưu, backup dữ liệu tự động, Việc phân quyền người dùng có thể tùy biến theo yêu cầu của người quản trị" đây là:', answer:'Những ưu điểm của dịch vụ VNPT Elearning'}, 
+{lesson:10, question:'Chọn định nghĩa đúng nhất đối với cây nhị phân tìm kiếm', answer:'Cây nhị phân tìm kiếm là cây nhị phân có thành phần khóa của mọi nút lớn hơn thành phần khóa của tất cả các nút trong cây con trái của nó và nhỏ hơn thành phần khóa của tất cả các nút trong cây con phải của nó.'}, 
+{lesson:10, question:'Anh/Chị hãy cho biết, trong ngôn ngữ lập trình JAVA, kiểu số nguyên Integer có kích thước bao nhiêu bit?', answer:'32'}, 
+{lesson:4, question:'Khi giới thiệu và tự giới thiệu NVKT nên:', answer:'Tự giới thiệu ngắn gọn tên, đơn vị làm việc với thái độ lịch sự, khiêm nhường. Giới thiệu người có địa vị cao hoặc người lớn tuổi trước và giới thiệu tên kèm theo chức vụ.'}, 
+{lesson:11, question:'Website cập nhật thông tin về an toàn thông tin do Trung tâm ATTT – Ban IT&VAS xây dựng', answer:'https://vnptcert.vnpt.vn/'}, 
+{lesson:11, question:'Khuyến nghị nào dưới đây là SAI khi sử dụng điện thoại thông minh?', answer:'Cài đặt ứng dụng từ các nguồn appstore, google play, website, diễn đàn chia sẻ,…'}, 
+{lesson:11, question:'Tường lửa (Firewall) không có tác dụng với', answer:'Social Engineering'}, 
+{lesson:11, question:'Chiều dài tối thiểu của 1 mật khẩu mạnh', answer:'8 ký tự'}, 
+{lesson:11, question:'Điểm yếu nhất trong an ninh mạng là:', answer:'Thiết lập không đúng trên các trang thiết bị và phần mềm được cung cấp'}, 
+{lesson:11, question:'Phương án đảm bảo an toàn bảo mật cho điện thoại di động', answer:'Tất cả các phương án'}, 
+{lesson:11, question:'Tên gọi tiếng Việt của kho ứng dụng trên hệ điều hành Android', answer:'CH Play'}, 
+{lesson:11, question:'Rút trực tiếp USB ra khỏi máy tính mà không cần thực hiện các thao tác ngắt kết nối có thể làm dữ liệu trong USB bị lỗi. Điều đó đúng hay sai?', answer:'Đúng'}, 
+{lesson:5, question:'"Khóa bí mật" trong dịch vụ VNPT - MobileID là loại khóa thuộc hệ thống:', answer:'Mã không đối xứng'}, 
+{lesson:10, question:'Giả sử ta có bảng dữ liệu có tên “KHACHHANG” gồm các thuộc tính theo thứ tự “MAKH”, “TENKH”. Câu lệnh truy vấn nào sau đây để xóa khách hàng có mã “001” có tên là “Tuấn”.', answer:'$str= “delete from KHACHHANG where MAKH= ‘001’ and TENKH= ‘Tuấn’”;'}, 
+{lesson:1, question:'Một trong các tình huống chào chưa đúng quy chuẩn trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, bao gồm:   ', answer:'Vừa chào vừa giới thiệu/ nói chuyện; Một tay bỏ vào túi quần, 1 tay chào; Cúi chào quá thấp so với quy chuẩn'}, 
+{lesson:2, question:'Khi thiết lập VPN với mã hóa PSK trên thiết bị router cisco, hai yếu tố nào phải cấu hình dưới cryto map? (chọn 2 đáp án)', answer:'[2 chọn]\npeer\ntransform-set'}, 
+{lesson:2, question:'Giải pháp IDS/IPS nào được dùng giám sát tiến trình và tài nguyên', answer:'HIPS'}, 
+{lesson:2, question:'Điều nào đúng khi tường lửa ASA cho phép các gói tin HTTP GET đi vào trong suốt quá trình hoạt động (chọn 3 đáp án)', answer:'[3 chọn]\nKhi khớp với một kết nối TCP được tìm thấy\nKhi cấu hình phù hợp các mục NAT\nKhi các mục ACL được cấu hình phù hợp'}, 
+{lesson:2, question:'Chế độ nào được sử dụng để mã hóa lưu lượng trực tiếp giữa máy chủ và máy khách trên kênh truyền VPN', answer:'transport mode'}, 
+{lesson:2, question:'3 trường thông tin nào được dùng để mã hóa ESP trong quá trình truyền thông tin? (chọn 3 đáp án)', answer:'[3 chọn]\nPad Length\nNext Header\nPadding'}, 
+{lesson:8, question:'Máy tính dùng hệ điều hành nào có thể gia nhập AD (Active Directory) domain?', answer:'Windows OS'}, 
+{lesson:8, question:'Đặc điểm của mail offline là (chọn 2 đáp án):', answer:'[2 chọn]\nServer mail nội bộ không cần chạy liên tục.\nThuê host mail của nhà cung cấp dịch vụ.'}, 
+{lesson:8, question:'Cơ chế point-to-point trong việc giải đáp tên máy, đó là kiểu', answer:'P node'}, 
+{lesson:8, question:'Các thành phần chính của Hyper V:', answer:'Hypervisor, ngăn ảo hóa và mô hình I/O (nhập / Xuất) ảo hóa mới.'}, 
+{lesson:8, question:'Khi đang xử lý lỗi về mạng, bạn nhận thấy rằng máy tính có thể ping được tới một địa chri webserver nhưng lại không thể kết nối TCP qua port 80 trên server đó. Vậy đâu là nguyên nhân chính trong việc?', answer:'Một ACL đã chặn port TCP'}, 
+{lesson:1, question:'Trong Văn hóa cúi chào khi giao tiếp với khách hàng của VNPT, thời gian hợp lý khi thực hiện cúi chào khách hàng là:', answer:'Từ 01 đến 03 giây'}, 
+{lesson:6, question:'Cấu trúc bộ nhớ nào được chia sẽ? (chọn 2 đáp án)', answer:'[2 chọn]\nLibrary cache\nLarge pool'}, 
+{lesson:11, question:'Nguyên nhân chủ quan trong nguy cơ tiêu hủy thông tin là:', answer:'Bản thân người dùng vô tình xóa thông tin'}, 
+{lesson:11, question:'Quy tắc đặt mật khẩu nào sau đây dễ bị bẻ khóa, dễ lộ mật khẩu?', answer:'Sử dụng các mật khẩu đơn giản như 123456, qwerty…'}, 
+{lesson:11, question:'Giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng của VNPT có hiệu lực từ ngày', answer:'10/09/2017'}, 
+{lesson:11, question:'Loại mã độc nào chỉ gây khó chịu cho người dùng mà không có tính phá hoại', answer:'Adware'}, 
+{lesson:11, question:'Theo quy định hiện hành của VNPT về tài khoản/mật khẩu, mật khẩu của các máy chủ, máy trạm phải được thiết lập đủ độ mạnh, bao gồm?', answer:'Tối thiểu 8 ký tự, có chữ in thường, in hoa, chữ số và ký tự đặc biệt'}, 
+{lesson:11, question:'Để cấp phát động địa chỉ IP, ta có thể sử dụng dịch vụ có giao thức nào?', answer:'Dùng giao thức DHCP'}, 
+{lesson:11, question:'Khi máy chủ teamview vào máy khách việc trao đổi thông tin có thể được thực hiện thông qua chức năng:', answer:'Voice Chat và Video Chat'}, 
+{lesson:11, question:'Theo mặc định, cổng nào được HTTPS sử dụng', answer:'443'}, 
+{lesson:11, question:'Google Authenticator là phần mêm', answer:'Tạo mã xác thực OTP (One time password)'}, 
+{lesson:11, question:'Cú pháp nhắn tin để lấy lại mật khẩu truy cập Portal VNPT', answer:'MP gửi 993'}, 
+{lesson:11, question:'Phải thực hiện thay đổi mật khẩu ngay khi:', answer:'Tát cả đều đúng'}, 
+{lesson:11, question:'Chữ ký số được dùng cho mục đích gì', answer:'Để kiểm tra định danh người gửi'}, 
+{lesson:11, question:'Loại mã độc nào yêu cầu trả tiền để có thể khôi phục lại điều khiển hệ thống', answer:'Ransomware'}, 
+{lesson:11, question:'Để tăng cường bảo mật dữ liệu trong USB, đáp án nào dưới đây là sai?', answer:'Sao lưu từng tệp tin vào USB và không sử dụng mật khẩu cho các tệp tin'}, 
+{lesson:11, question:'Trong suốt quá trình kiểm định một bản ghi hệ thống máy chủ, các mục nào sau đây có thể được xem như một khả năng đe dọa bảo mật', answer:'Năm trăm ngàn công việc in được gửi đến một máy in'}, 
+{lesson:11, question:'Tổ hợp phím tắt để khóa màn hình trên Windows 10 là:', answer:'Windows + L'}, 
+{lesson:11, question:'Mật khẩu mạnh bao gồm:', answer:'Tất cả các yếu tố'}, 
+{lesson:8, question:'Câu lệnh nào có thể sử dụng để giải quyết các vấn đề về mạng (chọn 3 đáp án):', answer:'[3 chọn]\nPing\nShow ip route\nShow ip interface'}, 
+{lesson:8, question:'Câu lệnh nào được sử dụng để xem thông tin CPU', answer:'Show process'}, 
+{lesson:8, question:'Sau khi cài Terminal service, để cài 1 phần mềm, ta sử dụng', answer:'Cài thông qua Add/Remove program'}, 
+{lesson:8, question:'Bản quyền phần mềm của Microsoft cung cấp loại nào?', answer:'Tất cả các đáp án trên'}, 
+{lesson:8, question:'Các phương pháp ảo hóa phổ biến là:', answer:'Ảo hóa máy chủ, ảo hóa ứng dụng, ảo hóa lưu trữ'}, 
+{lesson:8, question:'Khi cài đặt, VMWare tạo ra ở máy thật bao nhiêu card mạng ảo để máy thật giao tiếp với các máy tính ảo.', answer:'2'}, 
+{lesson:2, question:'Khi áp dụng chính sách tường lửa “zone base policy”. Ba hành động nào được áp dụng cho lưu lượng lớp truy cập? (chọn 3 đáp án)', answer:'[3 chọn]\npass\ninspect\ndrop'}, 
+{lesson:8, question:'Để thiết lập quyền khởi động ưu tiên cho file boot DLC (*.iso) trong VMWare :', answer:'Vào VM  à chọn CD/DVD (SATA) à chọn đường dẫn đến file DLC '}, 
+{lesson:8, question:'Chính sách tài khoản nào nên được thiết lập để ngăn chặn các cuộc tấn công ác ý vào tài khoản của user?', answer:'Giới hạn số lần logon'}, 
+{lesson:8, question:'Để không phải thực hiện thao tác cài lại các máy ảo, có thể sử dụng chức năng khôi phục tại thời điểm được tao ra, ta chọn tính năng', answer:'Snapshots'}, 
+{lesson:8, question:'Chọn 2 địa chỉ lớp A (chọn 2 đáp án):', answer:'[2 chọn]\n11.0.0.1/8\n10.0.0.2/8'}, 
+{lesson:8, question:'Nếu một router có 3 hosts kết nối trên một port và 2 host còn lại kết nối tới 2 port khác. Vậy có bao nhiêu miền quảng bá được thể hiện trên router?', answer:'2'}, 
+{lesson:8, question:'Khôi phục lại Snapshot trên VMWare', answer:'Chọn Menu VM –> Snapshot –> Revert  to Snapshot: tên Snapshot bạn cần khôi phục'}, 
+{lesson:8, question:'Thiết lập VMWare Workstation, để tạo mới 1 máy ảo thực hiện trình tư các bước như sau', answer:'Chọn File >New Virtual Machine, chọn File ISO, chọn Next để thực hiện một số điều chỉnh cho đến tùy chỉnh lại RAM và CPU cho máy ảo và chọn thư mục để lưu trữ máy ảo.'}, 
+{lesson:8, question:'Chiều dài tối thiểu của mật khẩu cần phải là :', answer:'8 ký tự'}, 
+{lesson:8, question:'Port mặc định của WorldClient là bao nhiêu:', answer:'3000'}, 
+{lesson:2, question:'Bạn cần cấm việc dò quét từ mạng khác theo giao thức ICMP. Bạn phải set lệnh deny ICMP với tham số nào?', answer:'Type = 3, Code = 1'}, 
+{lesson:2, question:'Trong Active FTP mode, port nào được sử dụng để thiết lập kênh điều khiển ?', answer:'21'}, 
+{lesson:2, question:'Ba điều nào đúng khi nói về DHCP Snooping? (chọn 3 đáp án)', answer:'[3 chọn]\nModify Traffic in transit\nArp Poisoning\nUsed to perform man-in-the-middle attack'}, 
+{lesson:8, question:'DHCPOFFER  đây là gói tin nhằm giúp', answer:'DHCP Server đề nghị danh sách các IP cho thuê đến Client'}, 
+{lesson:8, question:'Công nghệ Hyper-V trong Windows Server là gì?', answer:'Công nghệ ảo hóa của Microsoft'}, 
+{lesson:8, question:'Ảo hóa mức hệ điều hành còn gọi là', answer:'Containers Virtualizazation hay Isolation'}, 
+{lesson:8, question:'Sử dụng mặt subnet nào được sử dụng cho 8 dải mạng con, mỗi mạng chứa từ 6 cho tới 26 hosts?', answer:'255.255.255.224'}, 
+{lesson:8, question:'Đâu là điểm khác giữa thiết bị CSU/DSU và modem?', answer:'Thiết bị CSU/DSU chuyển đổi tín hiệu số từ một router tới đường truyền leased; thiết bị modem chuyển đổi tín hiệu số từ router tới đường truyên điện thoại.'}, 
+{lesson:7, question:'Dữ liệu lớn (Big Data) khác dữ liệu thường điểm nào ?', answer:'Khả năng lưu trữ lớn hơn (Khả năng lưu trữ và xử lý dữ liệu )'}, 
+{lesson:8, question:'Trình tự các bước Export máy ảo trong Hyper-V gồm:', answer:'Mở Hyper-V, sau đó chọn Export,  nhấn Browse để lựa chọn nơi muốn Export máy ảo trong Hyper-V.'}, 
+{lesson:8, question:'Để kích Hyper-V Manager trên Windows, thực hiện trình tự các bước sau:', answer:'Ở cửa sổ Control Panel, chọn Programs - truy cập Programs and Features rồi chọn Turn Windows features on or off. Tích vào Hyper-V rồi nhấn OK'}, 
+{lesson:2, question:'Hai lệnh nào được sử dụng để bảo mật file cấu hình cho thiết bị cisco (chọn 2 đáp án)', answer:'[2 chọn]\nsecure boot-config\nsecure boot-image'}, 
+{lesson:11, question:'Quy trình để tiếp cận đơn vị triển khai phần mềm:', answer:'Chuẩn bị - Tiếp cận - Giới thiệu tư vấn lợi ích dịch vụ - Xử lý tình huống trong quá trình tư vấn - Một số giải pháp hỗ trợ khi tư vấn - Chăm sóc khách hàng'}, 
+{lesson:11, question:'Theo khuyến cáo của Microsoft, nhà sản xuất hệ điều hành Windows, trên một máy tính bạn chỉ nên sử dụng duy nhất một phần mềm diệt virus. Điều đó đúng hay sai?', answer:'Đúng'}, 
+{lesson:8, question:'Chọn 2 đáp án đúng về địa chỉ Ipv6 ? (chọn 2 đáp án):', answer:'[2 chọn]\nfd15:db8::700:3:400F:572B\nfd15:0db8:0000:0000:700:3:400F:527B'}, 
+{lesson:8, question:'Bạn có thể cấu hình Hyper – V để chạy nhiều máy ảo cùng lúc. Số lượng máy ảo nhiêu hay ít tùy thuộc vào mấy yếu tố', answer:'3'}, 
+{lesson:8, question:'Sau khi cài Terminal Service(Software Deployment) , để cài một phần mềm người ta sử dụng', answer:'Thông qua Add/Remove Program'}, 
+{lesson:2, question:'Điều nào đúng về thiết bị ASA khi ở chế độ trong suốt (transparent)', answer:'It requires a management IP address'}, 
+{lesson:2, question:'Hai lệnh nào được sử dụng để bảo mật file cấu hình cho thiết bị cisco (chọn 2 đáp án)', answer:'[2 chọn]\nsecure boot-image\nsecure boot-config'}, 
+{lesson:2, question:'Hai tính năng nào thường được sử dụng CoPP và CPPr để bảo vệ luồng dữ liệu? (chọn 2 đáp án)', answer:'[2 chọn]\nQoS\ntraffic classification'}, 
+{lesson:8, question:'Các giao thức xác thực nào sau đây là được sử dụng trong các mạng không dây ?', answer:'802.11b'}, 
+{lesson:2, question:'Hai tính năng nào thường được sử dụng CoPP và CPPr để bảo vệ luồng dữ liệu? (chọn 2 đáp án)', answer:'[2 chọn]\ntraffic classification\nQoS'}, 
+{lesson:2, question:'Khi áp dụng chính sách tường lửa “zone base policy”. Ba hành động nào được áp dụng cho lưu lượng lớp truy cập? (chọn 3 đáp án)', answer:'[3 chọn]\npass\ndrop\ninspect'}
 ];
+
 function trimAccent(phrase) {
 	return phrase
 		.normalize('NFD')
@@ -6711,6 +1174,14 @@ userLesson.addEventListener('change', filter);
 // Search
 const userSearch = document.querySelector('[data-keyword]');
 userSearch.addEventListener('keyup', filter);
+
+const clearSearch = document.querySelector('.search__clear');
+
+clearSearch.addEventListener('click', () => {
+	userSearch.value = "";
+	userSearch.focus();
+	filter();
+})
 
 function formatText(text, _from, _to) {
 	let result = text;
@@ -6789,13 +1260,6 @@ function filter() {
 	}
 	list.innerHTML = htmlQueue1 + htmlQueue0;
 }
-const clearBtn = document.querySelector('.clear-btn');
-const clearSearch = document.querySelector('.search__clear');
-
-clearSearch.addEventListener('click', () => {
-	userSearch.value = '';
-	filter();
-});
 
 function labelSearch(x) {
 	userSearch.value = x;

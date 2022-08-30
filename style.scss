@@ -3,18 +3,18 @@ $border-radius: 5px;
 
 // Colors
 $color--white: #ffffff;
-$color--black: #222222;
+$color--black: #171717;
 $base-ui--1: #2e2e2e;
-$base-ui--2: #2d2e2e;
+$base-ui--2: #505050;
 $base-ui--3: #426fc9;
 $base-ui--4: #6282b4;
-$base-ui--5: #7d9bc2;
+$base-ui--5: #7db0d3;
 $base-ui--6: #a2b6d3;
-$base-ui--7: #cdd9e7;
+$base-ui--7: #ce976a;
 
 $state-ui--primary: #3384f3;
 $state-ui--danger: #d63031;
-$state-ui--success: #00b894;
+$state-ui--success: #1e2423;
 $state-ui--info: #D980FA;
 $state-ui--warning: #fdcb6e;
 
@@ -62,8 +62,7 @@ body {
 }
 
 .highlight {
-    background: rgb(241, 237, 217);
-    color: $base-ui--3;
+    background: $base-ui--2;
 }
 
 .list {
@@ -133,7 +132,7 @@ body {
 								font-size: 1rem;
         outline: none;
         background: $color--white;
-
+-webkit-appearance: none;
         &:focus {
             box-shadow: 0px 0px 0px 3px rgba($state-ui--primary, .15);
             border-color: $state-ui--primary;
@@ -149,6 +148,24 @@ body {
         background-position-x: 100%;
         background-position-y: 13px;
     }
+				&__clear {
+					position: absolute;
+					top: 0.7rem;
+					right: 0.8rem;
+					cursor: pointer;
+					background: $color--white;
+					width: 2rem;
+					height: 2rem;
+					line-height: 2rem;
+					color: $base-ui--4;
+					border: 0;
+					padding: 0;
+					border-radius: 50%;
+					font-size: 1.4rem;
+					&:focus, &:active {
+						outline: 0;
+					}
+				}
 }
 
 .search-item {
