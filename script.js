@@ -1149,7 +1149,9 @@ let data = [
 {lesson:2, question:'Hai tính năng nào thường được sử dụng CoPP và CPPr để bảo vệ luồng dữ liệu? (chọn 2 đáp án)', answer:'[2 chọn]\nQoS\ntraffic classification'}, 
 {lesson:8, question:'Các giao thức xác thực nào sau đây là được sử dụng trong các mạng không dây ?', answer:'802.11b'}, 
 {lesson:2, question:'Hai tính năng nào thường được sử dụng CoPP và CPPr để bảo vệ luồng dữ liệu? (chọn 2 đáp án)', answer:'[2 chọn]\ntraffic classification\nQoS'}, 
-{lesson:2, question:'Khi áp dụng chính sách tường lửa “zone base policy”. Ba hành động nào được áp dụng cho lưu lượng lớp truy cập? (chọn 3 đáp án)', answer:'[3 chọn]\npass\ndrop\ninspect'}
+{lesson:2, question:'Khi áp dụng chính sách tường lửa “zone base policy”. Ba hành động nào được áp dụng cho lưu lượng lớp truy cập? (chọn 3 đáp án)', answer:'[3 chọn]\npass\ndrop\ninspect'}, 
+{lesson:4, question:'Khi tiếp xúc với khách hàng, lý do nào là quan trọng nhất khiến chúng ta nên gọi đúng tên khách hàng?', answer:'Để thể hiện sự tôn trọng và tạo thiện cảm với khách hàng'}, 
+{lesson:4, question:'Trong quá trình phục vụ, nếu khách hàng không hài lòng với dịch vụ hoặc thái độ của nhân viên, NVKT nên ứng xử thế nào?', answer:'Chân thành xin lỗi khách hàng cho dù nhân viên có lỗi hay không; chủ động lắng nghe, thể hiện đồng cảm với khách hàng và có hướng giải thích rõ ràng, nhẹ nhàng để khách hàng hiểu cũng như thông cảm'}
 ];
 
 function trimAccent(phrase) {
