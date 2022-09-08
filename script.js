@@ -1200,7 +1200,7 @@ function matchKeyword(keyword, data) {
 	let index = data.questionLower.indexOf(keyword);
 	if (index >= 0) {
 		return {
-			prior: 1,
+			prior: 4,
 			question: formatText(data.question, index, index + keyword.length),
 			answer: formatText(data.answer)
 		};
@@ -1208,7 +1208,7 @@ function matchKeyword(keyword, data) {
 	index = data.answerLower.indexOf(keyword);
 	if (index >= 0) {
 		return {
-			prior: 1,
+			prior: 3,
 			question: formatText(data.question),
 			answer: formatText(data.answer, index, index + keyword.length),
 		};
@@ -1217,7 +1217,7 @@ function matchKeyword(keyword, data) {
 	index = data.questionNonAccent.indexOf(keywordNonAccent);
 	if (index >= 0) {
 		return {
-			prior: 0,
+			prior: 2,
 			question: formatText(data.question, index, index + keyword.length),
 			answer: formatText(data.answer)
 		};
@@ -1225,13 +1225,13 @@ function matchKeyword(keyword, data) {
 	index = data.answerNonAccent.indexOf(keywordNonAccent);
 	if (index >= 0) {
 		return {
-			prior: 0,
+			prior: 1,
 			question: formatText(data.question),
 			answer: formatText(data.answer, index, index + keyword.length),
 		};
 	}
 	return {
-		prior: -1,
+		prior: 0,
 		question: "",
 		answer: ""
 	};
@@ -1240,25 +1240,26 @@ function filter() {
 	let lesson = parseInt(document.querySelector('[data-lesson]').value);
 	let keyword = document.querySelector('[data-keyword]').value.toLowerCase();
 
-	let htmlQueue1 = '',
-		htmlQueue0 = '';
+	let htmlQueue = {
+		0:"",
+		1:"",
+		2:"",
+		3:"",
+		4:""
+	};
 	for (i = 0; i < data.length; i++) {
 		if (lesson >0 && data[i].lesson !== lesson) {
 			continue;
 		}
 		if (keyword) {
-			let match = matchKeyword(keyword, data[i]);
-			if (match.prior === 1) {
-				htmlQueue1 += template(match);
-			} else if (match.prior === 0) {
-				htmlQueue0 += template(match);
-			} else {
-			}
+			let match = matchKeyword(keyword, data[i]);			
+			htmlQueue[match.prior] += template(match);			
 		} else {
-			htmlQueue1 += template(data[i]);
+			/* Nếu ko gõ từ khóa thì hiện toàn bộ */
+			htmlQueue[1] += template(data[i]);
 		}
 	}
-	list.innerHTML = htmlQueue1 + htmlQueue0;
+	list.innerHTML = htmlQueue[4] + htmlQueue[3] + htmlQueue[2] + htmlQueue[1];
 }
 
 function labelSearch(x) {
