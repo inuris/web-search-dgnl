@@ -3,8 +3,10 @@ $border-radius: 5px;
 
 // Colors
 $color--white: #ffffff;
-$color--black: #171717;
-$base-ui--1: #2e2e2e;
+$color--black: #333333;
+$color--grey: #dddddd;
+$color--light-grey: #e9ecf3;
+$base-ui--1: #005ed3;
 $base-ui--2: #505050;
 $base-ui--3: #426fc9;
 $base-ui--4: #6282b4;
@@ -15,7 +17,7 @@ $base-ui--7: #ce976a;
 $state-ui--primary: #3384f3;
 $state-ui--danger: #d63031;
 $state-ui--success: #1e2423;
-$state-ui--info: #D980FA;
+$state-ui--info: #d980fa;
 $state-ui--warning: #fdcb6e;
 
 // Color Map
@@ -24,177 +26,159 @@ $border-color: $base-ui--2;
 $border-color-hover: $base-ui--3;
 
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-
+	box-sizing: border-box;
+	font-size: 16px;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
-    background: $color--black;
+	width: 100%;
+	height: 100%;
+	background: $color--light-grey;
 }
 
 body {
-    font-size: 1rem;
-    color: $base-ui--7;
-    font-family: arial, sans-serif;
-    line-height: 1.5;
+	font-size: 1rem;
+	color: $base-ui--7;
+	font-family: arial, sans-serif;
+	line-height: 1.35;
 }
-
+.header {
+	margin: 0;
+	padding: 0.5rem;
+	border-bottom: 1px solid $color--grey;
+}
 .container {
-    max-width: $container-width;
-    margin: 0.5rem auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+	max-width: $container-width;
+	margin: 0.5rem auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 .row {
-    margin-left: -1rem;
-    margin-right: -1rem;
+	margin-left: -1rem;
+	margin-right: -1rem;
+	clear: both;
+	float: none;
 }
 
+.col{
+	float: left;
+}
 .highlight {
-    background: $base-ui--2;
+	background: $base-ui--1;
+	color: $color--white;
 }
 
 .list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 6rem;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 6rem;
 }
 
 .list-item {
-    width: 100%;
-    margin-bottom: 0.5rem;
-    padding: 0.8rem;
-    border: 1px solid $border-color;
-    display: flex;
-    align-items: center;
-    position: relative;
-    color: $base-ui--5;
-    text-decoration: none;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	padding: 0.8rem;
+	border: 1px solid $color--white;
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: $base-ui--1;
+	text-decoration: none;
+	background: $color--white;
+	&:hover {
+		border: 1px solid $border-color-hover;
 
-    &:hover {
-        border: 1px solid $border-color-hover;
-        background: $base-ui--1;
+		.list-item__button {
+			opacity: 1;
+			transition: all 100ms ease;
+		}
+	}
 
-        .list-item__button {
-            opacity: 1;
-            transition: all 100ms ease;
-        }
-    }
+	&__question {
+		display: block;
+		font-size: 0.9em;
+	}
 
-    &__question {
-        display: block;
-    }
-
-    &__answer {
-        font-size: 0.9em;
-        color: $base-ui--7;
-    }
+	&__answer {
+		font-size: 0.9em;
+		color: $color--black;
+	}
 }
 
 .search,
 .lesson {
-    margin-bottom: 0.5rem;
-    font-size: 2.4rem;
-    position: relative;
+	margin-bottom: 0.5rem;
+	font-size: 2.4rem;
+	position: relative;
 
-    label,
-    input,
-    select {
-        display: block;
-    }
+	label,
+	input,
+	select {
+		display: block;
+	}
 
-    label {
-        font-weight: 700;
-        margin-bottom: 1rem;
-    }
+	label {
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
 
-    input,
-    select {
-        width: 100%;
-        padding: 1rem;
-        border-radius: $border-radius;
-        border: 1px solid $base-ui--3;
-        font-family: inherit;
-								font-size: 1rem;
-        outline: none;
-        background: $color--white;
--webkit-appearance: none;
-        &:focus {
-            box-shadow: 0px 0px 0px 3px rgba($state-ui--primary, .15);
-            border-color: $state-ui--primary;
-        }
-    }
+	input,
+	select {
+		width: 100%;
+		padding: 0.75rem 1rem;
+		border-radius: $border-radius;
+		border: 1px solid $base-ui--3;
+		font-family: inherit;
+		font-size: 1rem;
+		outline: none;
+		background: $color--white;
+		-webkit-appearance: none;
+		&:focus {
+			box-shadow: 0px 0px 0px 3px rgba($state-ui--primary, 0.15);
+			border-color: $state-ui--primary;
+		}
+	}
 
-    select {
-								padding: 0.75rem 1rem;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-repeat: no-repeat;
-        background-position-x: calc(100% - 8px);
-        background-position-y: 10px;
-								background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-    }
-				&__clear {
-					position: absolute;
-					top: 0.7rem;
-					right: 0.5rem;
-					cursor: pointer;
-					background: transparent;
-					width: 2rem;
-					height: 2rem;
-					line-height: 2rem;
-					color: $base-ui--4;
-					border: 0;
-					padding: 0;
-					border-radius: 50%;
-					font-size: 1.4rem;
-					&:focus, &:active {
-						outline: 0;
-					}
-				}
-}
-
-.search-item {
-    font-size: 1.4rem;
-    display: inline-block;
-    padding: .5rem;
-    line-height: 1;
-    color: $state-ui--primary;
-    border-radius: $border-radius;
-    background: transparentize($state-ui--primary, .85);
-    cursor: pointer;
-    margin: 0 .5rem .5rem 0;
-
-    &:hover,
-    &:focus {
-        color: darken($state-ui--primary, 10%);
-        background: transparentize($state-ui--primary, .8);
-    }
-
-    &__close {
-        opacity: .5;
-        display: inline-block;
-        cursor: pointer;
-        margin-left: .5rem;
-
-        &:hover {
-            color: $state-ui--danger;
-        }
-    }
+	select {
+		padding: 0.6rem 1rem;
+		border: 1px solid $color--grey;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background-repeat: no-repeat;
+		background-position-x: calc(100% - 8px);
+		background-position-y: 10px;
+		background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	}
+	&__clear {
+		position: absolute;
+		top: 0.45rem;
+		right: 0.4rem;
+		cursor: pointer;
+		background: transparent;
+		width: 2rem;
+		height: 2rem;
+		line-height: 2rem;
+		color: $base-ui--4;
+		border: 0;
+		padding: 0;
+		border-radius: 50%;
+		font-size: 1.4rem;
+		&:focus,
+		&:active {
+			outline: 0;
+		}
+	}
 }
