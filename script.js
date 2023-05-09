@@ -1441,7 +1441,9 @@ let data = [
 {lessonid:13, question:'Các yếu tố vật lý và hóa học liên quan đến quá trình lao động, sản xuất là?', answer:'Tất cả các đáp án nêu đều đúng'}, 
 {lessonid:13, question:'Luật An toàn, vệ sinh lao động năm 2015 quy định những trường hợp nào sau đây, người lao động không được hưởng chế độ từ người sử dụng lao động khi bị tai nạn lao động?', answer:'Tất cả các đáp án nêu đều đúng'}, 
 {lessonid:13, question:'Người lao động đang làm việc không may bị điện giật, sau khi nạn nhân được tách ra khỏi nguồn điện, nạn nhân đang trong tình trạng ngừng thở ngừng tim, người sơ cứu viên cần:', answer:'Đưa nạn nhân ra nơi thoáng khí, đặt nạn nhân nằm đầu thấp trên nền cứng bằng phẳng, đầu ngửa về phía gáy, khai thông đường thở, tiến hành thổi ngạt, ép tim ngoài lồng ngực đúng phương pháp cho đến khi nạn nhân hồi tỉnh hoặc trên đường vận chuyển nạn nhân đến bệnh viện.'}, 
-{lessonid:13, question:'Luật An toàn, vệ sinh lao động năm 2015 định nghĩa vệ sinh lao động là gì?', answer:'Vệ sinh lao động là giải pháp phòng, chống tác động của yếu tố có hại gây bệnh tật, làm suy giảm sức khỏe cho con người trong quá trình lao động'}
+{lessonid:13, question:'Luật An toàn, vệ sinh lao động năm 2015 định nghĩa vệ sinh lao động là gì?', answer:'Vệ sinh lao động là giải pháp phòng, chống tác động của yếu tố có hại gây bệnh tật, làm suy giảm sức khỏe cho con người trong quá trình lao động'},
+{lessonid:13, question:'Hệ thống tín hiệu, biển hiệu áp dụng trong công tác an toàn vệ sinh lao động nhằm mục đích chính là gì?', answer:'Báo trước cho người lao động sự cố có thể xảy ra và đưa ra hướng dẫn, quy định'}, 
+{lessonid:13, question:'Để giảm thiểu rủi ro về nguy cơ trượt, té, vấp ngã, người lao động cần thực hiện tốt những biện pháp là?', answer:'Sử dụng các biển cảnh báo trơn trượt; Lối đi trong văn phòng nên được giữ sạch sẽ, tránh sắp xếp đồ đạc một cách lộn xộn có thể tạo ra nguy hiểm khi di chuyển'}
 ];
 
 const list = document.getElementById('list');
