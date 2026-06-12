@@ -4,35 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tìm kiếm ĐGNL - Learning</title>
-  <script type="module" crossorigin src="./assets/index-BzUnv4yj.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-IrKxYYR9.css">
+  <script type="module" crossorigin src="./assets/index-etDhlHiW.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BfpS7FhC.css">
 </head>
 <body>
-  <div class="header" style="background: #fff">
-    <div class="container">
-      <div class="row">
-        <div class="col" style="width: 35%">
-          <div class="logo" style="color: #005ed3; font-size: 1rem; font-weight: bold; padding-top: 0.6rem;">LEARNING</div>
+  <!-- Màn hình Nhập mật khẩu -->
+  <div id="login-screen" class="login-screen hidden">
+    <div class="login-card">
+      <div class="login-card__logo">LEARNING</div>
+      <p class="login-card__subtitle">Vui lòng nhập mật khẩu để truy cập tài liệu</p>
+      <form id="login-form" class="login-card__form">
+        <div class="form-group">
+          <input type="password" id="password-input" placeholder="Mật khẩu..." required />
         </div>
-        <div class="col" style="width: 65%; float: right">
-          <div class="lesson">
-            <select data-lesson>
-              <option value="0" selected>-- Tất cả --</option>
-            </select>
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox" id="remember-checkbox" checked />
+            <span>Ghi nhớ mật khẩu</span>
+          </label>
+        </div>
+        <div id="login-error" class="login-error hidden"></div>
+        <button type="submit" class="login-btn">Xác nhận</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Nội dung Tìm kiếm chính -->
+  <div id="main-content" class="hidden">
+    <div class="header" style="background: #fff">
+      <div class="container">
+        <div class="row">
+          <div class="col" style="width: 35%">
+            <div class="logo" style="color: #005ed3; font-size: 1rem; font-weight: bold; padding-top: 0.6rem;">LEARNING</div>
+          </div>
+          <div class="col" style="width: 65%; float: right">
+            <div class="lesson">
+              <select data-lesson>
+                <option value="0" selected>-- Tất cả --</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row search-row">
+          <div class="search">
+            <input type="search" data-keyword placeholder="Từ khóa ..." />
+            <button class="search__clear">&times;</button>
           </div>
         </div>
       </div>
-      <div class="row search-row">
-        <div class="search">
-          <input type="search" data-keyword placeholder="Từ khóa ..." />
-          <button class="search__clear">&times;</button>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div id="list" class="list" data-searchable></div>
+    <div class="container">
+      <div class="row">
+        <div id="list" class="list" data-searchable></div>
+      </div>
     </div>
   </div>
 

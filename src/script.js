@@ -6,6 +6,17 @@ const userLesson = document.querySelector('[data-lesson]');
 const userSearch = document.querySelector('[data-keyword]');
 const clearSearch = document.querySelector('.search__clear');
 
+// Login Screen Elements
+const loginScreen = document.getElementById('login-screen');
+const loginForm = document.getElementById('login-form');
+const passwordInput = document.getElementById('password-input');
+const rememberCheckbox = document.getElementById('remember-checkbox');
+const loginError = document.getElementById('login-error');
+const mainContent = document.getElementById('main-content');
+const loginBtn = loginForm ? loginForm.querySelector('.login-btn') : null;
+
+let currentPassword = "";
+
 // Render Users
 const template = (listItem) => {
 	return `
@@ -144,13 +155,73 @@ function showError(errMessage) {
 	`;
 	const retryBtn = document.getElementById('btn-retry');
 	if (retryBtn) {
-		retryBtn.addEventListener('click', loadData);
+		retryBtn.addEventListener('click', () => {
+			loadData(currentPassword, true);
+		});
 	}
 }
 
-function loadData() {
-	showLoading();
-	fetch(apiURL)
+// Login Screen Helper Functions
+function showLoginScreen(errMsg = '') {
+	if (loginScreen) loginScreen.classList.remove('hidden');
+	if (mainContent) mainContent.classList.add('hidden');
+	if (passwordInput) {
+		passwordInput.disabled = false;
+		passwordInput.value = "";
+		passwordInput.focus();
+	}
+	if (loginBtn) {
+		loginBtn.disabled = false;
+		loginBtn.textContent = "Xác nhận";
+	}
+	if (errMsg) {
+		showLoginError(errMsg);
+	} else {
+		if (loginError) loginError.classList.add('hidden');
+	}
+}
+
+function hideLoginScreen() {
+	if (loginScreen) loginScreen.classList.add('hidden');
+	if (mainContent) mainContent.classList.remove('hidden');
+}
+
+function showLoginError(msg) {
+	if (loginError) {
+		loginError.textContent = msg;
+		loginError.classList.remove('hidden');
+	}
+}
+
+function setLoginLoading(isLoading) {
+	if (passwordInput) passwordInput.disabled = isLoading;
+	if (loginBtn) {
+		loginBtn.disabled = isLoading;
+		loginBtn.textContent = isLoading ? "Đang xác thực..." : "Xác nhận";
+	}
+	if (isLoading && loginError) {
+		loginError.classList.add('hidden');
+	}
+}
+
+function loadData(password, isAutoLoad = false) {
+	if (!password) {
+		showLoginScreen();
+		return;
+	}
+
+	currentPassword = password;
+
+	if (isAutoLoad) {
+		showLoading();
+		hideLoginScreen();
+	} else {
+		setLoginLoading(true);
+	}
+
+	const url = `${apiURL}?password=${encodeURIComponent(password)}`;
+
+	fetch(url)
 		.then(response => {
 			if (!response.ok) {
 				throw new Error("Lỗi kết nối mạng (HTTP " + response.status + ")");
@@ -186,17 +257,52 @@ function loadData() {
 				if (userLesson) userLesson.disabled = false;
 				if (userSearch) userSearch.disabled = false;
 
+				// Save password if checked
+				if (rememberCheckbox && rememberCheckbox.checked) {
+					localStorage.setItem('saved_password', password);
+				} else {
+					localStorage.removeItem('saved_password');
+				}
+
+				// Transition to search UI
+				hideLoginScreen();
+
 				// Initial render
 				filter();
 			} else {
-				throw new Error(res.message || "Định dạng dữ liệu không hợp lệ");
+				throw new Error(res.message || "Mật khẩu không chính xác hoặc lỗi dữ liệu");
 			}
 		})
 		.catch(error => {
 			console.error("Lỗi khi tải dữ liệu:", error);
-			showError(error.message);
+
+			// Clear saved password if auth failed
+			localStorage.removeItem('saved_password');
+
+			if (!isAutoLoad) {
+				setLoginLoading(false);
+				showLoginError(error.message);
+			} else {
+				showLoginScreen(error.message);
+			}
 		});
 }
 
+// Bind Login Form Submission
+if (loginForm) {
+	loginForm.addEventListener('submit', (e) => {
+		e.preventDefault();
+		const password = passwordInput ? passwordInput.value : '';
+		if (password) {
+			loadData(password, false);
+		}
+	});
+}
+
 // Start loading on page load
-loadData();
+const savedPassword = localStorage.getItem('saved_password');
+if (savedPassword) {
+	loadData(savedPassword, true);
+} else {
+	showLoginScreen();
+}
