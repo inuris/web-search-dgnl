@@ -1,5 +1,5 @@
 let data = [];
-const apiURL = import.meta.env.VITE_API_URL || "https://script.google.com/macros/s/AKfycbxjNnzUpzk5qcCfh_PD_-XWU7AGhmLlTJwu1wJDqM4lEwkWj9pIILSQOWK6z3p0IGAo/exec";
+const apiURL = import.meta.env.VITE_API_URL;
 
 const list = document.getElementById('list');
 const userLesson = document.querySelector('[data-lesson]');
