@@ -1,5 +1,5 @@
 let data = [];
-const apiURL = "https://script.google.com/macros/s/AKfycbwLjblDkm9Dvdr663BMdICSd8KAEsraO9XCzqk6F39XvVWUzzrlPzxgG3TBVNFrxbuG/exec";
+const apiURL = import.meta.env.VITE_API_URL || "https://script.google.com/macros/s/AKfycbxjNnzUpzk5qcCfh_PD_-XWU7AGhmLlTJwu1wJDqM4lEwkWj9pIILSQOWK6z3p0IGAo/exec";
 
 const list = document.getElementById('list');
 const userLesson = document.querySelector('[data-lesson]');
@@ -257,12 +257,16 @@ function loadData(password, isAutoLoad = false) {
 				if (userLesson) userLesson.disabled = false;
 				if (userSearch) userSearch.disabled = false;
 
-				// Save password if checked
+				// NOTE: Password should NOT be saved in localStorage for security reasons
+				// Uncomment below only if you implement proper encryption
+				/*
 				if (rememberCheckbox && rememberCheckbox.checked) {
 					localStorage.setItem('saved_password', password);
 				} else {
 					localStorage.removeItem('saved_password');
 				}
+				*/
+				localStorage.removeItem('saved_password');
 
 				// Transition to search UI
 				hideLoginScreen();
@@ -299,10 +303,5 @@ if (loginForm) {
 	});
 }
 
-// Start loading on page load
-const savedPassword = localStorage.getItem('saved_password');
-if (savedPassword) {
-	loadData(savedPassword, true);
-} else {
-	showLoginScreen();
-}
+// Start loading on page load (disabled password auto-load for security)
+showLoginScreen();
