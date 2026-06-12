@@ -163,9 +163,11 @@ function loadData() {
 
 				// Process search optimization fields
 				data.forEach((element) => {
-					element.questionLower = (element.question || "").toLowerCase();
+					element.question = String(element.question || "");
+					element.answer = String(element.answer || "");
+					element.questionLower = element.question.toLowerCase();
 					element.questionNonAccent = trimAccent(element.questionLower);
-					element.answerLower = (element.answer || "").toLowerCase();
+					element.answerLower = element.answer.toLowerCase();
 					element.answerNonAccent = trimAccent(element.answerLower);
 				});
 
