@@ -1,27 +1,40 @@
-<div class="header" style="background: #fff">
-  <div class="container">
-    <div class="row">
-      <div class="col" style="width: 35%">
-        <div class="logo" style="color: #005ed3; font-size: 1rem; font-weight: bold; padding-top: 0.6rem;">LEARNING</div>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tìm kiếm ĐGNL - Learning</title>
+  <link rel="stylesheet" href="./src/style.scss">
+</head>
+<body>
+  <div class="header" style="background: #fff">
+    <div class="container">
+      <div class="row">
+        <div class="col" style="width: 35%">
+          <div class="logo" style="color: #005ed3; font-size: 1rem; font-weight: bold; padding-top: 0.6rem;">LEARNING</div>
+        </div>
+        <div class="col" style="width: 65%; float: right">
+          <div class="lesson">
+            <select data-lesson>
+              <option value="0" selected>-- Tất cả --</option>
+            </select>
+          </div>
+        </div>
       </div>
-      <div class="col" style="width: 65%; float: right">
-        <div class="lesson">
-          <select data-lesson>
-            <option value="0" selected>-- Tất cả --</option>
-          </select>
+      <div class="row search-row">
+        <div class="search">
+          <input type="search" data-keyword placeholder="Từ khóa ..." />
+          <button class="search__clear">&times;</button>
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div class="row">
-      <div class="search">
-        <input type="search" data-keyword placeholder="Từ khóa ..." />
-        <button class="search__clear">&times;</button>
-      </div>
+      <div id="list" class="list" data-searchable></div>
     </div>
   </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div id="list" class="list" data-searchable></div>
-  </div>
-</div>
+
+  <script type="module" src="./src/script.js"></script>
+</body>
+</html>
