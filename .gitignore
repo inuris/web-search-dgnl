@@ -8,7 +8,7 @@ dist/
 dist-ssr/
 build/
 
-# Local env files
+# Local env files (DO NOT COMMIT - contains sensitive data)
 .env
 .env.local
 .env.development.local
