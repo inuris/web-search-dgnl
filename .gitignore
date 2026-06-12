@@ -32,3 +32,27 @@ lerna-debug.log*
 *.sln
 *.sw?
 Thumbs.db
+
+# Lock files (use for consistent installs locally, but often excluded from repos)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE generated files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.o
+*.a
+*.lib
+*.so
