@@ -2,6 +2,7 @@ let data = [];
 const apiURL = import.meta.env.VITE_API_URL;
 
 const list = document.getElementById('list');
+const header = document.querySelector('.header');
 const userLesson = document.querySelector('[data-lesson]');
 const userSearch = document.querySelector('[data-keyword]');
 const clearSearch = document.querySelector('.search__clear');
@@ -148,6 +149,14 @@ function filter() {
 	}
 	list.innerHTML = htmlQueue[6] + htmlQueue[5] + htmlQueue[4] + htmlQueue[3] + htmlQueue[2] + htmlQueue[1];
 }
+
+// Shrink the header to just the search input once the user scrolls down
+const HEADER_COMPACT_SCROLL_THRESHOLD = 80;
+function updateHeaderCompact() {
+	if (!header) return;
+	header.classList.toggle('header--compact', window.scrollY > HEADER_COMPACT_SCROLL_THRESHOLD);
+}
+window.addEventListener('scroll', updateHeaderCompact, { passive: true });
 
 // Attach event listeners
 if (userLesson) userLesson.addEventListener('change', filter);
