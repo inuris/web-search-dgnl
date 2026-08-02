@@ -157,6 +157,15 @@ body {
 		line-height: 1.4;
 	}
 
+	&__choices {
+		display: block;
+		font-size: 0.925rem;
+		color: $base-ui--3;
+		line-height: 1.5;
+		margin-bottom: 0.5rem;
+		white-space: pre-line;
+	}
+
 	&__answer {
 		font-size: 0.925rem;
 		color: $base-ui--2;

@@ -19,10 +19,14 @@ let currentPassword = "";
 
 // Render Users
 const template = (listItem) => {
+	const choicesHtml = listItem.choices
+		? `<span class="list-item__choices">${listItem.choices}</span>`
+		: '';
 	return `
 			<a class="list-item" href="#">
 				<div class="list-item__content">
 					<span class="list-item__question">${listItem.question}</span>
+					${choicesHtml}
 					<span class="list-item__answer">${listItem.answer}</span>
 				</div>
 			</a>
@@ -55,16 +59,27 @@ function matchKeyword(keyword, data) {
 	let index = data.questionLower.indexOf(keyword);
 	if (index >= 0) {
 		return {
-			prior: 4,
+			prior: 6,
 			question: formatText(data.question, index, index + keyword.length),
+			choices: formatText(data.choices),
+			answer: formatText(data.answer)
+		};
+	}
+	index = data.choicesLower.indexOf(keyword);
+	if (index >= 0) {
+		return {
+			prior: 5,
+			question: formatText(data.question),
+			choices: formatText(data.choices, index, index + keyword.length),
 			answer: formatText(data.answer)
 		};
 	}
 	index = data.answerLower.indexOf(keyword);
 	if (index >= 0) {
 		return {
-			prior: 3,
+			prior: 4,
 			question: formatText(data.question),
+			choices: formatText(data.choices),
 			answer: formatText(data.answer, index, index + keyword.length),
 		};
 	}
@@ -72,8 +87,18 @@ function matchKeyword(keyword, data) {
 	index = data.questionNonAccent.indexOf(keywordNonAccent);
 	if (index >= 0) {
 		return {
-			prior: 2,
+			prior: 3,
 			question: formatText(data.question, index, index + keyword.length),
+			choices: formatText(data.choices),
+			answer: formatText(data.answer)
+		};
+	}
+	index = data.choicesNonAccent.indexOf(keywordNonAccent);
+	if (index >= 0) {
+		return {
+			prior: 2,
+			question: formatText(data.question),
+			choices: formatText(data.choices, index, index + keyword.length),
 			answer: formatText(data.answer)
 		};
 	}
@@ -82,12 +107,14 @@ function matchKeyword(keyword, data) {
 		return {
 			prior: 1,
 			question: formatText(data.question),
+			choices: formatText(data.choices),
 			answer: formatText(data.answer, index, index + keyword.length),
 		};
 	}
 	return {
 		prior: 0,
 		question: "",
+		choices: "",
 		answer: ""
 	};
 }
@@ -103,7 +130,9 @@ function filter() {
 		1: "",
 		2: "",
 		3: "",
-		4: ""
+		4: "",
+		5: "",
+		6: ""
 	};
 	for (let i = 0; i < data.length; i++) {
 		if (lesson > 0 && data[i].lessonid !== lesson) {
@@ -117,7 +146,7 @@ function filter() {
 			htmlQueue[1] += template(data[i]);
 		}
 	}
-	list.innerHTML = htmlQueue[4] + htmlQueue[3] + htmlQueue[2] + htmlQueue[1];
+	list.innerHTML = htmlQueue[6] + htmlQueue[5] + htmlQueue[4] + htmlQueue[3] + htmlQueue[2] + htmlQueue[1];
 }
 
 // Attach event listeners
@@ -235,9 +264,12 @@ function loadData(password, isAutoLoad = false) {
 				// Process search optimization fields
 				data.forEach((element) => {
 					element.question = String(element.question || "");
+					element.choices = String(element.choices || "");
 					element.answer = String(element.answer || "");
 					element.questionLower = element.question.toLowerCase();
 					element.questionNonAccent = trimAccent(element.questionLower);
+					element.choicesLower = element.choices.toLowerCase();
+					element.choicesNonAccent = trimAccent(element.choicesLower);
 					element.answerLower = element.answer.toLowerCase();
 					element.answerNonAccent = trimAccent(element.answerLower);
 				});

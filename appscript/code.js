@@ -30,7 +30,8 @@ function doGet(e) {
         const recordsQuestions = dataQuestions.slice(1).map(row => ({
             lessonid: row[0],
             question: row[1],
-            answer: row[2]
+            answer: row[2],
+            choices: row[3]
         })).filter(item => item.question || item.lessonid);
 
         // 3. Xử lý dữ liệu từ Sheet Danh mục bài học (ID: 517711267)
