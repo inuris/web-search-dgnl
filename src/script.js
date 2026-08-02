@@ -43,73 +43,77 @@ function trimAccent(phrase) {
 		.replace(/[^a-zA-Z0-9 ]/g, ' ');
 }
 
-function formatText(text, _from, _to) {
-	let result = text;
-	if (_from !== undefined && _to !== undefined) {
-		result = text.substring(0, _from) +
+function formatText(text) {
+	return text.replace(/\n/gm, '<br />');
+}
+
+// Wraps every occurrence of `needle` found in `haystack` with a highlight span,
+// slicing the highlighted segments out of `text` (haystack and text are index-aligned).
+function highlightAll(text, haystack, needle) {
+	if (!needle) return formatText(text);
+	let result = '';
+	let cursor = 0;
+	let index = haystack.indexOf(needle, cursor);
+	while (index >= 0) {
+		result += text.substring(cursor, index) +
 			"<span class='highlight'>" +
-			text.substring(_from, _to) +
-			'</span>' +
-			text.substring(_to);
+			text.substring(index, index + needle.length) +
+			'</span>';
+		cursor = index + needle.length;
+		index = haystack.indexOf(needle, cursor);
 	}
-	result = result.replace(/\n/gm, '<br />');
-	return result;
+	result += text.substring(cursor);
+	return formatText(result);
 }
 
 function matchKeyword(keyword, data) {
-	let index = data.questionLower.indexOf(keyword);
-	if (index >= 0) {
+	if (data.questionLower.indexOf(keyword) >= 0) {
 		return {
 			prior: 6,
-			question: formatText(data.question, index, index + keyword.length),
+			question: highlightAll(data.question, data.questionLower, keyword),
 			choices: formatText(data.choices),
 			answer: formatText(data.answer)
 		};
 	}
-	index = data.choicesLower.indexOf(keyword);
-	if (index >= 0) {
+	if (data.choicesLower.indexOf(keyword) >= 0) {
 		return {
 			prior: 5,
 			question: formatText(data.question),
-			choices: formatText(data.choices, index, index + keyword.length),
+			choices: highlightAll(data.choices, data.choicesLower, keyword),
 			answer: formatText(data.answer)
 		};
 	}
-	index = data.answerLower.indexOf(keyword);
-	if (index >= 0) {
+	if (data.answerLower.indexOf(keyword) >= 0) {
 		return {
 			prior: 4,
 			question: formatText(data.question),
 			choices: formatText(data.choices),
-			answer: formatText(data.answer, index, index + keyword.length),
+			answer: highlightAll(data.answer, data.answerLower, keyword)
 		};
 	}
 	let keywordNonAccent = trimAccent(keyword);
-	index = data.questionNonAccent.indexOf(keywordNonAccent);
-	if (index >= 0) {
+	if (data.questionNonAccent.indexOf(keywordNonAccent) >= 0) {
 		return {
 			prior: 3,
-			question: formatText(data.question, index, index + keyword.length),
+			question: highlightAll(data.question, data.questionNonAccent, keywordNonAccent),
 			choices: formatText(data.choices),
 			answer: formatText(data.answer)
 		};
 	}
-	index = data.choicesNonAccent.indexOf(keywordNonAccent);
-	if (index >= 0) {
+	if (data.choicesNonAccent.indexOf(keywordNonAccent) >= 0) {
 		return {
 			prior: 2,
 			question: formatText(data.question),
-			choices: formatText(data.choices, index, index + keyword.length),
+			choices: highlightAll(data.choices, data.choicesNonAccent, keywordNonAccent),
 			answer: formatText(data.answer)
 		};
 	}
-	index = data.answerNonAccent.indexOf(keywordNonAccent);
-	if (index >= 0) {
+	if (data.answerNonAccent.indexOf(keywordNonAccent) >= 0) {
 		return {
 			prior: 1,
 			question: formatText(data.question),
 			choices: formatText(data.choices),
-			answer: formatText(data.answer, index, index + keyword.length),
+			answer: highlightAll(data.answer, data.answerNonAccent, keywordNonAccent)
 		};
 	}
 	return {
